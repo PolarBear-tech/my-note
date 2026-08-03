@@ -13,12 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/计划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "计划"
+            }
+          },
+          {
+            "id": "389c78d4a8322704",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -93,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -128,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -171,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,10 +212,6 @@
   "active": "4f5e1b4a934cd4af",
   "lastOpenFiles": [
     "md笔记/计划.md",
-    "高等数学/chapter-1.excalidraw.md",
-    "高等数学/chapter-1.excalidraw",
-    "README.md",
-    "计划.canvas",
-    "md笔记"
-  ]
-}
+    "你好.md",
+    "未命名.canvas",
+    "Excalidraw/Draw

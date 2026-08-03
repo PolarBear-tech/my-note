@@ -1,8 +1,10 @@
 {
   "interfaceFontFamily": "霞鹜文楷等宽",
-  "baseFontSize": 20,
+  "baseFontSize": 16,
   "textFontFamily": "霞鹜文楷等宽",
   "monospaceFontFamily": "霞鹜文楷等宽",
-  "cssTheme": "Catppuccin",
-  "accentColor": ""
+  "cssTheme": "Transparent",
+  "accentColor": "",
+  "showRibbon": false,
+  "showViewHeader": false
 }
