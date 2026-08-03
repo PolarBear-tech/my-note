@@ -1,8 +1,8 @@
 {
-  "interfaceFontFamily": "霞鹜文楷",
+  "interfaceFontFamily": "霞鹜文楷等宽",
   "baseFontSize": 20,
-  "textFontFamily": "霞鹜文楷",
+  "textFontFamily": "霞鹜文楷等宽",
   "monospaceFontFamily": "霞鹜文楷等宽",
-  "cssTheme": "Typewriter",
+  "cssTheme": "",
   "accentColor": ""
 }

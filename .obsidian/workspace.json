@@ -11,12 +11,14 @@
             "id": "4f5e1b4a934cd4af",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "高等数学/chapter-1.excalidraw.md"
+                "file": "md笔记/计划.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "chapter-1.excalidraw"
+              "icon": "lucide-file",
+              "title": "计划"
             }
           }
         ]
@@ -76,6 +78,16 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "f4ebbcf4217fb224",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ]
       }
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "高等数学/chapter-1.excalidraw.md",
+                "file": "md笔记/计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,7 +181,8 @@
               "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -189,8 +202,8 @@
   },
   "active": "4f5e1b4a934cd4af",
   "lastOpenFiles": [
-    "高等数学/chapter-1.excalidraw",
     "高等数学/chapter-1.excalidraw.md",
+    "高等数学/chapter-1.excalidraw",
     "md笔记/计划.md",
     "README.md",
     "计划.canvas",
