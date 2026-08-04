@@ -3,7 +3,7 @@
   "baseFontSize": 16,
   "textFontFamily": "霞鹜文楷等宽",
   "monospaceFontFamily": "霞鹜文楷等宽",
-  "cssTheme": "Transparent",
+  "cssTheme": "Catppuccin",
   "accentColor": "",
   "showRibbon": false,
   "showViewHeader": false
