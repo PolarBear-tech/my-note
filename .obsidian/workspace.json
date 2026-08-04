@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2c970290dc5b9a16",
+        "id": "4eaace308c728b13",
         "type": "tabs",
         "children": [
           {
-            "id": "4f5e1b4a934cd4af",
+            "id": "539fd4e8289d4b0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "md笔记/计划.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "计划"
+              "title": "新标签页"
             }
           }
         ]
@@ -93,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -200,16 +195,18 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "4f5e1b4a934cd4af",
+  "active": "539fd4e8289d4b0f",
   "lastOpenFiles": [
-    "README.md",
+    "标题.md",
+    "未命名.md",
     "md笔记/计划.md",
+    "README.md",
+    "高等数学/chapter-1.excalidraw.md",
     "你好.md",
     "未命名.canvas",
     "Excalidraw/Drawing 2026-08-03 21.30.20.excalidraw.md",
     "Excalidraw/Drawing 2026-08-03 21.30.25.excalidraw.md",
     "Excalidraw",
-    "高等数学/chapter-1.excalidraw.md",
     "高等数学/chapter-1.excalidraw",
     "计划.canvas",
     "md笔记"

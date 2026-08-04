@@ -50,6 +50,29 @@ map s$ :surround_math<CR>
 
 
 " 实现工作区的分割
-exmap windows-split-h obcommand workspace:split-vertical
+exmap vsp obcommand workspace:split-vertical
 " 实现工作区的纵向分割
-exmap windows-split-v obcommand workspace:split-horizontal
+exmap hsp obcommand workspace:split-horizontal
+
+
+
+" 聚焦
+exmap focusLeft obcommand editor:focus-left
+exmap focusRight obcommand editor:focus-right
+exmap focusBottom obcommand editor:focus-bottom
+exmap focusTop obcommand editor:focus-top
+nmap <C-w>h :focusLeft<CR>
+nmap <C-w>l :focusRight<CR>
+nmap <C-w>j :focusBottom<CR>
+nmap <C-w>k :focusTop<CR>
+
+" 关闭工作区
+exmap q obcommand workspace:close
+
+" 模拟折叠标题的功能
+exmap unfoldall obcommand editor:unfold-all
+exmap togglefold obcommand editor:toggle-fold
+exmap foldall obcommand editor:fold-all
+nmap zo :togglefold<CR>
+nmap za :foldall<CR>
+nmap zc :unfoldall<CR>
