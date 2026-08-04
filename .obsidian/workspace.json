@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c872bbf07a689b33",
+        "id": "7442e8bca2b0b733",
         "type": "tabs",
         "children": [
           {
-            "id": "cf2f66fe95028522",
+            "id": "efa1492d27c67520",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "md笔记/交大新生入学.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "交大新生入学"
             }
           }
         ]
@@ -85,12 +89,12 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -197,16 +201,18 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "f4ebbcf4217fb224",
+  "active": "efa1492d27c67520",
   "lastOpenFiles": [
+    "未命名.md",
+    "README.md",
+    "md笔记/交大新生入学.md",
+    "组织",
     "md笔记/Python Contributor之路.md",
     "我的计划.md",
     "md笔记/薛定谔方程里为什么有i.md",
     "路线.md",
     "计划.md",
-    "未命名.md",
     "标题.md",
-    "README.md",
     "高等数学/chapter-1.excalidraw.md",
     "你好.md",
     "未命名.canvas",

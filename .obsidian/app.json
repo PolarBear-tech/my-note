@@ -1,5 +1,7 @@
 {
   "spellcheck": false,
   "vimMode": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "md笔记"
 }
