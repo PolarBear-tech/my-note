@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4eaace308c728b13",
+        "id": "0508668dac05c3d2",
         "type": "tabs",
         "children": [
           {
-            "id": "539fd4e8289d4b0f",
+            "id": "bf49249bb172d45d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -195,10 +196,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "539fd4e8289d4b0f",
+  "active": "bf49249bb172d45d",
   "lastOpenFiles": [
-    "标题.md",
     "未命名.md",
+    "标题.md",
     "md笔记/计划.md",
     "README.md",
     "高等数学/chapter-1.excalidraw.md",
