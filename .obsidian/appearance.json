@@ -1,7 +1,7 @@
 {
-  "interfaceFontFamily": "霞鹜文楷等宽",
+  "interfaceFontFamily": "霞鹜文楷 屏幕阅读版",
   "baseFontSize": 20,
-  "textFontFamily": "霞鹜文楷等宽",
+  "textFontFamily": "霞鹜文楷 屏幕阅读版",
   "monospaceFontFamily": "霞鹜文楷等宽",
   "cssTheme": "Catppuccin",
   "accentColor": "",
