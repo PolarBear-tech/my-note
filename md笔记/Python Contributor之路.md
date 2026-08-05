@@ -6,4 +6,4 @@
 # 资源
 
 - [中国大学MOOC](https://www.icourse163.org/)
-- 
+- [Python Developer’s Guide](https://devguide.python.org/)
