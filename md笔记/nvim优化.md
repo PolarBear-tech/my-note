@@ -2,6 +2,7 @@
 
 # weztrerm.nvim
 
+有关wezterm:
 `willothy/wezterm.nvim` 的核心定位是：**在 Neovim 里通过 Lua 调用 `wezterm` CLI，从而控制外部的 WezTerm 终端**。它不需要你在 WezTerm 侧做任何配置，纯 nvim 插件。
 
 ---
