@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "688775fa01370a82",
+        "id": "753f01f64ea937ca",
         "type": "tabs",
         "children": [
           {
-            "id": "d44200eb7daf3db7",
+            "id": "efa5b03e4f576e1b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "md笔记/nvim优化.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "nvim优化"
+              "title": "新标签页"
             }
           }
         ]
@@ -110,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/nvim优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "md笔记/nvim优化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -172,7 +168,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -192,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -213,10 +208,10 @@
       "opencode-obsidian:OpenCode": false
     }
   },
-  "active": "d44200eb7daf3db7",
+  "active": "efa5b03e4f576e1b",
   "lastOpenFiles": [
-    "md笔记/未命名.md",
     "md笔记/nvim优化.md",
+    "md笔记/未命名.md",
     "md笔记/Python Contributor之路.md",
     "md笔记/交大新生入学.md",
     "未命名.md",
