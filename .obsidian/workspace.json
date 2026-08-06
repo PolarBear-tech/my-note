@@ -4,22 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "10150e3a32947a47",
+        "id": "a529e42c47710486",
         "type": "tabs",
         "children": [
           {
-            "id": "13f40377c6c70e2e",
+            "id": "26f27fd125821eec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "英语四级/Word List 1.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Excalidraw/Drawing 2026-08-06 09.33.14.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Word List 1"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-08-06 09.33.14.excalidraw"
             }
           }
         ]
@@ -94,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -172,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语四级/Word List 1.md",
+                "file": "Excalidraw/Drawing 2026-08-06 09.33.14.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -192,11 +190,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 311.41668701171875
+    "width": 368.91668701171875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +211,12 @@
       "opencode-obsidian:OpenCode": false
     }
   },
-  "active": "13f40377c6c70e2e",
+  "active": "26f27fd125821eec",
   "lastOpenFiles": [
+    "高等数学/chapter-1.excalidraw.md",
+    "Excalidraw/Drawing 2026-08-06 09.33.14.excalidraw.md",
+    "Excalidraw",
+    "英语四级/Word List 2.md",
     "英语四级/Word List 1.md",
     "我的计划.md",
     "英语四级",
@@ -229,12 +232,10 @@
     "路线.md",
     "计划.md",
     "标题.md",
-    "高等数学/chapter-1.excalidraw.md",
     "你好.md",
     "未命名.canvas",
     "Excalidraw/Drawing 2026-08-03 21.30.20.excalidraw.md",
     "Excalidraw/Drawing 2026-08-03 21.30.25.excalidraw.md",
-    "Excalidraw",
     "高等数学/chapter-1.excalidraw",
     "计划.canvas",
     "md笔记"
