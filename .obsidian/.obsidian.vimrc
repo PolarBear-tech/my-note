@@ -35,7 +35,6 @@ vunmap s
 map s" :surround_double_quotes<CR>
 map s' :surround_single_quotes<CR>
 map s` :surround_backticks<CR>
-map sb :surround_brackets<CR>
 map s( :surround_brackets<CR>
 map s) :surround_brackets<CR>
 map s[ :surround_square_brackets<CR>
