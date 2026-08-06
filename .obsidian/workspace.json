@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "753f01f64ea937ca",
+        "id": "10150e3a32947a47",
         "type": "tabs",
         "children": [
           {
-            "id": "efa5b03e4f576e1b",
+            "id": "13f40377c6c70e2e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "英语四级/Word List 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Word List 1"
             }
           }
         ]
@@ -89,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -168,6 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "英语四级/Word List 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 439.3333740234375,
-    "collapsed": true
+    "width": 311.41668701171875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,17 +212,20 @@
       "opencode-obsidian:OpenCode": false
     }
   },
-  "active": "efa5b03e4f576e1b",
+  "active": "13f40377c6c70e2e",
   "lastOpenFiles": [
-    "md笔记/nvim优化.md",
-    "md笔记/未命名.md",
+    "英语四级/Word List 1.md",
+    "我的计划.md",
+    "英语四级",
     "md笔记/Python Contributor之路.md",
+    "md笔记/nvim优化.md",
+    "md笔记/薛定谔方程里为什么有i.md",
     "md笔记/交大新生入学.md",
+    "new.md",
+    "md笔记/未命名.md",
     "未命名.md",
     "README.md",
     "组织",
-    "我的计划.md",
-    "md笔记/薛定谔方程里为什么有i.md",
     "路线.md",
     "计划.md",
     "标题.md",

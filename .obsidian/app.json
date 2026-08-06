@@ -3,5 +3,12 @@
   "vimMode": true,
   "showLineNumber": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "md笔记"
+  "newFileFolderPath": "md笔记",
+  "settingsPopoutWindow": false,
+  "readableLineLength": true,
+  "showInlineTitle": false,
+  "rightToLeft": false,
+  "openBehavior": "file:我的计划.md",
+  "attachmentFolderPath": "./附件",
+  "showUnsupportedFiles": true
 }
