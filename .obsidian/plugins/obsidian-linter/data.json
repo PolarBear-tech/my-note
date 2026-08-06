@@ -98,17 +98,17 @@
       "start-at-h2": false
     },
     "headings-start-line": {
-      "enabled": false
+      "enabled": true
     },
     "remove-trailing-punctuation-in-heading": {
-      "enabled": false,
+      "enabled": true,
       "punctuation-to-remove": ".,;:!。，；：！"
     },
     "footnote-after-punctuation": {
-      "enabled": false
+      "enabled": true
     },
     "move-footnotes-to-the-bottom": {
-      "enabled": false,
+      "enabled": true,
       "include-blank-line-between-footnotes": false
     },
     "re-index-footnotes": {
@@ -145,7 +145,7 @@
       "list-end-style": "."
     },
     "proper-ellipsis": {
-      "enabled": false
+      "enabled": true
     },
     "quote-style": {
       "enabled": false,
@@ -161,13 +161,13 @@
       "enabled": false
     },
     "remove-hyphenated-line-breaks": {
-      "enabled": false
+      "enabled": true
     },
     "remove-multiple-spaces": {
-      "enabled": false
+      "enabled": true
     },
     "strong-style": {
-      "enabled": false,
+      "enabled": true,
       "style": "consistent"
     },
     "two-spaces-between-lines-with-content": {
@@ -175,7 +175,7 @@
       "line-break-indicator": "  "
     },
     "unordered-list-style": {
-      "enabled": false,
+      "enabled": true,
       "list-style": "consistent"
     },
     "compact-yaml": {
@@ -183,7 +183,7 @@
       "inner-new-lines": false
     },
     "consecutive-blank-lines": {
-      "enabled": false
+      "enabled": true
     },
     "convert-spaces-to-tabs": {
       "enabled": false,
@@ -205,7 +205,7 @@
       "enabled": false
     },
     "heading-blank-lines": {
-      "enabled": false,
+      "enabled": true,
       "bottom": true,
       "empty-line-after-yaml": true
     },
@@ -216,7 +216,7 @@
       "enabled": false
     },
     "paragraph-blank-lines": {
-      "enabled": false
+      "enabled": true
     },
     "remove-empty-lines-between-list-markers-and-checklists": {
       "enabled": false
@@ -240,12 +240,12 @@
       "enabled": false
     },
     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
-      "enabled": false,
+      "enabled": true,
       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
       "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
-      "enabled": false,
+      "enabled": true,
       "two-space-line-break": false
     },
     "add-blockquote-indentation-on-paste": {
@@ -258,16 +258,16 @@
       "enabled": false
     },
     "proper-ellipsis-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "remove-hyphens-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "remove-leading-or-trailing-whitespace-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "remove-leftover-footnotes-from-quote-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "remove-multiple-blank-lines-on-paste": {
       "enabled": false
@@ -276,14 +276,17 @@
   "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
-  "suppressMessageWhenNoChange": false,
+  "suppressMessageWhenNoChange": true,
   "suppressLintAllFilesConfirmationModal": false,
   "suppressLintAllFilesInFolderConfirmationModal": false,
-  "lintOnFileChange": false,
-  "displayLintOnFileChangeNotice": false,
+  "lintOnFileChange": true,
+  "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "additionalFileExtensions": [],
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "高等数学",
+    "Excalidraw"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
