@@ -1,13 +1,6 @@
 {
-  "pluginList": [
-    "mtymek/opencode-obsidian"
-  ],
-  "pluginSubListFrozenVersion": [
-    {
-      "repo": "mtymek/opencode-obsidian",
-      "version": ""
-    }
-  ],
+  "pluginList": [],
+  "pluginSubListFrozenVersion": [],
   "themesList": [],
   "updateAtStartup": true,
   "updateThemesAtStartup": true,

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "217e0c93f6d3650e",
+        "id": "39838f8cb2291086",
         "type": "tabs",
         "children": [
           {
-            "id": "d9724c995a2bb248",
+            "id": "ffd84c2edee51c4f",
             "type": "leaf",
             "state": {
               "type": "kanban",
@@ -178,7 +178,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "我的计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,23 +185,14 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
-          },
-          {
-            "id": "6316aa82c4293d90",
-            "type": "leaf",
-            "state": {
-              "type": "opencode-view",
-              "state": {},
-              "icon": "opencode-logo",
-              "title": "OpenCode"
-            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 368.91668701171875
+    "width": 368.91668701171875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,11 +204,10 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian42-brat:BRAT": false,
       "opencode-obsidian:OpenCode": false
     }
   },
-  "active": "d9724c995a2bb248",
+  "active": "ffd84c2edee51c4f",
   "lastOpenFiles": [
     "我的计划.md",
     "英语四级/Word List 2.md",
