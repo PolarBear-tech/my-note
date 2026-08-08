@@ -4,27 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "39838f8cb2291086",
+        "id": "98a9ad10391a63af",
         "type": "tabs",
         "children": [
           {
-            "id": "ffd84c2edee51c4f",
+            "id": "78d203339e816b41",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "我的计划.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "我的计划"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -207,8 +197,9 @@
       "opencode-obsidian:OpenCode": false
     }
   },
-  "active": "ffd84c2edee51c4f",
+  "active": "78d203339e816b41",
   "lastOpenFiles": [
+    "md笔记/Python Contributor之路.md",
     "我的计划.md",
     "英语四级/Word List 2.md",
     "md笔记/薛定谔方程里为什么有i.md",
@@ -221,7 +212,6 @@
     "Excalidraw",
     "英语四级/Word List 1.md",
     "英语四级",
-    "md笔记/Python Contributor之路.md",
     "new.md",
     "未命名.md",
     "README.md",
