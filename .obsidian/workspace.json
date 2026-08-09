@@ -4,17 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "98a9ad10391a63af",
+        "id": "3146e80a6aad003b",
         "type": "tabs",
         "children": [
           {
-            "id": "78d203339e816b41",
+            "id": "0d2a343ebb1e3cce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "kanban",
+              "state": {
+                "file": "我的计划.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "我的计划"
             }
           }
         ]
@@ -193,19 +203,18 @@
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-kanban:Create new board": false,
-      "opencode-obsidian:OpenCode": false
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "78d203339e816b41",
+  "active": "0d2a343ebb1e3cce",
   "lastOpenFiles": [
-    "md笔记/Python Contributor之路.md",
+    "md笔记/Wishlist.md",
     "我的计划.md",
+    "md笔记/Python Contributor之路.md",
     "英语四级/Word List 2.md",
     "md笔记/薛定谔方程里为什么有i.md",
     "md笔记/nvim优化.md",
     "md笔记/交大新生入学.md",
-    "md笔记/Wishlist.md",
     "未命名",
     "高等数学/chapter-2.exaclidraw.md",
     "高等数学/chapter-1.excalidraw.md",
