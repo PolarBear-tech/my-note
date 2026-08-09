@@ -1,14 +1,14 @@
 # RoadMap
 
-1. C 语言学习
-2. 阅读源码
+- [x] C 语言学习
+- [ ] 阅读源码
 
 # 资源
 
 - [中国大学MOOC](https://www.icourse163.org/)
 - [Python Developer’s Guide](https://devguide.python.org/)
 
-# 要做什么
+# 关于源码
 
 按「对读 CPython 源码的直接帮助」**排序，给你一份务实的书单。不需要全读，每本标了**重点章节。
 
@@ -92,3 +92,98 @@
 ### 一句话总结
 
 > **《Python 源码剖析》+ CSAPP 第 9 章 + 龙书前 3 章**，这三样啃完，再打开 CPython 源码，你会感觉从「看天书」变成「查字典」。
+
+# 工具链
+
+## bear
+
+生成 complie_
+
+```bash
+sudo apt install bear
+```
+
+# pkg-config
+
+# pkg‑config 是什么
+
+`pkg‑config` 是 Linux/Unix 下的**库元数据工具**，不是编译器，也不是开发库本身。
+
+简单一句话：**帮编译脚本自动查询第三方库的头文件路径、编译参数、链接参数**。
+
+## 它干什么活
+
+当你编译软件（比如 CPython）需要依赖系统库：`openssl`、`libffi`、`readline`。
+
+这些库安装后分散在系统各处：
+
+- 头文件：`/usr/include/xxx.h`
+- 库文件：`/usr/lib/x86_64‑linux‑gnu/libxxx.so`
+
+手写 `-I/usr/include -L/usr/lib -lxxx` 很麻烦，不同系统路径还不一样。
+
+`pkg‑config` 读取 `.pc` 文件（存于 `/usr/lib/pkgconfig/`），里面记录该库的编译、链接参数。
+
+举个例子终端直接执行：
+
+```bash
+pkg-config --cflags libffi
+pkg-config --libs libffi
+```
+
+输出该库需要的 `-I` 头文件路径、`‑l` 链接参数。
+
+## 和 CPython 的关系
+
+CPython 的 `configure` 脚本会调用 `pkg‑config`：
+
+```
+checking for libffi … via pkg‑config
+```
+1. 如果有 pkg‑config：自动拿到 libffi、openssl、readline 的编译参数，开启对应的扩展模块（`_ctypes`、`ssl`）。
+2. **缺少 pkg‑config（就是你刚才看到的警告）**
+    configure 不会直接报错崩溃，但**无法用.pc 文件探测库**，会降级尝试猜路径。
+    - 猜成功：模块正常编译
+    - 猜失败：直接跳过该扩展，编译出来的 Python 就没有这个模块。
+
+> ⚠️重点区分：
+> - `pkg‑config`：查询工具
+> - `libffi‑dev / libssl‑dev`：真正的库源码/头文件
+> 就算装了 pkg‑config，没装 `‑dev` 开发包，照样检测不到库。
+
+## 对你当前场景的影响
+
+1. **Cpython 内核源码阅读（ceval.c / PyObject）：不受影响**
+clangd、`gen_compile_commands.py`、解释器核心编译，**完全不需要 pkg‑config**。
+2. 只影响**第三方扩展模块**：ssl、ctypes、readline 等是否被编译进你本地编译出来的 python。
+
+如果你只是看解释器内核源码，这个警告可以无视；如果你要本地编译一个功能完整的 Python，建议安装。
+
+## 实操小例子
+
+```bash
+# 安装
+sudo apt install pkg-config
+
+# 查看系统有哪些pc文件
+ls /usr/lib/x86_64-linux-gnu/pkgconfig/
+
+# 查询libffi
+pkg-config --cflags --libs libffi
+```
+
+## 类比理解
+
+`pkg‑config` ≈ 一个**库信息查询手册**。
+
+configure（CPython 配置脚本）就是查手册的人。
+
+手册丢了（没装 pkg‑config），人只能靠记忆瞎猜库在哪，有可能猜对，有可能猜错漏掉功能。
+
+> Windows MSVC 生态没有 pkg‑config，Windows 用 vcpkg 的方式实现类似能力。
+
+### 总结
+
+- 它不是编译器，不是库；是查询工具。
+- 警告≠报错，核心解释器依旧可以编译。
+- 读 CPython 内核源码可以忽略警告；要完整 Python 二进制建议装上。

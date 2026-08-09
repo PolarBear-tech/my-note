@@ -4,27 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3146e80a6aad003b",
+        "id": "bd6b2f778e1e29be",
         "type": "tabs",
         "children": [
           {
-            "id": "0d2a343ebb1e3cce",
+            "id": "f9df82b5ea9a60e7",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "我的计划.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "md笔记/Python Contributor之路.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-trello",
-              "title": "我的计划"
+              "icon": "lucide-file",
+              "title": "Python Contributor之路"
             }
           }
         ]
@@ -206,11 +201,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "0d2a343ebb1e3cce",
+  "active": "f9df82b5ea9a60e7",
   "lastOpenFiles": [
+    "md笔记/Python Contributor之路.md",
     "md笔记/Wishlist.md",
     "我的计划.md",
-    "md笔记/Python Contributor之路.md",
     "英语四级/Word List 2.md",
     "md笔记/薛定谔方程里为什么有i.md",
     "md笔记/nvim优化.md",
