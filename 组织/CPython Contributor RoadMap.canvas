@@ -18,7 +18,8 @@
 		{"id":"029edb68fae5133c","type":"text","text":"make & cmake","x":975,"y":-660,"width":250,"height":60},
 		{"id":"b3e73840022d12fb","type":"text","text":"翁恺C语言","x":1358,"y":-1033,"width":250,"height":60},
 		{"id":"9df179f92ad683ac","type":"text","text":"RealPython","x":1354,"y":-1268,"width":250,"height":60},
-		{"id":"0a2d48cf7c411f0b","type":"file","file":"md笔记/RealPython.md","x":1780,"y":-1560,"width":400,"height":400}
+		{"id":"0a2d48cf7c411f0b","type":"file","file":"md笔记/RealPython.md","x":1780,"y":-1560,"width":400,"height":400},
+		{"id":"0de63075248b5a7d","x":967,"y":-533,"width":250,"height":60,"type":"text","text":"sphinx"}
 	],
 	"edges":[
 		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
@@ -39,6 +40,7 @@
 		{"id":"4193ad4db2c38c54","fromNode":"a295f5f1147651e3","fromSide":"right","toNode":"b3e73840022d12fb","toSide":"left"},
 		{"id":"e5b4ff32c7160dcb","fromNode":"ddd522f2efc21ed5","fromSide":"right","toNode":"b3e73840022d12fb","toSide":"left"},
 		{"id":"dfdc76c652fb5e38","fromNode":"e5588627f1a7f1c4","fromSide":"right","toNode":"9df179f92ad683ac","toSide":"left"},
-		{"id":"a64b8a5d4e11d1a2","fromNode":"9df179f92ad683ac","fromSide":"right","toNode":"0a2d48cf7c411f0b","toSide":"left"}
+		{"id":"a64b8a5d4e11d1a2","fromNode":"9df179f92ad683ac","fromSide":"right","toNode":"0a2d48cf7c411f0b","toSide":"left"},
+		{"id":"19fe2705d3700bdd","fromNode":"b7f24f1d13cf57ba","fromSide":"right","toNode":"0de63075248b5a7d","toSide":"left"}
 	]
 }
