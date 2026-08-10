@@ -10,5 +10,6 @@
   "rightToLeft": false,
   "openBehavior": "file:我的计划.md",
   "attachmentFolderPath": "./附件",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }
