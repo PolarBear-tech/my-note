@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8a22afbae8a6c83e",
+        "id": "786b63d6acda658c",
         "type": "tabs",
         "children": [
           {
-            "id": "cca617c8a1503b9b",
+            "id": "bb438d841da08b63",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -196,11 +192,14 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "cca617c8a1503b9b",
+  "active": "bb438d841da08b63",
   "lastOpenFiles": [
-    "我的计划.md",
-    "README.md",
+    "未命名.md",
+    "Drawing 2026-08-10 20.15.46.excalidraw.md",
+    "Drawing 2026-08-10 20.14.42.excalidraw.md",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
+    "README.md",
+    "我的计划.md",
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
     "手写笔记",
     "文本笔记/英语四级/Word List 1.md",
@@ -225,13 +224,11 @@
     "Excalidraw",
     "文本笔记/英语四级",
     "new.md",
-    "未命名.md",
     "组织",
     "路线.md",
     "计划.md",
     "标题.md",
     "你好.md",
-    "Excalidraw/Drawing 2026-08-03 21.30.20.excalidraw.md",
     "高等数学/chapter-1.excalidraw",
     "计划.canvas",
     "文本笔记"
