@@ -4,24 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "df704a9845b7a107",
+        "id": "8a22afbae8a6c83e",
         "type": "tabs",
         "children": [
           {
-            "id": "f9df82b5ea9a60e7",
+            "id": "cca617c8a1503b9b",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/CPython Contributor RoadMap.canvas",
-                "viewState": {
-                  "x": 3391.0911475261423,
-                  "y": -3604.5626236621824,
-                  "zoom": -0.6481481082645479
-                }
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "CPython Contributor RoadMap"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -92,13 +90,11 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -157,20 +153,6 @@
             }
           },
           {
-            "id": "8c628905e14594fd",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
             "id": "c90c5a2a83a37647",
             "type": "leaf",
             "state": {
@@ -195,7 +177,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -214,40 +196,44 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "f9df82b5ea9a60e7",
+  "active": "cca617c8a1503b9b",
   "lastOpenFiles": [
-    "md笔记/python开源项目.md",
-    "组织/CPython Contributor RoadMap.canvas",
-    "md笔记/python进阶学习知识点.md",
-    "md笔记/RealPython.md",
-    "md笔记/Make指南.md",
-    "md笔记/Python Contributor之路.md",
-    "组织/未命名.md",
-    "md笔记/薛定谔方程里为什么有i.md",
     "我的计划.md",
-    "md笔记/Wishlist.md",
-    "英语四级/Word List 2.md",
-    "md笔记/nvim优化.md",
-    "md笔记/交大新生入学.md",
-    "未命名",
-    "高等数学/chapter-2.exaclidraw.md",
-    "高等数学/chapter-1.excalidraw.md",
+    "README.md",
+    "手写笔记/高等书学-chapter-1.excalidraw.md",
+    "手写笔记/高等数学-chapter-2.exaclidraw.md",
+    "手写笔记",
+    "文本笔记/英语四级/Word List 1.md",
+    "文本笔记/英语四级/Word List 2.md",
+    "文本笔记/洗面奶.md",
+    "组织/CPython Contributor RoadMap.canvas",
+    "组织/自我提升.canvas",
+    "组织/四六级.canvas",
+    "组织/高等数学.canvas",
+    "未命名.canvas",
+    "Untitled Kanban.md",
+    "组织/未命名.md",
+    "文本笔记/python开源项目.md",
+    "文本笔记/python进阶学习知识点.md",
+    "文本笔记/RealPython.md",
+    "文本笔记/Make指南.md",
+    "文本笔记/Python Contributor之路.md",
+    "文本笔记/薛定谔方程里为什么有i.md",
+    "文本笔记/Wishlist.md",
+    "文本笔记/nvim优化.md",
+    "文本笔记/交大新生入学.md",
     "Excalidraw",
-    "英语四级/Word List 1.md",
-    "英语四级",
+    "文本笔记/英语四级",
     "new.md",
     "未命名.md",
-    "README.md",
     "组织",
     "路线.md",
     "计划.md",
     "标题.md",
     "你好.md",
-    "未命名.canvas",
     "Excalidraw/Drawing 2026-08-03 21.30.20.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-03 21.30.25.excalidraw.md",
     "高等数学/chapter-1.excalidraw",
     "计划.canvas",
-    "md笔记"
+    "文本笔记"
   ]
 }

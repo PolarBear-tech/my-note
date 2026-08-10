@@ -3,5 +3,6 @@
   "snapToGrid": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "组织",
-  "cardLabelVisibility": "hover"
+  "cardLabelVisibility": "always",
+  "defaultWheelBehavior": "pan"
 }

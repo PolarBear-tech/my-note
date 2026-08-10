@@ -6,5 +6,5 @@
   "cssTheme": "Catppuccin",
   "accentColor": "",
   "showRibbon": false,
-  "showViewHeader": false
+  "showViewHeader": true
 }

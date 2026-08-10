@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"97b9d2a32ea993ae","x":-260,"y":-20,"width":250,"height":60,"type":"text","text":"四六级"},
+		{"id":"451a0c2b82ee7e5c","x":480,"y":-720,"width":400,"height":400,"type":"file","file":"文本笔记/英语四级/Word List 1.md"},
+		{"id":"f0dc750dd14a4c98","x":480,"y":-240,"width":400,"height":400,"type":"file","file":"文本笔记/英语四级/Word List 2.md"}
+	],
+	"edges":[
+		{"id":"4f44eed91fcbdc58","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"451a0c2b82ee7e5c","toSide":"left"},
+		{"id":"09c9a712b915e6ed","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"f0dc750dd14a4c98","toSide":"left"}
+	]
+}
