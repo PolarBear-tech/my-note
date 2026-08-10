@@ -2,5 +2,6 @@
   "snapToObjects": true,
   "snapToGrid": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "md笔记"
+  "newFileFolderPath": "组织",
+  "cardLabelVisibility": "hover"
 }

@@ -4,22 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "bd6b2f778e1e29be",
+        "id": "df704a9845b7a107",
         "type": "tabs",
         "children": [
           {
             "id": "f9df82b5ea9a60e7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "md笔记/Python Contributor之路.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/CPython Contributor RoadMap.canvas",
+                "viewState": {
+                  "x": 1491.5341122517068,
+                  "y": -965.858010946969,
+                  "zoom": -0.6986185648782004
+                }
               },
-              "icon": "lucide-file",
-              "title": "Python Contributor之路"
+              "icon": "lucide-layout-dashboard",
+              "title": "CPython Contributor RoadMap"
             }
           }
         ]
@@ -94,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -203,11 +204,14 @@
   },
   "active": "f9df82b5ea9a60e7",
   "lastOpenFiles": [
+    "md笔记/RealPython.md",
+    "组织/CPython Contributor RoadMap.canvas",
     "md笔记/Python Contributor之路.md",
-    "md笔记/Wishlist.md",
-    "我的计划.md",
-    "英语四级/Word List 2.md",
+    "组织/未命名.md",
     "md笔记/薛定谔方程里为什么有i.md",
+    "我的计划.md",
+    "md笔记/Wishlist.md",
+    "英语四级/Word List 2.md",
     "md笔记/nvim优化.md",
     "md笔记/交大新生入学.md",
     "未命名",
