@@ -15,9 +15,9 @@
               "state": {
                 "file": "组织/CPython Contributor RoadMap.canvas",
                 "viewState": {
-                  "x": 1753.1085594104345,
-                  "y": -1249.6813874870493,
-                  "zoom": -0.1418667853545501
+                  "x": -255,
+                  "y": 3.7577930514422087,
+                  "zoom": -0.07861234033613375
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -199,7 +199,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.91668701171875
+    "width": 368.91668701171875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
