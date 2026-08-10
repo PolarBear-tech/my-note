@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "786b63d6acda658c",
+        "id": "79649be22da2d673",
         "type": "tabs",
         "children": [
           {
-            "id": "bb438d841da08b63",
+            "id": "6bdf0c0c80fd5bfc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "我的计划.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "我的计划"
             }
           }
         ]
@@ -51,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Sparse",
+                "query": "tag:#excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +111,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "md笔记/nvim优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,27 +129,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "md笔记/nvim优化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
               "title": "出链"
-            }
-          },
-          {
-            "id": "a48150fc514e2aba",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
             }
           },
           {
@@ -173,7 +161,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -186,26 +174,27 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-kanban:Create new board": false
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false
     }
   },
-  "active": "bb438d841da08b63",
+  "active": "6bdf0c0c80fd5bfc",
   "lastOpenFiles": [
+    "我的计划.md",
+    "手写笔记/高等书学-chapter-1.excalidraw.md",
+    "组织/CPython Contributor RoadMap.canvas",
+    "文本笔记/python进阶学习知识点.md",
     "未命名.md",
     "Drawing 2026-08-10 20.15.46.excalidraw.md",
     "Drawing 2026-08-10 20.14.42.excalidraw.md",
-    "手写笔记/高等书学-chapter-1.excalidraw.md",
     "README.md",
-    "我的计划.md",
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
     "手写笔记",
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
     "文本笔记/洗面奶.md",
-    "组织/CPython Contributor RoadMap.canvas",
     "组织/自我提升.canvas",
     "组织/四六级.canvas",
     "组织/高等数学.canvas",
@@ -213,7 +202,6 @@
     "Untitled Kanban.md",
     "组织/未命名.md",
     "文本笔记/python开源项目.md",
-    "文本笔记/python进阶学习知识点.md",
     "文本笔记/RealPython.md",
     "文本笔记/Make指南.md",
     "文本笔记/Python Contributor之路.md",
@@ -228,7 +216,6 @@
     "路线.md",
     "计划.md",
     "标题.md",
-    "你好.md",
     "高等数学/chapter-1.excalidraw",
     "计划.canvas",
     "文本笔记"
