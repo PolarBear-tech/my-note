@@ -20,7 +20,6 @@
 		{"id":"94cc25e30d00d5be","type":"file","file":"文本笔记/Make指南.md","x":1800,"y":-930,"width":400,"height":400},
 		{"id":"939f89603833e318","type":"text","text":"[Sphinx Doc](https://www.sphinx-doc.org/zh-cn/master/index.html)","x":1300,"y":-620,"width":250,"height":60},
 		{"id":"b3e73840022d12fb","type":"text","text":"翁恺C语言","x":1425,"y":-1199,"width":250,"height":60},
-		{"id":"29d8277f5fbb5eee","type":"file","file":"文本笔记/python进阶学习知识点.md","x":1820,"y":-2771,"width":400,"height":400},
 		{"id":"5b3450dff4203796","type":"file","file":"文本笔记/python开源项目.md","x":1774,"y":-1858,"width":400,"height":400},
 		{"id":"65a7745f0adf4b17","type":"text","text":"高级语法","x":3013,"y":-3725,"width":250,"height":60},
 		{"id":"b734c1e4ecec2145","type":"text","text":"多线程","x":3464,"y":-2511,"width":250,"height":60},
@@ -42,16 +41,13 @@
 		{"id":"c4eab2c982b85ee5","type":"text","text":"[Kludex/starlette: The little ASGI framework that shines. 🌟](https://github.com/Kludex/starlette)","x":2473,"y":-1260,"width":399,"height":80},
 		{"id":"a57a8f8062b4fef2","type":"text","text":"[encode/httpx: A next generation HTTP client for Python. 🦋](https://github.com/encode/httpx)","x":2473,"y":-1100,"width":399,"height":80},
 		{"id":"7a29db03bc9ff937","type":"text","text":"元类","x":3464,"y":-3379,"width":250,"height":60},
-		{"id":"15d240990705acfc","type":"text","text":"装饰器","x":3464,"y":-3985,"width":250,"height":60},
 		{"id":"1c37f6408294fd17","type":"text","text":"生成器","x":3466,"y":-3877,"width":250,"height":60},
 		{"id":"7abd7f21453874b7","type":"text","text":"迭代器","x":3466,"y":-3755,"width":250,"height":60},
 		{"id":"d1c53b8985ca0e38","type":"text","text":"上下文管理器","x":3464,"y":-3639,"width":250,"height":60},
-		{"id":"23051d9fbb912358","type":"text","text":"闭包","x":3464,"y":-3519,"width":250,"height":60},
-		{"id":"fe58629a04b85eb3","type":"text","text":"[[装饰器.py]]","x":3822,"y":-3985,"width":250,"height":60},
-		{"id":"d16ab39ff91c16e6","type":"text","text":"[[闭包.py]]","x":3822,"y":-3519,"width":250,"height":60},
-		{"id":"769c1658ff7e40c9","type":"text","text":"描述器","x":3466,"y":-4110,"width":250,"height":60},
-		{"id":"a0add36433c5ff20","type":"text","text":"[[描述器.py]]","x":3822,"y":-4110,"width":250,"height":60},
-		{"id":"b89e20e888260c60","type":"text","text":"","x":3834,"y":-3830,"width":250,"height":60}
+		{"id":"a0add36433c5ff20","type":"text","text":"[[描述器.py]]","x":3466,"y":-4120,"width":250,"height":60},
+		{"id":"fe58629a04b85eb3","type":"text","text":"[[装饰器.py]]","x":3464,"y":-4000,"width":250,"height":60},
+		{"id":"d16ab39ff91c16e6","type":"text","text":"[[闭包.py]]","x":3466,"y":-3500,"width":250,"height":60},
+		{"id":"29d8277f5fbb5eee","type":"file","file":"文本笔记/python进阶学习知识点.md","x":1774,"y":-2760,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
@@ -77,14 +73,14 @@
 		{"id":"537bee5572b2470a","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"1c37f6408294fd17","toSide":"left"},
 		{"id":"a3330416f540f3b6","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"7abd7f21453874b7","toSide":"left"},
 		{"id":"baa949ac8bdd2b8f","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"d1c53b8985ca0e38","toSide":"left"},
-		{"id":"6b8bfcfe0576c817","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"23051d9fbb912358","toSide":"left"},
+		{"id":"6b8bfcfe0576c817","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"d16ab39ff91c16e6","toSide":"left"},
 		{"id":"d5bb6cff42ecb22f","fromNode":"db8d62f8dd61875e","fromSide":"right","toNode":"adde8ced59541451","toSide":"left"},
 		{"id":"98cf299facf65390","fromNode":"adde8ced59541451","fromSide":"right","toNode":"db661d8c2cac38be","toSide":"left"},
 		{"id":"29bea74d474be4bd","fromNode":"adde8ced59541451","fromSide":"right","toNode":"ba3f37d8d63f3b42","toSide":"left"},
 		{"id":"59f5cb6ffb2f3970","fromNode":"adde8ced59541451","fromSide":"right","toNode":"eaa21c617e10740b","toSide":"left"},
 		{"id":"87d15a7fdec7dc4c","fromNode":"adde8ced59541451","fromSide":"right","toNode":"0db751f938177d76","toSide":"left"},
 		{"id":"d5fcd12e5385a155","fromNode":"adde8ced59541451","fromSide":"right","toNode":"e8de6680a143e1f4","toSide":"left"},
-		{"id":"4534b71738e14adb","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"15d240990705acfc","toSide":"left"},
+		{"id":"4534b71738e14adb","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"fe58629a04b85eb3","toSide":"left"},
 		{"id":"858cb2b47f507831","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"7a29db03bc9ff937","toSide":"left"},
 		{"id":"2ebc9524e8ae290b","fromNode":"db8d62f8dd61875e","fromSide":"right","toNode":"9face04db35614ec","toSide":"left"},
 		{"id":"61713405b7bb58f1","fromNode":"9face04db35614ec","fromSide":"right","toNode":"b734c1e4ecec2145","toSide":"left"},
@@ -101,11 +97,6 @@
 		{"id":"4182042944835a40","fromNode":"5b3450dff4203796","fromSide":"right","toNode":"01796be2e0b48104","toSide":"left"},
 		{"id":"02ad7095decd7c98","fromNode":"5b3450dff4203796","fromSide":"right","toNode":"c4eab2c982b85ee5","toSide":"left"},
 		{"id":"107d15d5298ba7bc","fromNode":"5b3450dff4203796","fromSide":"right","toNode":"a57a8f8062b4fef2","toSide":"left"},
-		{"id":"c5d9edcf782cd9d7","fromNode":"15d240990705acfc","fromSide":"right","toNode":"fe58629a04b85eb3","toSide":"left"},
-		{"id":"7f7bf12641e7f24f","fromNode":"23051d9fbb912358","fromSide":"right","toNode":"d16ab39ff91c16e6","toSide":"left"},
-		{"id":"c7d7c079b4a80b0c","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"769c1658ff7e40c9","toSide":"left"},
-		{"id":"2c51a1b8df2a7b61","fromNode":"769c1658ff7e40c9","fromSide":"right","toNode":"a0add36433c5ff20","toSide":"left"},
-		{"id":"8cc85146f673830e","fromNode":"1c37f6408294fd17","fromSide":"right","toNode":"b89e20e888260c60","toSide":"left"},
-		{"id":"4344f40b3aefde92","fromNode":"7abd7f21453874b7","fromSide":"right","toNode":"b89e20e888260c60","toSide":"left"}
+		{"id":"c7d7c079b4a80b0c","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"a0add36433c5ff20","toSide":"left"}
 	]
 }

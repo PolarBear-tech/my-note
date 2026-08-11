@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "b839291e9e814c009c87d738d08e4cb5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "043818eb472f319f8a0f59abe3a19608",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "  1           RESUME                   0\n\n  2           LOAD_GLOBAL              1 (print + NULL)\n              LOAD_CONST               0 ('1')\n              LOAD_CONST               1 ('2')\n              CALL                     2\n              POP_TOP\n              LOAD_CONST               2 (None)\n              RETURN_VALUE\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "YNzd",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

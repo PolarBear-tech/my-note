@@ -7,15 +7,22 @@ app = marimo.App()
 @app.cell
 def _():
     import marimo as mo
+    import dis
 
-    return (mo,)
+    return (dis,)
 
 
 @app.cell
-def _(mo):
-    mo.md("""
-    # New notebook
-    """)
+def _(dis):
+    def _f():
+        print("1", "2")
+
+    dis.dis(_f)
+    return
+
+
+@app.cell
+def _():
     return
 
 
