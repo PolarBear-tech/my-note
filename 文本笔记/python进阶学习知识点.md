@@ -48,19 +48,13 @@
 ### 🆓 免费线上学习站点
 
 1. **官方文档**
-
-    [https://docs.python.org/zh-cn/3/](https://link.wtturl.cn/?target=https%3A%2F%2Fdocs.python.org%2Fzh-cn%2F3%2F&scene=im&aid=582478&lang=zh "autolink")
-
-    进阶最重要的资料，很多人忽略，看语言参考、库参考。
-
+	[https://docs.python.org/zh-cn/3/](https://link.wtturl.cn/?target=https%3A%2F%2Fdocs.python.org%2Fzh-cn%2F3%2F&scene=im&aid=582478&lang=zh "autolink")
+	进阶最重要的资料，很多人忽略，看语言参考、库参考。
 2. 菜鸟教程不适合进阶，跳过。
-
 3. B 站高质量进阶
-
-- 李沐 Python 进阶（讲性能、GIL、并发）
-- 鱼皮 Python 进阶工程化（虚拟环境、pytest、项目实战）
-- 莫烦 python（适合数据分析方向）
-
+	- 李沐 Python 进阶（讲性能、GIL、并发）
+	- 鱼皮 Python 进阶工程化（虚拟环境、pytest、项目实战）
+	- 莫烦 python（适合数据分析方向）
 4. 开源项目实战（最重要！进阶不能只看视频）
 
 > 进阶关键：读别人写的成熟 Python 源码

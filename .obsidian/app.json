@@ -5,7 +5,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "手写笔记",
   "settingsPopoutWindow": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "showInlineTitle": true,
   "rightToLeft": false,
   "openBehavior": "file:我的计划.md",
