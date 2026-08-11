@@ -124,12 +124,12 @@
     },
     {
       "id": "emfo",
-      "code_hash": "efe451e358d35fde9d0aac3a65056c52",
+      "code_hash": "3d365924666f58d049edff707c05df2b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u7c7b\u4e0e\u88c5\u9970\u5668</h2>\n<span class=\"paragraph\">\u7c7b\u88c5\u9970\u5668\uff1a</span>\n<ul>\n<li>\u53ef\u4ee5\u4fee\u9970\u7c7b\u7684\u88c5\u9970\u5668</li>\n<li>\u53ef\u4ee5\u4f5c\u4e3a\u88c5\u9970\u5668\u7684\u7c7b</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u88c5\u9970\u5668\u7c7b</h2></span>"
           }
         }
       ],
@@ -163,12 +163,12 @@
     },
     {
       "id": "WsaR",
-      "code_hash": "2ccc84702f5fc399a07313235443ea09",
+      "code_hash": "8791baca2af5659d301c2d09dccd3aa0",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u5e26\u53c2\u6570\u7684\u7c7b\u88c5\u9970\u5668</h2></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u5e26\u53c2\u6570\u7684\u88c5\u9970\u5668\u7c7b</h2></span>"
           }
         }
       ],
@@ -209,6 +209,52 @@
     },
     {
       "id": "pkiU",
+      "code_hash": "b4a83dbe5e35e79468d0f7661266020d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u7c7b\u88c5\u9970\u5668</h1>\n<span class=\"paragraph\">\u6ce8\u610f\u548c<em>\u88c5\u9970\u5668\u7c7b</em>\u505a\u533a\u5206</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fXVI",
+      "code_hash": "807eefdc48f8293d3f2741c1787b7844",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uOnS",
+      "code_hash": "5efbe2c6997003b0de0882cc23daea28",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "{'a': 1, 'b': 'str'}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "MDWE",
       "code_hash": null,
       "outputs": [],
       "console": []

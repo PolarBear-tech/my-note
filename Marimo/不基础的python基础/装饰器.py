@@ -105,12 +105,7 @@ def _(gunc):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 类与装饰器
-
-    类装饰器：
-
-    - 可以修饰类的装饰器
-    - 可以作为装饰器的类
+    ## 装饰器类
     """)
     return
 
@@ -143,7 +138,7 @@ def _(hunc):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 带参数的类装饰器
+    ## 带参数的装饰器类
     """)
     return
 
@@ -173,6 +168,40 @@ def _(time):
 @app.cell
 def _(lunc):
     lunc()
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 类装饰器
+
+    注意和*装饰器类*做区分
+    """)
+    return
+
+
+@app.cell
+def _():
+    def _add_str(cls):
+        def __str__(self):
+            return str(self.__dict__)
+        cls.__str__ = __str__
+        return cls
+
+    @_add_str
+    class _A:
+        def __init__(self, a, b):
+            self.a = a
+            self.b = b
+
+    o = _A(1, "str")
+    return (o,)
+
+
+@app.cell
+def _(o):
+    print(o)
     return
 
 
