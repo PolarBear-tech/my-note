@@ -30,7 +30,7 @@ def _(mo):
 
 @app.cell
 def _(time):
-    def timer(f):
+    def _timeit(f):
         def _inner(*args, **kwargs):
             start = time.time()
             f(*args, **kwargs)
@@ -39,12 +39,8 @@ def _(time):
 
         return _inner
 
-    return (timer,)
 
-
-@app.cell
-def _(time, timer):
-    @timer
+    @_timeit
     def func():
         time.sleep(1)
 
@@ -79,7 +75,7 @@ def _(mo):
 
 @app.cell
 def _(time):
-    def timer_with_arg(repeat):
+    def _timeit(repeat):
         def _timer(f):
             def _inner(*args, **kwargs):
                 sum = 0
@@ -93,12 +89,7 @@ def _(time):
             return _inner
         return _timer
 
-    return (timer_with_arg,)
-
-
-@app.cell
-def _(time, timer_with_arg):
-    @timer_with_arg(10)
+    @_timeit(3)
     def gunc():
         time.sleep(1)
 
@@ -117,7 +108,71 @@ def _(mo):
     ## 类与装饰器
 
     类装饰器：
+
+    - 可以修饰类的装饰器
+    - 可以作为装饰器的类
     """)
+    return
+
+
+@app.cell
+def _(time):
+    class _Timer:
+        def __init__(self, func):
+            self.func = func
+
+        def __call__(self, *args, **kwargs):
+            start = time.time()
+            self.func(*args, **kwargs)
+            end = time.time()
+            return end - start
+
+    @_Timer
+    def hunc():
+        time.sleep(1)
+
+    return (hunc,)
+
+
+@app.cell
+def _(hunc):
+    hunc()
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## 带参数的类装饰器
+    """)
+    return
+
+
+@app.cell
+def _(time):
+    class _Timer:
+        def __init__(self, perfix):
+            self.perfix = perfix
+
+        def __call__(self, func):
+            def _inner(*args, **kwargs):
+                start = time.time()
+                ret = func(*args, **kwargs)
+                end = time.time()
+                print(f"{self.perfix}: {end - start}")
+                return ret
+            return _inner
+
+    @_Timer("time")
+    def lunc():
+        time.sleep(0.5)
+
+    return (lunc,)
+
+
+@app.cell
+def _(lunc):
+    lunc()
     return
 
 
