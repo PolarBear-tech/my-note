@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文本笔记/python进阶学习知识点.md",
+                "file": "文本笔记/Wishlist.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "python进阶学习知识点"
+              "title": "Wishlist"
             }
           }
         ]
@@ -34,7 +34,7 @@
       {
         "id": "dc2dfa1be42557e3",
         "type": "tabs",
-        "dimension": 58.495821727019504,
+        "dimension": 58.4958217270195,
         "children": [
           {
             "id": "497eb0e50e1c55fd",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/python进阶学习知识点.md",
+                "file": "文本笔记/Wishlist.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -210,9 +210,9 @@
   },
   "active": "26b06fb845f4ff84",
   "lastOpenFiles": [
+    "我的计划.md",
     "组织/CPython Contributor RoadMap.canvas",
     "README.md",
-    "我的计划.md",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
     "文本笔记/python进阶学习知识点.md",
     "未命名.md",
