@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9dfe53e423598248",
+        "id": "68e46d1c2ec6fd8a",
         "type": "tabs",
         "children": [
           {
-            "id": "f3eabe989142da9e",
+            "id": "366b0144d6fd8f7e",
             "type": "leaf",
             "state": {
               "type": "marimo-editor",
               "state": {
-                "file": "Marimo/装饰器.py"
+                "file": "Marimo/不基础的python基础/装饰器.py"
               },
               "icon": "marimo-logo",
               "title": "装饰器.py"
@@ -195,24 +195,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3eabe989142da9e",
+  "active": "366b0144d6fd8f7e",
   "lastOpenFiles": [
-    "Marimo/__marimo__/session/untitled_marimo_3.py.json",
+    "组织/CPython Contributor RoadMap.canvas",
+    "组织/自我提升.canvas",
+    "Marimo/不基础的python基础",
+    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_3.py.json",
     "Marimo/untitled_marimo_3.py",
-    "Marimo/__marimo__/session/untitled_marimo_2.py.json",
+    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_2.py.json",
     "Marimo/untitled_marimo_2.py",
     "pyproject.toml",
-    "Marimo/__marimo__/session/untitled_marimo_1.py.json",
+    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_1.py.json",
     "Marimo/untitled_marimo_1.py",
     "Marimo/untitled_marimo.py",
     "Marimo/catppuccin.css",
     "我的计划.md",
     "README.md",
-    "Marimo/catppuccin-mocha.css~",
-    "Marimo/catppuccin-mocha.css",
     "Marimo/test.md",
     "文本笔记/Wishlist.md",
-    "组织/CPython Contributor RoadMap.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
     "文本笔记/python进阶学习知识点.md",
     "未命名.md",
@@ -222,7 +222,6 @@
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
     "文本笔记/洗面奶.md",
-    "组织/自我提升.canvas",
     "组织/四六级.canvas",
     "组织/高等数学.canvas",
     "未命名.canvas",
