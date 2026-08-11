@@ -1,6 +1,6 @@
 [
-  "obsidian-git",
   "obsidian-excalidraw-plugin",
   "obsidian-linter",
-  "obsidian-dictionary-plugin"
+  "obsidian-dictionary-plugin",
+  "marimo-bridge"
 ]

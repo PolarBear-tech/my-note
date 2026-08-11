@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "bb184c240c42b25d",
+        "id": "9dfe53e423598248",
         "type": "tabs",
         "children": [
           {
-            "id": "12b0021d1fab1093",
+            "id": "f3eabe989142da9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/装饰器.py"
+              },
+              "icon": "marimo-logo",
+              "title": "装饰器.py"
             }
           }
         ]
@@ -29,7 +31,7 @@
       {
         "id": "dc2dfa1be42557e3",
         "type": "tabs",
-        "dimension": 58.4958217270195,
+        "dimension": 58.49582172701949,
         "children": [
           {
             "id": "497eb0e50e1c55fd",
@@ -75,23 +77,13 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
-          },
-          {
-            "id": "f4ebbcf4217fb224",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ]
       },
       {
         "id": "84a0017b663d21e9",
         "type": "tabs",
-        "dimension": 41.5041782729805,
+        "dimension": 41.50417827298051,
         "children": [
           {
             "id": "6bdf0c0c80fd5bfc",
@@ -195,32 +187,36 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
       "marimo-bridge:Open marimo home": false
     }
   },
-  "active": "12b0021d1fab1093",
+  "active": "f3eabe989142da9e",
   "lastOpenFiles": [
-    "uv.lock",
+    "Marimo/__marimo__/session/untitled_marimo_3.py.json",
+    "Marimo/untitled_marimo_3.py",
+    "Marimo/__marimo__/session/untitled_marimo_2.py.json",
+    "Marimo/untitled_marimo_2.py",
     "pyproject.toml",
-    "src/note/__init__.py",
-    "src/note",
-    "src",
-    "文本笔记/Wishlist.md",
-    "untitled_marimo.py",
+    "Marimo/__marimo__/session/untitled_marimo_1.py.json",
+    "Marimo/untitled_marimo_1.py",
+    "Marimo/untitled_marimo.py",
+    "Marimo/catppuccin.css",
     "我的计划.md",
-    "组织/CPython Contributor RoadMap.canvas",
     "README.md",
+    "Marimo/catppuccin-mocha.css~",
+    "Marimo/catppuccin-mocha.css",
+    "Marimo/test.md",
+    "文本笔记/Wishlist.md",
+    "组织/CPython Contributor RoadMap.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
     "文本笔记/python进阶学习知识点.md",
     "未命名.md",
     "Drawing 2026-08-10 20.15.46.excalidraw.md",
     "Drawing 2026-08-10 20.14.42.excalidraw.md",
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
-    "手写笔记",
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
     "文本笔记/洗面奶.md",
@@ -237,14 +233,9 @@
     "文本笔记/薛定谔方程里为什么有i.md",
     "文本笔记/nvim优化.md",
     "文本笔记/交大新生入学.md",
-    "Excalidraw",
-    "文本笔记/英语四级",
     "new.md",
-    "组织",
     "路线.md",
     "计划.md",
-    "标题.md",
-    "高等数学/chapter-1.excalidraw",
     "计划.canvas"
   ]
 }
