@@ -205,6 +205,32 @@ def _(o):
     return
 
 
+@app.cell(hide_code=True)
+def _():
+    def _add_str(perfix):
+        def _set(cls):
+            def __str__(self):
+                return perfix + ":" + str(self.__dict__)
+            cls.__str__ = __str__
+            return cls
+        return _set
+
+    @_add_str(perfix="_A")
+    class _A:
+        def __init__(self, a, b):
+            self.a = a
+            self.b = b
+
+    p = _A(1, "str")
+    return (p,)
+
+
+@app.cell
+def _(p):
+    print(p)
+    return
+
+
 @app.cell
 def _():
     return

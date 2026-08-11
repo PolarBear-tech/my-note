@@ -255,6 +255,39 @@
     },
     {
       "id": "MDWE",
+      "code_hash": "38139945250faad123855e038fe9c052",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YyiU",
+      "code_hash": "15bc8d095c82e6657a5e90f17ae2a6cc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "_A:{'a': 1, 'b': 'str'}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "sisg",
       "code_hash": null,
       "outputs": [],
       "console": []

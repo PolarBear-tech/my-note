@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "68e46d1c2ec6fd8a",
+        "id": "a8bf63352464c798",
         "type": "tabs",
         "children": [
           {
-            "id": "366b0144d6fd8f7e",
+            "id": "6833a1abf4794565",
             "type": "leaf",
             "state": {
               "type": "marimo-editor",
               "state": {
-                "file": "Marimo/不基础的python基础/装饰器.py"
+                "file": "Marimo/高级语法/生成器和迭代器.py"
               },
               "icon": "marimo-logo",
-              "title": "装饰器.py"
+              "title": "生成器和迭代器.py"
             }
           }
         ]
@@ -132,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.58331298828125,
-    "collapsed": true
+    "width": 270.58331298828125
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -195,20 +194,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "366b0144d6fd8f7e",
+  "active": "6833a1abf4794565",
   "lastOpenFiles": [
+    "Marimo/高级语法/__marimo__/session/生成器和迭代器.py.json",
     "组织/CPython Contributor RoadMap.canvas",
+    "Marimo/高级语法/__marimo__/session/untitled_marimo.py.json",
+    "Marimo/高级语法/未命名.md",
+    "Marimo/高级语法/生成器和迭代器.py",
+    "Marimo/高级语法/__marimo__/session/装饰器.py.json",
+    "Marimo/高级语法/__marimo__/session/描述器.py.json",
+    "Marimo/高级语法/__marimo__/session",
+    "Marimo/高级语法/__marimo__",
+    "Marimo/高级语法/描述器.py",
+    "Marimo/不基础的python基础/untitled_marimo.py",
+    "Marimo/高级语法/闭包.py",
+    "Marimo/不基础的python基础/__marimo__/session/闭包.py.json",
     "组织/自我提升.canvas",
-    "Marimo/不基础的python基础",
-    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_3.py.json",
-    "Marimo/untitled_marimo_3.py",
-    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_2.py.json",
-    "Marimo/untitled_marimo_2.py",
-    "pyproject.toml",
-    "Marimo/不基础的python基础/__marimo__/session/untitled_marimo_1.py.json",
-    "Marimo/untitled_marimo_1.py",
-    "Marimo/untitled_marimo.py",
-    "Marimo/catppuccin.css",
     "我的计划.md",
     "README.md",
     "Marimo/test.md",
@@ -236,7 +237,6 @@
     "文本笔记/交大新生入学.md",
     "new.md",
     "路线.md",
-    "计划.md",
     "计划.canvas"
   ]
 }
