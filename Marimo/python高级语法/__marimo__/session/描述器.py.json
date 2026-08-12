@@ -8,17 +8,24 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "MJUe",
-      "code_hash": "e4d82dbdcdda0f5bc1dd04e1fc12bba4",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"new-notebook\">New notebook</h1></span>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "bca658578609205ec3e65da146d5655e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u63cf\u8ff0\u5668</h1>\n<span class=\"paragraph\">\u53ea\u8981\u4e00\u4e2a\u7c7b\u5b9a\u4e49\u4e86 <code>__get__</code> <code>\u2014\u2014\u2014</code></span></span>"
           }
         }
       ],
