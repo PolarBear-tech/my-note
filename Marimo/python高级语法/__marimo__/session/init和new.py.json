@@ -1,0 +1,55 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "8749306333c3fccb5ecc20698f362841",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "__new__\n__init__\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "cHQz",
+      "code_hash": "7cecea541dbf94112d9494486e9294bc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"new\">\u4ec0\u4e48\u65f6\u5019\u9700\u8981\u7528new\u5462</h1>\n<span class=\"paragraph\">\u9700\u8981\u5ba2\u5236\u5316\u5efa\u7acbobject\u65f6\uff0c\u624d\u9700\u8981\u4f7f\u7528\uff0c\u6bd4\u5982\u8bbe\u7f6e\u6210\u5355\u4f8b\u6a21\u5f0f</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
