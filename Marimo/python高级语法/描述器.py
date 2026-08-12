@@ -66,7 +66,7 @@ def _(mo):
 
 
 @app.cell
-def _(AA, aa):
+def _():
     # 既有__get__又有__set__，是一个资料描述器
     class _M:
         def __init__(self):
@@ -104,19 +104,24 @@ def _(AA, aa):
     print(_o.n) # 5, 非资料描述器同名时调用的是属性，为传入的5
     print(_A.n) # 1, 如果是类来访问，就调用的是描述器，返回self.x的值
 
-    print(_o.m) # 3, 其实在_o = _A(2,5)创建实例时，进行了属性赋值，其中相当于进行了aa.m=2
+    print(_o.m) # 3, 其实在_o = _A(2,5)创建实例时，进行了属性赋值，其中相当于进行了_o.m=2
     # 但是_o调用m时却不是常规地调用属性m，而是资料描述器m
-    # 所以定义实例aa时，其实触发了m的__set__方法，将2传给value，self.x变成3
-    # aa.m调用时也访问的是描述器，返回self.x即3的结果
+    # 所以定义实例_o时，其实触发了m的__set__方法，将2传给value，self.x变成3
+    # _o.m调用时也访问的是描述器，返回self.x即3的结果
     # 其实看打印信息也能看出什么时候调用了__get__和__set__
 
     _o.m = 6 # 另外对属性赋值也是调用了m的__set__方法
-    print(aa.m) # 7，调用__get__方法
+    print(_o.m) # 7，调用__get__方法
 
     print('-'*20)
     # 在代码中显式调用__get__方法
-    print(AA.__dict__['n'].__get__(None, AA)) # 1
-    print(AA.__dict__['n'].__get__(aa, AA)) # 1
+    print(_A.__dict__['n'].__get__(None, _A)) # 1
+    print(_A.__dict__['n'].__get__(_o, _A)) # 1
+    return
+
+
+@app.cell
+def _():
     return
 
 

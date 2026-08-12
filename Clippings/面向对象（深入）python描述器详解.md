@@ -271,27 +271,26 @@ print(AA.__dict__['n'].__get__(aa, AA)) # 1
 
 注：要想制作一个只读的资料描述器，需要同时定义 `__set__` 和 `__get__`,并在 `__set__` 中引发一个 AttributeError 异常。定义一个引发异常的 `__set__` 方法就足够让一个描述器成为资料描述器。
 
-## 描述器的细节
+## 描述器的细节 
 
-本节分为如下两个部分
-
-- 调用描述器的原理
-- `__get__` 和 `__set__` 方法中的参数解释
+### 调用描述器的原理
 
 1.首先是调用描述器的原理 当调用一个属性，而属性指向一个描述器时，为什么就会去调用这个描述器呢，其实这是由 `object.__getattribute__()` 方法控制的，其中 `object` 是新式类定义时默认继承的类，即 py2 这么写的 `class(object)` 中的 `object` 。新定义的一个类继承了 object 类，也就继承了 `__getattribute__` 方法。当访问一个属性比如 `b.x` 时，会自动调用这个方法 `__getattribute__()` 的定义如下
 
 ```python
 def __getattribute__(self, key):
-    "Emulate type_getattro() in Objects/typeobject.c"
-    v = object.__getattribute__(self, key)
-    if hasattr(v, '__get__'):
-        return v.__get__(None, self)
-    return v
+	"Emulate type_getattro() in Objects/typeobject.c"
+	v = object.__getattribute__(self, key)
+	if hasattr(v, '__get__'):
+		return v.__get__(None, self)
+	return v
 ```
 
 上面的定义显示，如果 `b.x` 是一个描述器对象，即能找到 `__get__` 方法，则会调用这个 get 方法，否则就使用普通的属性。 如果在一个类中重写 `__getattribute__` ，将会改变描述器的行为，甚至将描述器这一功能关闭。
 
-2.`__get__` 和 `__set__` 方法中的参数解释 官网中标明了这三个方法需要传入哪些参数，还有这些方法的返回结果是什么，如下所示
+### `__get__` 和 `__set__` 方法中的参数解释
+
+`__get__` 和 `__set__` 方法中的参数解释 官网中标明了这三个方法需要传入哪些参数，还有这些方法的返回结果是什么，如下所示
 
 ```python
 descr.__get__(self, obj, type=None) --> value
@@ -301,7 +300,7 @@ descr.__delete__(self, obj) --> None
 
 我们要了解的就是 `self obj type value` 分别是什么 看下面一个例子
 
-```
+```python
 class M:
     def __init__(self, name):
         self.name = name

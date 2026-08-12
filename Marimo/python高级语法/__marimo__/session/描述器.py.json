@@ -66,6 +66,26 @@
     },
     {
       "id": "PKri",
+      "code_hash": "4a93dc5c0d47eee417957605a9d4c7e4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "set m here\n{'n': 5}\n{'__module__': '__main__', '__firstlineno__': 24, 'm': <__main__._cell_PKri_M object at 0x0000013D80EDB620>, 'n': <__main__._cell_PKri_N object at 0x0000013D80EDB4D0>, '__init__': <function _cell_PKri_A.__init__ at 0x0000013D83275380>, '__static_attributes__': ('m', 'n'), '__dict__': <attribute '__dict__' of '_cell_PKri_A' objects>, '__weakref__': <attribute '__weakref__' of '_cell_PKri_A' objects>, '__doc__': None}\n5\nget n here\n1\nget m here\n3\nset m here\nget m here\n7\n--------------------\nget n here\n1\nget n here\n1\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bFbA",
       "code_hash": null,
       "outputs": [],
       "console": []

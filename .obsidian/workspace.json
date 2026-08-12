@@ -14,42 +14,12 @@
               "type": "markdown",
               "state": {
                 "file": "Clippings/面向对象（深入）python描述器详解.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
               "title": "面向对象（深入）python描述器详解"
-            }
-          }
-        ]
-      },
-      {
-        "id": "25de20407c8b4128",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6d83101ce0278f40",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/python高级语法/描述器.py"
-              },
-              "icon": "marimo-logo",
-              "title": "描述器.py"
-            }
-          },
-          {
-            "id": "8c9681982ae795b0",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/main.py"
-              },
-              "icon": "marimo-logo",
-              "title": "main.py"
             }
           }
         ]
@@ -183,6 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Clippings/面向对象（深入）python描述器详解.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5,
-    "collapsed": true
+    "width": 253.5
   },
   "left-ribbon": {
     "hiddenItems": {
