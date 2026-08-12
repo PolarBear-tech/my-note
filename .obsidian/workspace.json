@@ -11,17 +11,15 @@
             "id": "6833a1abf4794565",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/CPython Contributor RoadMap.canvas",
-                "viewState": {
-                  "x": 322.81952906964904,
-                  "y": 50.52968385174381,
-                  "zoom": -0.5837000439276676
-                }
+                "file": "我的计划.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "CPython Contributor RoadMap"
+              "icon": "lucide-file",
+              "title": "我的计划"
             }
           }
         ]
@@ -201,19 +199,18 @@
   },
   "active": "6833a1abf4794565",
   "lastOpenFiles": [
+    "组织/CPython Contributor RoadMap.canvas",
+    "Marimo/python高级语法/元类.py",
     "Marimo/__marimo__/session/main.py.json",
     "Marimo/__marimo__/session",
     "Marimo/__marimo__",
-    "组织/CPython Contributor RoadMap.canvas",
     "Marimo/main.py",
-    "Marimo/高级语法/__marimo__/session/生成器和迭代器.py.json",
-    "Marimo/高级语法/__marimo__/session/untitled_marimo.py.json",
+    "Marimo/python高级语法/__marimo__/session/生成器和迭代器.py.json",
+    "Marimo/python高级语法/__marimo__/session/untitled_marimo.py.json",
     "Marimo/高级语法/未命名.md",
     "Marimo/高级语法/生成器和迭代器.py",
-    "Marimo/高级语法/__marimo__/session/装饰器.py.json",
-    "Marimo/高级语法/__marimo__/session/描述器.py.json",
-    "Marimo/高级语法/__marimo__/session",
-    "Marimo/高级语法/__marimo__",
+    "Marimo/python高级语法/__marimo__/session/装饰器.py.json",
+    "Marimo/python高级语法/__marimo__/session/描述器.py.json",
     "组织/自我提升.canvas",
     "我的计划.md",
     "README.md",
