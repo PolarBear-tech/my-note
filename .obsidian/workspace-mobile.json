@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "a31a7edc569337ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "98b05735e367d6ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be33c0e113415f35",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 114.9139344124032,
+                  "y": 69.91019336400788,
+                  "zoom": -1.4749238394767505
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
+            }
+          },
+          {
+            "id": "1923b74ac00e6f74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "主页.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "主页"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6cae5f2891543f88",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "5888b114e0ed9833",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-folder-closed",
+          "title": "文件列表"
+        }
+      },
+      {
+        "id": "24e47ca466c67e44",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "搜索"
+        }
+      },
+      {
+        "id": "e6e97be1b0be40f7",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-bookmark",
+          "title": "书签"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "7c445aa2d427e459",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "4941f28f6d664d44",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "反向链接"
+        }
+      },
+      {
+        "id": "b616380c2185707a",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "出链"
+        }
+      },
+      {
+        "id": "bb1673dab1583775",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "大纲"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "1923b74ac00e6f74",
+  "lastOpenFiles": [
+    "组织/root.canvas",
+    "组织/其他.canvas",
+    "主页.md",
+    "文本笔记/未命名.md",
+    "组织/高等数学.canvas",
+    "手写笔记/高等书学-chapter-1.excalidraw.md",
+    "我的计划.md"
+  ]
+}
