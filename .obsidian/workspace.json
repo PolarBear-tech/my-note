@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a8bf63352464c798",
+        "id": "1c5083b1acee7faa",
         "type": "tabs",
         "children": [
           {
-            "id": "6833a1abf4794565",
+            "id": "4f58ff09dc6c8131",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文本笔记/英语四级/Word List 4.md",
+                "file": "文本笔记/英语四级/Word List 6.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Word List 4"
+              "title": "Word List 6"
             }
           }
         ]
@@ -152,6 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "文本笔记/英语四级/Word List 6.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -181,8 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.66668701171875,
-    "collapsed": true
+    "width": 253.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,10 +197,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6833a1abf4794565",
+  "active": "4f58ff09dc6c8131",
   "lastOpenFiles": [
-    "文本笔记/英语四级/Word List 4.md",
+    "文本笔记/RealPython.md",
+    "文本笔记/英语四级/Word List 6.md",
     "组织/四六级.canvas",
+    "组织/自我提升.canvas",
+    "文本笔记/英语四级/Word List 5.md",
+    "文本笔记/英语四级/Word List 4.md",
     "文本笔记/英语四级/Word List 3.md",
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
@@ -217,7 +221,6 @@
     "Marimo/高级语法/生成器和迭代器.py",
     "Marimo/python高级语法/__marimo__/session/装饰器.py.json",
     "Marimo/python高级语法/__marimo__/session/描述器.py.json",
-    "组织/自我提升.canvas",
     "README.md",
     "Marimo/test.md",
     "文本笔记/Wishlist.md",
@@ -233,12 +236,9 @@
     "Untitled Kanban.md",
     "组织/未命名.md",
     "文本笔记/python开源项目.md",
-    "文本笔记/RealPython.md",
     "文本笔记/Make指南.md",
     "文本笔记/Python Contributor之路.md",
     "文本笔记/薛定谔方程里为什么有i.md",
-    "文本笔记/nvim优化.md",
-    "文本笔记/交大新生入学.md",
     "计划.canvas"
   ]
 }

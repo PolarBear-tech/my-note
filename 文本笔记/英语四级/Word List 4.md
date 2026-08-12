@@ -12,8 +12,20 @@
 
 -  detailed education norms 详细的教育标准
 
-## renovate
+# renovate
 
 ## vt. 翻新；改造；修复
 
-- renovate the din
+- renovate the dining-rooms 翻新餐厅
+
+# conterpart
+
+## n. 职务相当的人；作用相当的事物
+
+- one's male conterpart 某人的男性同行
+
+# phase
+
+## n. 阶段；时期
+
+- in testing and trail phase 在测试和试验阶段

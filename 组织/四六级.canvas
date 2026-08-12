@@ -1,13 +1,17 @@
 {
 	"nodes":[
 		{"id":"97b9d2a32ea993ae","type":"text","text":"四六级","x":-260,"y":-20,"width":250,"height":60},
-		{"id":"451a0c2b82ee7e5c","type":"file","file":"文本笔记/英语四级/Word List 1.md","x":480,"y":-720,"width":400,"height":80},
-		{"id":"f0dc750dd14a4c98","type":"file","file":"文本笔记/英语四级/Word List 2.md","x":480,"y":-560,"width":400,"height":80},
-		{"id":"17fc396de0c6ac6d","x":480,"y":-400,"width":400,"height":80,"type":"file","file":"文本笔记/英语四级/Word List 3.md"}
+		{"id":"451a0c2b82ee7e5c","type":"file","file":"文本笔记/英语四级/Word List 1.md","x":261,"y":-700,"width":399,"height":80},
+		{"id":"f0dc750dd14a4c98","type":"file","file":"文本笔记/英语四级/Word List 2.md","x":261,"y":-540,"width":399,"height":80},
+		{"id":"17fc396de0c6ac6d","type":"file","file":"文本笔记/英语四级/Word List 3.md","x":261,"y":-380,"width":399,"height":80},
+		{"id":"0c1122e1e82ec537","type":"file","file":"文本笔记/英语四级/Word List 4.md","x":261,"y":-240,"width":399,"height":80},
+		{"id":"651cff3886a10b05","x":260,"y":-100,"width":400,"height":80,"type":"file","file":"文本笔记/英语四级/Word List 5.md"}
 	],
 	"edges":[
 		{"id":"4f44eed91fcbdc58","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"451a0c2b82ee7e5c","toSide":"left"},
 		{"id":"09c9a712b915e6ed","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"f0dc750dd14a4c98","toSide":"left"},
-		{"id":"219ee9e3638d9d9e","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"17fc396de0c6ac6d","toSide":"left"}
+		{"id":"219ee9e3638d9d9e","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"17fc396de0c6ac6d","toSide":"left"},
+		{"id":"e4ed294cb5f6abc5","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"0c1122e1e82ec537","toSide":"left"},
+		{"id":"e6c126fb7b474b56","fromNode":"97b9d2a32ea993ae","fromSide":"right","toNode":"651cff3886a10b05","toSide":"left"}
 	]
 }
