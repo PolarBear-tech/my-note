@@ -4,11 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "eb240a1ae955cc1b",
+        "id": "98b05735e367d6ed",
         "type": "tabs",
         "children": [
           {
-            "id": "bc7f9bcb7d080c7f",
+            "id": "be33c0e113415f35",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 114.9139344124032,
+                  "y": 69.91019336400788,
+                  "zoom": -1.4749238394767505
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
+            }
+          },
+          {
+            "id": "1923b74ac00e6f74",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +39,8 @@
               "title": "主页"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -139,12 +157,17 @@
       "command-palette:打开命令面板": false,
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "bc7f9bcb7d080c7f",
+  "active": "1923b74ac00e6f74",
   "lastOpenFiles": [
+    "组织/root.canvas",
+    "组织/其他.canvas",
+    "主页.md",
+    "文本笔记/未命名.md",
+    "组织/高等数学.canvas",
+    "手写笔记/高等书学-chapter-1.excalidraw.md",
     "我的计划.md"
   ]
 }
