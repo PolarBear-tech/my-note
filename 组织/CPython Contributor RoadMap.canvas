@@ -47,8 +47,9 @@
 		{"id":"a0add36433c5ff20","type":"text","text":"描述器","x":3460,"y":-4106,"width":250,"height":60},
 		{"id":"f3d96b4666138dd9","type":"text","text":"[[描述器.py]]","x":3938,"y":-4196,"width":250,"height":60},
 		{"id":"ec66172d6fb0c3dd","type":"file","file":"Clippings/python描述器详解.md","x":3938,"y":-4071,"width":400,"height":220},
-		{"id":"74c22a8d755e08a0","type":"text","text":"[[Python其他]]","x":3460,"y":-3300,"width":250,"height":60},
-		{"id":"48cfa9ee282751f6","type":"file","file":"文本笔记/python学习相关/RealPython.md","x":-960,"y":-1240,"width":400,"height":400}
+		{"id":"74c22a8d755e08a0","type":"text","text":"Python其他","x":3460,"y":-3300,"width":250,"height":60},
+		{"id":"48cfa9ee282751f6","type":"file","file":"文本笔记/python学习相关/RealPython.md","x":-960,"y":-1240,"width":400,"height":400},
+		{"id":"75b406767fb47f51","x":3938,"y":-3536,"width":400,"height":296,"type":"file","file":"文本笔记/python学习相关/Python其他.md"}
 	],
 	"edges":[
 		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
@@ -98,6 +99,7 @@
 		{"id":"c7d7c079b4a80b0c","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"a0add36433c5ff20","toSide":"left"},
 		{"id":"399eaee10aff5b63","fromNode":"a0add36433c5ff20","fromSide":"right","toNode":"f3d96b4666138dd9","toSide":"left"},
 		{"id":"a9d316aef43444b2","fromNode":"a0add36433c5ff20","fromSide":"right","toNode":"ec66172d6fb0c3dd","toSide":"left"},
-		{"id":"8fb63eaca60ec822","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"74c22a8d755e08a0","toSide":"left"}
+		{"id":"8fb63eaca60ec822","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"74c22a8d755e08a0","toSide":"left"},
+		{"id":"e4b35e89acf8875d","fromNode":"74c22a8d755e08a0","fromSide":"right","toNode":"75b406767fb47f51","toSide":"left"}
 	]
 }

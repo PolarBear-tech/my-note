@@ -18,5 +18,4 @@
  - `Git`：多设备同步
  - `Linter`：格式化
  - `marimo Bridge`：实现在 Obsidian 中打开 marimo 笔记
- - `Vimrc Support`：迎合我的 Vim 使用习惯
  - `Latex Suit`：写数学公式用的，虽然我很少打开它
