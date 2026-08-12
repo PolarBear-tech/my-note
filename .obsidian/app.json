@@ -1,6 +1,6 @@
 {
   "spellcheck": false,
-  "vimMode": false,
+  "vimMode": true,
   "showLineNumber": false,
   "newFileLocation": "folder",
   "newFileFolderPath": "手写笔记",

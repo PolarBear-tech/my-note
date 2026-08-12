@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "我的计划.md",
+                "file": "文本笔记/英语四级/Word List 4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "我的计划"
+              "title": "Word List 4"
             }
           }
         ]
@@ -199,6 +199,12 @@
   },
   "active": "6833a1abf4794565",
   "lastOpenFiles": [
+    "文本笔记/英语四级/Word List 4.md",
+    "组织/四六级.canvas",
+    "文本笔记/英语四级/Word List 3.md",
+    "文本笔记/英语四级/Word List 1.md",
+    "文本笔记/英语四级/Word List 2.md",
+    "我的计划.md",
     "组织/CPython Contributor RoadMap.canvas",
     "Marimo/python高级语法/元类.py",
     "Marimo/__marimo__/session/main.py.json",
@@ -212,7 +218,6 @@
     "Marimo/python高级语法/__marimo__/session/装饰器.py.json",
     "Marimo/python高级语法/__marimo__/session/描述器.py.json",
     "组织/自我提升.canvas",
-    "我的计划.md",
     "README.md",
     "Marimo/test.md",
     "文本笔记/Wishlist.md",
@@ -222,10 +227,7 @@
     "Drawing 2026-08-10 20.15.46.excalidraw.md",
     "Drawing 2026-08-10 20.14.42.excalidraw.md",
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
-    "文本笔记/英语四级/Word List 1.md",
-    "文本笔记/英语四级/Word List 2.md",
     "文本笔记/洗面奶.md",
-    "组织/四六级.canvas",
     "组织/高等数学.canvas",
     "未命名.canvas",
     "Untitled Kanban.md",
@@ -237,8 +239,6 @@
     "文本笔记/薛定谔方程里为什么有i.md",
     "文本笔记/nvim优化.md",
     "文本笔记/交大新生入学.md",
-    "new.md",
-    "路线.md",
     "计划.canvas"
   ]
 }
