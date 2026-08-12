@@ -4,40 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "dcb72991792a8536",
+        "id": "561a0c6a348ba7b0",
         "type": "tabs",
         "children": [
           {
-            "id": "4ede039d451a5bf3",
+            "id": "55b7c7d4038acbf5",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/CPython Contributor RoadMap.canvas",
-                "viewState": {
-                  "x": 3680.6864062409054,
-                  "y": -3616.1926041165284,
-                  "zoom": -0.5566063830453927
-                }
+                "file": "我的计划.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "CPython Contributor RoadMap"
-            }
-          },
-          {
-            "id": "03d51c26b0ce363d",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/python高级语法/描述器.py"
-              },
-              "icon": "marimo-logo",
-              "title": "描述器.py"
+              "icon": "lucide-file",
+              "title": "我的计划"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.58331298828125,
-    "collapsed": true
+    "width": 270.58331298828125
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -213,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03d51c26b0ce363d",
+  "active": "55b7c7d4038acbf5",
   "lastOpenFiles": [
     "组织/CPython Contributor RoadMap.canvas",
     "文本笔记/python进阶学习知识点.md",
