@@ -2,8 +2,21 @@
 
 这是我大学学习的笔记知识库。
 
-- md 笔记存储在 `文本笔记` 文件夹中
-- 手写笔记以 `.excalidraw`形式存储在`手写笔记` 文件夹里
+## 各个文件夹的作用
+
+- `文本笔记` 文件夹是 以 `.md` 形式存储的文本笔记
+- `手写笔记` 文件夹是以 `.excalidraw` 形式存储的手写笔记
 - `组织`文件夹里的 `.canvas` 文件是用来组织所有的文本笔记和手写笔记
 - `Marimo` 文件夹里是我所有的 `marimo`notebook
-- `我的计划.md` 是我所有正在进行的项目
+- `Clippings`文件夹是我搜集的网上知识，由 `Obsidian Web Clipper` 生成
+- `我的计划.md` 文件是我所有正在进行的项目
+
+## 插件说明
+
+ - `Dictionary`：查单词的
+ - `Excalidraw`：绘图软件，用来记录手写笔记
+ - `Git`：多设备同步
+ - `Linter`：格式化
+ - `marimo Bridge`：实现在 Obsidian 中打开 marimo 笔记
+ - `Vimrc Support`：迎合我的 Vim 使用习惯
+ - `Latex Suit`：写数学公式用的，虽然我很少打开它

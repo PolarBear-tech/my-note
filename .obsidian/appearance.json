@@ -2,7 +2,7 @@
   "interfaceFontFamily": "霞鹜文楷 屏幕阅读版",
   "baseFontSize": 20,
   "textFontFamily": "霞鹜文楷 屏幕阅读版",
-  "monospaceFontFamily": "霞鹜文楷等宽",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "cssTheme": "Catppuccin",
   "accentColor": "",
   "showRibbon": false,
