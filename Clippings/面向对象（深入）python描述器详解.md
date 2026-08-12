@@ -202,7 +202,7 @@ print(type(aa).__dict__) # 里面有n和m
 print(aa.n) # 2, 在aa.__dict__中找不到n，于是到type(aa).__dict__中找到了n，并返回其值
 print(type(aa).__dict__['n']) # 2, 其实是上面一条的调用机制
 
-print(aa.m) # 1, 在aa.__dict__中找不到n，于是到type(aa).__dict__中找到了m
+print(aa.m) # 1, 在aa.__dict__中找不到m，于是到type(aa).__dict__中找到了m
 # m是一个描述器对象，于是调用__get__方法，将self.x的值返回，即1
 print(type(aa).__dict__['m'].__get__(aa,AA)) # 1, 上面一条的调用方式是这样的
 # __get__的定义中，除了self，还有instance和owner，其实分别表示的就是描述器所在的实例和类，这里的细节我们后文会讲

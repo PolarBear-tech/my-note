@@ -20,7 +20,7 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "043818eb472f319f8a0f59abe3a19608",
+      "code_hash": "3aeba63ffe17e7fc534756ad9c75f452",
       "outputs": [
         {
           "type": "data",
@@ -33,13 +33,13 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "  1           RESUME                   0\n\n  2           LOAD_GLOBAL              1 (print + NULL)\n              LOAD_CONST               0 ('1')\n              LOAD_CONST               1 ('2')\n              CALL                     2\n              POP_TOP\n              LOAD_CONST               2 (None)\n              RETURN_VALUE\n",
+          "text": "{'__module__': '__main__', '__firstlineno__': 1, '__doc__': '\\n_A\\n', 'name': '_A', '__init__': <function _cell_MJUe_A.__init__ at 0x0000028663BD2560>, '__static_attributes__': ('age',), '__dict__': <attribute '__dict__' of '_cell_MJUe_A' objects>, '__weakref__': <attribute '__weakref__' of '_cell_MJUe_A' objects>}\n{'age': 10}\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
-      "id": "YNzd",
+      "id": "vblA",
       "code_hash": null,
       "outputs": [],
       "console": []

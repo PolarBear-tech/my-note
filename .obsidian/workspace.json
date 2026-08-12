@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Clippings/面向对象（深入）python描述器详解.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -38,6 +38,18 @@
               },
               "icon": "marimo-logo",
               "title": "描述器.py"
+            }
+          },
+          {
+            "id": "8c9681982ae795b0",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/main.py"
+              },
+              "icon": "marimo-logo",
+              "title": "main.py"
             }
           }
         ]

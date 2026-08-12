@@ -3,6 +3,5 @@
   "obsidian-linter",
   "obsidian-dictionary-plugin",
   "marimo-bridge",
-  "obsidian-git",
-  "obsidian-vimrc-support"
+  "obsidian-git"
 ]
