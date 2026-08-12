@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "54e97d95475e1361",
+        "id": "1277cf748a4d07c6",
         "type": "tabs",
         "children": [
           {
-            "id": "dd8ffda56deee372",
+            "id": "395e94eb678be973",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "canvas",
+              "state": {
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 160,
+                  "y": 60,
+                  "zoom": -0.6379325142594233
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
             }
           }
         ]
@@ -146,6 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "组织/root.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -153,8 +161,19 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "c2a083edd954ae23",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "e2a8ebdd080d10dc",
@@ -190,8 +209,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dd8ffda56deee372",
+  "active": "395e94eb678be973",
   "lastOpenFiles": [
+    "主页.md",
+    "README.md",
+    "组织/root.canvas",
     "文本笔记/python学习相关/Python其他.md",
     "Marimo/python高级语法/__marimo__/session/bytes.py.json",
     "组织/CPython Contributor RoadMap.canvas",
@@ -199,12 +221,10 @@
     "Marimo/python高级语法/__marimo__/session/format.py.json",
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "Marimo/python高级语法/format.py",
-    "README.md",
     "Marimo/python高级语法/__marimo__/session/init和new.py.json",
     "Marimo/python高级语法/init和new.py",
     "组织/自我提升.canvas",
     "Clippings/python描述器详解.md",
-    "主页.md",
     "文本笔记/Wishlist.md",
     "文本笔记/python学习相关",
     "文本笔记/Dwzb.md",
