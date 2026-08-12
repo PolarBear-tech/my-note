@@ -9,7 +9,7 @@ def _():
     import marimo as mo
     import dis
 
-    return
+    return (dis,)
 
 
 @app.cell
@@ -26,6 +26,21 @@ def _():
     print(_A.__dict__)
     _o = _A(10)
     print(_o.__dict__)
+    return
+
+
+@app.cell
+def _(dis):
+    class _A:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+        @classmethod
+        def func(cls):
+            print(1)
+
+    dis.dis(_A)
     return
 
 

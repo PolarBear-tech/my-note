@@ -11,15 +11,12 @@
             "id": "bd229464047fd9ba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "marimo-editor",
               "state": {
-                "file": "Clippings/面向对象（深入）python描述器详解.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "file": "Marimo/main.py"
               },
-              "icon": "lucide-file",
-              "title": "面向对象（深入）python描述器详解"
+              "icon": "marimo-logo",
+              "title": "main.py"
             }
           }
         ]
@@ -153,7 +150,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/面向对象（深入）python描述器详解.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""

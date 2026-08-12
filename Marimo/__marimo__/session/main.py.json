@@ -33,13 +33,33 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "{'__module__': '__main__', '__firstlineno__': 1, '__doc__': '\\n_A\\n', 'name': '_A', '__init__': <function _cell_MJUe_A.__init__ at 0x0000028663BD2560>, '__static_attributes__': ('age',), '__dict__': <attribute '__dict__' of '_cell_MJUe_A' objects>, '__weakref__': <attribute '__weakref__' of '_cell_MJUe_A' objects>}\n{'age': 10}\n",
+          "text": "{'__module__': '__main__', '__firstlineno__': 1, '__doc__': '\\n_A\\n', 'name': '_A', '__init__': <function _cell_MJUe_A.__init__ at 0x0000028660EE1380>, '__static_attributes__': ('age',), '__dict__': <attribute '__dict__' of '_cell_MJUe_A' objects>, '__weakref__': <attribute '__weakref__' of '_cell_MJUe_A' objects>}\n{'age': 10}\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
       "id": "vblA",
+      "code_hash": "35f928217fca27ecdd5701061c04a7b4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Disassembly of __init__:\n  2           RESUME                   0\n\n  3           LOAD_FAST_BORROW_LOAD_FAST_BORROW 16 (name, self)\n              STORE_ATTR               0 (name)\n\n  4           LOAD_FAST_BORROW_LOAD_FAST_BORROW 32 (age, self)\n              STORE_ATTR               1 (age)\n              LOAD_CONST               0 (None)\n              RETURN_VALUE\n\nDisassembly of func:\n  6           RESUME                   0\n\n  8           LOAD_GLOBAL              1 (print + NULL)\n              LOAD_SMALL_INT           1\n              CALL                     1\n              POP_TOP\n              LOAD_CONST               1 (None)\n              RETURN_VALUE\n\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DfPu",
       "code_hash": null,
       "outputs": [],
       "console": []
