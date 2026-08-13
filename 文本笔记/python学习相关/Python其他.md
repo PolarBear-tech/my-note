@@ -191,6 +191,8 @@ class Student:
 
 ## 运算相关
 
+### 二元运算
+
 |         符号         |                 函数                  |                      备注                      |
 | :----------------: | :---------------------------------: | :------------------------------------------: |
 |         +          |              `__add__`              |                                              |
@@ -208,6 +210,53 @@ class Student:
 |         ^          |              `__xor__`              |                      异或                      |
 |         \|         |              `__or__`               |                      或                       |
 
-> [!NOTE]
-> 想象一下向量的数乘，当
+> [!NOTE] `__rmul__`
+> 想象一下向量的数乘，当有一个自定义类`Vector`时。
+> ```python
+> class Vector:
+> 	def __init__(self, x, y):
+> 		self.x = x
+> 		self.y = y
+> 	def __mul__(self, other):
+> 		if isinstance(other, int):
+> 			return Vector(self.x * other, self.y * other)
+> ```
+> 
+> 这时`Vector(1, 2) * 3` <==> `Vector(1, 2).__mul__(3)`
+> 而 `3 * Vector(1, 2)` 则无法使用，这时，可以定义一个`__rmul__`，调用时`int`没有关于`Vector`乘法，会查找后者的`__rmul__`进行运算。
+> 其他的所有函数也都有他们的`r`版本。
+> 还有一种`i`版本，对应的是`+=`，`-=`...
+
+### 一元运算
+
+|     符号      |      方法       |        备注        |
+| :---------: | :-----------: | :--------------: |
+|      -      |   `__neg__`   |                  |
+|      +      |   `__pos__`   |                  |
+|   `abs()`   |   `__abs__`   |                  |
+|      ~      | `__invert__`  |                  |
+|   `int()`   |   `__int__`   |   需要返回int的数据结构   |
+|  `float()`  |  `__float__`  |  需要返回float的数据结构  |
+| `complex()` | `__complex__` | 需要返回complex的数据结构 |
+|     []      |  `__index__`  |                  |
+
+
+> [!NOTE] `__index__`
+> ```python
+> class Vector:
+> 	def __init__(self, x, y):
+> 		self.x = x
+> 		self.y = y
+> 	def __index__(self):
+> 		return int(self.x)
+> v = Vector(1.2, 5)
+> list = [1, 2, 3, 4]
+> list[v] # list[1] = 2
+> ```
+> 而且当`__index__`被定义之后，会被`__int__`、`__float__`和`__complex__`默认使用，除非你手动定义。
+
+
+### 取整运算
+
+
 
