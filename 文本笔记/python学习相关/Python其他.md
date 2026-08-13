@@ -93,15 +93,15 @@ class Student:
 
 ### `__getattr__`
 
-当访问类中不存在的显式定义的attr时，会调用这个函数。
+当访问类中不存在的显式定义的 attr 时，会调用这个函数。
 
 ### `__getattribute__`
 
-当访问类对象的任何attr时，都会调用这个函数。
+当访问类对象的任何 `attr` 时，都会调用这个函数。
 
 > [!WARNING]
-> 小心，当想要使用`__getattribute__`默认行为时，需要使用`super().__getattribute__(name)`，不能使用`getattr(self, name)`，这会产生无限递归。
-> 
+> 小心，当想要使用 `__getattribute__` 默认行为时，需要使用`super().__getattribute__(name)`，不能使用`getattr(self, name)`，这会产生无限递归。
+>
 > ```python
 > class A:
 > 	def __init__(self, data):
@@ -113,7 +113,8 @@ class Student:
 > 		return super().__getattribute__(name)
 > ```
 
-
 ### `__setattr__`
 
-这个函数和`__get`
+这个函数和 `__getattr__`不同，在任何时候设置属性时，都会调用这个函数，包括`__init__` 内的赋值。
+
+需要使用 `super().__setattr__(name, val)` 调用默认的设置函数。

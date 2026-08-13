@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hZVz",
+      "code_hash": "1a5cbf6b7dc82af77a02a9bacc8a79d7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__getattr__\"><code>__getattr__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZwFB",
+      "code_hash": "f2262ea51c459d0a04323b38c0c62cff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "data_\ngetting test\ntest_\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "rZsD",
+      "code_hash": "a9f8d96b885e269ff87d766b6b5d12e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__getattribute__\"><code>__getattribute__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KjxM",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
