@@ -6,7 +6,7 @@
   "newFileFolderPath": "文本笔记",
   "settingsPopoutWindow": false,
   "readableLineLength": false,
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "rightToLeft": false,
   "openBehavior": "file:主页.md",
   "attachmentFolderPath": "./附件",
