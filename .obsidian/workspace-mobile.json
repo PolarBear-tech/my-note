@@ -8,23 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "be33c0e113415f35",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 114.9139344124032,
-                  "y": 69.91019336400788,
-                  "zoom": -1.4749238394767505
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
-            }
-          },
-          {
             "id": "1923b74ac00e6f74",
             "type": "leaf",
             "state": {
@@ -39,8 +22,7 @@
               "title": "主页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,8 +145,9 @@
   "active": "1923b74ac00e6f74",
   "lastOpenFiles": [
     "组织/root.canvas",
-    "组织/其他.canvas",
+    "组织/CPython Contributor RoadMap.canvas",
     "主页.md",
+    "组织/其他.canvas",
     "文本笔记/未命名.md",
     "组织/高等数学.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
