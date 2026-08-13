@@ -123,6 +123,7 @@ def _():
     class _A(metaclass=_Meta):
         pass
 
+    _A.x
     return
 
 

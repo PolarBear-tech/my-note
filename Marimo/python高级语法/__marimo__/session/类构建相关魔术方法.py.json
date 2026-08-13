@@ -172,8 +172,15 @@
     },
     {
       "id": "gRRt",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "54ac89453058fc00d7a8b20305bf1fb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>10</pre>"
+          }
+        }
+      ],
       "console": []
     }
   ]
