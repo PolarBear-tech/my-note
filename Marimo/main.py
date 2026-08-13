@@ -46,6 +46,22 @@ def _(dis):
 
 @app.cell
 def _():
+    class _SayMetaClass(type):
+        def __new__(cls, name, bases, attrs):
+            attrs["say_" + name.lower()] = lambda self, value, saying=name: print(f"{value}: {saying}!")
+            return type.__new__(cls, name, bases, attrs)
+
+    class _Hello(metaclass=_SayMetaClass):
+        pass
+
+    _hello = _Hello()
+    print(_hello.__dict__)
+    # _hello.say__hello("world")
+    return
+
+
+@app.cell
+def _():
     return
 
 

@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "34ba1a8d0886f0a9",
+            "id": "a4e36b648cf10b82",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -41,6 +41,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "3d74976651992121",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34ba1a8d0886f0a9",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/main.py"
+              },
+              "icon": "marimo-logo",
+              "title": "main.py"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.58331298828125
+    "width": 270.58331298828125,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -225,11 +244,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34ba1a8d0886f0a9",
+  "active": "a4e36b648cf10b82",
   "lastOpenFiles": [
+    "Clippings/python 元类.md",
     "组织/CPython Contributor RoadMap.canvas",
     "Clippings/python 描述器详解.md",
-    "Clippings/python 元类.md",
     "Marimo/python高级语法/__marimo__/session/元类.py.json",
     "手写笔记/闭包.md",
     "Marimo/python高级语法/untitled_marimo.py",

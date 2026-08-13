@@ -59,7 +59,27 @@
       ]
     },
     {
-      "id": "DfPu",
+      "id": "bkHC",
+      "code_hash": "27f5e3056b10e0fca23e293d03e713e5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "{}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "mqIW",
       "code_hash": null,
       "outputs": [],
       "console": []

@@ -2,6 +2,7 @@
 source: "https://zhuanlan.zhihu.com/p/60461261"
 created: 2026-08-13
 ---
+
 千万不要被所谓“元类是 99% 的 python 程序员不会用到的特性”这类的说辞吓住。因为 **每个中国人，都是天生的元类使用者**
 
 学懂元类，你只需要知道两句话：
@@ -9,7 +10,7 @@ created: 2026-08-13
 - 道生一，一生二，二生三，三生万物
 - 我是谁？我从哪来里？我要到哪里去？
 
-在 python 世界，拥有一个 [永恒的道](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E6%B0%B8%E6%81%92%E7%9A%84%E9%81%93&zhida_source=entity) ，那就是“type”，请记在脑海中，type 就是道。如此广袤无垠的 python 生态圈，都是由 type 产生出来的。
+在 python 世界，拥有一个 永恒的道 ，那就是“type”，请记在脑海中，type 就是道。如此广袤无垠的 python 生态圈，都是由 type 产生出来的。
 
 1. **道** 即是 type
 2. **一** 即是 metaclass(元类，或者叫类生成器)
@@ -40,6 +41,7 @@ hello.say_hello()
 **这就是一个标准的“二生三，三生万物”过程。** 从类到我们可以调用的方法，用了这两步。
 
 那我们不由自主要问，类从何而来呢？回到代码的第一行。
+
 class Hello 其实是一个函数的“ [语义化](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E8%AF%AD%E4%B9%89%E5%8C%96&zhida_source=entity) 简称”，只为了让代码更浅显易懂，它的另一个写法是：
 
 ```python
@@ -49,14 +51,13 @@ def fn(self,  name='world'):  # 假如我们有一个函数叫fn
 Hello = type('Hello',  (object,),  dict(say_hello=fn))  # 通过type创建Hello class ---- 神秘的“道”，可以点化一切，这次我们直接从“道”生出了“二”
 ```
 
-这样的写法，就和之前的 Class Hello 写法作用完全相同，你可以试试创建实例并调用
+这样的写法，就和之前的 `class Hello` 写法作用完全相同，你可以试试创建实例并调用
 
 ```python
 # 从Hello类创建一个实例hello ----二生三，完全一样
 hello  =  Hello()
 
 # 使用hello调用方法say_hello ----三生万物，完全一样
-
 hello.say_hello()
 ```
 
@@ -71,13 +72,14 @@ Hello,  world.  ----调用结果完全一样。
 > Hello = type(‘Hello’, (object,), dict(say\_hello=fn))
 
 这就是“道”，python [世界的起源](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E4%B8%96%E7%95%8C%E7%9A%84%E8%B5%B7%E6%BA%90&zhida_source=entity) ，你可以为此而惊叹。
+
 注意它的三个参数！暗合人类的三大永恒命题：我是谁，我从哪里来，我要到哪里去。
 
 - 第一个参数：我是谁。 在这里，我需要一个区分于其它一切的命名，以上的实例将我命名为“Hello”
 - 第二个参数：我从哪里来
-	在这里，我需要知道从哪里来，也就是我的“父类”，以上实例中我的父类是“object”——python 中一种非常初级的类。
+  在这里，我需要知道从哪里来，也就是我的“父类”，以上实例中我的父类是“object”——python 中一种非常初级的类。
 - 第三个参数：我要到哪里去
-	在这里，我们将需要调用的方法和属性包含到一个字典里，再作为参数传入。以上实例中，我们有一个 say\_hello 方法包装进了字典中。
+  在这里，我们将需要调用的方法和属性包含到一个字典里，再作为参数传入。以上实例中，我们有一个 say\_hello 方法包装进了字典中。
 
 值得注意的是，三大永恒命题，是一切类，一切实例，甚至一切实例属性与方法都具有的。理所应当，它们的“创造者”，道和一，即 type 和元类，也具有这三个参数。但平常，类的三大永恒命题并不作为参数传入，而是以如下方式传入
 
@@ -88,9 +90,9 @@ class  Hello(object){
 
 # 小括号内声明“我来自哪里”
 
-# 中括号内声明“我要到哪里去”
+# 大括号内声明“我要到哪里去”
 
-    def  say_hello(){
+    def say_hello(){
 
     }
 
@@ -102,23 +104,21 @@ class  Hello(object){
 
 ## 元类——道生一，一生二
 
-一般来说，元类均被命名后缀为 Metalass。想象一下，我们需要一个可以自动打招呼的 [元类](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=10&q=%E5%85%83%E7%B1%BB&zhida_source=entity) ，它里面的类方法呢，有时需要 say\_Hello，有时需要 say\_Hi，有时又需要 say\_Sayolala，有时需要 say\_Nihao。
+一般来说，元类均被命名后缀为 Metalass。想象一下，我们需要一个可以自动打招呼的元类 ，它里面的类方法呢，有时需要 say\_Hello，有时需要 say\_Hi，有时又需要 say\_Sayolala，有时需要 say\_Nihao。
 
 如果每个内置的 say\_xxx 都需要在类里面声明一次，那将是多么可怕的苦役！ 不如使用 **元类** 来解决问题。
 
 以下是创建一个专门“打招呼”用的元类代码：
 
 ```python
-class  SayMetaClass(type):
-
-    def  __new__(cls,  name,  bases,  attrs):
-
-        attrs['say_'+name]  =  lambda  self,value,saying=name:  print(saying+','+value+'!')
-
-        return  type.__new__(cls,  name,  bases,  attrs)
+class SayMetaClass(type):
+    def __new__(cls,  name,  bases,  attrs):
+        attrs['say_'+name] = lambda self,value,saying=name: print(saying+','+value+'!')
+        return type.__new__(cls,  name,  bases,  attrs)
 ```
 
 记住两点：
+
 1、元类是由“type”衍生而出，所以父类需要传入 type。【 **道生一，所以一必须包含道** 】
 
 2、元类的操作都在 **new** 中完成，它的第一个参数是将创建的类，之后的参数即是三大永恒命题：我是谁，我从哪里来，我将到哪里去。 它返回的对象也是三大永恒命题， **接下来，这三个参数将一直陪伴我们。**
@@ -126,43 +126,33 @@ class  SayMetaClass(type):
 在 **new** 中，我只进行了一个操作，就是
 
 ```php
-attrs['say_'+name]  =  lambda  self,value,saying=name:  print(saying+','+value+'!')
+attrs['say_'+name] = lambda self,value,saying=name: print(saying+','+value+'!')
 ```
 
 它跟据类的名字，创建了一个类方法。比如我们由元类创建的类叫“Hello”，那创建时就自动有了一个叫“say\_Hello”的类方法，然后又将类的名字“Hello”作为默认参数 saying，传到了方法里面。然后把 hello 方法调用时的传参作为 value 传进去，最终打印出来。
 
 那么，一个元类是怎么从创建到调用的呢？
+
 来！一起根据道生一、一生二、二生三、三生万物的准则，走进元类的生命周期吧！
 
 ```python
 # 道生一：传入type
 
 class  SayMetaClass(type):
-
     # 传入三大永恒命题：类名称、父类、属性
-
     def  __new__(cls,  name,  bases,  attrs):
-
         # 创造“天赋”
-
         attrs['say_'+name]  =  lambda  self,value,saying=name:  print(saying+','+value+'!')
-
         # 传承三大永恒命题：类名称、父类、属性
-
         return  type.__new__(cls,  name,  bases,  attrs)
 
 # 一生二：创建类
-
 class  Hello(object,  metaclass=SayMetaClass):
-
     pass
 
 # 二生三：创建实列
-
 hello  =  Hello()
-
 # 三生万物：调用实例方法
-
 hello.say_Hello('world!')
 ```
 
@@ -182,15 +172,12 @@ Hello,  world!
 # 一生二：创建类
 
 class  Sayolala(object,  metaclass=SayMetaClass):
-
     pass
 
 # 二生三：创建实列
-
 s  =  Sayolala()
 
 # 三生万物：调用实例方法
-
 s.say_Sayolala('japan!')
 ```
 
@@ -276,12 +263,6 @@ L2.add(1)
 
 > python 世界的一切，尽在掌握。
 
-\[图片上传失败…(image-24d6f9-1553584305219)\]
-
-![](https://pic4.zhimg.com/v2-34bb0dd3b7916d6329876f2d4f6fd01d_1440w.jpg)
-
-[1360353032-59d4a735e0fb9\_articlex](https://link.zhihu.com/?target=https%3A//links.jianshu.com/go%3Fto%3Dhttp%253A%252F%252Fjbcdn2.b0.upaiyun.com%252F2017%252F10%252F59cf699f2e0d558fec5cf33fd333600f.jpg)
-
 **年轻的造物主，请随我一起开创新世界。**
 
 我们选择两个领域，一个是 Django 的核心思想，“Object Relational Mapping”，即 [对象-关系映射](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E5%AF%B9%E8%B1%A1-%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84&zhida_source=entity) ，简称 ORM。
@@ -296,40 +277,34 @@ L2.add(1)
 
 ### 准备工作，创建一个 Field 类
 
-```
+```python
 class  Field(object):
-
     def  __init__(self,  name,  column_type):
-
         self.name  =  name
-
         self.column_type  =  column_type
 
     def  __str__(self):
-
         return  '<%s:%s>'  %  (self.__class__.__name__,  self.name)
 ```
 
 **它的作用是**
+
 在 Field 类实例化时将得到两个参数，name 和 column\_type，它们将被绑定为 Field 的私有属性，如果要将 Field 转化为字符串时，将返回“Field:XXX” ， XXX 是传入的 name 名称。
 
 ### 准备工作：创建 StringField 和 IntergerField
 
-```
+```python
 class  StringField(Field):
-
     def  __init__(self,  name):
-
         super(StringField,  self).__init__(name,  'varchar(100)')
 
 class  IntegerField(Field):
-
     def  __init__(self,  name):
-
         super(IntegerField,  self).__init__(name,  'bigint')
 ```
 
 **它的作用是**
+
 在 StringField,IntegerField 实例初始化时，时自动调用父类的初始化方式。
 
 ### 道生一
@@ -435,6 +410,7 @@ class  User(Model):
 ```
 
 这时
+
 id= IntegerField(‘id’) 就会自动解析为：
 
 Model.**setattr** (self, ‘id’, IntegerField(‘id’))
@@ -738,6 +714,7 @@ if  __name__  ==  '__main__':
 分别从三个免费代理网站抓取了页面上显示的全部代理。
 
 如果对 yield 用法不熟悉，可以查看：
+
 [居然老师的python教程](https://link.zhihu.com/?target=https%3A//links.jianshu.com/go%3Fto%3Dhttps%253A%252F%252Fspace.bilibili.com%252F238650100)
 
 ### 二生三：创建实例对象 crawler
