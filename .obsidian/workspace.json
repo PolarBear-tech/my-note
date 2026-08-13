@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c979ddfe550e6a32",
+        "id": "f021a5abaf8b858f",
         "type": "tabs",
         "children": [
           {
-            "id": "538f5fa7ca7411f2",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/python高级语法/属性相关魔术方法.py"
-              },
-              "icon": "marimo-logo",
-              "title": "属性相关魔术方法.py"
-            }
-          },
-          {
-            "id": "1dff3c85829e34c1",
+            "id": "1c4bc7da99159b09",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,6 +20,18 @@
               },
               "icon": "lucide-file",
               "title": "Python其他"
+            }
+          },
+          {
+            "id": "ca6105a2b93653fa",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/python高级语法/类构建相关魔术方法.py"
+              },
+              "icon": "marimo-logo",
+              "title": "类构建相关魔术方法.py"
             }
           }
         ]
@@ -173,6 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "文本笔记/python学习相关/Python其他.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,9 +218,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "538f5fa7ca7411f2",
+  "active": "1c4bc7da99159b09",
   "lastOpenFiles": [
     "文本笔记/python学习相关/Python其他.md",
+    "Marimo/python高级语法/__marimo__/session/类构建相关魔术方法.py.json",
+    "Marimo/python高级语法/类构建相关魔术方法.py",
     "Marimo/python高级语法/__marimo__/session/属性相关魔术方法.py.json",
     "Marimo/python高级语法/属性相关魔术方法.py",
     "组织/CPython Contributor RoadMap.canvas",
@@ -237,8 +240,6 @@
     "Marimo/python高级语法/bytes.py",
     "Marimo/python高级语法/__marimo__/session/format.py.json",
     "Marimo/python高级语法/format.py",
-    "Marimo/python高级语法/__marimo__/session/init和new.py.json",
-    "Marimo/python高级语法/init和new.py",
     "组织/自我提升.canvas",
     "文本笔记/Wishlist.md",
     "文本笔记/Dwzb.md",

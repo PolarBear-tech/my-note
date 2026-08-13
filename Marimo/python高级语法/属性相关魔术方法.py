@@ -131,8 +131,26 @@ def _():
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # `__dir__`
+    """)
+    return
+
+
 @app.cell
 def _():
+    class _A:
+        def __init__(self):
+            self.data = "data_"
+
+        def __dir__(self):
+            ori = super().__dir__()
+            return [_p for _p in ori if not _p.startswith("_")]
+
+    _o = _A()
+    dir(_o)
     return
 
 

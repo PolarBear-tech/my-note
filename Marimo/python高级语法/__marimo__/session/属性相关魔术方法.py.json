@@ -157,9 +157,29 @@
       ]
     },
     {
+      "id": "Hxmn",
+      "code_hash": "5d8020c80f4e4e4d98556cfe18296347",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__dir__\"><code>__dir__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "dZhm",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "c6ab0cdc2c42d6e82e6a0b350f69eeca",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"data\"]"
+          }
+        }
+      ],
       "console": []
     }
   ]
