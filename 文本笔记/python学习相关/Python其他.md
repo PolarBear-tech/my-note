@@ -185,9 +185,9 @@ class Student:
 
 用来准备构建 class 的命名空间的。
 
-### `__instancecheck__`和`__subclasscheck__`
+### `__instancecheck__` 和 `__subclasscheck__`
 
-在使用`isinstance(o, base)`和`issubclass(o, base)`时调用。
+在使用 `isinstance(o, base)`和`issubclass(o, base)` 时调用。
 
 ## 运算方法
 
@@ -203,7 +203,7 @@ class Student:
 |         //         |           `__floordiv__`            |                      整除                      |
 |         %          |              `__mod__`              |                      取余                      |
 | `divmod(o_1, o_2)` |            `__divmod__`             |                  既得到商，又拿到余数                  |
-|         **         | `__pow__(self, other, modulo=None)` | 乘方，加上`modulo`就是`(self ** other) % modulo`的结果 |
+|         **         | `__pow__(self, other, modulo=None)` | 乘方，加上 `modulo`就是`(self ** other) % modulo` 的结果 |
 |         <<         |            `__lshift__`             |                      左移                      |
 |         >>         |            `__rshift__`             |                      右移                      |
 |         &          |              `__and__`              |                      与                       |
@@ -211,7 +211,7 @@ class Student:
 |         \|         |              `__or__`               |                      或                       |
 
 > [!NOTE] `__rmul__`
-> 想象一下向量的数乘，当有一个自定义类`Vector`时。
+> 想象一下向量的数乘，当有一个自定义类 `Vector` 时。
 > ```python
 > class Vector:
 > 	def __init__(self, x, y):
@@ -221,11 +221,11 @@ class Student:
 > 		if isinstance(other, int):
 > 			return Vector(self.x * other, self.y * other)
 > ```
-> 
-> 这时`Vector(1, 2) * 3` <==> `Vector(1, 2).__mul__(3)`
-> 而 `3 * Vector(1, 2)` 则无法使用，这时，可以定义一个`__rmul__`，调用时`int`没有关于`Vector`乘法，会查找后者的`__rmul__`进行运算。
-> 其他的所有函数也都有他们的`r`版本。
-> 还有一种`i`版本，对应的是`+=`，`-=`...
+>
+> 这时 `Vector(1, 2) * 3` <==> `Vector(1, 2).__mul__(3)`
+> 而 `3 * Vector(1, 2)` 则无法使用，这时，可以定义一个`__rmul__`，调用时`int`没有关于`Vector`乘法，会查找后者的`__rmul__` 进行运算。
+> 其他的所有函数也都有他们的 `r` 版本。
+> 还有一种 `i` 版本，对应的是`+=`，`-=`…
 
 ### 一元运算
 
@@ -235,11 +235,10 @@ class Student:
 |      +      |   `__pos__`   |                  |
 |   `abs()`   |   `__abs__`   |                  |
 |      ~      | `__invert__`  |                  |
-|   `int()`   |   `__int__`   |   需要返回int的数据结构   |
-|  `float()`  |  `__float__`  |  需要返回float的数据结构  |
-| `complex()` | `__complex__` | 需要返回complex的数据结构 |
+|   `int()`   |   `__int__`   |   需要返回 int 的数据结构   |
+|  `float()`  |  `__float__`  |  需要返回 float 的数据结构  |
+| `complex()` | `__complex__` | 需要返回 complex 的数据结构 |
 |     []      |  `__index__`  |                  |
-
 
 > [!NOTE] `__index__`
 > ```python
@@ -253,22 +252,20 @@ class Student:
 > list = [1, 2, 3, 4]
 > list[v] # list[1] = 2
 > ```
-> 而且当`__index__`被定义之后，会被`__int__`、`__float__`和`__complex__`默认使用，除非你手动定义。
-
+> 而且当 `__index__`被定义之后，会被`__int__`、`__float__`和`__complex__` 默认使用，除非你手动定义。
 
 ### 取整运算
 
-`__round__`、`__floor__`、`__trunc__`和`__ceil__`
+`__round__`、`__floor__`、`__trunc__` 和 `__ceil__`
 
 ## 模拟方法
 
-
-|   模拟的对象   |                   对应方法                    |                                                   备注                                                   |
-| :-------: | :---------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-| callable  |                `__call__`                 |                                                                                                        |
-| container |         `__len__`和`__contains__`          | 当一个类里没有`__bool__`时，会尝试调用`__len__`返回值是0，则`False`，否则`True`；而在使用`a in list`时会调用`list.__contains__(a)`<br> |
-|  mapping  | `__getitem__`、`__setitem__`和`__delitem__` |                               分别在调用`o[idx]`、`o[idx] = x`和`del o[idx]`时使用                               |
-|           |              `__reversed__`               |                                             `reversed(o)`                                              |
-| iteration |                `__iter__`                 |                                                 返回迭代器                                                  |
-|           |               `__missing__`               |                              **只有在`dict`的子类里才有**，当在`dict`里找不到某个key时应该做什么                               |
-
+|      模拟的对象      |                   对应方法                    |                                                   备注                                                   |
+| :-------------: | :---------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+|    callable     |                `__call__`                 |                                                                                                        |
+|    container    |         `__len__`和 `__contains__`          | 当一个类里没有`__bool__`时，会尝试调用`__len__`返回值是 0，则`False`，否则`True`；而在使用`a in list` 时会调用`list.__contains__(a)`<br> |
+|     mapping     | `__getitem__`、`__setitem__`和 `__delitem__` |                               分别在调用`o[idx]`、`o[idx] = x`和`del o[idx]` 时使用                               |
+|                 |              `__reversed__`               |                                             `reversed(o)`                                              |
+|    iteration    |                `__iter__`                 |                                                 返回迭代器                                                  |
+|                 |               `__missing__`               |                              **只有在 `dict`的子类里才有**，当在`dict` 里找不到某个 key 时应该做什么                               |
+| context manager |          `__enter__` 和 `__exit__`           |                                                                                                        |
