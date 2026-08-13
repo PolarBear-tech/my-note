@@ -48,8 +48,35 @@
 
 当`a == b`和`a < b`而且`b.__class__`是`a.__class__`的子类时，会分别调用`b.__eq__(a)`和`b.__gt__(a)`。
 
-## `hash`
+## `__hash__`
 
 原本所有的类都会默认实现一个`hash`方法，用于存储到`dict`或`set`时调用。
 
 如果定义了`__eq__`函数，系统就不会自动生成这个函数了。
+
+这个函数有若干要求，首先，该函数的返回结果必须是整数，并且`__eq__`相等的两个对象，`__hash__`的结果必须相同。
+
+官方建议，使用`hash()`函数并将类的重要参数组成元组作为参数获得hash值，并返回。
+
+比如：
+
+```python
+class Student:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+		
+	def __eq__(self, other):
+		if not isinstance(other, self.__class__):
+			return False
+		else:
+			return self.name == other.name and self.age == other.age
+	
+	def __hash__(self):
+		return hash((self.name, self.age))
+```
+
+> [!NOTE]
+> 注意，当一个hashable作为键传入字典等容器时，不可以再将它当作mutable的对象，因为这违反了hashtable的工作原理
+
+
