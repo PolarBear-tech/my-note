@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"512951389a788606","type":"text","text":"- [ ] Hypothesis","x":167,"y":3,"width":250,"height":60},
+		{"id":"73e15d2c30a99bb1","type":"text","text":"- [ ] py-spy","x":167,"y":135,"width":250,"height":60},
+		{"id":"6e9581c7432fde98","type":"text","text":"- [ ] Docker","x":-205,"y":363,"width":250,"height":60},
+		{"id":"c547f110b0eed69d","type":"text","text":"调试","x":-205,"y":229,"width":250,"height":60},
+		{"id":"f255aaa47355ec20","type":"text","text":"- [ ] memray","x":167,"y":229,"width":250,"height":60},
+		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":167,"y":333,"width":250,"height":60},
+		{"id":"fe6ef1750d56c27d","type":"text","text":"- [ ] github action","x":-205,"y":503,"width":250,"height":60},
+		{"id":"4c90a8cae6660177","type":"text","text":"- [ ] pydantic","x":-205,"y":655,"width":250,"height":60},
+		{"id":"e9c7d239172ca0be","type":"text","text":"- [ ] coverage.py","x":167,"y":-87,"width":250,"height":60},
+		{"id":"f88563b82817b85d","type":"text","text":"测试","x":-205,"y":-57,"width":250,"height":60},
+		{"id":"26bad81770ee6452","type":"text","text":"- [x] uv","x":-205,"y":75,"width":250,"height":60},
+		{"id":"1e260e0a1b67c2da","type":"text","text":"工程工具","x":-817,"y":241,"width":250,"height":60},
+		{"id":"343a8a91344507e3","type":"text","text":"- [ ] [Sphinx Doc](https://www.sphinx-doc.org/zh-cn/master/index.html)","x":-205,"y":-207,"width":250,"height":60},
+		{"id":"1c0f28ee53f48f19","type":"text","text":"- [ ] pytest","x":167,"y":-177,"width":250,"height":60},
+		{"id":"ea456f956dbe452f","type":"text","text":"- [x] bash","x":-200,"y":-447,"width":250,"height":60},
+		{"id":"21918965ceee6f6e","type":"text","text":"- [ ] make & cmake","x":-205,"y":-337,"width":250,"height":60},
+		{"id":"fc59197ca7f7ec65","type":"file","file":"文本笔记/python学习相关/Make指南.md","x":92,"y":-600,"width":400,"height":323}
+	],
+	"edges":[
+		{"id":"77cc7bdbb54a9364","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"512951389a788606","toSide":"left"},
+		{"id":"7653930fbd1511c4","fromNode":"c547f110b0eed69d","fromSide":"right","toNode":"73e15d2c30a99bb1","toSide":"left"},
+		{"id":"fcbdb5c1629a9d14","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"6e9581c7432fde98","toSide":"left"},
+		{"id":"c48cf4a9db4c51c7","fromNode":"c547f110b0eed69d","fromSide":"right","toNode":"f255aaa47355ec20","toSide":"left"},
+		{"id":"bd853a4e5bfaa463","fromNode":"c547f110b0eed69d","fromSide":"right","toNode":"286938976b6f83ea","toSide":"left"},
+		{"id":"baf8a82cbc3a9481","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"c547f110b0eed69d","toSide":"left"},
+		{"id":"0e2a2b178581824b","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"fe6ef1750d56c27d","toSide":"left"},
+		{"id":"3aef6a3f42b21c1c","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"4c90a8cae6660177","toSide":"left"},
+		{"id":"f40ca7002f38eb68","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"e9c7d239172ca0be","toSide":"left"},
+		{"id":"7816396b25d7f45e","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"1c0f28ee53f48f19","toSide":"left"},
+		{"id":"e2f2d5aa08dd436b","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"f88563b82817b85d","toSide":"left"},
+		{"id":"1585e02e5dc0a968","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"26bad81770ee6452","toSide":"left"},
+		{"id":"b37c1b6282699949","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"ea456f956dbe452f","toSide":"left"},
+		{"id":"2db59a438d768fbe","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"21918965ceee6f6e","toSide":"left"},
+		{"id":"6be2c3aec0d67648","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"343a8a91344507e3","toSide":"left"}
+	]
+}

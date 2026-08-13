@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"b51b258a8c4cd787","type":"text","text":"各项技能","x":102,"y":-480,"width":250,"height":60},
+		{"id":"199b99f496b63d0d","type":"text","text":"RoadMap","x":-380,"y":-140,"width":250,"height":60},
+		{"id":"462b2b7246f7a4dc","type":"file","file":"文本笔记/python学习相关/Python Contributor之路.md","x":-960,"y":-310,"width":400,"height":400},
+		{"id":"311a5d656ff487ea","type":"file","file":"组织/python/工程工具.canvas","x":634,"y":-450,"width":400,"height":400},
+		{"id":"f755eca3f8e17da7","type":"text","text":"C","x":584,"y":-720,"width":250,"height":60},
+		{"id":"a295f5f1147651e3","type":"text","text":"基础","x":909,"y":-750,"width":250,"height":60},
+		{"id":"ddd522f2efc21ed5","type":"text","text":"进阶","x":909,"y":-660,"width":250,"height":60},
+		{"id":"b3e73840022d12fb","type":"text","text":"翁恺C语言","x":1263,"y":-690,"width":250,"height":50},
+		{"id":"e5588627f1a7f1c4","type":"text","text":"进阶","x":957,"y":-1090,"width":250,"height":60},
+		{"id":"6eb34287fe7438a6","type":"text","text":"基础","x":952,"y":-970,"width":250,"height":60},
+		{"id":"8a24f4b60c5e15e6","type":"text","text":"Python","x":584,"y":-1030,"width":250,"height":60},
+		{"id":"197cb7520567293e","type":"file","file":"组织/python/实战.canvas","x":1600,"y":-940,"width":400,"height":400},
+		{"id":"ae48aa979ea00b7d","type":"file","file":"组织/python/内核语法.canvas","x":1600,"y":-1460,"width":400,"height":400},
+		{"id":"257ee1202f2a77b2","type":"text","text":"计算机编译原理","x":659,"y":80,"width":250,"height":60},
+		{"id":"9605677b18aee7ee","type":"text","text":"操作系统与内存管理","x":659,"y":280,"width":250,"height":60},
+		{"id":"005539aca43da8b5","type":"text","text":"cpython源码阅读","x":102,"y":540,"width":250,"height":60},
+		{"id":"d0a07b0e9576d874","type":"text","text":"码农高天","x":659,"y":480,"width":250,"height":60},
+		{"id":"48cfa9ee282751f6","type":"file","file":"文本笔记/python学习相关/The Zen of Python.md","x":-655,"y":-910,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
+		{"id":"c866c4fb15a61da1","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"b51b258a8c4cd787","toSide":"left"},
+		{"id":"da46816925136c4d","fromNode":"b51b258a8c4cd787","fromSide":"right","toNode":"8a24f4b60c5e15e6","toSide":"left"},
+		{"id":"fb2036ec0f85b8a8","fromNode":"b51b258a8c4cd787","fromSide":"right","toNode":"f755eca3f8e17da7","toSide":"left"},
+		{"id":"681e5a34649ae1a7","fromNode":"b51b258a8c4cd787","fromSide":"right","toNode":"257ee1202f2a77b2","toSide":"left"},
+		{"id":"f72fd8d1effef1bd","fromNode":"b51b258a8c4cd787","fromSide":"right","toNode":"9605677b18aee7ee","toSide":"left"},
+		{"id":"73682518e8f48e9e","fromNode":"8a24f4b60c5e15e6","fromSide":"right","toNode":"6eb34287fe7438a6","toSide":"left"},
+		{"id":"3ad108bae1a81be0","fromNode":"8a24f4b60c5e15e6","fromSide":"right","toNode":"e5588627f1a7f1c4","toSide":"left"},
+		{"id":"86e45c10efbd8b89","fromNode":"f755eca3f8e17da7","fromSide":"right","toNode":"a295f5f1147651e3","toSide":"left"},
+		{"id":"651b58dc06f94688","fromNode":"f755eca3f8e17da7","fromSide":"right","toNode":"ddd522f2efc21ed5","toSide":"left"},
+		{"id":"6865c76e7f7f2b62","fromNode":"005539aca43da8b5","fromSide":"right","toNode":"d0a07b0e9576d874","toSide":"left"},
+		{"id":"4193ad4db2c38c54","fromNode":"a295f5f1147651e3","fromSide":"right","toNode":"b3e73840022d12fb","toSide":"left"},
+		{"id":"e5b4ff32c7160dcb","fromNode":"ddd522f2efc21ed5","fromSide":"right","toNode":"b3e73840022d12fb","toSide":"left"},
+		{"id":"df7ad4a69550bc7a","fromNode":"e5588627f1a7f1c4","fromSide":"right","toNode":"197cb7520567293e","toSide":"left"},
+		{"id":"37bbf06e7e238c8c","fromNode":"e5588627f1a7f1c4","fromSide":"right","toNode":"ae48aa979ea00b7d","toSide":"left"},
+		{"id":"2ba9b4c2b8f28af7","fromNode":"b51b258a8c4cd787","fromSide":"right","toNode":"311a5d656ff487ea","toSide":"left"}
+	]
+}
