@@ -251,7 +251,7 @@ L2.add(1)
 
 **年轻的造物主，请随我一起开创新世界。**
 
-我们选择两个领域，一个是 Django 的核心思想，“Object Relational Mapping”，即 对象-关系映射，简称 ORM。
+我们选择两个领域，一个是 Django 的核心思想，“Object Relational Mapping”，即 对象 - 关系映射，简称 ORM。
 
 这是 Django 的一大难点，但学完了元类，一切变得清晰。你对 Django 的理解将更上一层楼！
 
@@ -363,7 +363,9 @@ class  User(Model):
 这时
 
 id= IntegerField(‘id’) 就会自动解析为：
+
 Model.**setattr** (self, ‘id’, IntegerField(‘id’))
+
 因为 IntergerField(‘id’) 是 Field 的子类的实例，自动触发元类的 **new** ，所以将 IntergerField(‘id’) 存入 **mappings** 并删除这个键值对。
 
 ### 二生三、三生万物

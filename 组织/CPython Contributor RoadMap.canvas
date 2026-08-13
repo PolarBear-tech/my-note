@@ -41,17 +41,17 @@
 		{"id":"65a7745f0adf4b17","type":"text","text":"高级语法","x":3013,"y":-3645,"width":250,"height":60},
 		{"id":"d1c53b8985ca0e38","type":"text","text":"上下文管理器","x":3458,"y":-3705,"width":250,"height":60},
 		{"id":"d16ab39ff91c16e6","type":"text","text":"闭包","x":3460,"y":-3566,"width":250,"height":50},
-		{"id":"7a29db03bc9ff937","type":"text","text":"[[元类.py]]","x":3458,"y":-3445,"width":250,"height":60},
 		{"id":"1c37f6408294fd17","type":"text","text":"生成器和迭代器","x":3460,"y":-3821,"width":250,"height":60},
 		{"id":"fe58629a04b85eb3","type":"text","text":"[[装饰器.py]]","x":3460,"y":-3961,"width":250,"height":60},
 		{"id":"a0add36433c5ff20","type":"text","text":"描述器","x":3460,"y":-4106,"width":250,"height":60},
-		{"id":"f3d96b4666138dd9","type":"text","text":"[[描述器.py]]","x":3938,"y":-4196,"width":250,"height":60},
-		{"id":"ec66172d6fb0c3dd","type":"file","file":"Clippings/python 描述器详解.md","x":3938,"y":-4071,"width":400,"height":220},
-		{"id":"74c22a8d755e08a0","type":"text","text":"Python其他","x":3460,"y":-3300,"width":250,"height":60},
 		{"id":"48cfa9ee282751f6","type":"file","file":"文本笔记/python学习相关/RealPython.md","x":-960,"y":-1240,"width":400,"height":400},
-		{"id":"75b406767fb47f51","type":"file","file":"文本笔记/python学习相关/Python其他.md","x":3938,"y":-3415,"width":400,"height":175},
-		{"id":"c87c2c25a2e38168","x":3938,"y":-3634,"width":400,"height":99,"type":"file","file":"手写笔记/闭包.md"},
-		{"id":"fe34b9bc01b2fc35","x":3938,"y":-3735,"width":250,"height":60,"type":"text","text":"[[闭包.py]]"}
+		{"id":"74c22a8d755e08a0","type":"text","text":"Python其他","x":3458,"y":-3239,"width":250,"height":60},
+		{"id":"a9c7907b6c2afece","x":3458,"y":-3460,"width":400,"height":140,"type":"file","file":"Clippings/python 元类.md"},
+		{"id":"c87c2c25a2e38168","type":"file","file":"手写笔记/闭包.md","x":3922,"y":-3634,"width":400,"height":99},
+		{"id":"fe34b9bc01b2fc35","type":"text","text":"[[闭包.py]]","x":3922,"y":-3735,"width":250,"height":60},
+		{"id":"75b406767fb47f51","type":"file","file":"文本笔记/python学习相关/Python其他.md","x":3920,"y":-3460,"width":400,"height":281},
+		{"id":"f3d96b4666138dd9","type":"text","text":"[[描述器.py]]","x":3920,"y":-4136,"width":250,"height":60},
+		{"id":"ec66172d6fb0c3dd","type":"file","file":"Clippings/python 描述器详解.md","x":3920,"y":-4011,"width":400,"height":220}
 	],
 	"edges":[
 		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
@@ -82,7 +82,6 @@
 		{"id":"59f5cb6ffb2f3970","fromNode":"adde8ced59541451","fromSide":"right","toNode":"eaa21c617e10740b","toSide":"left"},
 		{"id":"d5fcd12e5385a155","fromNode":"adde8ced59541451","fromSide":"right","toNode":"e8de6680a143e1f4","toSide":"left"},
 		{"id":"4534b71738e14adb","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"fe58629a04b85eb3","toSide":"left"},
-		{"id":"858cb2b47f507831","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"7a29db03bc9ff937","toSide":"left"},
 		{"id":"2ebc9524e8ae290b","fromNode":"db8d62f8dd61875e","fromSide":"right","toNode":"9face04db35614ec","toSide":"left"},
 		{"id":"61713405b7bb58f1","fromNode":"9face04db35614ec","fromSide":"right","toNode":"b734c1e4ecec2145","toSide":"left"},
 		{"id":"db3e9be816a4fa1e","fromNode":"9face04db35614ec","fromSide":"right","toNode":"f81c7f336c6b897a","toSide":"left"},
@@ -104,6 +103,7 @@
 		{"id":"8fb63eaca60ec822","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"74c22a8d755e08a0","toSide":"left"},
 		{"id":"e4b35e89acf8875d","fromNode":"74c22a8d755e08a0","fromSide":"right","toNode":"75b406767fb47f51","toSide":"left"},
 		{"id":"ffb296773672d9f9","fromNode":"d16ab39ff91c16e6","fromSide":"right","toNode":"fe34b9bc01b2fc35","toSide":"left"},
-		{"id":"85e77c582919d5c4","fromNode":"d16ab39ff91c16e6","fromSide":"right","toNode":"c87c2c25a2e38168","toSide":"left"}
+		{"id":"85e77c582919d5c4","fromNode":"d16ab39ff91c16e6","fromSide":"right","toNode":"c87c2c25a2e38168","toSide":"left"},
+		{"id":"3129a7adf5d5163e","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"a9c7907b6c2afece","toSide":"left"}
 	]
 }
