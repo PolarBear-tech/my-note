@@ -268,3 +268,8 @@ class Student:
 |    iteration    |                `__iter__`                 |                                                 返回迭代器                                                  |
 |                 |               `__missing__`               |                              **只有在 `dict`的子类里才有**，当在`dict` 里找不到某个 key 时应该做什么                               |
 | context manager |          `__enter__` 和 `__exit__`           |                                                                                                        |
+
+# `match-case` 模式匹配
+
+# 函数式编程
+
