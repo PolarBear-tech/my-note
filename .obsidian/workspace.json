@@ -25,18 +25,22 @@
             }
           },
           {
-            "id": "9f64001371675331",
+            "id": "34ba1a8d0886f0a9",
             "type": "leaf",
             "state": {
-              "type": "marimo-editor",
+              "type": "markdown",
               "state": {
-                "file": "Marimo/python高级语法/元类.py"
+                "file": "Clippings/python 元类.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "marimo-logo",
-              "title": "元类.py"
+              "icon": "lucide-file",
+              "title": "python 元类"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/CPython Contributor RoadMap.canvas",
+                "file": "Clippings/python 元类.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -221,10 +225,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a2365c05c17c507d",
+  "active": "34ba1a8d0886f0a9",
   "lastOpenFiles": [
-    "Marimo/python高级语法/__marimo__/session/元类.py.json",
     "组织/CPython Contributor RoadMap.canvas",
+    "Clippings/python 描述器详解.md",
+    "Clippings/python 元类.md",
+    "Marimo/python高级语法/__marimo__/session/元类.py.json",
     "手写笔记/闭包.md",
     "Marimo/python高级语法/untitled_marimo.py",
     "Marimo/python高级语法/__marimo__/session/闭包.py.json",
@@ -240,11 +246,9 @@
     "Marimo/python高级语法/__marimo__/session/init和new.py.json",
     "Marimo/python高级语法/init和new.py",
     "组织/自我提升.canvas",
-    "Clippings/python描述器详解.md",
     "文本笔记/Wishlist.md",
     "文本笔记/python学习相关",
     "文本笔记/Dwzb.md",
-    "Clippings",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
     "文本笔记/python学习相关/python开源项目.md",
@@ -265,7 +269,6 @@
     "Drawing 2026-08-10 20.15.46.excalidraw.md",
     "Drawing 2026-08-10 20.14.42.excalidraw.md",
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
-    "文本笔记/洗面奶.md",
     "未命名.canvas",
     "计划.canvas"
   ]

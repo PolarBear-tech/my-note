@@ -14,7 +14,7 @@ def _():
 @app.cell
 def _(mo):
     mo.md("""
-    # New notebook
+ 
     """)
     return
 
