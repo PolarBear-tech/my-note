@@ -52,7 +52,93 @@
       ]
     },
     {
+      "id": "KXmM",
+      "code_hash": "3ae68e95813028b750eec3012734c58d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__set_name__\"><code>__set_name__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "SXlH",
+      "code_hash": "4af87054c66159eb6fbf597080b679bb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "<class '__main__._cell_SXlH_A'> x\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "fJKM",
+      "code_hash": "74e01bf114e3e6e6bfc84c469b1eecb2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__mro_entries__\"><code>__mro_entries__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SMxU",
+      "code_hash": "b4f874adbe4a44a6f32131ea00f5cb8d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "(<__main__._cell_SMxU_A object at 0x0000013A5A133A10>,)\nFalse\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "jkvw",
+      "code_hash": "65fb7afa294b398fe707431f667d1c10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "(<__main__._cell_jkvw_A object at 0x0000013A59538D70>,)\nTrue\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "vXQD",
       "code_hash": null,
       "outputs": [],
       "console": []

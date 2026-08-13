@@ -144,4 +144,22 @@ class Student:
 
 ### `__init_subclass__`
 
-z
+当这个类成为另一个类的基类时，衍生类创建时会调用这个函数。
+
+### `__set_name__`
+
+更多用在描述器，在类构建一个带有 `__set_name__` 的描述器的某个实例时会调用。
+
+### `__class_getitem__`
+
+区别于 `__getitem__`，这个是在对 class 做切片时调用的；而后者是在对象做切片时使用的。
+
+这个函数也是 `List[int]` 等的 type hint 的实现原理。
+
+### `__mro_entries__`
+
+参见 PEP 560
+
+### `__prepare__`
+
+用来构建

@@ -21,18 +21,6 @@
               "icon": "lucide-file",
               "title": "Python其他"
             }
-          },
-          {
-            "id": "ca6105a2b93653fa",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/python高级语法/类构建相关魔术方法.py"
-              },
-              "icon": "marimo-logo",
-              "title": "类构建相关魔术方法.py"
-            }
           }
         ]
       }
