@@ -1,0 +1,101 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "3e0b8a1b38547065699a3be6e04ca254",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u95ed\u5305</h1>\n<span class=\"paragraph\">\u5c31\u662f\u5f53\u4e00\u4e2a\u51fd\u6570<code>func</code>\u8fd4\u56de\u5176\u5185\u90e8\u7684\u53e6\u4e00\u4e2a\u51fd\u6570<code>gunc</code>\u65f6\uff0c\u800c\u4e14<code>gunc</code>\u5185\u4f7f\u7528\u4e86<code>func</code>\u5185\u7684\u53d8\u91cf\uff08\u6bd4\u5982<code>a</code>\uff09\uff0c\u5f53\u8c03\u7528\u4e86<code>func</code>\u5f97\u5230\u4e86<code>gunc</code>\u540e\uff0c\u7406\u5e94<code>a</code>\u5df2\u7ecf\u88ab\u91ca\u653e\u4e86\uff0c\u4f46\u662f\u4e3a\u4e86\u4fdd\u8bc1<code>gunc</code>\u7684\u6b63\u5e38\u8fd0\u884c\uff0c\u4f1a\u7ed9<code>gunc</code>\u4e00\u4e2a\u95ed\u5305\uff0c\u76f8\u5f53\u4e8e<code>gunc</code>\u7684\u8fd0\u884c\u73af\u5883\uff0c\u4fdd\u8bc1<code>gunc</code>\u7684\u6b63\u5e38\u8fd0\u884c\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Ofry",
+      "code_hash": "11d3ed38990ffc92dafaec844e9ebddb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "3\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "akYZ",
+      "code_hash": "959e789b658f519de6332dec7a05c10b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "9\n9\n9\n9\n9\n9\n9\n9\n9\n9\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ahfg",
+      "code_hash": "05e3f4b0d7dd31e9ea5a9715e9127ae0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "nBPA",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

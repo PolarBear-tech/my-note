@@ -4,27 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "1277cf748a4d07c6",
+        "id": "33f9c4aadfec9337",
         "type": "tabs",
         "children": [
           {
-            "id": "395e94eb678be973",
+            "id": "507b41c13eebd58c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "excalidraw",
               "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 160,
-                  "y": 60,
-                  "zoom": -0.6379325142594233
-                }
+                "file": "手写笔记/闭包.md"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "icon": "excalidraw-icon",
+              "title": "闭包"
+            }
+          },
+          {
+            "id": "b08af67aa687a295",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/python高级语法/untitled_marimo.py"
+              },
+              "icon": "marimo-logo",
+              "title": "untitled_marimo.py"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +89,16 @@
               },
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          },
+          {
+            "id": "c2a083edd954ae23",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ]
@@ -153,7 +171,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/root.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -161,19 +178,8 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
-          },
-          {
-            "id": "c2a083edd954ae23",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "e2a8ebdd080d10dc",
@@ -194,7 +200,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 253.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,14 +216,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "395e94eb678be973",
+  "active": "b08af67aa687a295",
   "lastOpenFiles": [
+    "手写笔记/闭包.md",
+    "Marimo/python高级语法/untitled_marimo.py",
+    "组织/CPython Contributor RoadMap.canvas",
+    "Marimo/python高级语法/__marimo__/session/闭包.py.json",
+    "组织/root.canvas",
     "主页.md",
     "README.md",
-    "组织/root.canvas",
     "文本笔记/python学习相关/Python其他.md",
     "Marimo/python高级语法/__marimo__/session/bytes.py.json",
-    "组织/CPython Contributor RoadMap.canvas",
     "Marimo/python高级语法/bytes.py",
     "Marimo/python高级语法/__marimo__/session/format.py.json",
     "文本笔记/python学习相关/python进阶学习知识点.md",
@@ -231,7 +241,6 @@
     "Clippings",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
-    "文本笔记/附件",
     "文本笔记/python学习相关/python开源项目.md",
     "组织/高等数学.canvas",
     "手写笔记/未命名.md",
@@ -243,7 +252,6 @@
     "文本笔记/英语四级/Word List 3.md",
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
-    "Marimo/python高级语法/元类.py",
     "Marimo/高级语法/未命名.md",
     "Marimo/test.md",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
@@ -253,7 +261,6 @@
     "手写笔记/高等数学-chapter-2.exaclidraw.md",
     "文本笔记/洗面奶.md",
     "未命名.canvas",
-    "Untitled Kanban.md",
     "计划.canvas"
   ]
 }
