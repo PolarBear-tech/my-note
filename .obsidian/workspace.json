@@ -4,41 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "eada336fdfd489a4",
+        "id": "4e781f361bc1991a",
         "type": "tabs",
         "children": [
           {
-            "id": "bb353d981877559d",
+            "id": "baead625786e439c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "组织/CPython Contributor RoadMap.canvas",
+                "viewState": {
+                  "x": 3087.15836571556,
+                  "y": -1978.4674818774013,
+                  "zoom": -0.6481481082645479
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "CPython Contributor RoadMap"
+            }
+          },
+          {
+            "id": "5e9eb738270e7d4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/python dataclass.md",
+                "file": "文本笔记/python学习相关/python开源项目.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "python dataclass"
-            }
-          },
-          {
-            "id": "a9238f44007914f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Python 数据结构与函数式编程工具"
+              "title": "python开源项目"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
+                "file": "组织/CPython Contributor RoadMap.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -223,14 +224,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9238f44007914f4",
+  "active": "baead625786e439c",
   "lastOpenFiles": [
+    "文本笔记/python学习相关/python开源项目.md",
     "组织/CPython Contributor RoadMap.canvas",
+    "文本笔记/python学习相关/python 魔术方法.md",
+    "文本笔记/python学习相关/Python Contributor之路.md",
+    "Clippings/python深浅拷贝.md",
+    "Clippings/python 元类.md",
+    "Clippings/python dataclass.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
     "文本笔记/python学习相关/Python其他.md",
-    "Clippings/python dataclass.md",
     "手写笔记/闭包.md",
-    "手写笔记/python 魔术方法.md",
     "Clippings/python 模式匹配.md",
     "主页.md",
     "文本笔记/python学习相关/python进阶学习知识点.md",
@@ -241,8 +246,7 @@
     "Marimo/python高级语法/属性相关魔术方法.py",
     "手写笔记/高等数学-chapter-2.md",
     "README.md",
-    "Clippings/python 元类.md",
-    "Clippings/python 描述器详解.md",
+    "Clippings/python 描述器.md",
     "Marimo/python高级语法/__marimo__/session/元类.py.json",
     "Marimo/python高级语法/__marimo__/session/闭包.py.json",
     "组织/root.canvas",
@@ -255,7 +259,6 @@
     "文本笔记/Dwzb.md",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
-    "文本笔记/python学习相关/python开源项目.md",
     "组织/高等数学.canvas",
     "组织/四六级.canvas",
     "文本笔记/英语四级/Word List 6.md",
@@ -265,8 +268,6 @@
     "文本笔记/英语四级/Word List 3.md",
     "文本笔记/英语四级/Word List 1.md",
     "文本笔记/英语四级/Word List 2.md",
-    "Marimo/高级语法/未命名.md",
-    "Marimo/test.md",
     "未命名.canvas",
     "计划.canvas"
   ]
