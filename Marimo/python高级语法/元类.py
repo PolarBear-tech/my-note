@@ -1,17 +1,21 @@
 import marimo
 
+__generated_with = "0.23.16"
 app = marimo.App()
 
 
 @app.cell
 def _():
     import marimo as mo
+
     return (mo,)
 
 
 @app.cell
 def _(mo):
-    mo.md("# New notebook")
+    mo.md("""
+    # New notebook
+    """)
     return
 
 

@@ -61,7 +61,7 @@ def _():
         l = []
         for i in range(10):
             def gunc(i_):
-                # 这一步吧
+                # 这一步把i这个unbound var 存进了闭包，持久化不会受到for循环的影响
                 def inner():
                     print(i_)
                 return inner
@@ -71,11 +71,6 @@ def _():
     _l = _func()
     for _gunc in _l:
         _gunc()
-    return
-
-
-@app.cell
-def _():
     return
 
 

@@ -4,35 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "33f9c4aadfec9337",
+        "id": "7e927984e101cb7c",
         "type": "tabs",
         "children": [
           {
-            "id": "507b41c13eebd58c",
+            "id": "a2365c05c17c507d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "canvas",
               "state": {
-                "file": "手写笔记/闭包.md"
+                "file": "组织/CPython Contributor RoadMap.canvas",
+                "viewState": {
+                  "x": 4023.8150461961222,
+                  "y": -3482.901916850391,
+                  "zoom": -0.6089761222434018
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "闭包"
+              "icon": "lucide-layout-dashboard",
+              "title": "CPython Contributor RoadMap"
             }
           },
           {
-            "id": "b08af67aa687a295",
+            "id": "9f64001371675331",
             "type": "leaf",
             "state": {
               "type": "marimo-editor",
               "state": {
-                "file": "Marimo/python高级语法/untitled_marimo.py"
+                "file": "Marimo/python高级语法/元类.py"
               },
               "icon": "marimo-logo",
-              "title": "untitled_marimo.py"
+              "title": "元类.py"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,6 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "组织/CPython Contributor RoadMap.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -216,11 +221,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b08af67aa687a295",
+  "active": "a2365c05c17c507d",
   "lastOpenFiles": [
+    "Marimo/python高级语法/__marimo__/session/元类.py.json",
+    "组织/CPython Contributor RoadMap.canvas",
     "手写笔记/闭包.md",
     "Marimo/python高级语法/untitled_marimo.py",
-    "组织/CPython Contributor RoadMap.canvas",
     "Marimo/python高级语法/__marimo__/session/闭包.py.json",
     "组织/root.canvas",
     "主页.md",
