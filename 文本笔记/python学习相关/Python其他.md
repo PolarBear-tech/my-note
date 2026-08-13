@@ -109,9 +109,11 @@ class Student:
 > 		self.counter = 0
 > 		
 > 	def __getattribute__(self, name):
-> 		self.counter += 1  # 这里又
-> 		return super().__gtattribute__(name)
+> 		self.counter += 1  # 这里又无限递归了
+> 		return super().__getattribute__(name)
 > ```
 
 
+### `__setattr__`
 
+这个函数和`__get`

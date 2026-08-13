@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文本笔记/python学习相关/Python其他.md",
+                "file": "主页.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Python其他"
+              "title": "主页"
             }
           },
           {
@@ -55,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/python学习相关/Python其他.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -239,12 +239,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6aa537e50c4b2d03",
+  "active": "5a9ad501caa9e613",
   "lastOpenFiles": [
+    "主页.md",
     "组织/CPython Contributor RoadMap.canvas",
     "README.md",
     "文本笔记/python学习相关/Python其他.md",
-    "主页.md",
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "Clippings/python 元类.md",
     "Clippings/python 描述器详解.md",
