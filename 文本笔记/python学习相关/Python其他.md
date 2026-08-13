@@ -177,7 +177,6 @@ class Student:
 > assert Tokens.__mro__ == (Tokens, NewList, object)
 > ```
 > Resolution using `__mro_entries__` happens _only_ in bases of a class definition statement. In all other situations where a class object is expected, no such resolution will happen, this includes `isinstance` and `issubclass` built-in functions.
-> NOTE: These two method names are reserved for use by the `typing` module and the generic types machinery, and any other use is discouraged. The reference implementation (with tests) can be found in [[4]](https://peps.python.org/pep-0560/#id10), and the proposal was originally posted and discussed on the `typing` tracker, see [[5]](https://peps.python.org/pep-0560/#id11).
 
 ### `__prepare__`
 

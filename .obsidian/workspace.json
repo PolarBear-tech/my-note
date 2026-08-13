@@ -15,8 +15,8 @@
               "state": {
                 "file": "组织/CPython Contributor RoadMap.canvas",
                 "viewState": {
-                  "x": 2204.269144203998,
-                  "y": -2430.5607081300486,
+                  "x": 2253.157831778645,
+                  "y": -2611.0724922333393,
                   "zoom": -0.589058248938862
                 }
               },
@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "346eacc38d95642f",
+            "id": "3a8c2fa7ccd190b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -132,6 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "文本笔记/python学习相关/python进阶学习知识点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,9 +151,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文本笔记/python进阶学习知识点.md",
+                "file": "文本笔记/python学习相关/python进阶学习知识点.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "出链"
@@ -225,18 +226,19 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "346eacc38d95642f",
+  "active": "3a8c2fa7ccd190b2",
   "lastOpenFiles": [
     "组织/CPython Contributor RoadMap.canvas",
-    "文本笔记/python学习相关/python进阶学习知识点.md",
     "文本笔记/python学习相关/Python其他.md",
+    "主页.md",
+    "Clippings/python 内存管理.md",
+    "文本笔记/python学习相关/python进阶学习知识点.md",
     "Marimo/python高级语法/__marimo__/session/类构建相关魔术方法.py.json",
     "Marimo/python高级语法/类构建相关魔术方法.py",
     "Marimo/python高级语法/__marimo__/session/属性相关魔术方法.py.json",
     "Marimo/python高级语法/属性相关魔术方法.py",
     "手写笔记/高等数学-chapter-2.md",
     "手写笔记/闭包.md",
-    "主页.md",
     "README.md",
     "Clippings/python 元类.md",
     "Clippings/python 描述器详解.md",
@@ -268,7 +270,6 @@
     "手写笔记/高等数学-chapter-1.md",
     "未命名.md",
     "Drawing 2026-08-10 20.15.46.excalidraw.md",
-    "Drawing 2026-08-10 20.14.42.excalidraw.md",
     "未命名.canvas",
     "计划.canvas"
   ]

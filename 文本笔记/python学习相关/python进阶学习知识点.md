@@ -13,7 +13,7 @@
 
 ### 2. 工程化能力（工作最常用）
 
-- 虚拟环境：venv /poetry/pipenv，依赖管理
+- 虚拟环境：venv/poetry/pipenv，依赖管理
 - 类型注解 typing，mypy 静态类型检查
 - 代码规范：flake8、ruff，格式化 black
 - 单元测试 pytest，mock

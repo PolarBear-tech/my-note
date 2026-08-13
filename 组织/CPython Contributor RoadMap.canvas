@@ -51,7 +51,8 @@
 		{"id":"74c22a8d755e08a0","type":"text","text":"Python其他","x":3460,"y":-3534,"width":250,"height":60},
 		{"id":"65a7745f0adf4b17","type":"text","text":"高级语法","x":3013,"y":-3940,"width":250,"height":60},
 		{"id":"db661d8c2cac38be","type":"text","text":"变量引用","x":3460,"y":-3240,"width":250,"height":60},
-		{"id":"eaa21c617e10740b","type":"text","text":"垃圾回收GC ","x":3460,"y":-3058,"width":250,"height":50}
+		{"id":"eaa21c617e10740b","type":"text","text":"垃圾回收GC ","x":3460,"y":-3058,"width":250,"height":50},
+		{"id":"d5ef3e16d716a736","x":3922,"y":-3390,"width":400,"height":300,"type":"file","file":"Clippings/python 内存管理.md"}
 	],
 	"edges":[
 		{"id":"107f4a98ad7678f3","fromNode":"199b99f496b63d0d","fromSide":"right","toNode":"005539aca43da8b5","toSide":"left"},
@@ -104,6 +105,8 @@
 		{"id":"e4b35e89acf8875d","fromNode":"74c22a8d755e08a0","fromSide":"right","toNode":"75b406767fb47f51","toSide":"left"},
 		{"id":"ffb296773672d9f9","fromNode":"d16ab39ff91c16e6","fromSide":"right","toNode":"fe34b9bc01b2fc35","toSide":"left"},
 		{"id":"85e77c582919d5c4","fromNode":"d16ab39ff91c16e6","fromSide":"right","toNode":"c87c2c25a2e38168","toSide":"left"},
-		{"id":"3129a7adf5d5163e","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"a9c7907b6c2afece","toSide":"left"}
+		{"id":"3129a7adf5d5163e","fromNode":"65a7745f0adf4b17","fromSide":"right","toNode":"a9c7907b6c2afece","toSide":"left"},
+		{"id":"98f00076db528df6","fromNode":"db661d8c2cac38be","fromSide":"right","toNode":"d5ef3e16d716a736","toSide":"left"},
+		{"id":"e70c4de3f01df278","fromNode":"eaa21c617e10740b","fromSide":"right","toNode":"d5ef3e16d716a736","toSide":"left"}
 	]
 }
