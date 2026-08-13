@@ -66,6 +66,98 @@
     },
     {
       "id": "KjxM",
+      "code_hash": "0b351694aa77e1e68c1e49901a044578",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>2</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bnkc",
+      "code_hash": "8f178a9ef1a1399bffbd4426eb421590",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__setattr__\"><code>__setattr__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HMaJ",
+      "code_hash": "d27c90bd33ff97fa7e459f446b685e5f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "name: Li\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "qgiW",
+      "code_hash": "d0aea64077a6212da6895b3c72732b90",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;xyz&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "eWht",
+      "code_hash": "51cde3256a7add5a4da6e0c06dc71278",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__delattr__\"><code>__delattr__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IwDn",
+      "code_hash": "c39653cb7bb89093ecd7d1d4b2a98a4c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "del data\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "dZhm",
       "code_hash": null,
       "outputs": [],
       "console": []
