@@ -189,7 +189,7 @@ class Student:
 
 在使用`isinstance(o, base)`和`issubclass(o, base)`时调用。
 
-## 运算相关
+## 运算方法
 
 ### 二元运算
 
@@ -258,5 +258,17 @@ class Student:
 
 ### 取整运算
 
+`__round__`、`__floor__`、`__trunc__`和`__ceil__`
 
+## 模拟方法
+
+
+|   模拟的对象   |                   对应方法                    |                                                   备注                                                   |
+| :-------: | :---------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| callable  |                `__call__`                 |                                                                                                        |
+| container |         `__len__`和`__contains__`          | 当一个类里没有`__bool__`时，会尝试调用`__len__`返回值是0，则`False`，否则`True`；而在使用`a in list`时会调用`list.__contains__(a)`<br> |
+|  mapping  | `__getitem__`、`__setitem__`和`__delitem__` |                               分别在调用`o[idx]`、`o[idx] = x`和`del o[idx]`时使用                               |
+|           |              `__reversed__`               |                                             `reversed(o)`                                              |
+| iteration |                `__iter__`                 |                                                 返回迭代器                                                  |
+|           |               `__missing__`               |                              **只有在`dict`的子类里才有**，当在`dict`里找不到某个key时应该做什么                               |
 
