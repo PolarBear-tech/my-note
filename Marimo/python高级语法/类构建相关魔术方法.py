@@ -91,8 +91,38 @@ def _():
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # `__prepare__`
+    """)
+    return
+
+
 @app.cell
 def _():
+    class _Meta(type):
+        @classmethod
+        def __prepare__(cls, name, bases, **kwds):
+            print(name, bases, kwds)
+            return {}
+
+    class _A(metaclass=_Meta):
+        pass
+
+    return
+
+
+@app.cell
+def _():
+    class _Meta(type):
+        @classmethod
+        def __prepare__(cls, name, bases, **kwds):
+            return {"x": 10}
+
+    class _A(metaclass=_Meta):
+        pass
+
     return
 
 

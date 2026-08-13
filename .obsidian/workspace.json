@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "Python其他"
             }
+          },
+          {
+            "id": "dd2edf4e7b007762",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/python高级语法/类构建相关魔术方法.py"
+              },
+              "icon": "marimo-logo",
+              "title": "类构建相关魔术方法.py"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,7 +174,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/python学习相关/Python其他.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -206,7 +218,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1c4bc7da99159b09",
+  "active": "dd2edf4e7b007762",
   "lastOpenFiles": [
     "文本笔记/python学习相关/Python其他.md",
     "Marimo/python高级语法/__marimo__/session/类构建相关魔术方法.py.json",

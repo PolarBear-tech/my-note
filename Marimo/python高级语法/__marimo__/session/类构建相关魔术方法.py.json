@@ -138,7 +138,40 @@
       ]
     },
     {
+      "id": "lYoo",
+      "code_hash": "713afd1a0d36bf5437260739a2fed1f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"__prepare__\"><code>__prepare__</code></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "vXQD",
+      "code_hash": "3ccae4e1aabf335c13d027f0a00e093e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "_cell_vXQD_A () {}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "gRRt",
       "code_hash": null,
       "outputs": [],
       "console": []

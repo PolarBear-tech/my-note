@@ -158,8 +158,29 @@ class Student:
 
 ### `__mro_entries__`
 
-参见 PEP 560
+> If an object that is not a class object appears in the tuple of bases of a class definition, then method `__mro_entries__` is searched on it. If found, it is called with the original tuple of bases as an argument. The result of the call must be a tuple, that is unpacked in the base classes in place of this object. (If the tuple is empty, this means that the original bases is simply discarded.) If there are more than one object with `__mro_entries__`, then all of them are called with the same original tuple of bases. This step happens first in the process of creation of a class, all other steps, including checks for duplicate bases and MRO calculation, happen normally with the updated bases.
+> Using the method API instead of just an attribute is necessary to avoid inconsistent MRO errors, and perform other manipulations that are currently done by `GenericMeta.__new__`. The original bases are stored as `__orig_bases__` in the class namespace (currently this is also done by the metaclass). For example:
+> ```python
+> class GenericAlias:
+>    def __init__(self, origin, item):
+>        self.origin = origin
+>        self.item = item
+>    def __mro_entries__(self, bases):
+>        return (self.origin,)
+> class NewList:
+>    def __class_getitem__(cls, item):
+>        return GenericAlias(cls, item)
+> class Tokens(NewList[int]):
+>    …
+> assert Tokens.__bases__ == (NewList,)
+> assert Tokens.__orig_bases__ == (NewList[int],)
+> assert Tokens.__mro__ == (Tokens, NewList, object)
+> ```
+> Resolution using `__mro_entries__` happens _only_ in bases of a class definition statement. In all other situations where a class object is expected, no such resolution will happen, this includes `isinstance` and `issubclass` built-in functions.
+> NOTE: These two method names are reserved for use by the `typing` module and the generic types machinery, and any other use is discouraged. The reference implementation (with tests) can be found in [[4]](https://peps.python.org/pep-0560/#id10), and the proposal was originally posted and discussed on the `typing` tracker, see [[5]](https://peps.python.org/pep-0560/#id11).
 
 ### `__prepare__`
 
-用来构建
+这个方法在写的时候需要手动加上 `@classmethod`
+
+用来准备构建 class 的命名空间的。
