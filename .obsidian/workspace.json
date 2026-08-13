@@ -41,24 +41,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "3d74976651992121",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "34ba1a8d0886f0a9",
-            "type": "leaf",
-            "state": {
-              "type": "marimo-editor",
-              "state": {
-                "file": "Marimo/main.py"
-              },
-              "icon": "marimo-logo",
-              "title": "main.py"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"

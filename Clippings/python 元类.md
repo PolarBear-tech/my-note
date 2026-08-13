@@ -191,17 +191,13 @@ Sayolala,  japan!
 
 ```python
 # 一生二：创建类
-
 class  Nihao(object,  metaclass=SayMetaClass):
-
     pass
 
 # 二生三：创建实列
-
 n  =  Nihao()
 
 # 三生万物：调用实例方法
-
 n.say_Nihao('中华!')
 ```
 
@@ -217,33 +213,25 @@ Nihao,  中华!
 # 道生一
 
 class  ListMetaclass(type):
-
     def  __new__(cls,  name,  bases,  attrs):
-
         # 天赋：通过add方法将值绑定
-
         attrs['add']  =  lambda  self,  value:  self.append(value)
-
         return  type.__new__(cls,  name,  bases,  attrs)
 
 # 一生二
-
 class  MyList(list,  metaclass=ListMetaclass):
-
     pass
 
 # 二生三
-
 L  =  MyList()
 
 # 三生万物
-
 L.add(1)
 ```
 
 现在我们打印一下 L
 
-```python
+```
 print(L)
 
 >>>  [1]
@@ -253,9 +241,7 @@ print(L)
 
 ```
 L2  =  list()
-
 L2.add(1)
-
 >>>AttributeError:  'list'  object  has no attribute  'add'
 ```
 
@@ -265,7 +251,7 @@ L2.add(1)
 
 **年轻的造物主，请随我一起开创新世界。**
 
-我们选择两个领域，一个是 Django 的核心思想，“Object Relational Mapping”，即 [对象-关系映射](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E5%AF%B9%E8%B1%A1-%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84&zhida_source=entity) ，简称 ORM。
+我们选择两个领域，一个是 Django 的核心思想，“Object Relational Mapping”，即 对象-关系映射，简称 ORM。
 
 这是 Django 的一大难点，但学完了元类，一切变得清晰。你对 Django 的理解将更上一层楼！
 
@@ -311,34 +297,20 @@ class  IntegerField(Field):
 
 ```python
 class  ModelMetaclass(type):
-
-    def  __new__(cls,  name,  bases,  attrs):
-
-        if  name=='Model':
-
-            return  type.__new__(cls,  name,  bases,  attrs)
-
-        print('Found model: %s'  %  name)
-
-        mappings  =  dict()
-
-        for  k,  v  in  attrs.items():
-
-            if  isinstance(v,  Field):
-
-                print('Found mapping: %s ==> %s'  %  (k,  v))
-
+    def __new__(cls, name, bases, attrs):
+        if name=='Model':
+            return type.__new__(cls, name, bases, attrs)
+        print('Found model: %s' % name)
+        mappings = dict()
+        for k, v in attrs.items():
+            if isinstance(v, Field):
+                print('Found mapping: %s ==> %s' % (k,  v))
                 mappings[k]  =  v
-
-        for  k  in  mappings.keys():
-
+        for k in mappings.keys():
             attrs.pop(k)
-
-        attrs['__mappings__']  =  mappings  # 保存属性和列的映射关系
-
-        attrs['__table__']  =  name  # 假设表名和类名一致
-
-        return  type.__new__(cls,  name,  bases,  attrs)
+        attrs['__mappings__'] = mappings  # 保存属性和列的映射关系
+        attrs['__table__'] = name  # 假设表名和类名一致
+        return type.__new__(cls, name, bases, attrs)
 ```
 
 **它做了以下几件事**
@@ -352,44 +324,28 @@ class  ModelMetaclass(type):
 ### 一生二
 
 ```python
-class  Model(dict,  metaclass=ModelMetaclass):
+class  Model(dict, metaclass=ModelMetaclass):
+    def __init__(self, **kwarg):
+        super(Model, self).__init__(**kwarg)
 
-    def  __init__(self,  **kwarg):
-
-        super(Model,  self).__init__(**kwarg)
-
-    def  __getattr__(self,  key):
-
+    def __getattr__(self, key):
         try:
-
-            return  self[key]
-
-        except  KeyError:
-
-            raise  AttributeError("'Model' object has no attribute '%s'"  %  key)
+            return self[key]
+        except KeyError:
+            raise AttributeError("'Model' object has no attribute '%s'" % key)
 
     def  __setattr__(self,  key,  value):
-
         self[key]  =  value
 
     # 模拟建表操作
-
-    def  save(self):
-
-        fields  =  []
-
-        args  =  []
-
-        for  k,  v  in  self.__mappings__.items():
-
+    def save(self):
+        fields = []
+        args = []
+        for k, v in self.__mappings__.items():
             fields.append(v.name)
-
-            args.append(getattr(self,  k,  None))
-
-        sql  =  'insert into %s (%s) values (%s)'  %  (self.__table__,  ','.join(fields),  ','.join([str(i)  for  i  in  args]))
-
+            args.append(getattr(self, k, None))
+        sql =  'insert into %s (%s) values (%s)' %  (self.__table__, ','.join(fields), ','.join([str(i) for i in args]))
         print('SQL: %s'  %  sql)
-
         print('ARGS: %s'  %  str(args))
 ```
 
@@ -397,24 +353,17 @@ class  Model(dict,  metaclass=ModelMetaclass):
 
 ```python
 class  User(Model):
-
     # 定义类的属性到列的映射：
-
     id  =  IntegerField('id')
-
     name  =  StringField('username')
-
     email  =  StringField('email')
-
     password  =  StringField('password')
 ```
 
 这时
 
 id= IntegerField(‘id’) 就会自动解析为：
-
 Model.**setattr** (self, ‘id’, IntegerField(‘id’))
-
 因为 IntergerField(‘id’) 是 Field 的子类的实例，自动触发元类的 **new** ，所以将 IntergerField(‘id’) 存入 **mappings** 并删除这个键值对。
 
 ### 二生三、三生万物
@@ -422,7 +371,7 @@ Model.**setattr** (self, ‘id’, IntegerField(‘id’))
 当你初始化一个实例的时候并调用 save() 方法时候
 
 ```bash
-u  =  User(id=12345,  name='Batman',  email='batman@nasa.org',  password='iamback')
+u = User(id=12345, name='Batman', email='batman@nasa.org', password='iamback')
 
 u.save()
 ```
@@ -440,21 +389,15 @@ u.save()
 
 ```php
 Found model:  User
-
 Found mapping:  name  ==>  <StringField:username>
-
 Found mapping:  password  ==>  <StringField:password>
-
 Found mapping:  id  ==>  <IntegerField:id>
-
 Found mapping:  email  ==>  <StringField:email>
-
 SQL:  insert into User  (username,password,id,email)  values  (Batman,iamback,12345,batman@nasa.org)
-
 ARGS:  ['Batman',  'iamback',  12345,  'batman@nasa.org']
 ```
 - 年轻的造物主，你已经和我一起体验了由“道”演化“万物”的伟大历程，这也是 Django 中的 Model 版块核心原理。
-- 接下来，请和我一起进行更好玩的 [爬虫](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=3&q=%E7%88%AC%E8%99%AB&zhida_source=entity) 实战（嗯，你现在已经是初级黑客了）： [网络代理](https://zhida.zhihu.com/search?content_id=101565221&content_type=Article&match_order=1&q=%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86&zhida_source=entity) 的爬取吧！
+- 接下来，请和我一起进行更好玩的 爬虫 实战（嗯，你现在已经是初级黑客了）： 网络代理的爬取吧！
 
 ## 挑战二：网络代理的爬取
 
@@ -466,37 +409,22 @@ ARGS:  ['Batman',  'iamback',  12345,  'batman@nasa.org']
 # 文件：get_page.py
 
 import  requests
-
 base_headers  =  {
-
     'User-Agent':  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
-
     'Accept-Encoding':  'gzip, deflate, sdch',
-
     'Accept-Language':  'zh-CN,zh;q=0.8'
-
 }
 
 def  get_page(url):
-
     headers  =  dict(base_headers)
-
     print('Getting',  url)
-
     try:
-
         r  =  requests.get(url,  headers=headers)
-
         print('Getting result',  url,  r.status_code)
-
         if  r.status_code  ==  200:
-
             return  r.text
-
     except  ConnectionError:
-
         print('Crawling Failed',  url)
-
         return  None
 ```
 
@@ -550,153 +478,83 @@ if(__name__  ==  '__main__'):
 
 ```python
 from  getpage import  get_page
-
 from  pyquery import  PyQuery as  pq
 
 # 道生一：创建抽取代理的metaclass
 
 class  ProxyMetaclass(type):
-
     """
-
         元类，在FreeProxyGetter类中加入
-
         __CrawlFunc__和__CrawlFuncCount__
-
         两个参数，分别表示爬虫函数，和爬虫函数的数量。
-
     """
 
     def  __new__(cls,  name,  bases,  attrs):
-
         count  =  0
-
         attrs['__CrawlFunc__']  =  []
-
         attrs['__CrawlName__']  =  []
-
         for  k,  v  in  attrs.items():
-
             if  'crawl_'  in  k:
-
-                attrs['__CrawlName__'].append(k)
-
+	              attrs['__CrawlName__'].append(k)
                 attrs['__CrawlFunc__'].append(v)
-
                 count  +=  1
-
         for  k  in  attrs['__CrawlName__']:
-
             attrs.pop(k)
-
         attrs['__CrawlFuncCount__']  =  count
-
         return  type.__new__(cls,  name,  bases,  attrs)
 
 # 一生二：创建代理获取类
-
 class  ProxyGetter(object,  metaclass=ProxyMetaclass):
-
     def  get_raw_proxies(self,  site):
-
         proxies  =  []
-
         print('Site',  site)
-
         for  func in  self.__CrawlFunc__:
-
             if  func.__name__==site:
-
                 this_page_proxies  =  func(self)
-
                 for  proxy in  this_page_proxies:
-
                     print('Getting',  proxy,  'from',  site)
-
                     proxies.append(proxy)
-
         return  proxies
-
     def  crawl_daili66(self,  page_count=4):
-
         start_url  =  'http://www.66ip.cn/{}.html'
-
         urls  =  [start_url.format(page)  for  page in  range(1,  page_count  +  1)]
-
         for  url in  urls:
-
             print('Crawling',  url)
-
             html  =  get_page(url)
-
             if  html:
-
                 doc  =  pq(html)
-
                 trs  =  doc('.containerbox table tr:gt(0)').items()
-
                 for  tr in  trs:
-
                     ip  =  tr.find('td:nth-child(1)').text()
-
                     port  =  tr.find('td:nth-child(2)').text()
-
                     yield  ':'.join([ip,  port])
-
     def  crawl_proxy360(self):
-
         start_url  =  'http://www.proxy360.cn/Region/China'
-
         print('Crawling',  start_url)
-
         html  =  get_page(start_url)
-
         if  html:
-
             doc  =  pq(html)
-
             lines  =  doc('div[name="list_proxy_ip"]').items()
-
             for  line in  lines:
-
                 ip  =  line.find('.tbBottomLine:nth-child(1)').text()
-
                 port  =  line.find('.tbBottomLine:nth-child(2)').text()
-
                 yield  ':'.join([ip,  port])
-
     def  crawl_goubanjia(self):
-
         start_url  =  'http://www.goubanjia.com/free/gngn/index.shtml'
-
         html  =  get_page(start_url)
-
         if  html:
-
             doc  =  pq(html)
-
             tds  =  doc('td.ip').items()
-
-            for  td in  tds:
-
+            for  td in  tds
                 td.find('p').remove()
-
                 yield  td.text().replace(' ',  '')
-
 if  __name__  ==  '__main__':
-
     # 二生三：实例化ProxyGetter
-
     crawler  =  ProxyGetter()
-
     print(crawler.__CrawlName__)
-
     # 三生万物
-
     for  site_label in  range(crawler.__CrawlFuncCount__):
-
         site  =  crawler.__CrawlName__[site_label]
-
         myProxies  =  crawler.get_raw_proxies(site)
 ```
 
@@ -736,13 +594,3 @@ if  __name__  ==  '__main__':
 
 - 道生一，一生二，二生三，三生万物
 - 我是谁，我来自哪里，我要到哪里去
-
-编辑于 2021-03-31 14:19[一文告诉你人工智能纯小白学习路线！](https://zhuanlan.zhihu.com/p/31863323446)
-
-[
-
-全文 5196 字，按照我这个路线坚持完，你会变成一个人工智能的牛人的。它是假定一个没有人工智能基础的程序员学习路线。写在前面：我觉的从 deepseek 开源以后，会有更多的企业和开发…
-
-](https://zhuanlan.zhihu.com/p/31863323446)
-
-赞同 281
