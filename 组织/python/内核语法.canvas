@@ -24,7 +24,7 @@
 		{"id":"2a11cbe6037c0bdc","type":"file","file":"Clippings/python 内存管理.md","x":534,"y":186,"width":400,"height":380},
 		{"id":"5ee822dba1588f27","type":"text","text":"- [x] [[描述器.py]]","x":574,"y":-1064,"width":250,"height":60},
 		{"id":"9750963d92a35810","type":"text","text":"- [x] [[python 元类]]","x":112,"y":-380,"width":250,"height":60},
-		{"id":"ddcbb16a9b7f75e3","type":"text","text":"- [ ] [[python 模式匹配]]","x":112,"y":-260,"width":250,"height":60},
+		{"id":"ddcbb16a9b7f75e3","type":"text","text":"- [x] [[python 模式匹配]]","x":112,"y":-260,"width":250,"height":60},
 		{"id":"f57849862f8ca285","type":"text","text":"- [x] [[python 魔术方法]]","x":112,"y":-140,"width":250,"height":60},
 		{"id":"1230ba4259c4b880","type":"text","text":"- [ ] [[Python 数据结构与函数式编程工具]]","x":112,"y":0,"width":412,"height":60}
 	],

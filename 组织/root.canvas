@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"ef0699e30062dee2","type":"text","text":"root","x":-260,"y":-40,"width":240,"height":60},
-		{"id":"9678c81cc93b485e","type":"file","file":"组织/高等数学.canvas","x":180,"y":-520,"width":295,"height":220},
+		{"id":"9678c81cc93b485e","type":"file","file":"组织/数学.canvas","x":180,"y":-520,"width":295,"height":220},
 		{"id":"65369b897981d666","type":"file","file":"组织/四六级.canvas","x":180,"y":-170,"width":301,"height":260},
 		{"id":"f341d822504d2e39","type":"file","file":"组织/python/python roadmap.canvas","x":180,"y":240,"width":400,"height":400}
 	],

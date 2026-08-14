@@ -2,6 +2,7 @@
 source: "https://zhuanlan.zhihu.com/p/706263499"
 created: 2026-08-13
 ---
+
 # 基本语法
 
 使用 match 语句和 case 子句来实现模式匹配。
