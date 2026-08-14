@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
+                "file": "主页.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Python 数据结构与函数式编程工具"
+              "title": "主页"
             }
           }
         ],
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
+                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
