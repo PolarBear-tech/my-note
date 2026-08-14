@@ -12,7 +12,6 @@
 		{"id":"ddcbb16a9b7f75e3","type":"text","text":"- [ ] [[python 模式匹配]]","x":127,"y":-276,"width":250,"height":60},
 		{"id":"1378ed675451d275","type":"text","text":"内存模型","x":-317,"y":376,"width":250,"height":60},
 		{"id":"abb87735a1006ac9","type":"text","text":"- [x] 闭包","x":114,"y":-494,"width":250,"height":50},
-		{"id":"5ee822dba1588f27","type":"text","text":"- [x] [[描述器.py]]","x":579,"y":-526,"width":250,"height":60},
 		{"id":"6277222e541913f5","type":"text","text":"- [x] [[装饰器.py]]","x":114,"y":-889,"width":250,"height":60},
 		{"id":"563d4731aad3ee7e","type":"text","text":"- [ ] 生成器和迭代器","x":114,"y":-749,"width":250,"height":60},
 		{"id":"f4d18ca533d12cf8","type":"text","text":"- [x] [[python 描述器]]","x":574,"y":-947,"width":250,"height":60},
@@ -26,7 +25,8 @@
 		{"id":"d7fb0ec21430ada3","type":"file","file":"手写笔记/闭包.md","x":-1006,"y":-993,"width":857,"height":268},
 		{"id":"09349871369c80ac","type":"text","text":"- [ ] 上下文管理器","x":112,"y":-633,"width":250,"height":60},
 		{"id":"b5d1ab7d7d75ffb7","type":"text","text":"- [x] 描述器","x":114,"y":-1034,"width":250,"height":60},
-		{"id":"2a11cbe6037c0bdc","type":"file","file":"Clippings/python 内存管理.md","x":650,"y":186,"width":400,"height":380}
+		{"id":"2a11cbe6037c0bdc","type":"file","file":"Clippings/python 内存管理.md","x":534,"y":186,"width":400,"height":380},
+		{"id":"5ee822dba1588f27","type":"text","text":"- [x] [[描述器.py]]","x":574,"y":-1064,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"c8e8d333c649ff37","fromNode":"fdb3d4ded1f89dc8","fromSide":"right","toNode":"b035c829ed019497","toSide":"left"},
