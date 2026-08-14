@@ -11,10 +11,12 @@
             "id": "fe79583332bc7ba3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "excalidraw",
+              "state": {
+                "file": "手写笔记/闭包.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "闭包"
             }
           }
         ]
@@ -157,6 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "手写笔记/闭包.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,8 +206,8 @@
   },
   "active": "fe79583332bc7ba3",
   "lastOpenFiles": [
-    "README.md",
     "主页.md",
+    "README.md",
     "组织/高等数学.canvas",
     "组织/root.canvas",
     "组织/python/实战.canvas",
