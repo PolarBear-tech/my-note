@@ -4,45 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "180f72c00e696a96",
+        "id": "8482b8b281bc4b8d",
         "type": "tabs",
         "children": [
           {
-            "id": "1a93d6aa9fcb9adb",
+            "id": "92042ccbe7a35e43",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 160,
-                  "y": 60,
-                  "zoom": -0.6379325142594233
-                }
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
-            }
-          },
-          {
-            "id": "84cff481c65894d2",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/python/实战.canvas",
-                "viewState": {
-                  "x": 471.8550401697792,
-                  "y": -620.7745282659644,
-                  "zoom": -0.35193985826338325
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "实战"
+              "icon": "lucide-file",
+              "title": "python-dotenv"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,8 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.58331298828125,
-    "collapsed": true
+    "width": 270.58331298828125
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -183,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/python/实战.canvas",
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,11 +204,18 @@
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
       "marimo-bridge:Open marimo home": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templates:插入模板": false
     }
   },
-  "active": "84cff481c65894d2",
+  "active": "92042ccbe7a35e43",
   "lastOpenFiles": [
+    "模板/日期+时间.md",
+    "文本笔记/python学习相关/实战日记/python-dotenv.md",
+    "组织/python/工程工具.canvas",
+    "模板",
+    "组织/python/实战.canvas",
+    "文本笔记/python学习相关/实战日记",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
     "主页.md",
@@ -242,8 +228,6 @@
     "文本笔记/python学习相关/Make指南.md",
     "手写笔记/闭包.md",
     "README.md",
-    "组织/python/实战.canvas",
-    "组织/python/工程工具.canvas",
     "组织/python",
     "文本笔记/python学习相关/python开源项目.md",
     "Clippings/python深浅拷贝.md",
@@ -261,8 +245,6 @@
     "Marimo/python高级语法/__marimo__/session/元类.py.json",
     "Marimo/python高级语法/__marimo__/session/闭包.py.json",
     "Marimo/python高级语法/__marimo__/session/bytes.py.json",
-    "Marimo/python高级语法/bytes.py",
-    "Marimo/python高级语法/__marimo__/session/format.py.json",
     "组织/自我提升.canvas",
     "文本笔记/Wishlist.md",
     "文本笔记/Dwzb.md",
@@ -273,8 +255,6 @@
     "文本笔记/python学习相关/The Zen of Python.md",
     "文本笔记/英语四级/Word List 5.md",
     "文本笔记/英语四级/Word List 4.md",
-    "文本笔记/英语四级/Word List 3.md",
-    "文本笔记/英语四级/Word List 1.md",
     "未命名.canvas",
     "计划.canvas"
   ]

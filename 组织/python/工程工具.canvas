@@ -1,22 +1,26 @@
 {
 	"nodes":[
-		{"id":"512951389a788606","type":"text","text":"- [ ] Hypothesis","x":167,"y":3,"width":250,"height":60},
-		{"id":"73e15d2c30a99bb1","type":"text","text":"- [ ] py-spy","x":167,"y":135,"width":250,"height":60},
 		{"id":"6e9581c7432fde98","type":"text","text":"- [ ] Docker","x":-205,"y":363,"width":250,"height":60},
 		{"id":"c547f110b0eed69d","type":"text","text":"调试","x":-205,"y":229,"width":250,"height":60},
-		{"id":"f255aaa47355ec20","type":"text","text":"- [ ] memray","x":167,"y":229,"width":250,"height":60},
-		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":167,"y":333,"width":250,"height":60},
 		{"id":"fe6ef1750d56c27d","type":"text","text":"- [ ] github action","x":-205,"y":503,"width":250,"height":60},
 		{"id":"4c90a8cae6660177","type":"text","text":"- [ ] pydantic","x":-205,"y":655,"width":250,"height":60},
-		{"id":"e9c7d239172ca0be","type":"text","text":"- [ ] coverage.py","x":167,"y":-87,"width":250,"height":60},
-		{"id":"f88563b82817b85d","type":"text","text":"测试","x":-205,"y":-57,"width":250,"height":60},
 		{"id":"26bad81770ee6452","type":"text","text":"- [x] uv","x":-205,"y":75,"width":250,"height":60},
 		{"id":"1e260e0a1b67c2da","type":"text","text":"工程工具","x":-817,"y":241,"width":250,"height":60},
-		{"id":"343a8a91344507e3","type":"text","text":"- [ ] [Sphinx Doc](https://www.sphinx-doc.org/zh-cn/master/index.html)","x":-205,"y":-207,"width":250,"height":60},
-		{"id":"1c0f28ee53f48f19","type":"text","text":"- [ ] pytest","x":167,"y":-177,"width":250,"height":60},
-		{"id":"ea456f956dbe452f","type":"text","text":"- [x] bash","x":-200,"y":-447,"width":250,"height":60},
-		{"id":"21918965ceee6f6e","type":"text","text":"- [ ] make & cmake","x":-205,"y":-337,"width":250,"height":60},
-		{"id":"fc59197ca7f7ec65","type":"file","file":"文本笔记/python学习相关/Make指南.md","x":92,"y":-600,"width":400,"height":323}
+		{"id":"fc59197ca7f7ec65","type":"file","file":"文本笔记/python学习相关/Make指南.md","x":92,"y":-820,"width":400,"height":323},
+		{"id":"ea456f956dbe452f","type":"text","text":"- [x] bash","x":-200,"y":-667,"width":250,"height":60},
+		{"id":"21918965ceee6f6e","type":"text","text":"- [ ] make & cmake","x":-205,"y":-557,"width":250,"height":60},
+		{"id":"f170bc561acfcbbb","x":-195,"y":-361,"width":250,"height":60,"type":"text","text":"文档生成"},
+		{"id":"889fdf5ab88888c0","x":164,"y":-421,"width":250,"height":60,"type":"text","text":"- [ ] Sphinx"},
+		{"id":"c37a1a6ce3bfc3dd","x":164,"y":-301,"width":250,"height":60,"type":"text","text":"- [ ] MkDocs"},
+		{"id":"343a8a91344507e3","type":"text","text":"[Sphinx Doc](https://www.sphinx-doc.org/zh-cn/master/index.html)","x":520,"y":-421,"width":250,"height":120},
+		{"id":"1c0f28ee53f48f19","type":"text","text":"- [ ] pytest","x":164,"y":-207,"width":250,"height":60},
+		{"id":"e9c7d239172ca0be","type":"text","text":"- [ ] coverage.py","x":164,"y":-117,"width":250,"height":60},
+		{"id":"f88563b82817b85d","type":"text","text":"测试","x":-205,"y":-117,"width":250,"height":60},
+		{"id":"512951389a788606","type":"text","text":"- [ ] Hypothesis","x":164,"y":-15,"width":250,"height":60},
+		{"id":"6c1adf3b449a524f","x":164,"y":75,"width":250,"height":60,"type":"text","text":"- [ ] tox"},
+		{"id":"73e15d2c30a99bb1","type":"text","text":"- [ ] py-spy","x":167,"y":181,"width":250,"height":60},
+		{"id":"f255aaa47355ec20","type":"text","text":"- [ ] memray","x":167,"y":275,"width":250,"height":60},
+		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":167,"y":379,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"77cc7bdbb54a9364","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"512951389a788606","toSide":"left"},
@@ -33,6 +37,9 @@
 		{"id":"1585e02e5dc0a968","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"26bad81770ee6452","toSide":"left"},
 		{"id":"b37c1b6282699949","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"ea456f956dbe452f","toSide":"left"},
 		{"id":"2db59a438d768fbe","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"21918965ceee6f6e","toSide":"left"},
-		{"id":"6be2c3aec0d67648","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"343a8a91344507e3","toSide":"left"}
+		{"id":"1e2f7f58fa02af64","fromNode":"1e260e0a1b67c2da","fromSide":"right","toNode":"f170bc561acfcbbb","toSide":"left"},
+		{"id":"64a60a506e44ec48","fromNode":"f170bc561acfcbbb","fromSide":"right","toNode":"c37a1a6ce3bfc3dd","toSide":"left"},
+		{"id":"679cca1fc4515f13","fromNode":"f170bc561acfcbbb","fromSide":"right","toNode":"889fdf5ab88888c0","toSide":"left"},
+		{"id":"a5c1f2a189f38750","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"6c1adf3b449a524f","toSide":"left"}
 	]
 }
