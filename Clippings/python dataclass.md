@@ -2,6 +2,7 @@
 source: "https://zhuanlan.zhihu.com/p/555359585"
 created: 2026-08-13
 ---
+
 有人可能在平时看代码的时候，会看到类似这样的标识 `@dataclass` 。 `@` 众所周知，简单易得，是 python 当中修饰符的意思（狗头）。那么 `@dataclass` 是做什么的呢？
 
 ### 开始
