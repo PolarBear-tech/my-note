@@ -4,39 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "40fc17c2c6c2c4cd",
+        "id": "180f72c00e696a96",
         "type": "tabs",
         "children": [
           {
-            "id": "eee43bbaea5ff6b9",
+            "id": "1a93d6aa9fcb9adb",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/python/内核语法.canvas",
+                "file": "组织/root.canvas",
                 "viewState": {
-                  "x": 283.897127777513,
-                  "y": 102.63843953086351,
-                  "zoom": -0.19652617029266062
+                  "x": 160,
+                  "y": 60,
+                  "zoom": -0.6379325142594233
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "内核语法"
+              "title": "root"
             }
           },
           {
-            "id": "505c6d024d7d0945",
+            "id": "84cff481c65894d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "主页.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/python/实战.canvas",
+                "viewState": {
+                  "x": 471.8550401697792,
+                  "y": -620.7745282659644,
+                  "zoom": -0.35193985826338325
+                }
               },
-              "icon": "lucide-file",
-              "title": "主页"
+              "icon": "lucide-layout-dashboard",
+              "title": "实战"
             }
           }
         ],
@@ -181,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "主页.md",
+                "file": "组织/python/实战.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,18 +228,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "505c6d024d7d0945",
+  "active": "84cff481c65894d2",
   "lastOpenFiles": [
-    "组织/python/内核语法.canvas",
     "组织/python/python roadmap.canvas",
-    "组织/数学.canvas",
     "组织/root.canvas",
+    "主页.md",
+    "组织/数学.canvas",
+    "组织/python/内核语法.canvas",
     "Clippings/python 模式匹配.md",
     "Clippings/python dataclass.md",
     "文本笔记/python学习相关/Python Contributor之路.md",
     "文本笔记/python学习相关/python 魔术方法.md",
     "文本笔记/python学习相关/Make指南.md",
-    "主页.md",
     "手写笔记/闭包.md",
     "README.md",
     "组织/python/实战.canvas",
