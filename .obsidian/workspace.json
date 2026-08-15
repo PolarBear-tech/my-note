@@ -4,22 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9e650c4d18063545",
+        "id": "1a395ffe8341c801",
         "type": "tabs",
         "children": [
           {
-            "id": "a995b884bcef153d",
+            "id": "9f92d5453bf38981",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/python/python roadmap.canvas",
+                "viewState": {
+                  "x": 520,
+                  "y": -430,
+                  "zoom": -1.5974226217096232
+                }
               },
-              "icon": "lucide-file",
-              "title": "python-dotenv"
+              "icon": "lucide-layout-dashboard",
+              "title": "python roadmap"
             }
           }
         ]
@@ -162,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
+                "file": "组织/python/python roadmap.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -208,21 +210,21 @@
       "templates:插入模板": false
     }
   },
-  "active": "a995b884bcef153d",
+  "active": "9f92d5453bf38981",
   "lastOpenFiles": [
+    "组织/root.canvas",
+    "主页.md",
     "模板/日期+时间.md",
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
     "未命名",
     "Clippings/医用物理学笔记.md",
     "README.md",
-    "主页.md",
     "文档/医用物理学笔记.pdf",
     "新建 文本文档.txt",
     "文档",
     "新建文件夹",
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
-    "组织/root.canvas",
     "组织/python/工程工具.canvas",
     "模板",
     "文本笔记/python学习相关/实战日记",
