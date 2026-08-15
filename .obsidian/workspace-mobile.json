@@ -11,15 +11,17 @@
             "id": "7bce3f5542b11807",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
+                "file": "组织/其他.canvas",
+                "viewState": {
+                  "x": -132.8768881044638,
+                  "y": 316.0678181957659,
+                  "zoom": -1.7794690631481023
+                }
               },
-              "icon": "lucide-file",
-              "title": "Python 数据结构与函数式编程工具"
+              "icon": "lucide-layout-dashboard",
+              "title": "其他"
             }
           }
         ]
@@ -121,7 +123,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Clippings/Python 数据结构与函数式编程工具.md",
+            "file": "组织/其他.canvas",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -135,6 +137,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templates:插入模板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -146,10 +149,16 @@
   },
   "active": "7bce3f5542b11807",
   "lastOpenFiles": [
+    "组织/root.canvas",
+    "组织/python/python roadmap.canvas",
+    "组织/其他.canvas",
+    "组织/其他.canvas.md",
+    "文本笔记/交大新生入学.md",
     "主页.md",
+    "Clippings/Python 数据结构与函数式编程工具.md",
+    "模板/日期+时间.md",
     "组织/python/工程工具.canvas",
     "组织/python/roadmap.canvas",
-    "组织/root.canvas",
     "Clippings/python 模式匹配.md",
     "Clippings/python 描述器.md",
     "文本笔记/python学习相关/python 魔术方法.md",
@@ -158,9 +167,7 @@
     "组织/python/内核语法.canvas",
     "组织/python/实战.canvas",
     "组织/python",
-    "Clippings/Python 数据结构与函数式编程工具.md",
     "组织/CPython Contributor RoadMap.canvas",
-    "组织/其他.canvas",
     "文本笔记/未命名.md",
     "组织/高等数学.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
