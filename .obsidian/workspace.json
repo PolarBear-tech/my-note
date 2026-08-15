@@ -11,10 +11,15 @@
             "id": "a995b884bcef153d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "python-dotenv"
             }
           }
         ]
@@ -157,6 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -204,6 +210,9 @@
   },
   "active": "a995b884bcef153d",
   "lastOpenFiles": [
+    "模板/日期+时间.md",
+    "文本笔记/python学习相关/实战日记/python-dotenv.md",
+    "未命名",
     "Clippings/医用物理学笔记.md",
     "README.md",
     "主页.md",
@@ -214,8 +223,6 @@
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
-    "文本笔记/python学习相关/实战日记/python-dotenv.md",
-    "模板/日期+时间.md",
     "组织/python/工程工具.canvas",
     "模板",
     "文本笔记/python学习相关/实战日记",
@@ -237,7 +244,6 @@
     "Clippings/python 内存管理.md",
     "Marimo/python高级语法/__marimo__/session/类构建相关魔术方法.py.json",
     "Marimo/python高级语法/类构建相关魔术方法.py",
-    "Marimo/python高级语法/__marimo__/session/属性相关魔术方法.py.json",
     "手写笔记/微积分-chapter-2.md",
     "Clippings/python 描述器.md",
     "组织/自我提升.canvas",
