@@ -12,7 +12,8 @@
 		{"id":"587cb2da9282ed66","type":"file","file":"文本笔记/python学习相关/python开源项目.md","x":-721,"y":-905,"width":400,"height":400},
 		{"id":"514c1321a5601058","type":"text","text":"开源项目","x":-721,"y":-253,"width":250,"height":60},
 		{"id":"0e4fc51202f9a81c","type":"text","text":"- [ ] typer","x":239,"y":404,"width":250,"height":60},
-		{"id":"5a44f1efba298828","type":"text","text":"- [ ] pluggy","x":239,"y":526,"width":250,"height":60}
+		{"id":"5a44f1efba298828","type":"text","text":"- [ ] pluggy","x":239,"y":526,"width":250,"height":60},
+		{"id":"211d94149734bf5c","x":779,"y":-1440,"width":400,"height":400,"type":"file","file":"文本笔记/python学习相关/实战日记/python-dotenv.md"}
 	],
 	"edges":[
 		{"id":"a3b427b205fb1476","fromNode":"ca46ddbf774964f3","fromSide":"right","toNode":"63eb0eaf1607e35d","toSide":"left"},
