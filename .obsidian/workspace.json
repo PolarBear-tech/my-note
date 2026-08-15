@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/医用物理学期末复习笔记.md",
+                "file": "主页.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "医用物理学期末复习笔记"
+              "title": "主页"
             }
           }
         ]
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/医用物理学期末复习笔记.md",
+                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -211,7 +211,7 @@
   "active": "85a8dd37cca3e27e",
   "lastOpenFiles": [
     "组织/python/实战.canvas",
-    "Clippings/医用物理学期末复习笔记.md",
+    "Clippings/医用物理学笔记.md",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
