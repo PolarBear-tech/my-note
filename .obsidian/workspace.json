@@ -4,24 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b6e206f237be37d1",
+        "id": "f5fc7a59f5c237a3",
         "type": "tabs",
         "children": [
           {
-            "id": "8b207ee59d476788",
+            "id": "745f6abf6b64b878",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/python/工程工具.canvas",
-                "viewState": {
-                  "x": 373.7777978733426,
-                  "y": 289.0176579415808,
-                  "zoom": 0
-                }
+                "file": "主页.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "工程工具"
+              "icon": "lucide-file",
+              "title": "主页"
             }
           }
         ]
@@ -164,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/python/工程工具.canvas",
+                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -210,8 +208,13 @@
       "templates:插入模板": false
     }
   },
-  "active": "8b207ee59d476788",
+  "active": "745f6abf6b64b878",
   "lastOpenFiles": [
+    "文本笔记/python学习相关/工具",
+    "文本笔记/python学习相关/工具/Hypothesis.md",
+    "组织/python/工程工具.canvas",
+    "文本笔记/python学习相关/工具/py-spy.md",
+    "文本笔记/python学习相关/工具/coverage.py.md",
     "文本笔记/python学习相关/工具/pytest.md",
     "文本笔记/python学习相关/工具",
     "Marimo/工程工具/__pycache__/pytest.cpython-314.pyc",
@@ -221,7 +224,6 @@
     "Marimo/工程工具/__marimo__/session/untitled_marimo.py.json",
     "Marimo/工程工具/__marimo__/session",
     "Marimo/工程工具/__marimo__",
-    "组织/python/工程工具.canvas",
     "Marimo/工程工具",
     "Marimo/工程工具/pytest.py",
     "组织/python/python roadmap.canvas",
@@ -252,13 +254,9 @@
     "Clippings/python 描述器.md",
     "组织/自我提升.canvas",
     "文本笔记/Wishlist.md",
-    "文本笔记/Dwzb.md",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
     "组织/四六级.canvas",
-    "文本笔记/英语四级/Word List 6.md",
-    "文本笔记/python学习相关/The Zen of Python.md",
-    "文本笔记/英语四级/Word List 5.md",
     "未命名.canvas"
   ]
 }
