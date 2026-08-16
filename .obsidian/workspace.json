@@ -11,17 +11,15 @@
             "id": "9f92d5453bf38981",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/python/内核语法.canvas",
-                "viewState": {
-                  "x": -57.5,
-                  "y": -15,
-                  "zoom": -1.4928223868217565
-                }
+                "file": "主页.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "内核语法"
+              "icon": "lucide-file",
+              "title": "主页"
             }
           }
         ]
@@ -164,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/python/内核语法.canvas",
+                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
