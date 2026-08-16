@@ -1,9 +1,11 @@
 {
 	"nodes":[
-		{"id":"0b067ba17c25cab0","x":-800,"y":-482,"width":400,"height":400,"type":"file","file":"文本笔记/洗面奶.md"},
-		{"id":"52a2bff529e75452","x":-150,"y":-482,"width":400,"height":400,"type":"file","file":"文本笔记/交大新生入学.md"},
-		{"id":"f5f465269193bac0","x":-150,"y":320,"width":400,"height":400,"type":"file","file":"文本笔记/nvim优化.md"},
-		{"id":"8d7474beba9e44ca","x":-400,"y":80,"width":250,"height":60,"type":"text","text":"其他"}
+		{"id":"69cfcafcee3d4bd3","type":"file","file":"文本笔记/读书日记.md","x":-1075,"y":-482,"width":400,"height":400},
+		{"id":"52a2bff529e75452","type":"file","file":"文本笔记/交大新生入学.md","x":250,"y":-482,"width":400,"height":400},
+		{"id":"f415f0e9b5d9d703","type":"file","file":"文本笔记/Plans.md","x":-1075,"y":140,"width":400,"height":400},
+		{"id":"0b067ba17c25cab0","type":"file","file":"文本笔记/洗面奶.md","x":-400,"y":-482,"width":400,"height":400},
+		{"id":"f5f465269193bac0","type":"file","file":"文本笔记/nvim优化.md","x":800,"y":140,"width":400,"height":400},
+		{"id":"0baff4cb39c85fde","type":"file","file":"文本笔记/Wish List.md","x":-400,"y":140,"width":400,"height":400,"color":"#ff0000"}
 	],
 	"edges":[]
 }
