@@ -8,14 +8,7 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -32,64 +25,22 @@
       "console": []
     },
     {
-      "id": "Ofry",
-      "code_hash": "11d3ed38990ffc92dafaec844e9ebddb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "3\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "id": "vblA",
+      "code_hash": "4851d8f360d8025094e2d4465fa426e3",
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "akYZ",
-      "code_hash": "959e789b658f519de6332dec7a05c10b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "9\n9\n9\n9\n9\n9\n9\n9\n9\n9\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "id": "bkHC",
+      "code_hash": "234ab7f69b6a65bc228ea6584ad0432f",
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "ahfg",
-      "code_hash": "05e3f4b0d7dd31e9ea5a9715e9127ae0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "id": "lEQa",
+      "code_hash": "670b7fd032f1864b3b6ac72e64ca43e9",
+      "outputs": [],
+      "console": []
     }
   ]
 }

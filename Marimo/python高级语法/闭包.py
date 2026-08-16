@@ -31,7 +31,7 @@ def _():
             return a
         a += 1
         return gunc
-    
+
     _gunc = _func()
     print(_gunc())
     return
