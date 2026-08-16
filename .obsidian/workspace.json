@@ -11,15 +11,17 @@
             "id": "745f6abf6b64b878",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "主页.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/python-dotenv梳理.canvas",
+                "viewState": {
+                  "x": 1000.504685214018,
+                  "y": 76.59226855735352,
+                  "zoom": -0.9154462621410694
+                }
               },
-              "icon": "lucide-file",
-              "title": "主页"
+              "icon": "lucide-layout-dashboard",
+              "title": "python-dotenv梳理"
             }
           }
         ]
@@ -162,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "主页.md",
+                "file": "组织/python-dotenv梳理.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -210,6 +212,15 @@
   },
   "active": "745f6abf6b64b878",
   "lastOpenFiles": [
+    "组织/python/实战.canvas",
+    "文本笔记/交大新生入学.md",
+    "组织/python-dotenv梳理.canvas",
+    "README.md",
+    "主页.md",
+    "手写笔记/python-dotenv梳理.md",
+    "文本笔记/python学习相关/实战日记/python-dotenv.md",
+    "组织/python/python roadmap.canvas",
+    "组织/root.canvas",
     "文本笔记/python学习相关/工具",
     "文本笔记/python学习相关/工具/Hypothesis.md",
     "组织/python/工程工具.canvas",
@@ -225,16 +236,9 @@
     "Marimo/工程工具/__marimo__/session",
     "Marimo/工程工具/__marimo__",
     "Marimo/工程工具",
-    "Marimo/工程工具/pytest.py",
-    "组织/python/python roadmap.canvas",
-    "组织/root.canvas",
-    "主页.md",
     "组织/其他.canvas",
     "模板/日期+时间.md",
-    "文本笔记/python学习相关/实战日记/python-dotenv.md",
     "Clippings/医用物理学笔记.md",
-    "README.md",
-    "组织/python/实战.canvas",
     "组织/数学.canvas",
     "组织/python/内核语法.canvas",
     "Clippings/python 模式匹配.md",
@@ -251,12 +255,9 @@
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "Clippings/python 内存管理.md",
     "手写笔记/微积分-chapter-2.md",
-    "Clippings/python 描述器.md",
     "组织/自我提升.canvas",
-    "文本笔记/Wishlist.md",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
-    "组织/四六级.canvas",
-    "未命名.canvas"
+    "组织/四六级.canvas"
   ]
 }
