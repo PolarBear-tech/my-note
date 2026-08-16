@@ -11,10 +11,17 @@
             "id": "034a0bcd5460ae95",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "canvas",
+              "state": {
+                "file": "组织/其他.canvas",
+                "viewState": {
+                  "x": -200,
+                  "y": 340,
+                  "zoom": -0.4635360169700341
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "其他"
             }
           }
         ]
@@ -142,9 +149,9 @@
   },
   "active": "034a0bcd5460ae95",
   "lastOpenFiles": [
+    "组织/root.canvas",
     "组织/其他.canvas",
     "文本笔记/Wish List.md",
-    "组织/root.canvas",
     "文本笔记/Plans.md",
     "文本笔记/读书日记.md",
     "README.md",
