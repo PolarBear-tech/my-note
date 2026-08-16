@@ -14,14 +14,14 @@
 		{"id":"343a8a91344507e3","type":"text","text":"[Sphinx Doc](https://www.sphinx-doc.org/zh-cn/master/index.html)","x":600,"y":-587,"width":250,"height":60},
 		{"id":"73e15d2c30a99bb1","type":"text","text":"- [ ] py-spy","x":177,"y":301,"width":250,"height":60},
 		{"id":"f255aaa47355ec20","type":"text","text":"- [ ] memray","x":177,"y":395,"width":250,"height":60},
-		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":177,"y":499,"width":250,"height":60},
 		{"id":"c547f110b0eed69d","type":"text","text":"调试","x":-195,"y":349,"width":250,"height":60},
 		{"id":"6e9581c7432fde98","type":"text","text":"- [ ] Docker","x":-195,"y":483,"width":250,"height":60},
 		{"id":"fe6ef1750d56c27d","type":"text","text":"- [ ] github action","x":-195,"y":623,"width":250,"height":60},
 		{"id":"4c90a8cae6660177","type":"text","text":"- [ ] pydantic","x":-195,"y":775,"width":250,"height":60},
 		{"id":"26bad81770ee6452","type":"text","text":"- [x] uv","x":-205,"y":181,"width":250,"height":60},
 		{"id":"4dbe5782176bdbeb","x":164,"y":181,"width":250,"height":60,"type":"text","text":"- [ ] unitest"},
-		{"id":"f88563b82817b85d","type":"text","text":"测试","x":-205,"y":-15,"width":250,"height":60}
+		{"id":"f88563b82817b85d","type":"text","text":"测试","x":-205,"y":-15,"width":250,"height":60},
+		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":177,"y":483,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"77cc7bdbb54a9364","fromNode":"f88563b82817b85d","fromSide":"right","toNode":"512951389a788606","toSide":"left"},
