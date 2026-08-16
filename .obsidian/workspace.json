@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f5fc7a59f5c237a3",
+        "id": "97b1d00fca1e35cd",
         "type": "tabs",
         "children": [
           {
-            "id": "745f6abf6b64b878",
+            "id": "deac0815d218771e",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/python-dotenv梳理.canvas",
-                "viewState": {
-                  "x": 1000.504685214018,
-                  "y": 76.59226855735352,
-                  "zoom": -0.9154462621410694
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "python-dotenv梳理"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -101,7 +94,7 @@
         "dimension": 39.338235294117645,
         "children": [
           {
-            "id": "be8028db8ad5f2df",
+            "id": "745f6abf6b64b878",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -116,7 +109,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Python 数据结构与函数式编程工具.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +156,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/python-dotenv梳理.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,9 +203,9 @@
   },
   "active": "745f6abf6b64b878",
   "lastOpenFiles": [
+    "组织/python-dotenv梳理.canvas",
     "组织/python/实战.canvas",
     "文本笔记/交大新生入学.md",
-    "组织/python-dotenv梳理.canvas",
     "README.md",
     "主页.md",
     "手写笔记/python-dotenv梳理.md",

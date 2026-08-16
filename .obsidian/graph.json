@@ -1,43 +1,14 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": false,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [
-    {
-      "query": "path:文本笔记/python学习相关 ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "path:组织 ",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "path:Clippings  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "path:Marimo  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    }
-  ],
-  "collapse-display": false,
-  "showArrow": true,
+  "colorGroups": [],
+  "collapse-display": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -46,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.1434752176261455,
+  "scale": 0.14347521762614523,
   "close": true
 }

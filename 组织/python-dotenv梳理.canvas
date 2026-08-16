@@ -3,7 +3,7 @@
 		{"id":"36d0e72c8e74134b","type":"text","text":"# `load_dotenv()`\n```python\nload_dotenv(\n    dotenv_path: Optional[StrPath] = None,\n    stream: Optional[IO[str]] = None,\n    verbose: bool = False,\n    override: bool = False,\n    interpolate: bool = True,\n    encoding: Optional[str] = \"utf-8\",\n) -> bool\n```","x":-557,"y":-258,"width":557,"height":378},
 		{"id":"85c8d2a6e7ffc7e1","type":"text","text":"# `_load_dotenv_disabled()`\n\n根据`PYTHON_DOTENV_DISABLED`的值判断用户是否允许load .env文件","x":280,"y":-153,"width":540,"height":169},
 		{"id":"55df2031b99fd73d","type":"text","text":"# `return False`","x":393,"y":140,"width":315,"height":92},
-		{"id":"295120df6d658448","type":"text","text":"# `find_env()`","x":1040,"y":-117,"width":400,"height":133}
+		{"id":"295120df6d658448","type":"text","text":"# `find_env()`","x":1040,"y":-116,"width":280,"height":95}
 	],
 	"edges":[
 		{"id":"888ea5dc0403d51c","fromNode":"36d0e72c8e74134b","fromSide":"right","toNode":"85c8d2a6e7ffc7e1","toSide":"left","label":"判断"},
