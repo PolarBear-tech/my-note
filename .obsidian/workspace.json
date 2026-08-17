@@ -8,16 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b9c358063b24ce85",
+            "id": "9d1208b6775c89c1",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "组织/python-dotenv梳理.canvas",
                 "viewState": {
-                  "x": 2894.7151901342213,
-                  "y": 252.13071676917247,
-                  "zoom": -0.23968681108531564
+                  "x": 1860.5152492100594,
+                  "y": 1333.3974058136598,
+                  "zoom": 0.19773743323504434
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -226,10 +226,12 @@
       "templates:插入模板": false
     }
   },
-  "active": "b9c358063b24ce85",
+  "active": "9d1208b6775c89c1",
   "lastOpenFiles": [
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
+    "文本笔记/未命名.md",
     "组织/python-dotenv梳理.canvas",
+    "文本笔记/交大新生入学.md",
     "附件/Wish List.md",
     "附件/主页.md",
     "组织/其他.canvas",
@@ -241,7 +243,6 @@
     "文本笔记/Plans.md",
     "主页.md",
     "组织/python/实战.canvas",
-    "文本笔记/交大新生入学.md",
     "手写笔记/python-dotenv梳理.md",
     "组织/python/python roadmap.canvas",
     "文本笔记/python学习相关/工具",
@@ -270,7 +271,6 @@
     "手写笔记/闭包.md",
     "文本笔记/python学习相关/python开源项目.md",
     "Clippings/python深浅拷贝.md",
-    "Clippings/python 元类.md",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "文本笔记/附件/Pasted image 20260812104837.png",
