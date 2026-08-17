@@ -11,17 +11,15 @@
             "id": "e6c9d83523e73095",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 120,
-                  "y": 160,
-                  "zoom": -1.1164419082221053
-                }
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -209,7 +207,7 @@
       "templates:插入模板": false
     }
   },
-  "active": "745f6abf6b64b878",
+  "active": "497eb0e50e1c55fd",
   "lastOpenFiles": [
     "组织/root.canvas",
     "文本笔记/关于外表.md",
