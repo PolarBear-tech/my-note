@@ -26,7 +26,8 @@
 		{"id":"9750963d92a35810","type":"text","text":"- [x] [[python 元类]]","x":112,"y":-380,"width":250,"height":60},
 		{"id":"ddcbb16a9b7f75e3","type":"text","text":"- [x] [[python 模式匹配]]","x":112,"y":-260,"width":250,"height":60},
 		{"id":"f57849862f8ca285","type":"text","text":"- [x] [[python 魔术方法]]","x":112,"y":-140,"width":250,"height":60},
-		{"id":"1230ba4259c4b880","type":"text","text":"- [ ] [[Python 数据结构与函数式编程工具]]","x":112,"y":0,"width":412,"height":60}
+		{"id":"1230ba4259c4b880","type":"text","text":"- [ ] [[Python 数据结构与函数式编程工具]]","x":112,"y":0,"width":412,"height":60},
+		{"id":"06339a40b9048cd3","x":-317,"y":1320,"width":250,"height":60,"type":"text","text":"- [ ] mro"}
 	],
 	"edges":[
 		{"id":"c8e8d333c649ff37","fromNode":"fdb3d4ded1f89dc8","fromSide":"right","toNode":"b035c829ed019497","toSide":"left"},
@@ -51,6 +52,7 @@
 		{"id":"ed04731ed78885ca","fromNode":"970d13529a1689fe","fromSide":"right","toNode":"b5d1ab7d7d75ffb7","toSide":"left"},
 		{"id":"d2dbbbf65a9cb45f","fromNode":"e01a1149acaf4a63","fromSide":"right","toNode":"970d13529a1689fe","toSide":"left"},
 		{"id":"08099d4b66fd4d1b","fromNode":"fdb3d4ded1f89dc8","fromSide":"right","toNode":"7937b72956389f1f","toSide":"left"},
-		{"id":"2d02ebf64392cb96","fromNode":"e01a1149acaf4a63","fromSide":"right","toNode":"fdb3d4ded1f89dc8","toSide":"left"}
+		{"id":"2d02ebf64392cb96","fromNode":"e01a1149acaf4a63","fromSide":"right","toNode":"fdb3d4ded1f89dc8","toSide":"left"},
+		{"id":"a88420921d287aec","fromNode":"e01a1149acaf4a63","fromSide":"right","toNode":"06339a40b9048cd3","toSide":"left"}
 	]
 }

@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/其他.canvas",
+                "file": "组织/root.canvas",
                 "viewState": {
-                  "x": -200,
-                  "y": 340,
-                  "zoom": -0.4635360169700341
+                  "x": 120,
+                  "y": 160,
+                  "zoom": -1.4672937364102678
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "其他"
+              "title": "root"
             }
           }
         ]
@@ -149,8 +149,11 @@
   },
   "active": "034a0bcd5460ae95",
   "lastOpenFiles": [
-    "组织/root.canvas",
     "组织/其他.canvas",
+    "组织/root.canvas",
+    "组织/python/python roadmap.canvas",
+    "组织/python/内核语法.canvas",
+    "文本笔记/未命名.md",
     "文本笔记/Wish List.md",
     "文本笔记/Plans.md",
     "文本笔记/读书日记.md",
@@ -161,7 +164,6 @@
     "附件/Wish List.md",
     "附件/主页.md",
     "附件",
-    "组织/python/python roadmap.canvas",
     "组织/其他.canvas.md",
     "文本笔记/交大新生入学.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
@@ -173,7 +175,6 @@
     "文本笔记/python学习相关/python 魔术方法.md",
     "Clippings/python dataclass.md",
     "文本笔记/python学习相关/The Zen of Python.md",
-    "组织/python/内核语法.canvas",
     "组织/python/实战.canvas",
     "组织/python",
     "组织/CPython Contributor RoadMap.canvas",
