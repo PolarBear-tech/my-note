@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"ba90a217a7276b42","x":-680,"y":1040,"width":400,"height":400,"type":"file","file":"文本笔记/python学习相关/工程思想.md"},
 		{"id":"1e260e0a1b67c2da","type":"text","text":"工程工具","x":-817,"y":241,"width":250,"height":60},
 		{"id":"fc59197ca7f7ec65","type":"file","file":"文本笔记/python学习相关/Make指南.md","x":92,"y":-820,"width":400,"height":323},
 		{"id":"ea456f956dbe452f","type":"text","text":"- [x] bash","x":-200,"y":-667,"width":250,"height":60},
@@ -20,10 +21,10 @@
 		{"id":"73e15d2c30a99bb1","type":"text","text":"- [ ] py-spy","x":164,"y":301,"width":250,"height":60},
 		{"id":"f255aaa47355ec20","type":"text","text":"- [ ] memray","x":164,"y":395,"width":250,"height":60},
 		{"id":"286938976b6f83ea","type":"text","text":"- [ ] pdb","x":164,"y":483,"width":250,"height":60},
-		{"id":"def35604252baa31","x":700,"y":-697,"width":400,"height":400,"type":"link","url":"https://www.sphinx-doc.org/zh-cn/master/index.html"},
-		{"id":"1ac3b4d0bd9b4dae","x":700,"y":313,"width":400,"height":400,"type":"file","file":"文本笔记/python学习相关/工具/Hypothesis.md"},
-		{"id":"677e182a922c5bf0","x":700,"y":-177,"width":400,"height":400,"type":"file","file":"文本笔记/python学习相关/工具/py-spy.md"},
-		{"id":"fe21f59fde61603c","x":1280,"y":-697,"width":400,"height":400,"type":"file","file":"文本笔记/python学习相关/工具/coverage.py.md"},
+		{"id":"def35604252baa31","type":"link","url":"https://www.sphinx-doc.org/zh-cn/master/index.html","x":700,"y":-697,"width":400,"height":400},
+		{"id":"1ac3b4d0bd9b4dae","type":"file","file":"文本笔记/python学习相关/工具/Hypothesis.md","x":700,"y":313,"width":400,"height":400},
+		{"id":"677e182a922c5bf0","type":"file","file":"文本笔记/python学习相关/工具/py-spy.md","x":700,"y":-177,"width":400,"height":400},
+		{"id":"fe21f59fde61603c","type":"file","file":"文本笔记/python学习相关/工具/coverage.py.md","x":1280,"y":-697,"width":400,"height":400},
 		{"id":"4c90a8cae6660177","type":"text","text":"- [ ] pydantic","x":-195,"y":820,"width":250,"height":60}
 	],
 	"edges":[

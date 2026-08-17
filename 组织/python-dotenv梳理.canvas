@@ -5,7 +5,7 @@
 		{"id":"36d0e72c8e74134b","type":"text","text":"`load_dotenv(...)`","x":-860,"y":-276,"width":320,"height":58},
 		{"id":"85c8d2a6e7ffc7e1","type":"text","text":"调用`_load_dotenv_disabled(...)`，根据`PYTHON_DOTENV_DISABLED`的值判断用户是否允许load .env文件","x":-139,"y":-314,"width":600,"height":133},
 		{"id":"55df2031b99fd73d","type":"text","text":"# `return False`","x":4,"y":300,"width":315,"height":92,"color":"#ff0000"},
-		{"id":"cc64076bf6df49e0","type":"text","text":"# `return True`","x":4,"y":-860,"width":315,"height":80},
+		{"id":"cc64076bf6df49e0","type":"text","text":"# `return True`","x":4,"y":-860,"width":315,"height":80,"color":"#ff0000"},
 		{"id":"295120df6d658448","type":"text","text":"调用`find_env()`，如果没有手动设置`dotenv_path`和`steam`时，寻找`.env`文件路径\n","x":621,"y":-308,"width":420,"height":120},
 		{"id":"e23de22695a87141","type":"text","text":"调用`_walk_to_root(...)`一层层寻找父文件夹","x":1301,"y":-43,"width":322,"height":80},
 		{"id":"7c649c0ecd93b6e2","type":"text","text":"根据栈结构寻找上一层调用`load_dotenv(...)`的文件","x":1304,"y":-188,"width":319,"height":100},
@@ -25,7 +25,8 @@
 		{"id":"89a59542950a5806","x":2231,"y":1156,"width":250,"height":149,"color":"#00ff00","type":"text","text":"`_dict`\n\n保存已解析的环境变量键值对"},
 		{"id":"25654f39f68543cc","x":2540,"y":1230,"width":250,"height":60,"color":"#00ff00","type":"text","text":"`encoding`  "},
 		{"id":"c5e8ec1e82a8de94","x":-719,"y":2844,"width":299,"height":156,"type":"text","text":"`parse_steam(...)`\n\n接受一个流，再通过`Reader`进行解析"},
-		{"id":"ef0a1af8b5443329","x":-563,"y":3449,"width":250,"height":60,"color":"#00ff00","type":"text","text":"`Reader`"}
+		{"id":"ef0a1af8b5443329","x":-100,"y":3520,"width":250,"height":60,"color":"#00ff00","type":"text","text":"`Reader`"},
+		{"id":"726556692df2ee7b","x":-97,"y":3724,"width":250,"height":60,"type":"text","text":"属性"}
 	],
 	"edges":[
 		{"id":"888ea5dc0403d51c","fromNode":"36d0e72c8e74134b","fromSide":"right","toNode":"85c8d2a6e7ffc7e1","toSide":"left","label":"判断"},
@@ -52,6 +53,8 @@
 		{"id":"a348408c6adfaf16","fromNode":"ca4a4332af594c28","fromSide":"bottom","toNode":"0f86f6e46c1d8555","toSide":"top"},
 		{"id":"516af46ebd7bfe31","fromNode":"ca4a4332af594c28","fromSide":"bottom","toNode":"89a59542950a5806","toSide":"top"},
 		{"id":"855241b08e7cb2a3","fromNode":"8b9e04ed9d78288b","fromSide":"right","toNode":"fa0d8bcbef35ca91","toSide":"left"},
-		{"id":"64df2f4d1e757f3f","fromNode":"fa0d8bcbef35ca91","fromSide":"right","toNode":"ba6e6faab974b926","toSide":"left"}
+		{"id":"64df2f4d1e757f3f","fromNode":"fa0d8bcbef35ca91","fromSide":"right","toNode":"ba6e6faab974b926","toSide":"left"},
+		{"id":"09571c175885236f","fromNode":"c5e8ec1e82a8de94","fromSide":"bottom","toNode":"ef0a1af8b5443329","toSide":"left","toEnd":"none","color":"#00ff00"},
+		{"id":"b64b4c2e614f246a","fromNode":"ef0a1af8b5443329","fromSide":"bottom","toNode":"726556692df2ee7b","toSide":"top"}
 	]
 }
