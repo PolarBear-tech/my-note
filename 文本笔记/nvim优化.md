@@ -1,12 +1,12 @@
-# img-clip.nvim
+## img-clip.nvim
 
 `img-clip.nvim` 是一个在 Neovim 中**粘贴/嵌入图片**的插件，支持从剪贴板粘贴、拖放、URL 下载，并自动生成对应标记语言的图片语法。
 
 ---
 
-## 一、安装
+### 一、安装
 
-### 系统依赖
+#### 系统依赖
 
 | 系统                  | 需要安装                                 |
 | ------------------- | ------------------------------------ |
@@ -17,7 +17,7 @@
 
 安装后运行 `:checkhealth img-clip` 验证依赖是否满足。
 
-### lazy.nvim
+#### lazy.nvim
 
 ```lua
 {
@@ -34,9 +34,9 @@
 
 ---
 
-## 二、核心用法
+### 二、核心用法
 
-### 命令
+#### 命令
 
 | 命令 | 作用 |
 |---|---|
@@ -44,7 +44,7 @@
 | `:ImgClipDebug` | 打印调试日志 |
 | `:ImgClipConfig` | 查看当前配置 |
 
-### Lua API
+#### Lua API
 
 ```lua
 require("img-clip").paste_image(opts?, input?)
@@ -66,9 +66,9 @@ require("img-clip").paste_image({}, "https://example.com/image.png")
 
 ---
 
-## 三、配置详解
+### 三、配置详解
 
-### 默认配置结构
+#### 默认配置结构
 
 ```lua
 {
@@ -151,7 +151,7 @@ require("img-clip").paste_image({}, "https://example.com/image.png")
 }
 ```
 
-### 模板占位符
+#### 模板占位符
 
 | 占位符 | 说明 |
 |---|---|
@@ -161,9 +161,9 @@ require("img-clip").paste_image({}, "https://example.com/image.png")
 
 ---
 
-## 四、实用配置示例
+### 四、实用配置示例
 
-### 示例 1：Markdown 笔记工作流
+#### 示例 1：Markdown 笔记工作流
 
 把截图自动保存到当前文件同级 `assets` 目录，并转换为 webp 压缩：
 
@@ -192,7 +192,7 @@ require("img-clip").paste_image({}, "https://example.com/image.png")
 }
 ```
 
-### 示例 2：为自定义文件类型添加支持
+#### 示例 2：为自定义文件类型添加支持
 
 比如 Quarto (`.qmd`) 文件，让它和 Markdown 行为一致：
 
@@ -208,7 +208,7 @@ opts = {
 }
 ```
 
-### 示例 3：拖放时自动嵌入（不提示文件名）
+#### 示例 3：拖放时自动嵌入（不提示文件名）
 
 ```lua
 opts = {
@@ -224,9 +224,9 @@ opts = {
 
 ---
 
-## 五、与其他插件集成
+### 五、与其他插件集成
 
-### 1. Telescope 选择本地图片插入
+#### 1. Telescope 选择本地图片插入
 
 ```lua
 local function embed_with_telescope()
@@ -251,7 +251,7 @@ end
 vim.keymap.set("n", "<leader>pi", embed_with_telescope, { desc = "Insert image from telescope" })
 ```
 
-### 2. Snacks.picker 集成
+#### 2. Snacks.picker 集成
 
 ```lua
 local function embed_with_snacks()
@@ -265,7 +265,7 @@ local function embed_with_snacks()
 end
 ```
 
-### 3. Oil.nvim 集成
+#### 3. Oil.nvim 集成
 
 ```lua
 -- 在 oil 中按 <leader>p 插入当前选中的图片
@@ -284,7 +284,7 @@ require("oil").setup({
 
 ---
 
-## 六、拖放支持情况
+### 六、拖放支持情况
 
 不同终端模拟器对拖放的支持：
 
@@ -299,7 +299,7 @@ require("oil").setup({
 
 ---
 
-## 七、常见问题
+### 七、常见问题
 
 1. **粘贴后只显示路径，没有生成图片语法？**
    - 检查当前文件类型是否在 `filetypes` 中配置了模板
@@ -316,15 +316,15 @@ require("oil").setup({
 4. **Windows 上拖放有问题？**
    - 尝试将默认 shell 改为 `powershell` 或 `pwsh`
 
+## weztrerm.nvim
 
-# weztrerm.nvim
+有关 wezterm:
 
-有关wezterm:
 `willothy/wezterm.nvim` 的核心定位是：**在 Neovim 里通过 Lua 调用 `wezterm` CLI，从而控制外部的 WezTerm 终端**。它不需要你在 WezTerm 侧做任何配置，纯 nvim 插件。
 
 ---
 
-## 一、安装
+### 一、安装
 
 要求 **Neovim >= 0.10**。
 
@@ -336,7 +336,7 @@ require("oil").setup({
 }
 ```
 
-### 配置选项
+#### 配置选项
 
 ```lua
 {
@@ -351,11 +351,11 @@ require("oil").setup({
 
 ---
 
-## 二、核心 API
+### 二、核心 API
 
 插件暴露的模块是 `require('wezterm')`，主要分两类：**标签/窗格切换** 和 **任务执行**。
 
-### 1. 切换标签页（switch_tab）
+#### 1. 切换标签页（switch_tab）
 
 ```lua
 local wezterm = require('wezterm')
@@ -375,7 +375,7 @@ vim.keymap.set("n", "<leader>wp", function() wezterm.switch_tab.relative(-1) end
 
 > 规律：**所有接收数值参数的函数，如果没传参，会自动检查 `vim.v.count`**。
 
-### 2. 切换窗格（switch_pane）
+#### 2. 切换窗格（switch_pane）
 
 在 `flatten.nvim` 的源码中可以看到实际用法：
 
@@ -389,9 +389,9 @@ vim.keymap.set("n", "<leader>wf", function()
 end)
 ```
 
-### 3. 执行任务（spawn）
+#### 3. 执行任务（spawn）
 
-#### 方式 A：命令 `:WeztermSpawn`
+##### 方式 A：命令 `:WeztermSpawn`
 
 安装后默认会注册一个用户命令：
 
@@ -403,7 +403,7 @@ end)
 
 这会在 **WezTerm 的新标签页** 中执行命令。
 
-#### 方式 B：Lua API（如果文档中有暴露）
+##### 方式 B：Lua API（如果文档中有暴露）
 
 完整的 API 列表建议直接在 nvim 中查看插件自带的文档：
 
@@ -415,9 +415,9 @@ end)
 
 ---
 
-## 三、典型使用场景
+### 三、典型使用场景
 
-### 场景 1：快速跳转到 WezTerm 的某个标签
+#### 场景 1：快速跳转到 WezTerm 的某个标签
 
 ```lua
 -- 1-9 数字直接跳转
@@ -428,9 +428,9 @@ for i = 1, 9 do
 end
 ```
 
-### 场景 2：配合 flatten.nvim 使用
+#### 场景 2：配合 flatten.nvim 使用
 
-这是最常见的组合。`flatten.nvim` 负责把外部命令打开的文件"扁平化"到当前 nvim 实例，而 `wezterm.nvim` 负责在操作完成后把焦点切回正确的 WezTerm pane：
+这是最常见的组合。`flatten.nvim` 负责把外部命令打开的文件 " 扁平化 " 到当前 nvim 实例，而 `wezterm.nvim` 负责在操作完成后把焦点切回正确的 WezTerm pane：
 
 ```lua
 -- flatten.nvim 配置片段
@@ -442,7 +442,7 @@ post_open = function(bufnr, winnr, ft, is_blocking)
 end
 ```
 
-### 场景 3：在 nvim 里启动后台任务
+#### 场景 3：在 nvim 里启动后台任务
 
 ```lua
 vim.keymap.set("n", "<leader>rr", function()
@@ -456,10 +456,10 @@ end)
 
 ---
 
-## 四、注意事项
+### 四、注意事项
 
 1. **依赖 `wezterm` CLI**：确保 `wezterm` 命令在系统 PATH 中可用。
 2. **只对当前 WezTerm 实例生效**：插件通过环境变量（如 `WEZTERM_PANE`）识别当前所在的 WezTerm 会话。
-3. **与 pane 导航插件不冲突**：这个插件是"nvim 控制 WezTerm"，而 `smart-splits.nvim` / `wezterm-mux.nvim` 是"在 nvim split 和 WezTerm pane 之间导航"，两者可以共存。
+3. **与 pane 导航插件不冲突**：这个插件是 "nvim 控制 WezTerm"，而 `smart-splits.nvim` / `wezterm-mux.nvim` 是 " 在 nvim split 和 WezTerm pane 之间导航 "，两者可以共存。
 
 如果你需要完整的函数签名和更多 API，最权威的方式是在 nvim 里执行 `:h wezterm.nvim`。

@@ -1,17 +1,17 @@
-# 豆包：Python 进阶学习路线 & 去哪里学
+## 豆包：Python 进阶学习路线 & 去哪里学
 
 > 前提：基础已经过关：会语法、循环条件、函数、类、异常、文件操作、模块包，能写小脚本。进阶不再学语法，而是**底层原理、工程能力、高性能、生态库、架构思维**。
 
-## 一、进阶核心学什么（重点清单）
+### 一、进阶核心学什么（重点清单）
 
-### 1. Python 语言内核（必学）
+#### 1. Python 语言内核（必学）
 
 - 高级语法：装饰器、生成器、迭代器、上下文管理器、闭包、\*args / \*\*kwargs、元类 metaclass
 - 内存模型：变量引用、深浅拷贝、垃圾回收 GC、小整数池、GIL 全局解释器锁
 - 并发编程：多线程、多进程、协程 asyncio，IO 密集 vs CPU 密集选型
 - 模块与包：import 机制、`__init__.py`、相对导入、setup/pyproject.toml 打包发布
 
-### 2. 工程化能力（工作最常用）
+#### 2. 工程化能力（工作最常用）
 
 - 虚拟环境：venv/poetry/pipenv，依赖管理
 - 类型注解 typing，mypy 静态类型检查
@@ -20,14 +20,14 @@
 - Git + pre‑commit 工作流
 - 日志 logging、配置文件、异常处理最佳实践
 
-### 3. 高性能 & 底层
+#### 3. 高性能 & 底层
 
 - CPython 简单原理，性能分析 cProfile
 - C 扩展基础 / Cython /ctypes
 - 数据结构：collections、itertools，理解时间复杂度
 - numpy 底层原理（如果做数据方向）
 
-### 4. 方向分支（选一个深耕）
+#### 4. 方向分支（选一个深耕）
 
 1. **后端开发**：FastAPI / Django，ORM，异步，接口设计
 2. **数据分析 AI**：numpy/pandas，pytorch
@@ -36,16 +36,16 @@
 
 ---
 
-## 二、学习资源（免费 + 付费，分网站 / 书籍）
+### 二、学习资源（免费 + 付费，分网站 / 书籍）
 
-### 📚 书籍（进阶首选，体系完整）
+#### 📚 书籍（进阶首选，体系完整）
 
 1. 《流畅 Python Fluent Python》✅ **进阶圣经，必看**，讲 Pythonic 写法、高级语法、并发
 2. 《Python Cookbook》大量工程实战案例
 3. 《Python 高性能编程》讲 GIL、性能优化
 4. 《CPython 源码剖析》想啃底层虚拟机看这本
 
-### 🆓 免费线上学习站点
+#### 🆓 免费线上学习站点
 
 1. **官方文档**
 	[https://docs.python.org/zh-cn/3/](https://link.wtturl.cn/?target=https%3A%2F%2Fdocs.python.org%2Fzh-cn%2F3%2F&scene=im&aid=582478&lang=zh "autolink")
@@ -62,12 +62,12 @@
 - FastAPI 源码、requests 源码、pytest 源码
 - github 搜小型高质量 python 项目，clone 下来读、改 bug、提交 PR
 
-### ✨ 付费课程（可选）
+#### ✨ 付费课程（可选）
 
 - 极客时间《Python 核心技术与实战》，工程向，适合想提升工作能力
 - 掘金小册：Python 进阶、asyncio 实战
 
-## 三、进阶正确学习方式（避坑）
+### 三、进阶正确学习方式（避坑）
 
 ❌ 不要继续刷基础语法练习题
 
@@ -80,7 +80,7 @@
 3. 用 pytest 给自己写的脚本写单元测试
 4. 把自己写的工具打包成 pip 可安装包
 
-## 四、学习顺序建议
+### 四、学习顺序建议
 
 1. 先搞定：装饰器、生成器、上下文管理器 →《流畅 Python》前半部分
 2. 再学：并发（线程 / 进程 /asyncio）
@@ -88,11 +88,11 @@
 4. 了解 GIL、GC 内存原理
 5. 选定业务方向（后端 / AI / 自动化）做实战项目
 
-# kimi：补充
+## kimi：补充
 
-## 一、遗漏的关键知识点
+### 一、遗漏的关键知识点
 
-### 1. 调试与性能分析（比 cProfile 更实用）
+#### 1. 调试与性能分析（比 cProfile 更实用）
 
 你提到了 cProfile，但进阶阶段还需要掌握**不修改代码就能分析**的工具：
 
@@ -103,7 +103,7 @@
 
 > 💡 **建议**：学 py-spy 和 memray，这两个是工作里真正救命的工具。
 
-### 2. Python 3.10+ 现代语法（很多人还在用 Python 3.8 的思维写代码）
+#### 2. Python 3.10+ 现代语法（很多人还在用 Python 3.8 的思维写代码）
 
 - **`match-case`** 结构模 式匹配（不只是 switch，能解构对象）
 - **`|` 联合类型注解**：`def f(x: int | str)` 替代 `Union[int, str]`
@@ -112,13 +112,13 @@
 
 > 这些新特性在《流畅 Python》第 2 版（2022 年出版）里有覆盖，如果你看的是第 1 版，建议对照官方文档补一下。
 
-### 3. 数据类与模型验证（工程化必会）
+#### 3. 数据类与模型验证（工程化必会）
 
 - **`@dataclass`** 的进阶用法：`slots=True`（省内存）、`frozen=True`（不可变）、`__post_init__`
 - **Pydantic v2**：现代 Python 的数据验证/序列化标准，FastAPI 底层就是 Pydantic，单独学它很重要
 - **`attrs`**：比 dataclass 更早、更灵活的类定义库
 
-### 4. 函数式编程工具箱
+#### 4. 函数式编程工具箱
 
 Python 不是纯函数式语言，但 `functools` 和 `itertools` 用好了代码会非常 Pythonic：
 
@@ -126,7 +126,7 @@ Python 不是纯函数式语言，但 `functools` 和 `itertools` 用好了代�
 - `itertools.groupby / tee / chain.from_iterable`
 - `operator.itemgetter / attrgetter`（配合 `sorted()` 和 `max()` 很优雅）
 
-### 5. 安全编码（极易被忽视）
+#### 5. 安全编码（极易被忽视）
 
 - **依赖安全**：`pip-audit`、`safety` 扫描已知漏洞
 - **Bandit**：静态安全分析工具（检测 SQL 注入、硬编码密码等）
@@ -134,9 +134,9 @@ Python 不是纯函数式语言，但 `functools` 和 `itertools` 用好了代�
 
 ---
 
-## 二、工程化补充（工作场景）
+### 二、工程化补充（工作场景）
 
-### 1. 容器化与部署
+#### 1. 容器化与部署
 
 再强的代码不会部署也白搭：
 
@@ -144,19 +144,19 @@ Python 不是纯函数式语言，但 `functools` 和 `itertools` 用好了代�
 - **GitHub Actions / GitLab CI**：自动化测试、lint、类型检查流水线
 - **`.dockerignore`** 和 `requirements.txt` 冻结策略
 
-### 2. 文档生成
+#### 2. 文档生成
 
 - **MkDocs + Material**：写技术文档/项目文档最顺手的组合
 - **Sphinx**：大型项目文档标准（如 Python 官方文档）
 - **Docstring 规范**：Google Style / NumPy Style，配合 `mkdocstrings` 自动生成 API 文档
 
-### 3. 包管理进阶
+#### 3. 包管理进阶
 
 - **lock 文件的重要性**：`poetry.lock` / `uv.lock` 保证可复现构建
 - **`uv`**（Astral 出品，Rust 写的 Python 包管理器）：2024-2025 年最值得关注的新工具，速度比 pip 快 10-100 倍，正在快速替代 poetry/pipenv
 - **可编辑安装**：`pip install -e .` 开发时的正确姿势
 
-### 4. 测试进阶
+#### 4. 测试进阶
 
 - **覆盖率**：`coverage.py`，目标不是 100%，而是**覆盖核心逻辑路径**
 - **Hypothesis**：基于属性的测试（property-based testing），自动生成边界 case，能发现你根本想不到的 bug
@@ -164,29 +164,29 @@ Python 不是纯函数式语言，但 `functools` 和 `itertools` 用好了代�
 
 ---
 
-## 三、底层原理补充
+### 三、底层原理补充
 
-### 1. 字节码与执行模型
+#### 1. 字节码与执行模型
 
 - **`dis` 模块**：反编译 Python 字节码，理解 `for` 循环和列表推导式的性能差异到底在哪
 - **`inspect` 模块**：运行时 introspection，写框架/库时经常用到
 - **`sys.settrace`**：理解调试器、pdb、coverage.py 的底层原理
 
-### 2. GIL 的替代方案（2024 年已变天）
+#### 2. GIL 的替代方案（2024 年已变天）
 
 Python 3.13 开始实验性支持 **GIL-free 构建（free-threaded）**，未来多线程 CPU 密集型任务可能有质变。建议关注：
 
 - `PYTHON_GIL=0` 环境变量
 - 无 GIL 下的线程安全编程模式
 
-### 3. 异步生态不止 asyncio
+#### 3. 异步生态不止 asyncio
 
 - **Trio**：比 asyncio 更友好的结构化并发库
 - **AnyIO**：兼容 asyncio 和 trio 的抽象层，写库时用它而不是直接绑死 asyncio
 
 ---
 
-## 四、实战项目补充建议
+### 四、实战项目补充建议
 
 你列的练手项目很好，我再补充几个**有明确产出、能放简历**的：
 
@@ -204,7 +204,7 @@ Python 3.13 开始实验性支持 **GIL-free 构建（free-threaded）**，未�
 
 ---
 
-## 五、学习路径微调建议
+### 五、学习路径微调建议
 
 你的顺序整体合理，但我建议**把工程化提前**：
 
@@ -217,13 +217,13 @@ Python 3.13 开始实验性支持 **GIL-free 构建（free-threaded）**，未�
 
 ---
 
-## 六、一句话总结
+### 六、一句话总结
 
 > **进阶的终点不是 " 知道更多语法 "，而是 " 能写出别人愿意维护的代码 "。**
 
 你的计划已经覆盖了 80%，补充上面这些后，剩下的就是**持续写代码、持续读好代码、持续复盘**。祝进阶顺利！🚀
 
-# 其他
+## 其他
 
 ![[Pasted image 20260812104837.png|967]]
 

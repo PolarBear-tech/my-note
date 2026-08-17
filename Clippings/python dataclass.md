@@ -5,7 +5,7 @@ created: 2026-08-13
 
 有人可能在平时看代码的时候，会看到类似这样的标识 `@dataclass` 。 `@` 众所周知，简单易得，是 python 当中修饰符的意思（狗头）。那么 `@dataclass` 是做什么的呢？
 
-### 开始
+## 开始
 
 首先我们可以看这么一段代码：
 
@@ -71,7 +71,7 @@ False
 
 其实牛逼不止于此。除了这三个函数之外， `dataclass` 还它实现了其他的一些函数，具体的函数名可以参考 [3. Data model — Python 3.14.7 documentation](https://docs.python.org/3/reference/datamodel.html#specialnames) ，可以看下哪些这是你需要的。如果没有的话，那就需要你自己写了, good luck。
 
-### 默认初始化
+## 默认初始化
 
 接下来让我们再深入的思考一下。在上面使用 `dataclass` 进行定义的时候，我们只是用了 `name:type` 就进行了初始化，那么如果我们想要使用默认值进行初始化呢，比如实现这个例子
 
@@ -149,7 +149,7 @@ Car(brand='bmw', price='500000', color='black') Car(brand='tesla', price='300000
 
 可以看到，bmw 随机的初始化了一个颜色 `black`. 但是要注意一点，这个初始化函数是不支持传参数的。那么，如果你就是需要初始化一个东西，而且必须要参数，这个该怎么办呢？ 这是时候，你自己定义一个 `__post__init__` 函数就可以了。他会在 [init函数](https://zhida.zhihu.com/search?content_id=211546098&content_type=Article&match_order=1&q=init%E5%87%BD%E6%95%B0&zhida_source=entity) 之后自动的去执行。
 
-### field 是嘛啊
+## field 是嘛啊
 
 因为可以用 field 函数替代原生的 field(),那么其实意味着我们可以这么写
 
@@ -198,7 +198,7 @@ bmw, red
 
 可以看到， price 的值就不会再打印出来了。
 
-### 你挺好的，但是谢谢了
+## 你挺好的，但是谢谢了
 
 介绍完了 dataclass 帮我们实现的这些函数之后，相信你会不由得竖起大拇指为他点赞。但是有的同学就未必愿意了：
 

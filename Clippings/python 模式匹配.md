@@ -3,7 +3,7 @@ source: "https://zhuanlan.zhihu.com/p/706263499"
 created: 2026-08-13
 ---
 
-# 基本语法
+## 基本语法
 
 使用 match 语句和 case 子句来实现模式匹配。
 
@@ -20,7 +20,7 @@ match subject:
        default_action
 ```
 
-# 简单值匹配
+## 简单值匹配
 
 ```python
 def describe_type(item):
@@ -42,7 +42,7 @@ print(describe_type("hello"))  # It's a string
 print(describe_type([1, 2, 3]))  # It's a list
 ```
 
-# 结构匹配
+## 结构匹配
 
 ```python
 def describe_structure(data):
@@ -62,7 +62,7 @@ print(describe_structure([1, 2]))  # It's a list with two items: 1 and 2
 print(describe_structure([1, 2, 3, 4]))  # It's a list starting with 1 and the rest is [2, 3, 4]
 ```
 
-# 对象匹配
+## 对象匹配
 
 ```python
 class Point:
@@ -89,7 +89,7 @@ print(describe_point(Point(3, 0)))  # It's on the x-axis at 3
 print(describe_point(Point(3, 5)))  # It's at (3, 5)
 ```
 
-# 条件匹配（守卫）
+## 条件匹配（守卫）
 
 ```python
 def categorize_num(item: int):
@@ -109,7 +109,7 @@ print(categorize_num(2))  # positive even
 print(categorize_num(3))  # positive odd
 ```
 
-# OR 模式
+## OR 模式
 
 ```python
 def describe_or_type(item):
@@ -128,7 +128,7 @@ print(describe_or_type(3.5))  # It's a number
 print(describe_or_type(Point(3, 5)))  # It's something else
 ```
 
-# 变量捕获
+## 变量捕获
 
 ```python
 def process_command(command):

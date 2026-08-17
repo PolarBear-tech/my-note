@@ -94,8 +94,8 @@
       "enabled": false
     },
     "header-increment": {
-      "enabled": false,
-      "start-at-h2": false
+      "enabled": true,
+      "start-at-h2": true
     },
     "headings-start-line": {
       "enabled": true

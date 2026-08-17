@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "56afe0caafcb0a90",
+        "id": "0f3841428d9bd07d",
         "type": "tabs",
         "children": [
           {
-            "id": "e6c9d83523e73095",
+            "id": "e1eff4995d97b8a5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -209,8 +204,13 @@
   },
   "active": "497eb0e50e1c55fd",
   "lastOpenFiles": [
-    "组织/root.canvas",
+    "文本笔记/nvim优化.md",
+    "文本笔记/Wish List.md",
+    "文本笔记/读书日记.md",
     "文本笔记/关于外表.md",
+    "组织/其他.canvas",
+    "README.md",
+    "组织/root.canvas",
     "文本笔记/Plans.md",
     "文本笔记/薛定谔方程里为什么有i.md",
     "组织/python/python roadmap.canvas",
@@ -226,11 +226,7 @@
     "文本笔记/交大新生入学.md",
     "附件/Wish List.md",
     "附件/主页.md",
-    "组织/其他.canvas",
-    "README.md",
     "附件",
-    "文本笔记/读书日记.md",
-    "文本笔记/Wish List.md",
     "主页.md",
     "手写笔记/python-dotenv梳理.md",
     "文本笔记/python学习相关/工具",

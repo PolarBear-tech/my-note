@@ -1,4 +1,4 @@
-# GNU make 手册 个人中译版
+## GNU make 手册 个人中译版
 
 Copyright (C) 2024 JohnSyu.
 
@@ -14,7 +14,7 @@ Texts. A copy of the license is included in the section entitled ``GNU
 
 Free Documentation License''.
 
-# 1 *make* 概述
+## 1 *make* 概述
 
 *make* 实用程序自动确定大型程序的哪些部分需要重新编译，并发出重新编译它们的命令。本手册描述了由 Richard Stallman 和 Roland McGrath 实现的 GNU *make*。自 3.76 版本以来的开发一直由 Paul D.Smith 负责。
 
@@ -36,15 +36,15 @@ make
 
 您可以提供命令行参数给 *make*，来控制应重新编译哪些文件或如何重新编译。请参阅 [9 How to Run make](https://www.gnu.org/software/make/manual/make.html#Running)。
 
-## 1.1 How to Read This Manual
+### 1.1 How to Read This Manual
 
 （暂略）
 
-## 1.2 Problems and Bugs
+### 1.2 Problems and Bugs
 
 （暂略）
 
-# 2 An Introduction to Makefiles
+## 2 An Introduction to Makefiles
 
 你需要一个名为 *makefile* 的文件来告诉 *make* 该做什么。通常，*makefile* 会告诉 *make* 如何编译和链接程序。
 
@@ -52,7 +52,7 @@ make
 
 当 *make* 重新编译编辑器时，必须重新编译每个更改过的 C 源文件。如果头文件发生了更改，则必须重新编译包含该头文件的每个 C 源文件，以确保安全。每次编译都会生成一个与源文件相对应目标文件。最后，如果重新编译了任何源文件，则所有目标文件，无论是新创建的还是从以前的编译中保存的，都必须链接在一起，以生成新的可执行编辑器（译者注，这里原文就是 new executable editor，虽然我感觉 editor 这个词怪怪的）。
 
-## 2.1 一条规则的样式
+### 2.1 一条规则的样式
 
 一个简单的 *makefile* 由以下形状的“规则 (rule)”组成：
 
@@ -77,7 +77,7 @@ target ... : prerquisited ...
 
 makefile 可能包含除规则之外的其他文本，但简单的 makefile 只需要包含规则。规则可能看起来比此模板中显示的要复杂一些，但都或多或少地符合模式。
 
-## 2.2 一个简单的 Makefile
+### 2.2 一个简单的 Makefile
 
 这是一个简单的 makefile，它描述了一个名为 edit 的可执行文件依赖于八个目标文件，而这些目标文件又依赖于八个 C 源文件和三个头文件。
 
@@ -134,7 +134,7 @@ make clean
 
 目标 “clean” 不是一个文件，而仅仅是一个操作的名称。由于您通常不想执行此规则中的操作，因此 “clean” 不是任何其他规则的先决条件。因此，除非您明确告诉它，否则 make 永远不会对它做任何事情。请注意，此规则不仅不是先决条件，它也没有任何先决条件，因此该规则的唯一目的是运行指定的配方。不引用文件而只是操作的目标称为*伪目标*。有关此类目标的信息，请参阅 [4.6 Phony Targets](https://www.gnu.org/software/make/manual/make.html#Phony-Targets)。请参阅 [5.5 Errors in Recipes](https://www.gnu.org/software/make/manual/make.html#Errors)，了解如何使 make 忽略来自 rm 或任何其他命令的错误。
 
-## 2.3 make 执行 Makefle 的过程
+### 2.3 make 执行 Makefle 的过程
 
 默认情况下，make 从第一个 target 开始（不是名称以“.”开头的 target，除非它们还包含一个或多个 ‘/’）。这称为默认终点目标（_default goal_）。（终点目标是 make 努力最终更新的目标。您可以使用命令行（请参阅 [9.2 Arguments to Specify the Goals](https://www.gnu.org/software/make/manual/make.html#Goals)）或使用 `.DEFAULT_GOAL` 特殊变量（请参阅 [6.14 Other Special Variables](https://www.gnu.org/software/make/manual/make.html#Special-Variables)）覆盖此行为。）
 
@@ -156,7 +156,7 @@ make 读取当前目录中的 makefile 并从处理第一条规则开始。在�
 
 因此，如果我们更改文件 insert.c 并运行 make，make 将编译该文件以更新 insert.o，然后链接 edit。如果我们更改文件 command.h 并运行 make，make 将重新编译目标文件 kbd.o、command.o 和 file.o，然后链接文件 edit。
 
-## 2.4 使用变量简化 makefile
+### 2.4 使用变量简化 makefile
 
 在我们的示例中，我们必须在 edit 规则中列出所有目标文件两次（此处重复）：
 
@@ -206,7 +206,7 @@ clean :
         rm edit $(objects)
 ```
 
-## 2.5 让 make 推断 recipes
+### 2.5 让 make 推断 recipes
 
 没有必要详细说明编译单个 C 源文件的方法，因为 `make` 可以弄清楚它们：它有一个隐含的规则，可以使用 `cc -c` 命令从相应命名的 .c 文件中更新 .o 文件。例如，它将使用配方 `cc -c main.c -o main.o` 将 main.c 编译为 main.o。因此，我们可以从目标文件的规则中省略这些方法。请参阅 [10 Using Implicit Rules](https://www.gnu.org/software/make/manual/make.html#Implicit-Rules)。
 
@@ -239,7 +239,7 @@ clean :
 
 因为隐式规则非常方便，所以它们很重要。你会看到它们经常被使用。
 
-## 2.6 Makefile 的另一种形式
+### 2.6 Makefile 的另一种形式
 
 当 makefile 的目标文件 **仅由隐式规则创建时**，可以使用 makefile 的另一种风格。在这种 makefile 风格中，可以按 prerequisites 而不是 target 对条目进行分组。
 
@@ -259,7 +259,7 @@ display.o insert.o search.o files.o : buffer.h
 
 这是否更好是一个品味问题：它更紧凑，但有些人不喜欢它，因为他们发现将每个目标的所有信息放在一个地方更清晰。
 
-## 2.7 清理目录的规则
+### 2.7 清理目录的规则
 
 编译程序并不是您编写规则唯一想要做的事情。Makefile 通常会告诉您除了编译程序之外如何做其他一些事情：例如，如何删除所有目标文件和可执行文件，以便目录是“干净的”。
 
@@ -284,11 +284,11 @@ clean :
 
 由于 *clean* 不是 *edit* 的先决条件，如果我们给出不带参数的命令 “`make`”，则此规则根本不会运行。为了使规则运行，我们必须键入 “`make clean`”。请参阅 [9 How to Run make](https://www.gnu.org/software/make/manual/make.html#Running)。
 
-# 3 Writing Makefiles
+## 3 Writing Makefiles
 
 来自数据库中告诉 *make* 如何重新编译系统的信息被称为 makefile。
 
-## 3.1 Makefiles 包含的内容
+### 3.1 Makefiles 包含的内容
 
 - explicit rules
     显式规则说明何时以及如何重新制作一个或多个文件，称为规则的 _targets_。它列出了 _target_ 所依赖的其他文件，称为目标的 _prerequisites_ ，还可以提供用于创建或更新 _target_ 的 _recipe_ 。[4 Writing Rules](https://www.gnu.org/software/make/manual/make.html#Rules)
@@ -306,7 +306,7 @@ clean :
     在 `define` 指令中，注释在定义变量时不会被忽略，而是保持变量值不变。当变量展开时，它们将被视为 make 注释或 recipe 文本，具体取决于评估变量的上下文。
 - [3.1.1 Splitting Long Lines](https://www.gnu.org/software/make/manual/make.html#Splitting-Lines)
 
-### 3.1.1 Splitting Long Lines
+#### 3.1.1 Splitting Long Lines
 
 Makefile 使用“基于行”的语法，其中换行符是特殊的，并标记语句的结尾。GNU make 对语句行的长度没有限制，最高可达计算机中的内存量。
 
@@ -318,7 +318,7 @@ Makefile 使用“基于行”的语法，其中换行符是特殊的，并标�
 
 如果特殊目标 `.POSIX` 被定义，那么反斜杠及换行符组合处理会稍微修改以符合 POSIX.2：首先，不删除反斜杠前面的空格，其次，不压缩连续的反斜杠/换行符。
 
-#### 不添加空格的拆分
+##### 不添加空格的拆分
 
 如果您需要拆分一行但不希望添加任何空格，您可以利用一个微妙的技巧：使用美元符号、反斜杠和换行符三个字符：
 
@@ -339,7 +339,7 @@ var := one$ word
 var := oneword
 ```
 
-## 3.2 Makefile 文件的名称
+### 3.2 Makefile 文件的名称
 
 默认情况下，当 make 查找 makefile 时，它会按顺序尝试以下名称：*GNUmakefile*、*makefile* 和 *Makefile*。
 
@@ -349,7 +349,7 @@ var := oneword
 
 如果您想为 makefile 使用非标准名称，您可以使用 “`-f`” 或 “`--file`” 选项指定 makefile 名称。参数 “`-f name`” 或 “`--file=name`” 告诉 make 将文件 *name* 作为 makefile 读取。如果您使用多个 “`-f`”或“`--file`” 选项，您可以指定多个 makefile。所有 makefile 都按照指定的顺序有效地连接在一起。如果您指定“`-f`”或“`--file`”，则不会自动检查默认 makefile 名称*GNUmakefile*、*makefile* 和 *Makefile*。
 
-## 3.3 包含其它 Makefile
+### 3.3 包含其它 Makefile
 
 `include` 指令告诉 make 暂停读取当前 makefile，并在继续之前读取一个或多个其他 makefile。该指令是 makefile 中的一行，如下所示：
 
@@ -397,7 +397,7 @@ include foo a.mk b.mk c.mk bish bash
 
 为了与其他一些 make 实现兼容，`sinclude` 是 `-include` 的另一个名称。
 
-## 3.4 变量 `MAKEFILES`
+### 3.4 变量 `MAKEFILES`
 
 如果定义了环境变量 `MAKEFILES`，make 会将其值视为要在其他文件之前读取的额外 makefile 的名称列表（以空格分隔）。这与 include 指令的工作原理非常相似：为找到这些文件将搜索许多不同的目录（请参阅 [3.3 Including Other Makefiles](https://www.gnu.org/software/make/manual/make.html#Include)）。此外，默认终点目标永远不会从这些 makefile 之一（或它们包含的任何 makefile）中获取，如果找不到 `MAKEFILES` 中列出的文件，并不会出错。
 
@@ -405,7 +405,7 @@ include foo a.mk b.mk c.mk bish bash
 
 一些用户倾向于在登录时自动在环境中设置 `MAKEFILES`，并对 makefile 进行编程以期望这样做。这是一个非常糟糕的主意，因为如果由其他人运行，这样的 makefile 将无法工作。在 makefile 中编写显式 `include` 指令要好得多。请参阅 [3.3 Including Other Makefiles](https://www.gnu.org/software/make/manual/make.html#Include)。
 
-## 3.5 Makefiles 是怎样被读取的
+### 3.5 Makefiles 是怎样被读取的
 
 有时 makefile 可以从其他文件重制，例如 RCS 或 SCCS 文件。如果可以从其他文件重制 makefile，您可能希望 make 获取最新版本的 makefile 以读取。
 
@@ -441,7 +441,7 @@ Makefile:: ;
 
 因此，“`make -f mfile -n mfile foo`” 将读取 makefile *mfile*，打印更新它所需的配方，而不实际运行它，然后打印更新 foo 所需的配方，而不运行它。foo 的配方将是由 *mfile* 的现有内容指定的配方。
 
-## 3.6 覆盖另一个 Makefile 中的一部分
+### 3.6 覆盖另一个 Makefile 中的一部分
 
 有时拥有一个与另一个 makefile 基本相同的 makefile 很有用。您通常可以使用 '`include`' 指令将一个 makefile 包含在另一个中，并添加更多目标或变量定义。但是，两个 makefile 为同一目标提供不同的配方是无效的。但是还有另一种方法。
 
@@ -466,7 +466,7 @@ force: ;
 
 它的工作方式是因为模式规则是只有一个 “`%`”，它匹配任何目标。该规则指定了一个先决条件 *force*，以保证即使目标文件已经存在，配方也会运行。我们给目标 *force* 一个空配方，以防止 make 搜索隐式规则来构建它——否则它将对 *force* 本身应用相同的 *match-anything* 规则，并创建一个先决条件循环！
 
-## 3.7 `make` 读取 Makefile 的方式
+### 3.7 `make` 读取 Makefile 的方式
 
 GNU make 的工作分为两个不同的阶段。在第一阶段，它读取所有 makefile 和被包含的 makefile，并内化所有变量及其值、隐式和显式规则，并构建所有目标及其先决条件的依赖关系图。在第二阶段，make 使用这些内化数据来确定哪些 targets 需要更新，并运行更新它们所需的 recipe。
 
@@ -476,7 +476,7 @@ GNU make 的工作分为两个不同的阶段。在第一阶段，它读取所�
 
 您可能还不熟悉其中的一些结构。您可以在以后的章节中熟悉本节时参考它们。
 
-### 变量赋值
+#### 变量赋值
 
 变量定义被解析如下：
 
@@ -528,11 +528,11 @@ endef
 
 对于 shell 赋值运算符 ‘`!=`’, 右侧被立即计算并交给 shell。结果存储在左侧命名的变量中，该变量被视为递归扩展变量（因此将在每个引用上重新计算）。
 
-### 条件指令
+#### 条件指令
 
 条件指令会立即被解析。例如，这意味着自动变量不能在条件指令中使用，因为在调用该规则的配方之前不会设置自动变量。如果您需要在条件指令中使用自动变量，您必须将条件移动到配方中并改用 shell 条件语法。
 
-### 规则定义
+#### 规则定义
 
 无论形式如何，规则总是以相同的方式展开：
 
@@ -543,7 +543,7 @@ immediate : immediate ; deferred
 
 即目标和先决条件部分立即展开，用于构建目标的配方总是延迟展开。显式规则、模式规则、后缀规则、静态模式规则和简单先决条件定义都是如此。
 
-## 3.8 解析 Makefile 的方式
+### 3.8 解析 Makefile 的方式
 
 GNU 逐行解析 makefile。解析使用以下步骤进行：
 
@@ -577,7 +577,7 @@ $(myrule)
 
 为了正确展开多行宏，您必须使用 `eval` 函数：这会导致 make 解析器在展开宏的结果上运行（参阅 [8.10 The eval Function](https://www.gnu.org/software/make/manual/make.html#Eval-Function)）
 
-## 3.9 第二次展开
+### 3.9 第二次展开
 
 之前我们了解到 GNU make 分两个不同的阶段工作：读入阶段和目标更新阶段（请参阅 [3.7 How make Reads a Makefile](https://www.gnu.org/software/make/manual/make.html#Reading-Makefiles)）。GNU make 还能够为 makefile 中定义的部分或全部目标启用先决条件（仅）的第二次展开。为了进行第二次展开，必须在使用此功能的第一个先决条件列表之前定义 `.SECONDEXPANSION`。
 
@@ -630,7 +630,7 @@ main lib: $$(patsubst %.c,%.o,$$($$@_SRCS))
 
 在二次展开阶段中对自动变量的评估，尤其是对目标名称变量 `$$@` 的评估，与在配方中的评估类似。然而，对于不同类型的规则定义来说，有一些细微的区别和“角落情况”。下面描述了使用不同自动变量的微妙之处。
 
-### 显式规则的二次展开
+#### 显式规则的二次展开
 
 在显式规则的二次展开期间，`$$@` 和 `$$%` 分别被计算为目标的文件名、目标成员名（当目标是存档成员时）。`$$<` 变量被计算到此目标的第一个规则中的第一个先决条件。`$$^` 和 `$$+` 计算到已为同一目标出现的所有先决条件规则的列表（`$$+` 有重复，`$$^` 没有）。以下示例将有助于说明这些行为：
 
@@ -650,11 +650,11 @@ foo: foo.3 bar.3 $$< $$^ $$+    # line #3
 
 变量 `$$?` 和 `$$*` 不可用并展开为空字符串。
 
-### 静态模式规则的二次展开
+#### 静态模式规则的二次展开
 
 静态模式规则的二次展开规则与上面的显式规则相同，但有一个例外：对于静态模式规则，变量 `$$*` 被设置为模式*词干*(stem)。与显式规则一样，`$$?` 不可用并展开为空字符串。
 
-### 隐式规则的二次展开
+#### 隐式规则的二次展开
 
 当 make 搜索隐式规则时，它会替换词干，然后对具有匹配目标模式的每个规则执行二次展开。自动变量的值以与静态模式规则相同的方式派生。例如：
 
@@ -683,7 +683,7 @@ foo foz: fo%: bo%
 
 在二次展开和目录前缀重建之后，打印的先决条件列表会是 `/tmp/foo/foo.c /tmp/bar/foo.c foo.h`。如果您对此重建不感兴趣，您可以在先决条件列表中使用 `$$*` 而不是 `%`。
 
-# 4 Writing Rules
+## 4 Writing Rules
 
 规则 (*rule*) 会出现在 makefile 中，并说明何时以及如何重新创建某些文件（即该规则的目标 (*target*)，通常每个规则只有一个目标）。它会列出作为目标的先决条件 (*prerequisites*) 的其他文件，以及用于创建或更新目标的指令 (*recipe*)。
 
@@ -691,7 +691,7 @@ rule 的顺序的唯一作用，是指定默认终点目标（*default goal*，�
 
 因此，我们编写 makefile 时，通常会将第一条 rule 作为是编译整个程序或 makefile 描述的所有程序的规则（通常将其称为“all”）。请参阅 [9.2 Arguments to Specify the Goals](https://www.gnu.org/software/make/manual/make.html#Goals)。
 
-## 4.1 规则示例
+### 4.1 规则示例
 
 ``` Makefile
 foo.o : foo.c defs.h       # module for twiddling the frobs
@@ -705,7 +705,7 @@ foo.o : foo.c defs.h       # module for twiddling the frobs
 - 如何判定 foo. o 是否过期：如果它不存在，或者 foo.c 或 defs.h 比它更新，它就过期了。
 - 如何更新 foo. o 文件：按规定运行 cc 。该指令没有明确提到 defs.h，但我们假设 foo.c 包含它，这就是将 defs.h 添加到先决条件中的原因。
 
-## 4.2 Rule 的语法
+### 4.2 Rule 的语法
 
 ``` Makefile
 targets : prerequisites
@@ -735,7 +735,7 @@ targets : prerequisites ; recipe
 
 如何更新由 recipe 指定。这是要由 shell 执行的一行或多行命令（通常是“sh”），但有一些额外的特征（请参阅  [5 Writing Recipes in Rules](https://www.gnu.org/software/make/manual/make.html#Recipes)）。
 
-## 4.3 Prerequisite 的类型
+### 4.3 Prerequisite 的类型
 
 GNU make 可以理解两种不同类型的先决条件：普通先决条件 (normal prerequisites) 和仅声明顺序的先决条件 (order-only prerequisites)。一个 normal prerequisites 做出两种声明：首先，它强制规定了调用 recipe 的顺序：在执行目标的指令之前，将先完成目标的所有先决条件的指令。其次，它强加了一种依赖关系：如果任何先决条件比目标更新，则该目标被视为过时，必须重新构建（通常，这正是您想要的：如果更新了目标的先决条件，那么也应该更新目标。）。
 
@@ -770,7 +770,7 @@ $(OBJDIR):
 
 现在，将在生成任何 “.o” 之前运行创建 objdir 目录的规则，但不会因为 objdir 的目录时间戳的更改导致重新生成任何 “.o” ，。
 
-## 4.4 在文件名中使用通配符
+### 4.4 在文件名中使用通配符
 
 可以使用通配符以单个文件名指定多个文件。make 中的通配符为 `*`、`？`和 `[…]`，和 Bourne shell 中的一样。例如，`*.c` 指定名称以“.c”结尾的所有文件（在工作目录中）的列表。
 
@@ -782,11 +782,11 @@ $(OBJDIR):
 
 通配符的特殊意义可以通过在其前面加一个反斜杠来关闭。因此，`foo\*bar` 将引用一个特定的文件，该文件的名称由“foo”、星号和“bar”组成。
 
-### 4.4.1 通配符示例
+#### 4.4.1 通配符示例
 
-### 4.4.2 使用通配符的缺陷
+#### 4.4.2 使用通配符的缺陷
 
-### 4.4.3 `wildcard` 函数
+#### 4.4.3 `wildcard` 函数
 
 通配符展开在规则 (rules) 中自动发生，但在**设置变量时或在函数的参数中**通常不会发生。此时则需要使用 `wildcard` 函数。
 
@@ -798,11 +798,11 @@ $(wildcard pattern…)
 
 与规则中的通配符展开一样，`wildcard` 函数的结果是排序的。但是，每个单独的表达式都是单独排序的，因此 `$(wildcard *.c *.h)` 将先排序所有匹配 '.c' 的文件，然后是所有匹配 '.h' 的文件。
 
-## 4.5 Searching Directories for Prerequisites
+### 4.5 Searching Directories for Prerequisites
 
 对于大型系统，通常需要将源代码放在与二进制文件分开的目录中。_make_ 的目录搜索功能通过自动搜索几个目录来找到一个先决条件，从而方便了这一点。在目录之间重新分发文件时，不需要更改单个规则，只需要更改搜索路径。
 
-### 4.5.1 `VPATH`: 所有先决条件的搜索路径
+#### 4.5.1 `VPATH`: 所有先决条件的搜索路径
 
 _make_ 变量 `VPATH` 的值指定 _make_ 应搜索的目录列表。大多数情况下，目录应包含不在当前目录中的先决条件文件；然而，_make_ 使用 `VPATH` 作为规则的先决条件和目标的搜索列表。
 
@@ -830,7 +830,7 @@ foo.o : foo.c
 foo.o : src/foo.c
 ```
 
-### 4.5.2 指令 `vpath`
+#### 4.5.2 指令 `vpath`
 
 小写的指令 `vpath` 与 变量`VPATH` 相似，但前者更具有选择性，允许您为特定类别的文件名（那些与特定模式匹配的）指定搜索路径。因此，您可以为一类文件名提供某些搜索目录，而为其他文件名提供其它目录（或不提供）。
 
@@ -850,9 +850,9 @@ _vpath_ 中的 _pattern_ 是包含 `%` 字符的字符串。该字符串必须�
 
 当前目录中不存在先决条件时，如果 *vpath* 指令中的 _pattern_ 与先决条件文件的名称匹配，则会像搜索 `VPATH` 变量中的目录一样（以及之前）搜索该指令中的目录。
 
-### 4.5.3 目录搜索是如何执行的
+#### 4.5.3 目录搜索是如何执行的
 
-### 4.5.4 使用目录搜索编写 Recipes
+#### 4.5.4 使用目录搜索编写 Recipes
 
 这是通过诸如“$^”之类的自动变量来完成的（请参阅自动变量）。
 
@@ -875,7 +875,7 @@ foo.o : foo.c defs.h hack.h
         cc -c $(CFLAGS) $< -o $@ # 译者注：推荐使用$<
 ```
 
-### 4.5.5 目录搜索与隐式规则
+#### 4.5.5 目录搜索与隐式规则
 
 在考虑隐式规则（请参阅 [10 Using Implicit Rules](https://www.gnu.org/software/make/manual/make.html#Implicit-Rules)）时，也会搜索 `VPATH` 或 `vpath` 中指定的目录。
 
@@ -883,7 +883,7 @@ foo.o : foo.c defs.h hack.h
 
 隐式规则的 recipe 通常会根据需要使用自动变量；因此，他们将使用目录搜索找到的文件名，而不需要额外的努力。
 
-### 4.5.6 链接库的目录搜索
+#### 4.5.6 链接库的目录搜索
 
 目录搜索以一种特殊的方式应用于与链接器一起使用的库。当您编写名称为“-lname”形式的先决条件时，此特殊功能就会发挥作用。（你可以看出这里发生了一些奇怪的事情，因为先决条件通常是文件名，而库的文件名通常看起来像 libname.a，而不是“-lname”。）
 
@@ -902,7 +902,7 @@ foo : foo.c -lcurses
 
 `.LIBPATTERNS` 的默认值 是 `lib%.so lib%.a`，它提供了上述默认行为。通过将此变量设置为空值，可以完全关闭链接库展开。
 
-## 4.6 伪目标 (Phony Targets)
+### 4.6 伪目标 (Phony Targets)
 
 一个伪目标并不是一个文件的真正名称；相反，它只是当您发出明确请求时要执行的 recipe 的名称。使用伪目标有两个原因：一是为了避免与同名文件发生冲突，二是为了提高性能。
 
@@ -996,7 +996,7 @@ cleandiff :
         rm *.diff
 ```
 
-## 4.7 没有 Recipes 或 Prerequisites 的 Rule
+### 4.7 没有 Recipes 或 Prerequisites 的 Rule
 
 如果一个规则没有先决条件或配方，并且该规则的目标是一个不存在的文件，那么每当运行该规则时，*make* 就会假设该目标已经更新。这意味着所有依赖于此目标的目标都将始终运行其配方（译者注，这里的意思应该是因为先决条件新于目标，所以配方才会运行）。
 
@@ -1014,7 +1014,7 @@ FORCE:
 
 使用 “.PHONY” 更明确、更高效。但是，make 的其他版本不支持“.PHONY”；因此“FORCE”出现在许多 makefile 中。
 
-## 4.8 空目标文件以记录事件
+### 4.8 空目标文件以记录事件
 
 空目标是伪目标的变体；它用于保存您偶尔发出的明确操作请求的配方。与伪目标不同，此目标文件可以真实存在；但文件的内容并不重要，并且通常是空的。
 
@@ -1030,7 +1030,7 @@ print: foo.c bar.c
 
 使用此规则，如果自上次 “make-print” 以来任何一个源文件发生了更改，则 “make-praint” 将执行 `lpr` 命令。自动变量“$？”用于仅打印那些已更改的文件（请参阅 [10.5.3 Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)）。
 
-## 4.9 特殊内置目标名称
+### 4.9 特殊内置目标名称
 
 某些名称如果作为目标出现，则具有特殊含义。
 
@@ -1076,7 +1076,7 @@ print: foo.c bar.c
 
 任意定义的隐式规则后缀如果以目标的形式呈现，那么它也将被视为特殊目标，两个后缀的串联也将被算作特殊目标，例如 “.c.o”。这些目标是后缀规则 (suffix rule)，这是一种过时的定义隐式规则的方式（但仍被广泛使用）。原则上，如果您将任何目标名称一分为二并将其添加到后缀列表中，则任何目标名称都可能是特殊的。在实践中，后缀通常以“.”开头，所以这些特殊的目标名称也以“.”开头。请参阅 [10.7 Old-Fashioned Suffix Rules](https://www.gnu.org/software/make/manual/make.html#Suffix-Rules)。
 
-## 4.10 一条规则中包含多个目标
+### 4.10 一条规则中包含多个目标
 
 当一个显式规则有多个目标时，可以用两种可能的方式之一处理它们：作为独立目标或组目标。处理它们的方式由目标列表后出现的分隔符决定。
 
@@ -1143,7 +1143,7 @@ foo bar biz &: baz boz
 
 如果希望一个目标出现在多个组中，则在声明包含该目标的所有组时，必须使用双冒号组的目标分隔符 `&::`。组的双冒号目标分别独立考虑，如果多个目标中至少有一个需要更新，则每个分组的双冒号规则的配方最多执行一次。
 
-## 4.11 多条规则的目标相同
+### 4.11 多条规则的目标相同
 
 一个文件可以是多条规则的目标。**所有规则中提到的所有先决条件都合并到目标的一个先决条件列表中。如果目标比任何规则中的任何先决条件都旧，则执行配方**。
 
@@ -1171,11 +1171,11 @@ $(objects) : $(extradeps)
 
 如果目标的显式规则都没有配方，则搜索适用的隐式规则以找到一个（请参阅 [10 Using Implicit Rules](https://www.gnu.org/software/make/manual/html_node/Implicit-Rules.html)）。
 
-## 4.12 静态模式规则
+### 4.12 静态模式规则
 
 静态模式规则 (_Static pattern rules_) 是指定多个目标并根据目标名称为每个目标构造先决条件名称的规则。它们比具有多个目标的普通规则更通用，因为目标不必具有相同的先决条件。它们的先决条件必须相似，但不一定相同。
 
-### 4.12.1 静态模式规则语法
+#### 4.12.1 静态模式规则语法
 
 以下是静态模式规则的语法：
 
@@ -1228,7 +1228,7 @@ bigoutput littleoutput : %output : text.g
 
 当 `generate` 命令运行时，`$*` 将展开到词干 ，要么是 'big'，要么是 'little'。
 
-### 4.12.2 静态模式规则与隐式规则
+#### 4.12.2 静态模式规则与隐式规则
 
 静态模式规则与定义为模式规则的隐式规则有很多共同点（请参阅 [10.5 Defining and Redefining Pattern Rules](https://www.gnu.org/software/make/manual/make.html#Pattern-Rules)）。两者都有目标模式 (a pattern for the target) 和构造先决条件名称的模式 (patterns for constructing the names of prerequisites)。区别在于 `make` 如何决定何时应用规则。
 
@@ -1241,7 +1241,7 @@ bigoutput littleoutput : %output : text.g
 - 对于那些名称无法在语法上分类但可以在显式列表中给出的文件，您可能希望覆盖这些文件的普通隐式规则。
 - 如果您不能确定所使用目录的精确内容，您可能无法确定哪些其他不相关的文件可能会导致使用错误的隐式规则。选择可能取决于隐式规则搜索的顺序。使用静态模式规则，则没有不确定性：每个规则都精确地应用于指定的目标。
 
-## 4.13 双冒号规则
+### 4.13 双冒号规则
 
 双冒号规则是在目标名称后使用 `::` 编写的显式规则。当同一目标出现在多个规则中时，它们的处理方式与普通规则不同。带有双冒号的模式规则具有完全不同的含义（请参阅 [
 
@@ -1257,7 +1257,7 @@ bigoutput littleoutput : %output : text.g
 
 每个双冒号规则都应该指定一个配方；如果没有，则在应用时将使用隐式规则。请参阅 [10 Using Implicit Rules](https://www.gnu.org/software/make/manual/html_node/Implicit-Rules.html)。
 
-## 4.14 自动生成先决条件
+### 4.14 自动生成先决条件
 
 在程序的 makefile 中，需要编写的许多规则通常只表示某个目标文件依赖于某个头文件。例如，如果 main.c 通过 `#include` 使用 defs.h ，那么您将编写：
 
@@ -1329,13 +1329,13 @@ include $(sources:.c=.d)
 
 请注意，“.d” 文件包含目标定义；您应该确保将 `include` 指令放在 makefile 中的第一个默认目标之后，或者冒着让随机目标文件成为默认目标的风险。请参阅 [2.3 How make Processes a Makefile](https://www.gnu.org/software/make/manual/html_node/How-Make-Works.html)。
 
-# 5 在规则中编写配方
+## 5 在规则中编写配方
 
 规则的配方由一个或多个 shell 命令行组成，这些命令行将按照出现的顺序每次执行一个。通常，执行这些命令的结果是使规则的目标更新为最新。
 
 用户可以使用许多不同的 shell 程序，但除非 *makefile* 另有规定，否则 *makefile* 中的配方始终由 /bin/sh 执行。请参阅 [5.3 Recipe Execution](https://www.gnu.org/software/make/manual/html_node/Execution.html)。
 
-## 5.1 配方的语法
+### 5.1 配方的语法
 
 *Makefile* 有一个不同寻常的特性，即在一个文件中实际上有两种不同的语法。*makefile* 中大部分内容使用 *make* 语法（请参阅 [3 Writing Makefiles](https://www.gnu.org/software/make/manual/html_node/Makefiles.html)）。然而，配方是由 shell 解释的，因此它们是使用 shell 语法编写的。*make* 程序并不试图理解 shell 语法：在将配方交给 shell 之前，它只对配方的内容执行很少的特定翻译。
 
@@ -1348,7 +1348,7 @@ include $(sources:.c=.d)
 - “规则上下文”中 (即以制表符作为行上第一个字符) 的变量定义，将被视为配方的一部分，而不是 *make* 变量定义，并传递给 shell。
 - “规则上下文”中 (即以制表符作为行上第一个字符) 的条件表达式（ifdef、ifeq 等，请参阅 [7.2 Syntax of Conditionals](https://www.gnu.org/software/make/manual/make.html#Conditional-Syntax)）将被视为配方的一部分，并传递给 shell。
 
-### 5.1.1 拆分配方行
+#### 5.1.1 拆分配方行
 
 *make* 解释配方的为数不多的方法之一是检查换行符前的反斜杠。与正常的 *makefile* 语法一样，通过在每个换行符之前放置一个反斜杠，可以将 *makefile* 中的单个逻辑配方行拆分为多个物理行。像这样的一系列行被视为单个配方行，将调用 shell 的一个实例来运行它。
 
@@ -1420,7 +1420,7 @@ hello world
 
 如果您愿意，您也可以使用特定于目标的变量（请参阅 [6.11 Target-specific Variable Values](https://www.gnu.org/software/make/manual/make.html#Target_002dspecific)）来获得变量和使用它的配方之间更紧密的对应关系。
 
-### 5.1.2 在配方中使用变量
+#### 5.1.2 在配方中使用变量
 
 *make* 处理配方的另一种方法是展开其中的任何变量引用（请参阅 [6.1 Basics of Variable References](https://www.gnu.org/software/make/manual/make.html#Reference)）。这发生在 *make* 完成所有 makefile 的读取并且目标被确定为过期之后；因此，不被重建的目标的配方永远不会展开。
 
@@ -1450,7 +1450,7 @@ two
 three
 ```
 
-## 5.2 配方中的回送显示 (echo)
+### 5.2 配方中的回送显示 (echo)
 
 通常情况下，在执行配方之前，*make* 会打印配方的每一行。我们称之为回送显示 (echoing)，因为它给人的感觉是你自己在打字。
 
@@ -1497,7 +1497,7 @@ print_information
 
 ）
 
-## 5.3 配方的执行
+### 5.3 配方的执行
 
 当需要执行配方来更新目标时，它们是通过为配方的每一行调用一个新的 子 shell(sub-shelll) 来执行的，除非特殊目标 `.ONESHELL` 生效（请参阅 [5.3.1 Using One Shell](https://www.gnu.org/software/make/manual/html_node/One-Shell.html)）（在实践中，make 可能会采取不影响结果的快捷方式。）
 
@@ -1510,7 +1510,7 @@ foo : bar/lose
 
 在这里，我们使用 shell 与运算符 `&&`，这样，如果 cd 命令失败，脚本将失败，而不会尝试在错误的目录中调用命令 gobble ，如果调用了可能会导致问题（在示例情况下，它肯定会导致../foo 被截断）。
 
-### 5.3.1 使用一个 shell
+#### 5.3.1 使用一个 shell
 
 有时，您更希望将配方中的所有行都传递给单个调用的 shell。通常在两种情况下是有用的：首先，它可以通过避免额外的进程来提高由许多命令行组成的配方的 makefile 的性能。其次，您可能希望在您的配方命令中包含换行符（例如，您使用的解释器与 SHELL 完全不同）。如果特殊目标 `.ONESHELL` 出现在 makefile 中的任何位置，则每个目标的所有配方行都将提供给单个调用的 shell。配方行之间的换行符将被保留。例如
 
@@ -1568,7 +1568,7 @@ foo : bar/lose
 
 然而，即使有了这个特殊功能，带有 `.ONESHELL` 的 makefile 也会以明显的方式表现出不同的行为。例如，通常情况下，如果配方中的任何一行失败，就会导致规则失败，不再处理更多的配方行。在 `.ONESHELL` 下，*make* 不会注意到除配方最后一行以外的任何一个配方行的错误。您可以修改 `.SHELLFLAGS` 用来将 -e 选项添加到 shell，这将导致命令行中任何位置的任何故障都会导致 shell 失败，但这本身可能会导致您的配方表现不同。最终，你可能需要强化你的配方行，让它们与 `.ONESHELL` 一起工作。
 
-### 5.3.2 选择 shell
+#### 5.3.2 选择 shell
 
 用作 shell 的程序取自变量 `SHELL`。如果在 makefile 中未设置此变量，则使用程序 /bin/sh 作为 shell。传递给 shell 的参数取自变量 `.SHELLFLAGS`。`.SHELLFLAGS` 的默认值在正常情况下为 `-c`，在 POSIX 兼容模式下为 `-ec`。
 
@@ -1595,7 +1595,7 @@ foo : bar/lose
 
 暂略
 
-## 5.4 并行执行
+### 5.4 并行执行
 
 GNU *make* 知道如何同时执行多个配方。通常，*make* 一次只执行一个配方，等待它完成后再执行下一个。然而，“`-j`”或“`--jobs`”选项告诉 *make* 同时执行许多配方。您可以从 *makefile* 中禁止某些或所有目标的并行性（请参阅 [5.4.1 Disabling Parallel Execution](https://www.gnu.org/software/make/manual/html_node/Parallel-Disable.html)）。
 
@@ -1619,7 +1619,7 @@ GNU *make* 知道如何同时执行多个配方。通常，*make* 一次只执�
 
 默认情况下，没有负载限制。
 
-### 5.4.1 禁用并行执行
+#### 5.4.1 禁用并行执行
 
 如果一个 *makefile* 完全准确地定义了其所有目标之间的依赖关系，那么无论是否启用并行执行，*make* 都将正确地构建目标。这是编写 *makefile* 的理想方式。
 
@@ -1670,7 +1670,7 @@ one two three: ; @sleep 1; echo $@
 
 `.WAIT` 功能也在其他版本的 *make* 中实现，它在 POSIX 版本的 *make* 标准中指定。
 
-### 5.4.2 并行执行期间的输出
+#### 5.4.2 并行执行期间的输出
 
 当并行运行多个配方时，每个配方的输出一生成就会出现，结果是来自不同配方的消息可能会穿插在一起，有时甚至会出现在同一行。这会使读取输出变得非常困难。
 
@@ -1697,7 +1697,7 @@ one two three: ; @sleep 1; echo $@
 
 如果 *make* 调用的某些程序确定将输出写入终端而不是文件，则它们的行为可能会有所不同（通常被描述为“交互式 (interactive)”与“非交互式 (non-interactive)”模式）。例如，如果许多可以显示彩色输出的程序，在确定它们不是在向终端写入，它们就不会这样做。如果您的 *makefile* 调用这样的程序，那么使用输出同步选项将使程序相信它是在“非交互式”模式下运行的，即使输出最终会到达终端。
 
-### 5.4.3 并行执行期间的输入
+#### 5.4.3 并行执行期间的输入
 
 两个进程不能同时从同一设备获取输入。为了确保只有一个配方尝试同时从终端获取输入，*make* 将使除正在运行的配方外的所有配方的标准输入流无效。如果另一个配方试图从标准输入中读取，通常会产生致命错误（“*Broken pipe*”信号）。
 
@@ -1705,7 +1705,7 @@ one two three: ; @sleep 1; echo $@
 
 **如果我们找到更好的替代方案，我们将改变 *make* 在这方面的工作方式。同时，如果您使用并行执行功能，则不应依赖任何使用标准输入的配方；但如果你没有使用这个功能，那么标准输入在所有配方中都能正常工作**。
 
-## 5.5 配方中的错误
+### 5.5 配方中的错误
 
 每次 *shell* 调用返回后，*make* 都会查看其退出状态。如果 *shell* 成功完成（退出状态为零），则在新的 *shell* 中执行配方中的下一行；最后一行执行结束后，规则就执行结束了。
 
@@ -1736,7 +1736,7 @@ clean:
 
 通常，当配方行出现故障时，如果它已经更改了目标文件，则该文件已损坏，无法使用——或者至少没有完全更新。然而，文件的时间戳表明它现在是最新的，所以下次运行时，它不会尝试更新该文件。这种情况与 shell 被信号终止时的情况完全相同；请参阅 [5.6 Interrupting or Killing make](https://www.gnu.org/software/make/manual/make.html#Interrupts)。因此，如果在开始更改文件后执行配方失败，通常正确的做法是删除目标文件。如果“`.DELETE_ON_ERROR`”作为目标出现，*make* 将执行此操作。这几乎总是你想做的，但这不是历史实践；因此，为了实现兼容性，您必须明确地请求它。
 
-## 5.6 中断或终止 make
+### 5.6 中断或终止 make
 
 如果 *make* 在执行 *shell* 时收到致命信号，它可能会删除配方应该更新的目标文件。如果目标文件的上次修改时间自 *make* 第一次检查后发生了更改，则会执行此操作。
 
@@ -1744,7 +1744,7 @@ clean:
 
 您可以通过将特殊目标 `.PRECIOUS` 依赖于此目标文件，来防止以这种方式删除目标文件。
 
-## 5.7 make 的递归使用
+### 5.7 make 的递归使用
 
 递归使用 *make* 意味着在 makefile 中使用 `make` 作为命令。当组成更大系统的各个子系统需要分离的 *makefile* 时，此技术非常有用。例如，假设您有一个子目录 *subdir*，它有自己的 *makefile*，并且您希望包含目录的 *makefile* 在该子目录上运行 *make*。你可以这样写：
 
@@ -1764,7 +1764,7 @@ subsystem:
 
 为了方便起见，当 GNU make 启动时（在它处理了所有 `-c` 选项之后），它将变量 `CURDIR` 设置为当前工作目录的路径名。之后`make`再也不会触及此值：特别注意，如果您包含其他目录中的文件，则 `CURDIR` 的值不会更改。该值的优先级与在 *makefile* 中设置该值时的优先级相同（默认情况下，环境变量 `CURDIR` 不会覆盖该值）。请注意，设置此变量对 *make* 的操作没有影响（例如，它不会导致 *make* 更改其工作目录）。
 
-### 5.7.1 变量 `MAKE` 的工作原理
+#### 5.7.1 变量 `MAKE` 的工作原理
 
 递归 *make* 命令应始终使用变量 `MAKE`，而不是显式命令`make`，如下所示：
 
@@ -1781,7 +1781,7 @@ subsystem:
 
 这个特殊功能使它可以随心所欲：每当规则的配方行包含变量 `MAKE` 时，标志“`-t`”、“`-n`”和“`-q`”都不适用于该行。包含 `MAKE` 的配方行正常执行，尽管存在导致大多数配方不运行的标志。通常的 `MAKEFLAGS` 机制将标志传递给 sub-*make*（请参阅 [5.7.3 Communicating Options to a Sub-make](https://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html)），因此您新建文件（译者注，原文中是 touch files， 但联想了一下 linux 中 `touch` 命令是用来新建也给文件的）或打印配方的请求会传播到子系统。
 
-### 5.7.2 向 sub-*make* 传递变量
+#### 5.7.2 向 sub-*make* 传递变量
 
 顶层 *make* 的变量值可以用显式请求通过环境传递给 sub-*make*。这些变量在 sub-*make* 中定义为默认值，但它们不会覆盖 sub-*make* 使用的 *makefile* 中定义的变量，除非使用 “`-e`” 开关（请参阅 [9.8 Summary of Options](https://www.gnu.org/software/make/manual/html_node/Options-Summary.html)）。
 
@@ -1868,7 +1868,7 @@ export
 
 可以使用变量 `MAKEFILES`使所有 sub-*make* 命令使用其他生成文件。`MAKEFILES` 的值是一个以空格分隔的文件名列表。如果在外部级别的 *makefile* 中定义了该变量，则该变量将通过环境传递；然后它作为一个额外的 *makefile* 列表，供 sub-*make*在通常或指定的 makefile 之前读取。请参阅 [3.4 The Variable MAKEFILES](https://www.gnu.org/software/make/manual/make.html#MAKEFILES-Variable)。
 
-### 5.7.3 将选项传达给 sub-*make*
+#### 5.7.3 将选项传达给 sub-*make*
 
 诸如“`-s`”和“`-k`”之类的标志通过变量 `MAKEFLAGS`自动传递给 sub-*make*。此变量由*make*自动设置，以包含 *make* 收到的标志字母。因此，如果执行“`make-ks`”，则`MAKEFLAGS` 将获得值“`ks`”。
 
@@ -1918,7 +1918,7 @@ subsystem:
 
 最好只将 `GNUMAKEFLAGS` 与不会实质性改变 *makefile* 行为的标志一起使用。如果您的 *makefile* 无论如何都需要 GNU Make，那么只需使用`MAKEFLAGS`。诸如“`--no-print-directory`”或“`--output-sync`”之类的标志可能适用于 `GNUMAKEFLAGS`。
 
-### 5.7.4 "--print directory" 选项
+#### 5.7.4 "--print directory" 选项
 
 如果您使用多个级别的递归 *make* 调用，“`-w`”或“`--print directory`”选项可以在 *make* 开始处理和 *make* 完成处理时显示每个目录，从而使输出更容易理解。例如，如果“`make -w`”在目录 */u/gnu/make* 中运行，*make*将在做任何事情之前打印以下形式的一行：
 
@@ -1934,7 +1934,7 @@ make: Leaving directory `/u/gnu/make'.
 
 通常，您不需要指定此选项，因为 *make* 可以为您指定：当您使用“`-C`”选项时，“`-w`”会自动打开，并且在 sub-*make*S 中也是如此。如果同时使用“`-s`”（表示为静默），或者使用“`--no print directory`”显式禁用它，make 将不会自动启用“`-w`”。
 
-## 5.8 定义预制配方 (Canned Recipes)
+### 5.8 定义预制配方 (Canned Recipes)
 
 当相同的命令序列在制作各种目标时很有用时，可以使用 `define` 指令将其定义为预制序列，并从这些目标的配方中引用预制序列。预制序列实际上是一个变量，因此名称不能与其他变量名称冲突。
 
@@ -1983,7 +1983,7 @@ frob.out: frob.in
 
 不回显任何配方行。（有关“`@`”的完整解释，请参阅 [5.2 Recipe Echoing](https://www.gnu.org/software/make/manual/make.html#Echoing)。）
 
-## 5.9 使用空配方
+### 5.9 使用空配方
 
 有时定义什么都不做的配方是有用的。这只给出一个只包含空格的 recipe 即可（译者注：在 10.1 里说的是要写一个分号，这是为了不应用隐式规则）。例如：
 
@@ -2009,7 +2009,7 @@ target:
 
 您可能倾向于为“不是实际文件的、其存在只是为了重新制作其先决条件”的目标定义空配方。但是，这不是最好的方法，因为如果目标文件确实存在，则可能无法正确地重新生成先决条件。有关更好的方法，请参阅 [4.6 Phony Targets](https://www.gnu.org/software/make/manual/make.html#Phony-Targets)。
 
-# 6 如何使用变量
+## 6 如何使用变量
 
 变量是定义在 *makefile* 中用于表示一个文本字符串（被称作变量的值）的名称。这些值由显式请求被替换为目标、先决条件、配方和 *makefile* 的其他部分。（在有些版本的 *make* 中变量也被称作宏 (macros)）
 
@@ -2025,7 +2025,7 @@ target:
 
 一些变量的名称是单个标点符号或只有几个字符。这些是自动变量，它们有特殊的特殊用途。请参阅 [10.5.3 Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)。
 
-## 6.1 变量引用基础
+### 6.1 变量引用基础
 
 要替换变量的值，请在一个美元符号后紧跟括号或者大括号围起来的变量名称，例如 `$(foo)` 或者 `${foo}`都是对变量 _foo_ 的有效引用。由于 `$` 的特殊意义，要在文件名或者配方中达到单个美元符号的效果时，应使用 ‘`$$`’。
 
@@ -2051,11 +2051,11 @@ prog.o : prog.$(foo)
 
 一个美元符号后面紧跟的单字符（除美元符号、左括号或左大括号外），会被视为变量名。因此，您可以使用“`$x`”引用变量 `x`。然而，这种做法可能会导致混淆（例如，“`$foo`”指的是变量`f` 后面跟着字符串`oo`），因此我们建议在所有变量周围使用括号或大括号，即使是单字符变量，除非省略括号会显著提高可读性。经常用于提高可读性的一个地方是自动变量（请参阅 [10.5.3 Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)）。
 
-## 6.2 变量的两种风格
+### 6.2 变量的两种风格
 
 GNU *make* 中的变量可以通过不同的方式获得值，我们称之为“变量的风格”。风格的区别在于它们如何处理在 *makefile* 中分配的值，以及在以后使用和展开变量时如何管理这些值。
 
-### 6.2.1 递归展开变量赋值
+#### 6.2.1 递归展开变量赋值
 
 变量的第一种风格是递归展开变量 (*recursively expanded variable*)。此种风格的变量的定义使用 `=`（参阅 [6.5 Setting Variables](https://www.gnu.org/software/make/manual/make.html#Setting)) 或者 `define` 指令 (参阅 [6.8 Defining Multi-Line Variables](https://www.gnu.org/software/make/manual/make.html#Multi_002dLine))。您指定的值是逐字被添加的；**如果它包含对其他变量的引用，那这些引用会在此变量被替换时（在展开其他字符串的过程中）被展开**。当这种情况发生时，称为递归展开 (recursive expansion)。
 
@@ -2088,7 +2088,7 @@ CFLAGS = $(CFLAGS) -O
 
 另一个缺点是，每当变量展开时，定义中引用的任何函数（请参阅 [8 Functions for Transforming Text](https://www.gnu.org/software/make/manual/make.html#Functions)）都会被执行。这会使 *make* 运行速度变慢；更糟糕的是，它会导致 ` wildcard` 和 `shell` 函数产生不可预测的结果，因为您无法轻松控制它们何时被调用，甚至无法控制调用次数。
 
-### 6.2.2 *简单展开变量* 赋值
+#### 6.2.2 *简单展开变量* 赋值
 
 为了避免递归展开变量的问题和不便，还有另一种风格：*简单展开变量*(*simply expanded variables*)。*简单展开变量*由使用 `:=` 或 `::=` 的行定义（请参阅 [6.5 Setting Variables](https://www.gnu.org/software/make/manual/make.html#Setting)）。这两种形式在 GNU *make* 中是等效的；然而，POSIX 标准仅描述了 "`::=`" 形式（POSIX Issue 8 的 POSIX 标准中添加了对 "`::=`" 的支持）。
 
@@ -2169,7 +2169,7 @@ dir := /foo/bar    # directory to put the frobs in
 
 这里，变量 `dir` 的值是 '/foo/bar '（后面有四个空格），这可能不是您想要的。（想象一下类似于“`$(dir)/file`”这样的定义！）
 
-### 6.2.3 立即展开变量赋值
+#### 6.2.3 立即展开变量赋值
 
 对于立即展开，与简单赋值不同的另一种被允许的赋值形式，其生成的变量是递归的：每次使用时都会再次展开。为了避免意外的结果，值被立即展开后，它将自动被转义：展开后的值中的所有 `$` 实例都将转换为 `$$`。这种类型的赋值使用“`:::=`”运算符。示例：
 
@@ -2212,7 +2212,7 @@ var = three$$four
 
 （译者注：在再次使用 `:::=` 赋值时，会覆盖掉之前的定义。）
 
-### 6.2.4 条件变量赋值
+#### 6.2.4 条件变量赋值
 
 变量还有另一个赋值运算符“`?=`”。这被称为条件变量赋值运算符 (*conditional variable assignment operator*)，因为它只有在变量尚未定义时才有效。此声明：
 
@@ -2230,11 +2230,11 @@ endif
 
 注意，设置为空值的变量也算被定义了，`?=` 不会对该变量进行设置。
 
-## 6.3 引用变量的高级功能
+### 6.3 引用变量的高级功能
 
 本节介绍了一些高级功能，您可以使用这些功能以更灵活的方式引用变量。
 
-### 6.3.1 替换引用
+#### 6.3.1 替换引用
 
 *替换引用*(*substitution reference*) 使用您指定的更改去替换变量的值。它的形式为 `$(var:a=b)` 或 `${var:a=b}`，其含义是取变量 *var* 的值，将该值中的单词末尾的每个 *a* 替换为 *b*，并替换生成的字符串。
 
@@ -2258,13 +2258,13 @@ bar := $(foo:%.o=%.c)
 
 将 “`bar`” 设置为 “`a.c b.c l.a c.c`”.
 
-### 6.3.2 计算变量名称
+#### 6.3.2 计算变量名称
 
 计算变量名是一个高级概念，在更复杂的 *makefile* 程序中非常有用。在简单的情况下，你不需要考虑它们，但它们可能非常有用。
 
 （译者注：原文地址 [6.3.2 Computed Variable Names](https://www.gnu.org/software/make/manual/make.html#Computed-Names)。暂时不想翻译这段，不仅复杂而且有点儿多，建议直接写一个规则，然后在配方里用 `echo` 打印某个变量的值就得了，别自己计算了。）
 
-## 6.4 变量获取值的方式
+### 6.4 变量获取值的方式
 
 变量可以通过几种不同的方式获取值：
 
@@ -2275,7 +2275,7 @@ bar := $(foo:%.o=%.c)
 - 自动变量可根据规则不同而赋予新值。每一个自动变量都有单一的常规用途。请参见 [10.5.3 Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)。
 - 有几个变量具有恒定的初始值。请参见 [10.3 Variables Used by Implicit Rules](https://www.gnu.org/software/make/manual/make.html#Implicit-Variables)。
 
-## 6.5 设置变量
+### 6.5 设置变量
 
 若要从 *makefile* 中设置变量，以变量名开头、后跟赋值运算符“`=`”、“`:=`”、“`::=`”或“`:::=`”之一的一行。运算符后面的任何内容和行上的任何初始空白都将成为值。例如
 
@@ -2323,7 +2323,7 @@ var := $(shell find . -name "*.c")
 
 与 `shell` 函数一样，刚刚调用的 shell 脚本的退出状态存储在 `.SHELLSTATUS ` 变量中。
 
-## 6.6 将更多文本附加到变量
+### 6.6 将更多文本附加到变量
 
 通常，向已定义的变量的值添加更多文本很有用。您可以使用包含 "`+=`" 的行来执行此操作，如下：
 
@@ -2388,7 +2388,7 @@ CFLAGS := $(CFLAGS) -pg # enable profiling
 
 这很接近，但不是我们想要的。使用 "`:=`" 将 `CFLAGS` 重新定义为 *简单展开变量*；这意味着 *make* 在设置变量之前展开文本 "`$(CFLAGS) -pg`"。如果尚未定义 `includes`，我们得到 "` -O -pg`"，且之后对 `includes` 的定义将不起作用。相反，通过使用 "`+=`"，我们将 `CFLAGS` 设置为非展开的值 "`$(includes) -O -pg`"。因此，我们保留了对 `includes` 的引用，因此如果该 `includes` 变量在稍后定义，像 "`$(CFLAGS)`" 这样的引用仍然使用它的值。
 
-## 6.7 `override` 指令
+### 6.7 `override` 指令
 
 如果变量已使用命令参数设置（请参阅 [9.5 Overriding Variables](https://www.gnu.org/software/make/manual/make.html#Overriding)），则 *makefile* 中的普通赋值将被忽略。尽管一个变量已经是使用命令参数设置的，您还是想在 *makefile* 中设置它，那么您可以使用 `override` 指令
 
@@ -2428,7 +2428,7 @@ endef
 
 请参阅 [6.8 Defining Multi-Line Variables](https://www.gnu.org/software/make/manual/make.html#Multi_002dLine)
 
-## 6.8 定义多行变量
+### 6.8 定义多行变量
 
 另一种设置变量值的方法是使用 `define` 指令。该指令有一种不寻常的语法，允许在值中包含换行符，这便于定义命令的预制序列（请参阅 [5.8 Defining Canned Recipes](https://www.gnu.org/software/make/manual/make.html#Canned-Recipes)），以及与 `eval` 一起使用的 *makefile* 语法部分（请参阅 [8.10 The eval Function](https://www.gnu.org/software/make/manual/make.html#Eval-Function)）。
 
@@ -2475,7 +2475,7 @@ endef
 
 请参阅 [6.7 The override Directive](https://www.gnu.org/software/make/manual/make.html#Override-Directive)
 
-## 6.9 取消变量定义
+### 6.9 取消变量定义
 
 如果您想清除一个变量，将其值设置为空通常就足够了。无论变量是否被设置，展开这样的变量将产生相同的结果（空字符串）。但是，如果您使用的是 `flavor` 函数（[8.12 The flavor Function](https://www.gnu.org/software/make/manual/make.html#Flavor-Function)）和 `origin` 函数（[8.11 The origin Function](https://www.gnu.org/software/make/manual/make.html#Origin-Function)）中，一个值被设置为空或是没有被设置，是有区别的。在这种情况下，您可能希望使用 `undefine` 指令使变量看起来好像从未设置过一样。例如：
 
@@ -2498,7 +2498,7 @@ $(info $(flavor bar))
 override undefine CFLAGS
 ```
 
-## 6.10 来自环境的变量
+### 6.10 来自环境的变量
 
 *make* 中的变量可以来自运行 *make* 的环境。*make* 启动时看到的每个环境变量都会转换为具有相同名称和值的 *make* 变量。但是，*makefile* 中的显式赋值或使用命令参数会覆盖环境。（如果指定了 “`-e`” 标志，则环境中的值将覆盖 *makefile* 中的分配。请参阅 [9.8 Summary of Options](https://www.gnu.org/software/make/manual/html_node/Options-Summary.html)。但实际中不建议这样做。）
 
@@ -2510,7 +2510,7 @@ override undefine CFLAGS
 
 变量 `SHELL` 尤其可能出现这种问题，它通常存在于环境中，用于指定用户对交互式 *shell* 的选择。这种选择会影响 “*make*”，这是非常不可取的；因此，“*make*” 以一种特殊的方式处理 “`SHELL`” 环境变量；请参阅 [5.3.2 Choosing the Shell ](https://www.gnu.org/software/make/manual/html_node/Choosing-the-Shell.html)。
 
-## 6.11 特定于目标的变量值
+### 6.11 特定于目标的变量值
 
 *make* 中的变量值通常是全局的；也就是说，无论在哪里评估它们，它们都是相同的（当然，除非它们被重置）。例外情况是用 `let` 函数（参见 [The let Function](https://www.gnu.org/software/make/manual/make.html#Let-Function)）或 foreach 函数（参见 [The foreach Function](https://www.gnu.org/software/make/manual/make.html#Foreach-Function)）定义的变量，以及自动变量（参见 [Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)）。
 
@@ -2541,7 +2541,7 @@ prog : prog.o foo.o bar.o
 
 请注意，给定的先决条件最多只能在每次调用 *make* 时构建一次。如果同一个文件是多个目标的先决条件，并且每个目标对同一目标特定变量都有不同的值，那么**构建的第一个目标将导致该先决条件被构建，先决条件将从第一个目标继承目标特定值。它将忽略任何其他目标的目标特定值。**
 
-## 6.12 特定于模式的变量值
+### 6.12 特定于模式的变量值
 
 除了特定于目标的变量值（请参阅 [6.11 Target-specific Variable Values](https://www.gnu.org/software/make/manual/make.html#Target_002dspecific)）之外，GNU *make* 还支持特定于模式 (pattern-specific) 的变量值。在这种形式中，变量是为与指定模式匹配的所有目标定义的。
 
@@ -2577,7 +2577,7 @@ all: foo.o lib/bar.o
 
 “特定于模式的变量” 会在 “为该目标所显式定义的特定于目标的变量” 之后、在 “为父目标定义的特定于目标的变量” 之前被搜索。
 
-## 6.13 抑制继承
+### 6.13 抑制继承
 
 如前几节所述，*make* 变量会被先决条件继承。此功能允许您根据导致重建的目标修改先决条件的行为。例如，您可以在 *debug* 目标上设置特定于目标的变量，然后执行 "`make debug`" 将导致该变量被 *debug* 的所有先决条件继承，而仅运行 "`make all`"（举例）将没有该赋值。
 
@@ -2594,7 +2594,7 @@ prog: a.o b.o
 
 由于 `private` 修饰符，*a.o* 和 *b.o* 不会从目标 *prog* 继承 `EXTRA_CFLAGS` 变量赋值。
 
-## 6.14 其它特殊变量
+### 6.14 其它特殊变量
 
 GNU *make* 支持一些具有特殊属性的变量。
 
@@ -2770,11 +2770,11 @@ myprog: .EXTRA_PREREQS = $(CC)
 
 全局设置 `.EXTRA_PREREQS` 将导致这些先决条件被添加到所有目标（这些目标本身没有用特定于目标的值覆盖它）。注意 *make* 足够聪明，不会添加 `.EXTRA_PREREQS` 中列出的先决条件作为自身的先决条件。
 
-# 7 *Makefile* 的条件句部分
+## 7 *Makefile* 的条件句部分
 
 根据变量的值，条件 (conditional) 指令会导致 *makefile* 的一部分被遵守或忽略。条件可以将一个变量的值与另一个变量进行比较，或者将变量的值与常量字符串做比较。条件控制 *make* 在 *makefile* 中实际“看到”的内容，因此在执行时不能用于控制配方。
 
-## 7.1 条件句举例
+### 7.1 条件句举例
 
 下面的条件表达式示例告诉 *make*，如果 `CC` 变量为“`gcc`”则使用一组库，否则使用另一组库。它的工作原理是控制两个配方行中的哪一个将用于规则。结果是，“`CC=gcc`”作为一个参数，不仅可以更改使用的编译器，还可以更改链接的库。
 
@@ -2830,7 +2830,7 @@ foo: $(objects)
     $(CC) -o foo $(objects) $(libs)
 ```
 
-## 7.2 条件句语法
+### 7.2 条件句语法
 
 不带 `else` 的简单条件的语法如下：
 
@@ -2955,7 +2955,7 @@ ifndef variable-name
 
 为了防止出现无法容忍的混乱，不允许在一个 *makefile* 中启动条件语句并在另一个 *makefile* 中结束它。但是，如果不尝试在包含的文件中终止条件语句，则可以在条件中编写 `include` 指令。
 
-## 7.3 用于测试 Flag 的条件句
+### 7.3 用于测试 Flag 的条件句
 
 您可以编写一个条件语句，通过将变量 `MAKEFLAGS` 与 `findstring` 函数（请参阅 [8.2 Functions for String Substitution and Analysis](https://www.gnu.org/software/make/manual/make.html#Text-Functions)）一起使用，来测试 *make* 命令标志（如“-t”）。当 `touch` 不足以使文件显示为最新时，这很有用。
 
@@ -2977,11 +2977,11 @@ endif
 
 前缀“`+`”将这些配方行标记为“递归”，这样即使使用了“`-t`”标志，它们也会被执行。请参阅 [5.7 Recursive Use of make](https://www.gnu.org/software/make/manual/make.html#Recursion)。
 
-# 8 用于转换文本的函数
+## 8 用于转换文本的函数
 
 函数允许您在 *makefile* 中进行文本处理，以计算要操作的文件或要在配方中使用的命令。您在函数调用中使用一个函数，在该调用中您提供函数名称和一些文本（参数）供函数操作。函数处理的结果会在调用处被替换到 *makefile* 中，就像变量被替换一样。
 
-## 8.1 调用函数的语法
+### 8.1 调用函数的语法
 
 函数调用类似于变量引用，任何可以出现变量引用的地方也可以出现函数调用，并且使用与变量引用相同的规则对其进行展开。函数调用看起来像这样
 
@@ -3049,7 +3049,7 @@ print information
 
 即， 即使在 `space_two`变量的`=` 符号后输入了两个（或者三个、四个…）空白字符，它的变量值也是空的。）
 
-## 8.2 字符串替换和分析的函数
+### 8.2 字符串替换和分析的函数
 
 以下是一些对字符串进行操作的函数：
 
@@ -3148,7 +3148,7 @@ print information
 
     效果是将文本 `-Isrc -I../headers` 附加到先前给定的 CFLAGS 值。使用覆盖指令，即使使用命令参数指定了`CFLAGS` 的先前值，也会分配新值。
 
-## 8.3 用于文件名的函数
+### 8.3 用于文件名的函数
 
 一些内置的展开功能专门涉及拆分文件名或文件名列表。
 
@@ -3223,7 +3223,7 @@ print information
 - `$(abspath names…)`
     对于 `names` 中的每个文件名，返回一个不包含任何 `.` 或 `..` 元素、也不包含任何重复的路径分隔符（/）的绝对名称。请注意，与 `realpath` 函数相比，`abspath` 不解析符号链接，也不要求文件名引用现有文件或目录。使用 `wildcard` 函数测试是否存在。
 
-## 8.4 条件函数
+### 8.4 条件函数
 
 有四个函数提供条件展开。这些函数的一个关键是并不是所有的参数都在最初被展开。只有那些需要展开的参数才会被展开。
 
@@ -3235,7 +3235,7 @@ print information
 
 - `$(intcmp lhs,rhs[,lt-part[,eq-part[,gt-part]]])`
 
-## 8.5 `let` 函数
+### 8.5 `let` 函数
 
 `let` 函数提供了一种限制变量范围的方法。`let` 表达式中命名变量的赋值仅在 `let` 表达式提供的文本中有效，这种赋值不会影响任何外部范围的此名称的变量。
 
@@ -3286,7 +3286,7 @@ $(let var [var ...],[list],text)
 
 `reverse` 调用完成后，不再设置 `first` 和 `rest`。如果这些名称的变量事先存在，它们不受宏 `reverse` 展开的影响。
 
-## 8.6 `foreach` 函数
+### 8.6 `foreach` 函数
 
 `foreach` 函数类似于 `let` 函数，但与其他函数非常不同。它导致一段文本被重复使用，但每次都对其执行不同的替换。`foreach` 函数类似于 shell *sh*中的 `for` 命令和 C-shell *csh* 中的 `foreach` 命令。
 
@@ -3335,7 +3335,7 @@ files := $(foreach Esta-escrito-en-espanol!,b c ch,$(find_files))
 
 如果 `find_files` 的值引用名称为 "`Esta-escrito-en-espanol!`" 的变量 (这是一个很长的名字，不是吗？)，则可能会很有用，但这更有可能是一个错误。
 
-## 8.7 `file` 函数
+### 8.7 `file` 函数
 
 `file` 函数允许 *makefile* 对文件进行写入或读取。支持两种写入模式：覆盖（其中文本被写入文件的开头，并且任何现有内容都将丢失）和追加（其中文本被写入文件的末尾，保留现有内容）。在这两种情况下，如果文件不存在，则创建文件。如果文件无法打开进行写入，或者写入操作失败，这是一个致命的错误。`file` 函数在写入文件时展开为空字符串。
 
@@ -3373,7 +3373,7 @@ program: $(OBJECTS)
     @rm $@.in
 ```
 
-## 8.8 `call` 函数
+### 8.8 `call` 函数
 
 `call` 函数的独特之处在于它可用于创建新的参数化函数。您可以编写一个复杂的表达式作为变量的值，然后使用 `call` 将其展开为不同的值。
 
@@ -3431,7 +3431,7 @@ o = $(call map,origin,o map MAKE)
 
 最后一个注意事项：向 `call` 函数的参数中添加空白字符时要小心。与其他函数一样，第二个和后续参数中包含的任何空白字符都将保留；这可能会导致奇怪的影响。在提供给 `call` 函数的参数时，删除所有无关的空格通常是最安全的。
 
-## 8.9 `value` 函数
+### 8.9 `value` 函数
 
 `value` 函数为您提供了一种使用变量值而不进一步展开变量值的方法。请注意，这不会撤消已经发生的展开；例如，如果您创建一个*简单展开*的变量，它的值会在定义期间展开；在这种情况下，值函数将返回与直接使用变量相同的结果。
 
@@ -3457,7 +3457,7 @@ all:
 
 `value` 函数最常与 `eval` 函数结合使用。请参阅 [8.10 The eval Function](https://www.gnu.org/software/make/manual/make.html#Eval-Function)。
 
-## 8.10 `eval` 函数
+### 8.10 `eval` 函数
 
 `eval` 函数非常特殊：它允许您定义新的不恒定的 *makefile* 结构；这是评估其他变量和函数的结果。`eval` 函数的参数被展开，然后扩展的结果被解析为 *makefile* 语法。展开的结果可以定义新的 *make* 变量、目标、隐式或显式规则等。
 
@@ -3509,7 +3509,7 @@ clean:
 
 ）
 
-## 8.11 `origin` 函数
+### 8.11 `origin` 函数
 
 `origin` 函数与大多数其他函数不同，因为它不对变量的值进行操作；它告诉你一些关于变量的事情。具体来说，它告诉你它来自哪里。
 
@@ -3563,7 +3563,7 @@ endif
 
 这里，如果 "`$(origin bletch)`" 返回 "environment" 或 "environment override"，则会进行重新定义。参阅 [8.2 Functions for String Substitution and Analysis](https://www.gnu.org/software/make/manual/make.html#Text-Functions)
 
-## 8.12 `flavor` 函数
+### 8.12 `flavor` 函数
 
 `flavor` 函数，像 `origin` 函数一样，不对变量的值进行操作，而是告诉你一些关于变量的事情。具体来说，它告诉你变量的风格（参见 [6.2 The Two Flavors of Variables](https://www.gnu.org/software/make/manual/make.html#Flavors)）。
 
@@ -3583,7 +3583,7 @@ $(flavor variable)
 
 - 'simple'
 
-## 8.13 用于控制 make 的函数
+### 8.13 用于控制 make 的函数
 
 这些函数控制 *make* 运行的方式。通常，它们用于向 *makefile* 的用户提供信息，或者在检测到某种环境错误时导致 *make* 停止。
 
@@ -3615,7 +3615,7 @@ $(flavor variable)
 - `$(info text…)`
     此函数进用于将其（展开的）参数打印到标准输出。没有添加 *makefile* 名称或行号。此函数展开的结果是空字符串。
 
-## 8.14 `shell` 函数
+### 8.14 `shell` 函数
 
 `shell` 函数与 `wildcard` 函数（请参阅 [4.4.3 The Function wildcard](https://www.gnu.org/software/make/manual/make.html#Wildcard-Function)）以外的任何其他函数不同，因为它与 *make* 之外的世界通信。
 
@@ -3656,13 +3656,13 @@ export PATH = $(shell echo /usr/local/bin:$$PATH)
 
 然而，在 `export HI = ` 处使用*简单展开*变量 (`:=`) 会更简单、更有效 。
 
-## 8.15 `guile` 函数
+### 8.15 `guile` 函数
 
 如果 GNU *make* 的构建支持 GNU Guile 作为内嵌扩展语言，那么 `guile` 函数将可用。`guile` 函数接受一个参数，该参数首先由 *make* 以正常方式扩展，然后传递给 GNU Guile 评估器。评估器的结果被转换为字符串并用作 *makefile* 中 `guile` 函数的展开。有关在 Guile 中编写展开的详细信息，请参阅 [12.1 GNU Guile Integration](https://www.gnu.org/software/make/manual/make.html#Guile-Integration)。
 
 您可以通过检查 `.FEATURES` 变量中的 `guile` 字符来确定是否支持 GNU Guile。
 
-# 9 如何运行 make
+## 9 如何运行 make
 
 一个用于说明如何重新编译程序的 *makefile* 可以以多种方式被使用。最简单的使用方式是重新编译每个过期的文件。通常，*makefile* 就是这样编写的，即如果您在没有参数的情况下运行 *make*，它就会这样做。
 
@@ -3679,7 +3679,7 @@ make 的退出状态始终是三个值之一：
 - 1
     如果您使用 '`-q`' 标志并 make 确定某个目标尚未更新，则退出状态为 1。参阅 [9.3 Instead of Executing Recipes](https://www.gnu.org/software/make/manual/make.html#Instead-of-Execution)
 
-## 9.1 用于指定 *Makefile* 的参数
+### 9.1 用于指定 *Makefile* 的参数
 
 指定 *makefile* 名称的方法是使用 '`-f`' 或 '`--file`' 选项（'`--makefile`' 也可以）。例如，'`-f altmake`' 表示使用文件 *altmake* 作为 *makefile*。
 
@@ -3687,7 +3687,7 @@ make 的退出状态始终是三个值之一：
 
 如果您不使用 '`-f`' 或 '`--file`' 标志，则默认是按顺序尝试 *GNUmakefile*、*makefile*和*Makefile*，三个存在或可以制作的第一个（请参阅 [3 Writing Makefiles](https://www.gnu.org/software/make/manual/make.html#Makefiles)）。
 
-## 9.2 用于指定终点目标的参数
+### 9.2 用于指定终点目标的参数
 
 终点目标 (goals) 是 *make* 最终应该努力更新的目标 (target)。如果其他目标作为终点目标的先决条件或终点目标的先决条件的先决条件等出现，它们也会更新。
 
@@ -3755,7 +3755,7 @@ all: size nm ld ar as
 - check<br>test
     对这个 makefile 构建的程序执行自我测试。
 
-## 9.3 请不要执行配方
+### 9.3 请不要执行配方
 
 *makefile* 告诉 *make* 如何判断目标是否是最新的，以及如何更新每个目标。但你并不是每次都想更新目标。某些选项指定 *make* 的其他活动。
 
@@ -3790,7 +3790,7 @@ all: size nm ld ar as
 
 请注意，选项 '`-p`' 和 '`-v`' 允许您获取有关 make 或正在使用的 makefile 的其他信息。[9.8 Summary of Options](https://www.gnu.org/software/make/manual/make.html#Options-Summary)
 
-## 9.4 避免某些文件的重新编译
+### 9.4 避免某些文件的重新编译
 
 有时您可能已经更改了一个源文件，但您不想重新编译依赖于它的所有文件。例如，假设您向许多其他文件依赖的头文件添加了一个宏或声明。保守地说，*make* 假定头文件中的任何更改都需要重新编译所有依赖文件，但是你知道它们不需要重新编译，你不浪费时间等待它们编译。
 
@@ -3805,7 +3805,7 @@ all: size nm ld ar as
 1. 使用 "`make -o headerfile`" 重新编译由于与特定头文件无关的原因需要编译的源文件。如果涉及多个头文件，请为每个头文件使用单独的 “`-o`” 选项。
 2. 使用 “`make -t`” 创建所有目标文件。
 
-## 9.5 覆盖变量
+### 9.5 覆盖变量
 
 包含 “`=`” 的**参数**指定变量的值: “`v=x`” 将变量 `v` 的值设置为 `x`。如果以这种方式指定值，则 makefile 中相同变量的所有普通赋值都将被忽略; 我们说它们**已被命令行参数覆盖**。
 
@@ -3831,7 +3831,7 @@ CFLAGS=-g
 
 有一种方法，makefile 可以更改您已覆盖的变量。这是使用 `override` 指令，即 `override variable = value`(见 [6.7 The override Directive](https://www.gnu.org/software/make/manual/make.html#Override-Directive))。
 
-## 9.6 测试一段程序的编译
+### 9.6 测试一段程序的编译
 
 通常，当执行 shell 命令时发生错误时，*make* 立即放弃，返回非零状态。不会为任何目标执行进一步的配方。该错误意味着无法正确重做终点目标，并且 *make* 在知道后立即报告。
 
@@ -3841,7 +3841,7 @@ CFLAGS=-g
 
 *make* 的通常行为假设您的目的是使终点目标保持最新; 一旦 *make* 了解到这是不可能的，它不妨立即报告失败。'`-k`' 标志表示，真正的目的是尽可能多地测试一下程序中所做的更改，也许是为了找到几个独立的问题，以便您可以在下一次尝试编译之前将它们全部更正。这就是 [Emacs](https://www.gnu.org/software/emacs/) 的 `M-x compile` 命令默认传递 '`-k`' 标志的原因。
 
-## 9.7 临时文件
+### 9.7 临时文件
 
 在某些情况下，*make* 需要创建自己的临时文件。*make*，包括所有递归调用的 *make* 实例，在运行时不得干扰这些文件。
 
@@ -3853,7 +3853,7 @@ CFLAGS=-g
 
 这些变量不能从 makefile 中设置：GNU *make* 必须在开始读取 makefile 之前可以访问到此位置。
 
-## 9.8 选项汇总
+### 9.8 选项汇总
 
 以下是 *make* 理解的所有选项的表格：
 
@@ -3988,7 +3988,7 @@ CFLAGS=-g
 - `--warn-undefined-variables`
     每当 make 看到对未定义变量的引用时发出警告消息。当您尝试调试以复杂方式使用变量的 makefile 时，这会很有帮助。
 
-# 10 Using Implicit Rules
+## 10 Using Implicit Rules
 
 我们经常使用某些重新制作目标文件的标准方法。例如，制作目标文件的一种常用方法是使用 C 编译器 *cc* 从 C 源文件中获取。
 
@@ -4002,7 +4002,7 @@ CFLAGS=-g
 
 后缀规则 ( _suffix fules_ ) 是一种定义隐式规则的更有限的方法。模式规则 ( _pattern rules_ ) 更通用、更清晰，但为了兼容性保留了后缀规则。
 
-## 10.1 使用隐式规则
+### 10.1 使用隐式规则
 
 为了让 make 找到更新目标文件的惯用的方法，你所要做的就是不要自己指定 recipes。要么写一个没有 recipes 的规则，要么根本不写规则。
 
@@ -4035,7 +4035,7 @@ foo.o: foo.p
 
 如果您不希望将隐式规则用于没有配方的目标，您可以通过编写一个分号的方式，为该目标提供一个空配方
 
-## 10.2 内置规则目录
+### 10.2 内置规则目录
 
 这是一个预定义的隐式规则目录，除非 makefile 显式地覆盖或取消它们，否则这些规则始终可用。有关取消或覆盖隐式规则的信息，参阅 [10.5.6 Canceling Implicit Rules](https://www.gnu.org/software/make/manual/make.html#Canceling-Rules) . `-r` 或 `--no-builtin-rules` 选项取消所有预设规则。
 
@@ -4111,7 +4111,7 @@ rm -f z.o
 
 生成目标文件的每个规则都使用变量 `OUTPUT_OPTION`。*make* 将此变量定义为包含 "`-o $@`"，或者为空，具体取决于编译时的选项。您需要 “`-o`” 选项来确保当源文件位于不同目录时，输出进入正确的文件，正如使用 `VPATH` 时（请参阅 [4.5 Searching Directories for Prerequisites](https://www.gnu.org/software/make/manual/make.html#Directory-Search)）。但是，某些系统上的编译器不接受目标文件的 “`-o`” 开关。如果您使用这样的系统并使用 `VPATH`，某些编译会将其输出放在错误的位置。解决此问题的一个可能的解决方法是将 `; mv $*.o $@` 赋值给 `OUTPUT_OPTION`。
 
-## 10.3 隐式规则所使用的变量
+### 10.3 隐式规则所使用的变量
 
 内置隐式规则中的配方可以自由使用某些预定义变量。您可以在 *makefile* 中更改这些变量的值，结合传递给 make 的参数，或在环境中的参数，更改隐式规则的工作方式，而无需重新定义规则本身。使用 `-R` 或 `--no-builtin-variables` 选项可取消隐式规则使用的所有变量。
 
@@ -4181,7 +4181,7 @@ rm -f z.o
 
 给 lint 的额外的标志。
 
-## 10.4 隐式规则链
+### 10.4 隐式规则链
 
 有时可以通过一系列隐式规则制作文件。例如，可以通过首先运行 Yacc 然后运行 cc 从 *n.y* 制作文件 *n.o* 。这样的序列称为链（*chain*）。
 
@@ -4213,7 +4213,7 @@ rm -f z.o
 
 最后，出于性能原因，*make* 不会考虑非终端 match-anything rules（即 '`%:`') 在搜索规则以构建隐式规则的先决条件时（请参阅 [10.5.5 Match-Anything Pattern Rules](https://www.gnu.org/software/make/manual/make.html#Match_002dAnything-Rules)）。
 
-## 10.5 定义和重定义模式规则（pattern rules）
+### 10.5 定义和重定义模式规则（pattern rules）
 
 您可以通过编写**模式规则**来定义**隐式规则**。**模式规则**( *pattern rule* ) 与普通规则不同之处在于,其目标包含字符 `%` （仅有一个）。目标被认为是匹配文件名的模式；“%”可以匹配任何非空子字符串，而其他字符只能匹配它们自己。先决条件同样使用 `%` 来显示它们的名称与目标名称的关系。
 
@@ -4221,7 +4221,7 @@ rm -f z.o
 
 请注意，在**模式规则**中使用 "`%`" 的展开发生在任何变量或函数展开**之后**，变量或函数展开发生在读取 *makefile* 时。详细见 [6 How to Use Variables](https://www.gnu.org/software/make/manual/make.html#Using-Variables) 和 [8 Functions for Transforming Text](https://www.gnu.org/software/make/manual/make.html#Functions) 。
 
-### 10.5.1 模式规则介绍
+#### 10.5.1 模式规则介绍
 
 模式规则在目标中包含字符 `%`（仅有一个）；否则，它看起来与普通规则完全一样。目标是匹配文件名的模式；"`%`" 匹配任何非空子字符串，而其他字符只匹配它们自己。
 
@@ -4247,7 +4247,7 @@ rm -f z.o
 
 有一个例外：如果一个 *模式目标* 过期或不存在并且 *makefile* 不需要构建它，那么它不会导致其他目标被认为过期（这个历史异常将在 GNU *make* 的未来版本中被删除，不要这样写你的 *makefile*）。如果检测到这种情况 make 将生成一个警告 "pattern recipe did not update peer target"；但是 *make* 无法检测到所有这样的情况。
 
-### 10.5.2 模式规则举例
+#### 10.5.2 模式规则举例
 
 以下是 *make* 中实际预定义的**模式规则**的一些示例。首先，将 "*.c*" 文件编译为 "*.o*" 文件的规则：
 
@@ -4276,7 +4276,7 @@ rm -f z.o
 
 这告诉 *make*，内容为 "`bison -d x.y`" 的配方可以制作 "*x.tab.c*" "*x.tab.h*" 这两个内容。如果文件 *foo* 依赖于 "*parse.tab.o*"、"*scan.o*" 以及 文件 "*scan.o*" 依赖于 "*parse.tab.h*"，当 "*parse.y*" 发生改变时，那么内容为 "`bison -d parse.y`" 的配方仅会被执行一次，"*parse.tab.o*" 和 "*scan.o*" 的先决条件就会被满足。（根据推测，"*parse.tab.o*" 会从 "*parse.tab.c*" 被重新编译，"*scan.o*" 会从 "*scan.c*" 被重新编译，"*foo*" 会从 "*parse.tab.o*", "*scan.o*" 和他的其它先决条件连接而来，之后它将会顺利地执行）
 
-### 10.5.3 自动变量
+#### 10.5.3 自动变量
 
 假设您正在编写一个模式规则，将一个 “*.c*” 文件编译成一个 “*.o*” 文件：您如何编写 “`cc`”命令，以便它在正确的源文件名上运行？您不能在 recipe 中写入名称，因为每次应用隐式规则时名称都不同。
 
@@ -4343,7 +4343,7 @@ rm -f z.o
 
 请注意，当我们谈论这些自动变量时，我们使用了一种特殊的风格约定；我们写 “`$<` 的值”，而不是 “变量 `<`”，就像我们为 `objects` 和 `CFLAGS` 等普通变量写的那样。我们认为这种约定在这种特殊情况下看起来更自然。请不要假设它有很深的意义;`$<` 引用的是名为 `<` 的变量，就像 `$(CFLAGS)` 引用的是名为 `CFLAGS` 的变量一样。也可以用 `$(<)` 代替 `$<`。
 
-### 10.5.4 模式 (pattern) 匹配的方式
+#### 10.5.4 模式 (pattern) 匹配的方式
 
 目标模式由前缀、"`%`" 和后缀组成，前缀和后缀其中一个或两个可以为空。只有当文件名以前缀开头并以后缀结尾，且前后缀不会重叠时，模式才会匹配文件名。前缀和后缀之间的文本称为词干。因此，当模式 "*%.o*" 与文件名 *test.o* 匹配时，词干就是 "*test*"。模式规则的先决条件通过将字符 "`%`" 替换为词干，变成实际的文件名。因此，如果在同一示例中，其中一个先决条件写成 "*%.c*"，它将扩展为 "*test.c*"。
 
@@ -4370,7 +4370,7 @@ lib/%.o: lib/%.c
 
 如果 *make* 被要求构建 *lib/bar.o* 并且 *lib/bar.c* 和 *lib/bar.f* 都存在，则将选择第三条规则，因为该规则的词干（"*bar*"）比第一条规则的词干（"*lib/bar*"）短。如果 *lib/bar.c* 不存在，则第三条规则不符合条件，将使用第二条规则，即使词干较长。
 
-### 10.5.5 Match-Anything 的模式规则
+#### 10.5.5 Match-Anything 的模式规则
 
 当**模式规则**的目标只是 "`%`" 时，它匹配任何文件名。我们称这些规则为 *match-anything* 规则。它们非常有用，但是 *make* 可能需要很多时间来考虑它们，因为它必须考虑这样的每个文件名的每个规则，是作为目标列出，还是作为先决条件列出。
 
@@ -4400,7 +4400,7 @@ lib/%.o: lib/%.c
 
 为列出为有效的每个后缀创建虚拟模式规则，例如 "`%.p`" 的规则，以便在后缀规则中使用。（请参阅 [10.7 Old-Fashioned Suffix Rules](https://www.gnu.org/software/make/manual/make.html#Suffix-Rules)）。
 
-### 10.5.6 取消隐式规则
+#### 10.5.6 取消隐式规则
 
 您可以通过定义具有相同目标和先决条件但配方不同的新**模式规则**来覆盖内置隐式规则（或您自己定义的规则）。定义新规则时，将替换内置规则。新规则在隐式规则序列中的位置取决于您编写新规则的位置。
 
@@ -4410,7 +4410,7 @@ lib/%.o: lib/%.c
 %.o : %.s
 ```
 
-## 10.6 定义 Last-Resort Default 规则
+### 10.6 定义 Last-Resort Default 规则
 
 您可以通过编写没有先决条件的终端 (terminal) *match-anything pattern rule* 来定义 *last-resort implicit rule*（请参阅 [10.5.5 Match-Anything Pattern Rules](https://www.gnu.org/software/make/manual/make.html#Match_002dAnything-Rules)）。这就像任何其他**模式规则**一样；它唯一的特别之处在于它将匹配任何目标。因此，这样一个规则的配方用于所有没有自己的配方并且没有其他隐式规则适用的目标和先决条件。
 
@@ -4437,7 +4437,7 @@ lib/%.o: lib/%.c
 
 您可以使用 *last-resort* 规则覆盖另一个 makefile 的一部分。请参阅 [3.6 Overriding Part of Another Makefile](https://www.gnu.org/software/make/manual/make.html#Overriding-Makefiles)。
 
-## 10.7 过时的后缀规则
+### 10.7 过时的后缀规则
 
 **后缀规则**(Suffix rules) 是 make 定义隐式规则的老式方法。后缀规则已经过时，因为**模式规则**更通用、更清晰。GNU make 支持它们，以便与旧 makefile 兼容。它们有两种：双后缀和单后缀。
 
@@ -4491,7 +4491,7 @@ lib/%.o: lib/%.c
 
 在 make 读取任何 makefile 之前，变量 `SUFFIXES` 被定义到默认后缀列表中。您可以使用特殊目标 `.SUFFIXES` 的规则更改后缀列表，但这不会改变此变量。
 
-## 10.8 隐式规则搜索算法
+### 10.8 隐式规则搜索算法
 
 下面是 *make* 搜索目标 *t* 的隐式规则的过程。对于每个没有配方的双冒号规则、没有配方的普通规则的每个目标，以及不是任何规则的目标的每个先决条件，都遵循这个过程。在搜索规则链时，对于来自隐式规则的先决条件，它也递归地遵循。
 
@@ -4530,11 +4530,11 @@ lib/%.o: lib/%.c
 
 当对 *t* 执行模式规则的配方时，自动变量被设置为对应于目标和先决条件。参阅 [10.5.3 Automatic Variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)
 
-# 11 Using `make` to Update Archive Files
+## 11 Using `make` to Update Archive Files
 
 存档文件 (_Archive files_) 是包含称为成员的命名子文件的文件；它们由程序 *ar* 维护，它们的主要用途是作为链接的子程序库。
 
-## 11.1 Archive Members as Targets
+### 11.1 Archive Members as Targets
 
 存档文件的单个成员可以用作 make 中的目标或先决条件。您在存档文件*archinve*中指定名为*member*的成员，如下所示：
 
@@ -4565,9 +4565,9 @@ foolib(hack.o) foolib(kludge.o)
 
 您还可以在存档成员引用中使用 shell 样式的通配符。请参阅 [4.4 Using Wildcard Characters in File Names](https://www.gnu.org/software/make/manual/make.html#Wildcards)。例如，`foolib(*.o)` 展开到名称以“.o”结尾的 foolib 存档的所有现有成员；也许是 `foolib(hack.o) foolib(kludge.o)` 。
 
-# 16 Makefile 公约
+## 16 Makefile 公约
 
-## 16.6 用户的标准目标
+### 16.6 用户的标准目标
 
 所有 GNU 程序在其 Makefile 中都应该有以下目标：
 
