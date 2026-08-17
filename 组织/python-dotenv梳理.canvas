@@ -1,20 +1,24 @@
 {
 	"nodes":[
-		{"id":"36d0e72c8e74134b","type":"text","text":"# `load_dotenv(...)`\n```python\nload_dotenv(\n    dotenv_path: Optional[StrPath] = None,\n    stream: Optional[IO[str]] = None,\n    verbose: bool = False,\n    override: bool = False,\n    interpolate: bool = True,\n    encoding: Optional[str] = \"utf-8\",\n) -> bool\n```","x":-557,"y":-258,"width":557,"height":378},
-		{"id":"85c8d2a6e7ffc7e1","type":"text","text":"# `_load_dotenv_disabled(...)`\n\n根据`PYTHON_DOTENV_DISABLED`的值判断用户是否允许load .env文件","x":280,"y":-153,"width":600,"height":169},
-		{"id":"cc64076bf6df49e0","x":-436,"y":-640,"width":315,"height":72,"type":"text","text":"# `return True`"},
-		{"id":"55df2031b99fd73d","type":"text","text":"# `return False`","x":-436,"y":360,"width":315,"height":92},
-		{"id":"295120df6d658448","type":"text","text":"# `find_env()`\n\n如果没有手动设置`dotenv_path`和`steam`时，寻找`.env`文件路径\n","x":1040,"y":-160,"width":420,"height":176},
-		{"id":"120f0db43d84aee9","x":1741,"y":-275,"width":319,"height":75,"type":"text","text":"# 直接使用`cwd`"},
-		{"id":"7c649c0ecd93b6e2","x":1741,"y":220,"width":250,"height":60,"type":"text","text":""}
+		{"id":"120f0db43d84aee9","x":1741,"y":-280,"width":319,"height":60,"type":"text","text":"**直接使用`cwd`**"},
+		{"id":"7c649c0ecd93b6e2","x":1741,"y":160,"width":539,"height":60,"type":"text","text":"**根据栈结构寻找上一层调用`load_dotenv(...)`的文件**"},
+		{"id":"295120df6d658448","type":"text","text":"**调用`find_env()`，如果没有手动设置`dotenv_path`和`steam`时，寻找`.env`文件路径**\n","x":1040,"y":-128,"width":420,"height":120},
+		{"id":"85c8d2a6e7ffc7e1","type":"text","text":"**调用`_load_dotenv_disabled(...)`，根据`PYTHON_DOTENV_DISABLED`的值判断用户是否允许load .env文件**","x":280,"y":-134,"width":600,"height":133},
+		{"id":"36d0e72c8e74134b","type":"text","text":"**主函数`load_dotenv(...)`**","x":-441,"y":-96,"width":320,"height":58},
+		{"id":"55df2031b99fd73d","type":"text","text":"# `return False`","x":-441,"y":480,"width":315,"height":92},
+		{"id":"cc64076bf6df49e0","x":-441,"y":-720,"width":315,"height":72,"type":"text","text":"# `return True`"},
+		{"id":"e23de22695a87141","x":2380,"y":150,"width":322,"height":80,"type":"text","text":"**调用`_walk_to_root(...)`一层层寻找父文件夹**"},
+		{"id":"d110241c390ed32b","x":2860,"y":130,"width":288,"height":121,"type":"text","text":"**对于每一层父文件夹都尝试在当前文件夹内寻找指定的`.dotenv`文件**"}
 	],
 	"edges":[
 		{"id":"888ea5dc0403d51c","fromNode":"36d0e72c8e74134b","fromSide":"right","toNode":"85c8d2a6e7ffc7e1","toSide":"left","label":"判断"},
 		{"id":"eec20a833eb3dc64","fromNode":"85c8d2a6e7ffc7e1","fromSide":"right","toNode":"295120df6d658448","toSide":"left","label":"允许"},
 		{"id":"84174908529a5ebc","fromNode":"85c8d2a6e7ffc7e1","fromSide":"bottom","toNode":"55df2031b99fd73d","toSide":"right","color":"#9b0000","label":"不允许"},
-		{"id":"f1f69bc6765618da","fromNode":"36d0e72c8e74134b","fromSide":"bottom","toNode":"55df2031b99fd73d","toSide":"top"},
-		{"id":"c151215c90f91557","fromNode":"36d0e72c8e74134b","fromSide":"top","toNode":"cc64076bf6df49e0","toSide":"bottom"},
-		{"id":"dba7150f35890a0b","fromNode":"295120df6d658448","fromSide":"right","toNode":"120f0db43d84aee9","toSide":"left","label":"交互式环境"},
-		{"id":"371b1b5381fd3300","fromNode":"295120df6d658448","fromSide":"right","toNode":"7c649c0ecd93b6e2","toSide":"left","label":"非交互式环境"}
+		{"id":"f1f69bc6765618da","fromNode":"36d0e72c8e74134b","fromSide":"bottom","toNode":"55df2031b99fd73d","toSide":"top","label":"不成功"},
+		{"id":"c151215c90f91557","fromNode":"36d0e72c8e74134b","fromSide":"top","toNode":"cc64076bf6df49e0","toSide":"bottom","label":"成功"},
+		{"id":"dba7150f35890a0b","fromNode":"295120df6d658448","fromSide":"right","toNode":"120f0db43d84aee9","toSide":"left","label":"特殊环境"},
+		{"id":"371b1b5381fd3300","fromNode":"295120df6d658448","fromSide":"right","toNode":"7c649c0ecd93b6e2","toSide":"left","label":"文件内环境"},
+		{"id":"442e76eb65147b7d","fromNode":"7c649c0ecd93b6e2","fromSide":"right","toNode":"e23de22695a87141","toSide":"left"},
+		{"id":"0948c807cc9695a3","fromNode":"e23de22695a87141","fromSide":"right","toNode":"d110241c390ed32b","toSide":"left"}
 	]
 }
