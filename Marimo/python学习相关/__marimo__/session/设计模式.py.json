@@ -66,12 +66,12 @@
     },
     {
       "id": "PxDB",
-      "code_hash": "3391610ce9f9c77251afe29c992500ba",
+      "code_hash": "29950e4d718dec99d36def662a6530fc",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>&lt;__main__.DataConnection object at 0x000001CD749CEEA0&gt;</pre>"
+            "text/html": "<pre class='text-xs'>&#x27;Connecting to database at 10.0.0.1:23410 with cacheuser&#x27;</pre>"
           }
         }
       ],
@@ -79,6 +79,78 @@
     },
     {
       "id": "oeBf",
+      "code_hash": "4b097a2481a4ad70adf96b238cf3e1c0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"builder\">\u5efa\u9020\u8005\u6a21\u5f0f(Builder)</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xzWh",
+      "code_hash": "fc958935fbec5330acb650ac08cc456b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VIzi",
+      "code_hash": "d8c0144e923982d5ae5ab2d9fef01d53",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Connecting to database at 127.0.0.1:3306 with username 'root'\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "dNHs",
+      "code_hash": "deb7d997c53f0ade4843a1142ce39d78",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jSZh",
+      "code_hash": "04d0e695e99715569539c4cd704cdff7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&quot;Connecting to database at 127.0.0.1:3306 with username &#x27;root&#x27;&quot;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zuLw",
       "code_hash": null,
       "outputs": [],
       "console": []

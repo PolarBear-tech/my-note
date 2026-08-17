@@ -76,7 +76,127 @@ def _(DataConnection):
 
 @app.cell
 def _(connection_factory):
-    connection_factory("cache")
+    connection_factory("cache").connect()
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 建造者模式(Builder)
+    """)
+    return
+
+
+@app.cell
+def _():
+    class DatabaseConnection:
+        def __init__(self, host, port, username, password,
+                     max_connections=None, timeout=None,
+                     enable_ssl=False,
+                     ssl_cert=None, connection_pool=None,
+                     retry_attempts=None,
+                     compression=False, read_preference=None):
+            self.host = host
+            self.port = port
+            self.username = username
+            self.password = password
+            self.max_connections = max_connections
+            # validate timeout
+            # 这里违反了单一责任原则
+            if timeout is not None and timeout <= 0:
+                raise ValueError("Connect timeout must be positive")
+            self.timeout = timeout
+            self.enable_ssl = enable_ssl
+            self.ssl_cert = ssl_cert
+            self.connection_pool = connection_pool
+            self.retry_attempts = retry_attempts
+            self.compression = compression
+            self.read_preference = read_preference
+
+        def connect(self):
+            return f"Connecting to database at {self.host}:{self.port} with username '{self.username}'"
+
+    def connection():
+        connection = DatabaseConnection(
+            "127.0.0.1", 
+            3306, 
+            "root", 
+            "123456",
+            max_connections=100, 
+            timeout=30, 
+            enable_ssl=True, 
+            ssl_cert="/path/to/cert",
+            connection_pool=20,
+            retry_attempts=3, 
+            compression=True,
+            read_preference="secondary"
+        )
+        # 太麻烦
+        print(connection.connect())
+
+    return DatabaseConnection, connection
+
+
+@app.cell
+def _(connection):
+    connection()
+    return
+
+
+@app.cell
+def _(DatabaseConnection):
+    class DatabaseConnectionBuilder:
+        def __init__(self, host, port, username, password):
+            self._config = {
+                "host": host,
+                "port": port,
+                "username": username,
+                "password": password,
+            }
+        
+        def set_max_connection(self, max_connection: int):
+            self._config["max_connection"] = max_connection
+            return self
+
+        def set_timeout(self, timeout: int):
+            if timeout < 0:
+                raise ValueError("timeout cannot be negative.")
+            self._config["timeout"] = timeout
+            return self
+
+        def enable_ssl(self, ssl_cert=None):
+            self._config['enable_ssl'] = True
+            self._config['ssl_cert'] = ssl_cert
+            return self
+
+        def set_connection_pool(self, pool_size):
+            self._config['connection_pool'] = pool_size
+            return self
+    
+        def set_retry_attempts(self, attempts):
+            self._config['retry_attempts'] = attempts
+            return self
+    
+        def enable_compression(self):
+            self._config['compression'] = True
+            return self
+    
+        def set_read_preference(self, preference):
+            self._config['read_preference'] = preference
+            return self
+
+        def build(self):
+            return DatabaseConnection(**self._config)
+
+    return (DatabaseConnectionBuilder,)
+
+
+@app.cell
+def _(DatabaseConnectionBuilder):
+    _main_db = DatabaseConnectionBuilder("127.0.0.1", 3306, "root", "123456").enable_ssl().build()
+
+    _main_db.connect()
     return
 
 
