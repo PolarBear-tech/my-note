@@ -36,3 +36,11 @@ def _get_stream(self) -> Iterator[IO[str]]:
   如果底层 API 一换，抛出的异常类型就变；上层代码就会被迫捕获一堆底层异常。
   而封装后：不管底层是 `FileNotFoundError` / `PermissionError` / `UnicodeDecodeError`，对外统一抛出 `ConfigError`，上层只需要捕获 `ConfigError`，不需要关心底层是什么原因。
 - 避免误导：底层异常不是真正业务错误
+
+## **2026-08-17** 13:25: 判断是否是交互模式或 `.exe` 文件环境
+
+利用 `sys`的信息，固定模式是`getattr(sys, flag)` 判断是否存在`flag`
+
+- 交互式环境，`ps1`、`ps2`
+- 打包的二进制文件，`frozen`
+
