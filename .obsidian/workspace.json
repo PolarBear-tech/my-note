@@ -4,22 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3e6b5e9837c54a48",
+        "id": "56afe0caafcb0a90",
         "type": "tabs",
         "children": [
           {
-            "id": "16af5d73e20a7f1b",
+            "id": "e6c9d83523e73095",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "文本笔记/Plans.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 120,
+                  "y": 160,
+                  "zoom": -1.1164419082221053
+                }
               },
-              "icon": "lucide-file",
-              "title": "Plans"
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
             }
           }
         ]
@@ -161,7 +163,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/Plans.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -208,15 +209,17 @@
       "templates:插入模板": false
     }
   },
-  "active": "497eb0e50e1c55fd",
+  "active": "745f6abf6b64b878",
   "lastOpenFiles": [
+    "组织/root.canvas",
+    "文本笔记/关于外表.md",
+    "文本笔记/Plans.md",
     "文本笔记/薛定谔方程里为什么有i.md",
     "组织/python/python roadmap.canvas",
     "组织/python/工程工具和思想.canvas",
     "文本笔记/python学习相关/工程思想.md",
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "组织/python/实战.canvas",
-    "组织/root.canvas",
     "文本笔记/python学习相关/Python Contributor之路.md",
     "文本笔记/附件/Pasted image 20260812104837.png",
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
@@ -230,7 +233,6 @@
     "附件",
     "文本笔记/读书日记.md",
     "文本笔记/Wish List.md",
-    "文本笔记/Plans.md",
     "主页.md",
     "手写笔记/python-dotenv梳理.md",
     "文本笔记/python学习相关/工具",
@@ -253,8 +255,6 @@
     "Clippings/python 模式匹配.md",
     "Clippings/python dataclass.md",
     "文本笔记/python学习相关/python 魔术方法.md",
-    "文本笔记/python学习相关/Make指南.md",
-    "手写笔记/闭包.md",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "组织/四六级.canvas"
