@@ -19,8 +19,8 @@
       "console": []
     },
     {
-      "id": "MJUe",
-      "code_hash": "5fe789ffa486bf98dfb9ec71dc73bc45",
+      "id": "NwKl",
+      "code_hash": "90082b50e4114ba626b0c5dce396c3de",
       "outputs": [
         {
           "type": "data",
@@ -29,6 +29,58 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "ubqt",
+      "code_hash": "8fc86c848f53b1f717320eafa38eea33",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Connecting to database at 127.0.0.1:3306 with root\nConnecting to database at 192.168.1.1:3307 with admin\nConnecting to database at 10.0.0.1:23410 with cacheuser\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "LFIA",
+      "code_hash": "d35095f67225320a2cc2b2043a2b43a1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PxDB",
+      "code_hash": "3391610ce9f9c77251afe29c992500ba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&lt;__main__.DataConnection object at 0x000001CD749CEEA0&gt;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oeBf",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     }
   ]
