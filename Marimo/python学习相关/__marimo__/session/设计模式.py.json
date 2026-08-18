@@ -118,6 +118,26 @@
     },
     {
       "id": "ZLQV",
+      "code_hash": "5d31ba6f738853032b30cebbd8d23b36",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "new logger print: from old interface\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "vwGh",
       "code_hash": null,
       "outputs": [],
       "console": []

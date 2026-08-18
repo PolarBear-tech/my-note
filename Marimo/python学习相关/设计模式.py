@@ -213,14 +213,45 @@ def _(mo):
     return
 
 
-app._unparsable_cell(
-    r"""
-    class _Logger:
+@app.cell
+def _():
+    from abc import ABC, abstractmethod
+
+    class _OldLoggerInterface(ABC):
+        @abstractmethod
+        def debug(self, message: str):
+            pass
+
+    class _NewLoggerInterface(ABC):
+        @abstractmethod
+        def d(self, message: str):
+            pass
+
+    class _NewLogger(_NewLoggerInterface):
+        def __init__(self):
+            pass
+
+        def d(self, message: str):
+            print(f"new logger print: {message}")
+
+    class _LoggerAdapter(_OldLoggerInterface):
+
+        def __init__(self, logger: _NewLoggerInterface):
+            self._logger = logger
     
-        def debug()
-    """,
-    name="_"
-)
+        def debug(self, message: str):
+            self._logger.d(message)
+
+
+    logger = _LoggerAdapter(_NewLogger())
+
+    logger.debug("from old interface")
+    return
+
+
+@app.cell
+def _():
+    return
 
 
 if __name__ == "__main__":
