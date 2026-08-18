@@ -43,14 +43,16 @@
 		{"id":"93cbd651b0c22fe1","type":"text","text":"`dict(...)`\n\n返回`.env`的文件代表的`dict`并。","x":1920,"y":2617,"width":407,"height":120,"color":"#00ff00"},
 		{"id":"9eee2f6240d727f5","type":"text","text":"检查`dotenv_path`文件是否存在","x":2508,"y":2278,"width":340,"height":60,"color":"#000000"},
 		{"id":"ba6e6faab974b926","type":"text","text":"`_get_stream(...)`\n\n返回数据代表的流式对象。","x":1920,"y":2355,"width":407,"height":120,"color":"#00ff00"},
-		{"id":"2b0024718e517c13","x":1963,"y":3001,"width":322,"height":120,"color":"#00ff00","type":"text","text":"`parse(...)`\n\n返回指定源代表数据的键值对"},
-		{"id":"020c4bb624833f05","x":2405,"y":3019,"width":273,"height":84,"type":"text","text":"调用`_get_stream(...)`得到`stream`"},
-		{"id":"4749683c77559958","x":2805,"y":2972,"width":460,"height":179,"type":"text","text":"调用`parse_stream`得到流数据的生成器对象。\n\n再交由`with_warn_for_invalid_lines(...)`打印错误信息并得到一个个数据。"},
-		{"id":"a721a8da1f696cf1","x":3406,"y":3001,"width":250,"height":120,"color":"#ff0000","type":"text","text":"若`key`不是无效的`None`，产出键值对数据"},
-		{"id":"80971d483cdd58a9","x":1941,"y":3493,"width":250,"height":147,"color":"#00ff00","type":"text","text":"`set_as_environment_variables(...)`\n\n设置环境变量"},
-		{"id":"528064e0fc18071a","x":2466,"y":3542,"width":212,"height":98,"type":"text","text":"先尝试调用一次`dict(...)`"},
-		{"id":"477f2010d9d9bda0","x":2824,"y":3484,"width":250,"height":60,"type":"text","text":"`return False`"},
-		{"id":"7387fe2e8031b8d0","x":2834,"y":3701,"width":346,"height":179,"type":"text","text":"遍历`dict()`里的所有键值对。\n\n"}
+		{"id":"477f2010d9d9bda0","x":2753,"y":3225,"width":250,"height":60,"color":"#ff0000","type":"text","text":"`return False`"},
+		{"id":"7387fe2e8031b8d0","x":2753,"y":3329,"width":346,"height":239,"type":"text","text":"遍历`dict()`里的所有键值对。\n\n- 若`key`存在于环境变量，但是`override`是`False`，直接跳过\n- 若`value`不是`None`，直接修改就好了"},
+		{"id":"45147fd698133139","x":3265,"y":3419,"width":250,"height":60,"color":"#ff0000","type":"text","text":"`return True`"},
+		{"id":"80971d483cdd58a9","x":1963,"y":3260,"width":250,"height":147,"color":"#00ff00","type":"text","text":"`set_as_environment_variables(...)`\n\n设置环境变量"},
+		{"id":"528064e0fc18071a","x":2320,"y":3285,"width":212,"height":98,"type":"text","text":"先尝试调用一次`dict(...)`"},
+		{"id":"882fe4c1358a0354","x":1963,"y":3620,"width":250,"height":109,"color":"#00ff00","type":"text","text":"`get(...)`\n\n查找需要的环境变量值"},
+		{"id":"2b0024718e517c13","x":1927,"y":3001,"width":322,"height":120,"color":"#00ff00","type":"text","text":"`parse(...)`\n\n返回指定源代表数据的键值对"},
+		{"id":"020c4bb624833f05","x":2369,"y":3019,"width":273,"height":84,"type":"text","text":"调用`_get_stream(...)`得到`stream`"},
+		{"id":"4749683c77559958","x":2769,"y":2972,"width":460,"height":179,"type":"text","text":"调用`parse_stream`得到流数据的生成器对象。\n\n再交由`with_warn_for_invalid_lines(...)`打印错误信息并得到一个个数据。"},
+		{"id":"a721a8da1f696cf1","x":3370,"y":3001,"width":250,"height":120,"color":"#ff0000","type":"text","text":"若`key`不是无效的`None`，产出键值对数据"}
 	],
 	"edges":[
 		{"id":"888ea5dc0403d51c","fromNode":"36d0e72c8e74134b","fromSide":"right","toNode":"85c8d2a6e7ffc7e1","toSide":"left","label":"判断"},
@@ -90,14 +92,14 @@
 		{"id":"9e882d3c5a0e5336","fromNode":"8b9e04ed9d78288b","fromSide":"right","toNode":"93cbd651b0c22fe1","toSide":"left"},
 		{"id":"960debc57ae97703","fromNode":"8b9e04ed9d78288b","fromSide":"right","toNode":"2b0024718e517c13","toSide":"left"},
 		{"id":"700b513672564d46","fromNode":"2b0024718e517c13","fromSide":"right","toNode":"020c4bb624833f05","toSide":"left","toEnd":"none"},
-		{"id":"0bd426990d2eb77b","fromNode":"020c4bb624833f05","fromSide":"top","toNode":"ba6e6faab974b926","toSide":"bottom","color":"#006400"},
 		{"id":"0b44452fc7e12a25","fromNode":"2203d64f8110b28e","fromSide":"bottom","toNode":"8b9e04ed9d78288b","toSide":"top","color":"#006464"},
 		{"id":"335990da40701099","fromNode":"020c4bb624833f05","fromSide":"right","toNode":"4749683c77559958","toSide":"left"},
-		{"id":"da10970c44b196b6","fromNode":"618991b79a34d8d6","fromSide":"bottom","toNode":"2b0024718e517c13","toSide":"top","color":"#006400"},
 		{"id":"3782fc472239f0a0","fromNode":"4749683c77559958","fromSide":"right","toNode":"a721a8da1f696cf1","toSide":"left"},
 		{"id":"8027272af799805a","fromNode":"8b9e04ed9d78288b","fromSide":"right","toNode":"80971d483cdd58a9","toSide":"left"},
-		{"id":"cb47b23377788023","fromNode":"80971d483cdd58a9","fromSide":"right","toNode":"528064e0fc18071a","toSide":"left"},
+		{"id":"cb47b23377788023","fromNode":"80971d483cdd58a9","fromSide":"right","toNode":"528064e0fc18071a","toSide":"left","toEnd":"none"},
 		{"id":"e49f2b11481eff75","fromNode":"528064e0fc18071a","fromSide":"right","toNode":"477f2010d9d9bda0","toSide":"left","label":"None"},
-		{"id":"caa75fb861763da8","fromNode":"528064e0fc18071a","fromSide":"right","toNode":"7387fe2e8031b8d0","toSide":"left","label":"not None"}
+		{"id":"caa75fb861763da8","fromNode":"528064e0fc18071a","fromSide":"right","toNode":"7387fe2e8031b8d0","toSide":"left","label":"not None"},
+		{"id":"1fe639ebb51e6667","fromNode":"7387fe2e8031b8d0","fromSide":"right","toNode":"45147fd698133139","toSide":"left"},
+		{"id":"193cec72fac0614a","fromNode":"8b9e04ed9d78288b","fromSide":"right","toNode":"882fe4c1358a0354","toSide":"left"}
 	]
 }

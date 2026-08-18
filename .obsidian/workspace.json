@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "187ff206a1b7c342",
+        "id": "276e977a8abd2a30",
         "type": "tabs",
         "children": [
           {
-            "id": "fd41d963716736e2",
+            "id": "4456c73980c73119",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/python-dotenv梳理.canvas",
-                "viewState": {
-                  "x": 2987.198954437754,
-                  "y": 3485.8341508668914,
-                  "zoom": -0.6752052125695607
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "python-dotenv梳理"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -164,7 +157,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组织/python-dotenv梳理.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -211,8 +203,9 @@
       "templates:插入模板": false
     }
   },
-  "active": "fd41d963716736e2",
+  "active": "4456c73980c73119",
   "lastOpenFiles": [
+    "组织/python-dotenv梳理.canvas",
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
@@ -239,7 +232,6 @@
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "文本笔记/附件/Pasted image 20260812104837.png",
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
-    "组织/python-dotenv梳理.canvas",
     "文本笔记/未命名.md",
     "附件/Wish List.md",
     "附件/主页.md",
