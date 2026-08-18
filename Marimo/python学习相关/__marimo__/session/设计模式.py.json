@@ -19,138 +19,7 @@
       "console": []
     },
     {
-      "id": "NwKl",
-      "code_hash": "90082b50e4114ba626b0c5dce396c3de",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u5de5\u5382\u6a21\u5f0f</h1></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ubqt",
-      "code_hash": "8fc86c848f53b1f717320eafa38eea33",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Connecting to database at 127.0.0.1:3306 with root\nConnecting to database at 192.168.1.1:3307 with admin\nConnecting to database at 10.0.0.1:23410 with cacheuser\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "LFIA",
-      "code_hash": "d35095f67225320a2cc2b2043a2b43a1",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "PxDB",
-      "code_hash": "29950e4d718dec99d36def662a6530fc",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;Connecting to database at 10.0.0.1:23410 with cacheuser&#x27;</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "oeBf",
-      "code_hash": "4b097a2481a4ad70adf96b238cf3e1c0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"builder\">\u5efa\u9020\u8005\u6a21\u5f0f(Builder)</h1></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "xzWh",
-      "code_hash": "fc958935fbec5330acb650ac08cc456b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "VIzi",
-      "code_hash": "d8c0144e923982d5ae5ab2d9fef01d53",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Connecting to database at 127.0.0.1:3306 with username 'root'\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "dNHs",
-      "code_hash": "deb7d997c53f0ade4843a1142ce39d78",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "jSZh",
-      "code_hash": "04d0e695e99715569539c4cd704cdff7",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&quot;Connecting to database at 127.0.0.1:3306 with username &#x27;root&#x27;&quot;</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "zuLw",
+      "id": "MJUe",
       "code_hash": "b74acd5af3965266d31b007574ef5c06",
       "outputs": [
         {
@@ -163,21 +32,8 @@
       "console": []
     },
     {
-      "id": "tlNk",
-      "code_hash": "e5c73328fec216c705178e7ec5c630d7",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "UaGH",
-      "code_hash": "fcb3434e4e9bfb46457aa0b3479e32fd",
+      "id": "vblA",
+      "code_hash": "1a18ab2c60004f73c6505a5f36433143",
       "outputs": [
         {
           "type": "data",
@@ -196,7 +52,72 @@
       ]
     },
     {
-      "id": "xism",
+      "id": "lEQa",
+      "code_hash": "90082b50e4114ba626b0c5dce396c3de",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u5de5\u5382\u6a21\u5f0f</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "b67e20be33e66149ae2bdf333507d453",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Connecting to database at 10.0.0.1:23410 with cacheuser&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "4b097a2481a4ad70adf96b238cf3e1c0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"builder\">\u5efa\u9020\u8005\u6a21\u5f0f(Builder)</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "68357e0de6551fcb47b7928d78fe03af",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&quot;Connecting to database at 127.0.0.1:3306 with username &#x27;root&#x27;&quot;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "e2176b3ad4431587ea6ea03dfe2750ae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u9002\u914d\u5668\u6a21\u5f0f</h1>\n<span class=\"paragraph\">\u73b0\u5728\u6709\u8fd9\u6837\u4e00\u4e2a\u573a\u666f\uff0c\u4e00\u4e2a\u8001\u5f0f\u9879\u76ee\u4e2d\u6709\u4e00\u4e2a<code>OldLogger</code>\u7c7b\uff0c\u4f46\u662f\u5f88\u4e0d\u597d\u7528\uff0c\u6211\u4eec\u5f15\u5165\u7b2c\u4e09\u65b9\u5e93\u7684<code>NewLogger</code>\u8fdb\u884c\u4f18\u5316\uff0c\u4f46\u662f\u4e8c\u8005\u7684\u63a5\u53e3\u4e0d\u4e00\u81f4\uff0c\u8fd9\u65f6\u4e3a\u4e86\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u5f15\u5165\u9002\u914d\u5668<code>LoggerAdapter</code></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZLQV",
       "code_hash": null,
       "outputs": [],
       "console": []

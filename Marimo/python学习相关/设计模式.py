@@ -21,7 +21,7 @@ def _(mo):
 
 @app.cell
 def _():
-    class Earth:
+    class _Earth:
         _instance = None
 
         def __new__(cls, *args, **kwargs):
@@ -32,18 +32,13 @@ def _():
         def __init__(self):
             self.flags = 12345
 
-    def connect():
-        e_1 = Earth()
-        e_2 = Earth()
+    def _connect():
+        e_1 = _Earth()
+        e_2 = _Earth()
 
         print(e_1 is e_2)
 
-    return (connect,)
-
-
-@app.cell
-def _(connect):
-    connect()
+    _connect()
     return
 
 
@@ -56,8 +51,8 @@ def _(mo):
 
 
 @app.cell
-def _():
-    class DataConnection:
+def _(DataConnection):
+    class _DatabaseConnection:
         def __init__(self, host, port, username, password):
             self.host = host
             self.port = port
@@ -67,52 +62,40 @@ def _():
         def connect(self):
             return f"Connecting to database at {self.host}:{self.port} with {self.username}"
 
-
-    def client():
+    def _client():
         # 难以维护，而且一直出现重复代码
-        main_db = DataConnection("127.0.0.1", 3306, "root", "123456")
-        analytics_db = DataConnection("192.168.1.1", 3307, "admin", "123456")
-        cache_db = DataConnection("10.0.0.1", 23410, "cacheuser", "123456")
+        main_db = _DatabseConnection("127.0.0.1", 3306, "root", "123456")
+        analytics_db = _DatabaseConnection("192.168.1.1", 3307, "admin", "123456")
+        cache_db = _DatabaseConnection("10.0.0.1", 23410, "cacheuser", "123456")
         print(main_db.connect())
         print(analytics_db.connect())
         print(cache_db.connect())
 
-    client()
-    return (DataConnection,)
-
-
-@app.cell
-def _(DataConnection):
-    def connection_factory(db_type: str) -> DataConnection | None:
+    def _connection_factory(db_type: str) -> DataConnection | None:
         # 这里更合适的是抽成一个配置文件
         db_configs = {
-            "main":{
+            "main": {
                 "host": "127.0.0.1",
                 "port": 3306,
                 "username": "root",
-                "password": "123456"
+                "password": "123456",
             },
-            "analytics":{
+            "analytics": {
                 "host": "192.168.1.1",
                 "port": 3307,
                 "username": "admin",
-                "password": "123456"
+                "password": "123456",
             },
             "cache": {
                 "host": "10.0.0.1",
                 "port": 23410,
                 "username": "cacheuser",
-                "password": "123456"
-            }
+                "password": "123456",
+            },
         }
-        return DataConnection(**db_configs[db_type])
+        return _DatabaseConnection(**db_configs[db_type])
 
-    return (connection_factory,)
-
-
-@app.cell
-def _(connection_factory):
-    connection_factory("cache").connect()
+    _connection_factory("cache").connect()
     return
 
 
@@ -126,7 +109,7 @@ def _(mo):
 
 @app.cell
 def _():
-    class DatabaseConnection:
+    class _DatabaseConnection:
         def __init__(self, host, port, username, password,
                      max_connections=None, timeout=None,
                      enable_ssl=False,
@@ -153,8 +136,8 @@ def _():
         def connect(self):
             return f"Connecting to database at {self.host}:{self.port} with username '{self.username}'"
 
-    def connection():
-        connection = DatabaseConnection(
+    def _connect():
+        connect = _DatabaseConnection(
             "127.0.0.1", 
             3306, 
             "root", 
@@ -169,20 +152,9 @@ def _():
             read_preference="secondary"
         )
         # 太麻烦
-        print(connection.connect())
+        print(connect.connect())
 
-    return DatabaseConnection, connection
-
-
-@app.cell
-def _(connection):
-    connection()
-    return
-
-
-@app.cell
-def _(DatabaseConnection):
-    class DatabaseConnectionBuilder:
+    class _DatabaseConnectionBuilder:
         def __init__(self, host, port, username, password):
             self._config = {
                 "host": host,
@@ -190,7 +162,7 @@ def _(DatabaseConnection):
                 "username": username,
                 "password": password,
             }
-    
+
         def set_max_connection(self, max_connection: int):
             self._config["max_connection"] = max_connection
             return self
@@ -223,22 +195,32 @@ def _(DatabaseConnection):
             return self
 
         def build(self):
-            return DatabaseConnection(**self._config)
+            return _DatabaseConnection(**self._config)
 
-    return (DatabaseConnectionBuilder,)
-
-
-@app.cell
-def _(DatabaseConnectionBuilder):
-    _main_db = DatabaseConnectionBuilder("127.0.0.1", 3306, "root", "123456").enable_ssl().build()
+    _main_db = _DatabaseConnectionBuilder("127.0.0.1", 3306, "root", "123456").enable_ssl().build()
 
     _main_db.connect()
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 适配器模式
+
+    现在有这样一个场景，一个老式项目中有一个`OldLogger`类，但是很不好用，我们引入第三方库的`NewLogger`进行优化，但是二者的接口不一致，这时为了解决这个问题，我们引入适配器`LoggerAdapter`
+    """)
     return
+
+
+app._unparsable_cell(
+    r"""
+    class _Logger:
+    
+        def debug()
+    """,
+    name="_"
+)
 
 
 if __name__ == "__main__":
