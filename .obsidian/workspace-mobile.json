@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/root.canvas",
+                "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": 120,
-                  "y": 160,
-                  "zoom": -1.4672937364102678
+                  "x": -875,
+                  "y": 56.314381270903084,
+                  "zoom": -0.6948615630764897
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "title": "其他"
             }
           }
         ]
@@ -149,8 +149,18 @@
   },
   "active": "034a0bcd5460ae95",
   "lastOpenFiles": [
-    "组织/其他.canvas",
     "组织/root.canvas",
+    "组织/其他.canvas",
+    "Marimo/python学习相关/__marimo__/session/format.py.json",
+    "Marimo/python学习相关/__marimo__/session/闭包.py.json",
+    "Marimo/python学习相关/__marimo__/session/设计模式.py.json",
+    "Marimo/python学习相关/__marimo__/session/bytes.py.json",
+    "Marimo/python学习相关/__marimo__/session/init和new.py.json",
+    "Marimo/python学习相关/__marimo__/session/属性相关魔术方法.py.json",
+    "Marimo/python学习相关/__marimo__/session/描述器.py.json",
+    "Marimo/python学习相关/__marimo__/session/元类.py.json",
+    "Marimo/python学习相关/__marimo__/session/生成器和迭代器.py.json",
+    "Marimo/python学习相关/__marimo__/session/类构建相关魔术方法.py.json",
     "组织/python/python roadmap.canvas",
     "组织/python/内核语法.canvas",
     "文本笔记/未命名.md",
@@ -158,12 +168,10 @@
     "文本笔记/Plans.md",
     "文本笔记/读书日记.md",
     "README.md",
-    "未命名",
     "主页 1.md",
     "主页.md",
     "附件/Wish List.md",
     "附件/主页.md",
-    "附件",
     "组织/其他.canvas.md",
     "文本笔记/交大新生入学.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
@@ -176,7 +184,6 @@
     "Clippings/python dataclass.md",
     "文本笔记/python学习相关/The Zen of Python.md",
     "组织/python/实战.canvas",
-    "组织/python",
     "组织/CPython Contributor RoadMap.canvas",
     "组织/高等数学.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
