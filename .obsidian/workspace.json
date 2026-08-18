@@ -11,17 +11,12 @@
             "id": "cd361cb802e86fe0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "pdf",
               "state": {
-                "file": "组织/其他.canvas",
-                "viewState": {
-                  "x": -178.46190284280215,
-                  "y": 10.380181593053521,
-                  "zoom": -1.3943365904154124
-                }
+                "file": "文档/医用物理学笔记.pdf"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "其他"
+              "icon": "lucide-file-text",
+              "title": "医用物理学笔记"
             }
           }
         ]
