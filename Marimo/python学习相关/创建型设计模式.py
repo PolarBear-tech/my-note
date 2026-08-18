@@ -14,6 +14,42 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    # 单例模式
+    """)
+    return
+
+
+@app.cell
+def _():
+    class Earth:
+        _instance = None
+
+        def __new__(cls, *args, **kwargs):
+            if cls._instance is None:
+                cls._instance = super().__new__(cls)
+            return cls._instance
+
+        def __init__(self):
+            self.flags = 12345
+
+    def connect():
+        e_1 = Earth()
+        e_2 = Earth()
+
+        print(e_1 is e_2)
+
+    return (connect,)
+
+
+@app.cell
+def _(connect):
+    connect()
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # 工厂模式
     """)
     return
@@ -154,7 +190,7 @@ def _(DatabaseConnection):
                 "username": username,
                 "password": password,
             }
-        
+    
         def set_max_connection(self, max_connection: int):
             self._config["max_connection"] = max_connection
             return self
@@ -173,15 +209,15 @@ def _(DatabaseConnection):
         def set_connection_pool(self, pool_size):
             self._config['connection_pool'] = pool_size
             return self
-    
+
         def set_retry_attempts(self, attempts):
             self._config['retry_attempts'] = attempts
             return self
-    
+
         def enable_compression(self):
             self._config['compression'] = True
             return self
-    
+
         def set_read_preference(self, preference):
             self._config['read_preference'] = preference
             return self
@@ -197,42 +233,6 @@ def _(DatabaseConnectionBuilder):
     _main_db = DatabaseConnectionBuilder("127.0.0.1", 3306, "root", "123456").enable_ssl().build()
 
     _main_db.connect()
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    # 单例模式
-    """)
-    return
-
-
-@app.cell
-def _():
-    class Earth:
-        _instance = None
-
-        def __new__(cls, *args, **kwargs):
-            if cls._instance is None:
-                cls._instance = super().__new__(cls)
-            return cls._instance
-    
-        def __init__(self):
-            self.flags = 12345
-
-    def connect():
-        e_1 = Earth()
-        e_2 = Earth()
-
-        print(e_1 is e_2)
-
-    return (connect,)
-
-
-@app.cell
-def _(connect):
-    connect()
     return
 
 

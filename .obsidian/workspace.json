@@ -13,18 +13,46 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/root.canvas",
+                "file": "组织/python/工程工具和思想.canvas",
                 "viewState": {
-                  "x": 120,
-                  "y": 160,
-                  "zoom": -1.1164419082221053
+                  "x": 431.5,
+                  "y": 310,
+                  "zoom": -1.7877574847228102
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "title": "工程工具和思想"
+            }
+          },
+          {
+            "id": "99c63561e1d945d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文本笔记/python学习相关/工程思想.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "工程思想"
+            }
+          },
+          {
+            "id": "6a98d82064169f43",
+            "type": "leaf",
+            "state": {
+              "type": "marimo-editor",
+              "state": {
+                "file": "Marimo/python学习相关/设计模式/创建型设计模式.py"
+              },
+              "icon": "marimo-logo",
+              "title": "创建型设计模式.py"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,15 +237,19 @@
       "templates:插入模板": false
     }
   },
-  "active": "1363963d73bb12ec",
+  "active": "497eb0e50e1c55fd",
   "lastOpenFiles": [
-    "文本笔记/python学习相关/工程思想.md",
     "组织/python/工程工具和思想.canvas",
+    "文本笔记/python学习相关/工程思想.md",
+    "Marimo/python学习相关/设计模式/__marimo__/session/创建型设计模式.py.json",
+    "Marimo/python学习相关/设计模式/__marimo__/session",
+    "Marimo/python学习相关/设计模式/__marimo__",
+    "Marimo/python学习相关/设计模式",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
     "组织/其他.canvas",
     "Marimo/python学习相关/__marimo__/session/设计模式.py.json",
-    "Marimo/python学习相关/设计模式.py",
+    "Marimo/python学习相关/创建型设计模式.py",
     "文本笔记/python学习相关/未命名",
     "文本笔记/nvim优化.md",
     "文本笔记/Wish List.md",
@@ -245,10 +277,6 @@
     "文本笔记/python学习相关/工具/coverage.py.md",
     "文本笔记/python学习相关/工具/pytest.md",
     "文本笔记/python学习相关/工具",
-    "Marimo/工程工具/__pycache__/pytest.cpython-314.pyc",
-    "Marimo/工程工具/__pycache__",
-    "Marimo/工程工具/__marimo__/session/pytest.py.json",
-    "Marimo/工程工具/untitled_marimo.py",
     "模板/日期+时间.md",
     "Clippings/医用物理学笔记.md",
     "组织/数学.canvas",
