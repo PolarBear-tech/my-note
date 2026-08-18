@@ -151,6 +151,52 @@
     },
     {
       "id": "zuLw",
+      "code_hash": "b74acd5af3965266d31b007574ef5c06",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u5355\u4f8b\u6a21\u5f0f</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tlNk",
+      "code_hash": "e5c73328fec216c705178e7ec5c630d7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UaGH",
+      "code_hash": "fcb3434e4e9bfb46457aa0b3479e32fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "xism",
       "code_hash": null,
       "outputs": [],
       "console": []

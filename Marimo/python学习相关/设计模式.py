@@ -200,6 +200,42 @@ def _(DatabaseConnectionBuilder):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 单例模式
+    """)
+    return
+
+
+@app.cell
+def _():
+    class Earth:
+        _instance = None
+
+        def __new__(cls, *args, **kwargs):
+            if cls._instance is None:
+                cls._instance = super().__new__(cls)
+            return cls._instance
+    
+        def __init__(self):
+            self.flags = 12345
+
+    def connect():
+        e_1 = Earth()
+        e_2 = Earth()
+
+        print(e_1 is e_2)
+
+    return (connect,)
+
+
+@app.cell
+def _(connect):
+    connect()
+    return
+
+
 @app.cell
 def _():
     return
