@@ -21,3 +21,4 @@
  - `Linter`：格式化
  - `marimo Bridge`：实现在 Obsidian 中打开 marimo 笔记
  - `Latex Suit`：写数学公式用的，虽然我很少打开它
+ - `floating toc`：侧边的目录

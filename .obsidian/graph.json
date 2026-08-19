@@ -5,20 +5,20 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:文本笔记  ",
+      "query": "path:手写笔记  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:手写笔记  ",
+      "query": "path:文本笔记  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 14725458
       }
     }
   ],
@@ -32,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.533879167226872,
+  "scale": 0.27676421319227734,
   "close": true
 }
