@@ -4,22 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "dbbbbb4f9fb66f87",
+        "id": "78f760b28400db48",
         "type": "tabs",
         "children": [
           {
-            "id": "f070084a43d4ff8f",
+            "id": "6b418e4023239794",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "marimo-editor",
               "state": {
-                "file": "文本笔记/读书日记.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Marimo/python学习相关/functools.py"
               },
-              "icon": "lucide-file",
-              "title": "读书日记"
+              "icon": "marimo-logo",
+              "title": "functools.py"
             }
           }
         ]
@@ -34,7 +31,7 @@
       {
         "id": "dc2dfa1be42557e3",
         "type": "tabs",
-        "dimension": 60.66176470588235,
+        "dimension": 59.9721059972106,
         "children": [
           {
             "id": "497eb0e50e1c55fd",
@@ -69,19 +66,6 @@
             }
           },
           {
-            "id": "a5f28345280fe81a",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-bookmark",
-              "title": "书签"
-            }
-          },
-          {
             "id": "c2a083edd954ae23",
             "type": "leaf",
             "state": {
@@ -96,16 +80,19 @@
       {
         "id": "84a0017b663d21e9",
         "type": "tabs",
-        "dimension": 39.338235294117645,
+        "dimension": 40.0278940027894,
         "children": [
           {
-            "id": "bfbaac88c01d5417",
+            "id": "a5f28345280fe81a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           },
           {
@@ -114,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文本笔记/读书日记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +119,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "主页.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
@@ -163,7 +148,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/读书日记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -171,8 +155,19 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "bfbaac88c01d5417",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "e2a8ebdd080d10dc",
@@ -210,17 +205,21 @@
       "templates:插入模板": false
     }
   },
-  "active": "f070084a43d4ff8f",
+  "active": "6b418e4023239794",
   "lastOpenFiles": [
-    "README.md",
+    "Marimo/python学习相关/__marimo__/session/functools.py.json",
+    "组织/python/内核语法.canvas",
+    "Marimo/python学习相关/functools.py",
+    "Clippings/Python 数据结构与函数式编程工具.md",
+    "组织/python/python roadmap.canvas",
+    "组织/root.canvas",
     "文本笔记/读书日记.md",
+    "README.md",
     "组织/其他.canvas",
     "文本笔记/Wish List.md",
     "模板/日期+时间.md",
-    "组织/root.canvas",
     "组织/python-dotenv梳理.canvas",
     "组织/python/实战.canvas",
-    "组织/python/python roadmap.canvas",
     "文本笔记/python学习相关/Python Contributor之路.md",
     "文本笔记/交大新生入学.md",
     "文档/医用物理学笔记.pdf",
@@ -246,16 +245,13 @@
     "附件",
     "主页.md",
     "手写笔记/python-dotenv梳理.md",
-    "文本笔记/python学习相关/工具",
     "文本笔记/python学习相关/工具/Hypothesis.md",
     "文本笔记/python学习相关/工具/py-spy.md",
     "文本笔记/python学习相关/工具/coverage.py.md",
     "文本笔记/python学习相关/工具/pytest.md",
     "Clippings/医用物理学笔记.md",
     "组织/数学.canvas",
-    "组织/python/内核语法.canvas",
     "Clippings/python 模式匹配.md",
-    "Clippings/python dataclass.md",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
     "组织/四六级.canvas"
