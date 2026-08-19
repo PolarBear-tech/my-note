@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "78f760b28400db48",
+        "id": "5c306dc9563a07ec",
         "type": "tabs",
         "children": [
           {
-            "id": "6b418e4023239794",
+            "id": "29c9c955f98b789d",
             "type": "leaf",
             "state": {
               "type": "marimo-editor",
@@ -205,7 +205,7 @@
       "templates:插入模板": false
     }
   },
-  "active": "6b418e4023239794",
+  "active": "29c9c955f98b789d",
   "lastOpenFiles": [
     "Marimo/python学习相关/__marimo__/session/functools.py.json",
     "组织/python/内核语法.canvas",
