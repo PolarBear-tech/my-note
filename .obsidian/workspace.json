@@ -11,10 +11,17 @@
             "id": "b75260965f7f5cf3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "canvas",
+              "state": {
+                "file": "组织/python/内核语法.canvas",
+                "viewState": {
+                  "x": -57.5,
+                  "y": 158,
+                  "zoom": -1.90067899723899
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "内核语法"
             }
           }
         ]
@@ -205,10 +212,10 @@
   },
   "active": "b75260965f7f5cf3",
   "lastOpenFiles": [
-    "组织/python-dotenv梳理.canvas",
-    "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
     "组织/root.canvas",
+    "组织/python-dotenv梳理.canvas",
+    "组织/python/实战.canvas",
     "组织/python/内核语法.canvas",
     "Clippings/Python 数据结构与函数式编程工具.md",
     "组织/其他.canvas",
