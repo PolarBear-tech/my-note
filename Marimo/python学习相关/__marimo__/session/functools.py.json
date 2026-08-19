@@ -32,7 +32,7 @@
       "console": []
     },
     {
-      "id": "OiDV",
+      "id": "vblA",
       "code_hash": "cd143dbd073c8042ec5579f429fb7922",
       "outputs": [
         {
@@ -45,7 +45,7 @@
       "console": []
     },
     {
-      "id": "IhuR",
+      "id": "bkHC",
       "code_hash": "7c9c0d9d805aa70cdcac41868b06c01d",
       "outputs": [
         {
@@ -58,7 +58,7 @@
       "console": []
     },
     {
-      "id": "DSRL",
+      "id": "lEQa",
       "code_hash": "48482dd6b172e957cfbca47482ffc621",
       "outputs": [
         {
@@ -71,7 +71,7 @@
       "console": []
     },
     {
-      "id": "Rnps",
+      "id": "PKri",
       "code_hash": "c86ed463fc5907d9b54bf06eb39fa557",
       "outputs": [
         {
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "JnFR",
+      "id": "Xref",
       "code_hash": "04931626f5341c1f8fa3423fd048a2de",
       "outputs": [
         {
@@ -97,7 +97,7 @@
       "console": []
     },
     {
-      "id": "rFDp",
+      "id": "SFPL",
       "code_hash": "f1a546e460f14baab18f041f0807b710",
       "outputs": [
         {
@@ -110,7 +110,7 @@
       "console": []
     },
     {
-      "id": "Izcj",
+      "id": "BYtC",
       "code_hash": "6d6a6d3b28fe4fa69142c6644cd29118",
       "outputs": [
         {
@@ -123,7 +123,7 @@
       "console": []
     },
     {
-      "id": "SHFO",
+      "id": "RGSE",
       "code_hash": "97d555b75d917301d96ce8def1f95e60",
       "outputs": [
         {
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "id": "PJgK",
+      "id": "Kclp",
       "code_hash": "b6a605a8cff53c1751071fbe09e7c301",
       "outputs": [
         {
@@ -156,7 +156,7 @@
       "console": []
     },
     {
-      "id": "VKGR",
+      "id": "emfo",
       "code_hash": "3cef4daff777c3a5794eae9b87eb2a83",
       "outputs": [
         {
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "id": "wlBf",
+      "id": "Hstk",
       "code_hash": "532cce28fee7d31c90f3e403c66a740a",
       "outputs": [
         {
@@ -189,7 +189,7 @@
       "console": []
     },
     {
-      "id": "NVTi",
+      "id": "nWHF",
       "code_hash": "320704f2e4e536ee5cc845d0c104ad50",
       "outputs": [
         {
@@ -209,7 +209,40 @@
       ]
     },
     {
-      "id": "MADL",
+      "id": "iLit",
+      "code_hash": "c26a7777e0f333ee17ed2720895460de",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"singledispatch\"><code>singledispatch</code></h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KrRy",
+      "code_hash": "4fd3bfd790d5d3e5c6d3c80c03d51ac7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "int: 12\nstr: 12\ndefault: 12j\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BrcR",
       "code_hash": null,
       "outputs": [],
       "console": []

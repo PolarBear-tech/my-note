@@ -148,6 +148,35 @@ def _(ft):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## `singledispatch`
+    """)
+    return
+
+
+@app.cell
+def _(ft):
+    @ft.singledispatch
+    def _func(x):
+        print("default:", x)
+
+
+    @_func.register
+    def _(x: int):
+        print("int:", x)
+
+    @_func.register
+    def _(x: str):
+        print("str:", x)
+
+    _func(12)
+    _func("12")
+    _func(12j)
+    return
+
+
 @app.cell
 def _():
     return
