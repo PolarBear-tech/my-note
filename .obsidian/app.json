@@ -5,7 +5,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "文本笔记",
   "settingsPopoutWindow": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "showInlineTitle": true,
   "rightToLeft": false,
   "openBehavior": "file:组织/root.canvas",

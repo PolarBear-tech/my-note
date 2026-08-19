@@ -11,23 +11,6 @@
             "id": "f070084a43d4ff8f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/其他.canvas",
-                "viewState": {
-                  "x": -179.64477031239846,
-                  "y": 8.3534020668206,
-                  "zoom": -1.9444443247936438
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "其他"
-            }
-          },
-          {
-            "id": "321ae553a6aceb24",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "文本笔记/读书日记.md",
@@ -39,8 +22,7 @@
               "title": "读书日记"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.66665649414062
+    "width": 247.66665649414062,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -210,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.16668701171875
+    "width": 240.16668701171875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,7 +210,7 @@
       "templates:插入模板": false
     }
   },
-  "active": "321ae553a6aceb24",
+  "active": "f070084a43d4ff8f",
   "lastOpenFiles": [
     "组织/其他.canvas",
     "文本笔记/读书日记.md",
