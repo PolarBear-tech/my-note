@@ -16,8 +16,8 @@
                 "file": "组织/其他.canvas",
                 "viewState": {
                   "x": -875,
-                  "y": 56.314381270903084,
-                  "zoom": -0.6948615630764897
+                  "y": -29.658119658119602,
+                  "zoom": -0.4635360169700341
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -150,6 +150,9 @@
   "active": "034a0bcd5460ae95",
   "lastOpenFiles": [
     "组织/root.canvas",
+    "组织/python/实战.canvas",
+    "组织/python/python roadmap.canvas",
+    "组织/python/工程工具和思想.canvas",
     "组织/其他.canvas",
     "Marimo/python学习相关/__marimo__/session/format.py.json",
     "Marimo/python学习相关/__marimo__/session/闭包.py.json",
@@ -161,7 +164,6 @@
     "Marimo/python学习相关/__marimo__/session/元类.py.json",
     "Marimo/python学习相关/__marimo__/session/生成器和迭代器.py.json",
     "Marimo/python学习相关/__marimo__/session/类构建相关魔术方法.py.json",
-    "组织/python/python roadmap.canvas",
     "组织/python/内核语法.canvas",
     "文本笔记/未命名.md",
     "文本笔记/Wish List.md",
@@ -183,7 +185,6 @@
     "文本笔记/python学习相关/python 魔术方法.md",
     "Clippings/python dataclass.md",
     "文本笔记/python学习相关/The Zen of Python.md",
-    "组织/python/实战.canvas",
     "组织/CPython Contributor RoadMap.canvas",
     "组织/高等数学.canvas",
     "手写笔记/高等书学-chapter-1.excalidraw.md",
