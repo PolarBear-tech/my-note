@@ -98,18 +98,58 @@ def _(mo):
 
 @app.cell
 def _(ft):
-    def dec(func: callable):
-        @ft.wraps
+    def _dec(func: callable):
+        @ft.wraps(func)
         def wrap(*args, **kwargs):
+            print("in wrap")
             return func(*args, **kwargs)
         return wrap
 
-    def func(a: int):
-        """
-        a: an integer
-        """
+    @_dec
+    def _func(a: int):
+        """a: an integer"""
         print(a)
+        return a + 1
 
+    print(_func(1))
+    print(_func.__doc__)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## total_ordering
+    """)
+    return
+
+
+@app.cell
+def _(ft):
+    @ft.total_ordering
+    class _A:
+        def __init__(self, v: int):
+            self.v = v
+
+        def __lt__(self, other):
+            return self.v < other.v
+
+        def __eq__(self, other):
+            return self.v == other.v
+
+        def __hash__(self):
+            return hash((self.v,))
+
+    _one = _A(1)
+    _two = _A(2)
+
+    print(_one <= _two)
+    print(_one > _two)
+    return
+
+
+@app.cell
+def _():
     return
 
 

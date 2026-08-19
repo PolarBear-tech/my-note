@@ -157,6 +157,59 @@
     },
     {
       "id": "VKGR",
+      "code_hash": "3cef4daff777c3a5794eae9b87eb2a83",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "in wrap\n1\n2\na: an integer\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "wlBf",
+      "code_hash": "532cce28fee7d31c90f3e403c66a740a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"total_ordering\">total_ordering</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NVTi",
+      "code_hash": "320704f2e4e536ee5cc845d0c104ad50",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "True\nFalse\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "MADL",
       "code_hash": null,
       "outputs": [],
       "console": []
