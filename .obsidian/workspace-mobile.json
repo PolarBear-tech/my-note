@@ -16,7 +16,7 @@
                 "file": "组织/其他.canvas",
                 "viewState": {
                   "x": -875,
-                  "y": -29.658119658119602,
+                  "y": -282,
                   "zoom": -0.4635360169700341
                 }
               },
@@ -150,10 +150,10 @@
   "active": "034a0bcd5460ae95",
   "lastOpenFiles": [
     "组织/root.canvas",
-    "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
-    "组织/python/工程工具和思想.canvas",
     "组织/其他.canvas",
+    "组织/python/实战.canvas",
+    "组织/python/工程工具和思想.canvas",
     "Marimo/python学习相关/__marimo__/session/format.py.json",
     "Marimo/python学习相关/__marimo__/session/闭包.py.json",
     "Marimo/python学习相关/__marimo__/session/设计模式.py.json",
