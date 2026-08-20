@@ -15,9 +15,9 @@
               "state": {
                 "file": "组织/python-dotenv梳理.canvas",
                 "viewState": {
-                  "x": 948.6757495664525,
-                  "y": -2769.617127376314,
-                  "zoom": -0.6481481082645479
+                  "x": 444.5886431867304,
+                  "y": 592.6200083414215,
+                  "zoom": -1.2962962165290959
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -80,7 +80,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "84a0017b663d21e9",
