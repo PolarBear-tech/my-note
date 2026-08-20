@@ -32,5 +32,6 @@
       "key": "O"
     }
   ],
-  "switcher:open": []
+  "switcher:open": [],
+  "command-palette:open": []
 }

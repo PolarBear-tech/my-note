@@ -1,0 +1,45 @@
+{
+  "global": {
+    "traditionalChineseSupport": false,
+    "doublePinyin": "全拼",
+    "fuzzyPinyin": false,
+    "fuzzyPinyinSetting": [],
+    "palladius": false,
+    "closeWithBackspace": true,
+    "autoCaseSensitivity": true
+  },
+  "file": {
+    "showAttachments": false,
+    "showAllFileTypes": true,
+    "showUnresolvedLink": false,
+    "quicklySelectHistoryFiles": false,
+    "quicklySelectHistoryFilesHint": "asdfjklgh",
+    "attachmentExtensions": [
+      "jpg",
+      "png",
+      "py"
+    ],
+    "usePathToSearch": false,
+    "useFileEditorSuggest": true,
+    "showTags": false,
+    "searchWithTag": true,
+    "keyEnter": "打开",
+    "keyCtrlEnter": "打开到新标签页",
+    "keyAltEnter": "打开到其他面板",
+    "keyCtrlAltEnter": "打开到新面板"
+  },
+  "heading": {
+    "showFirstLevelHeading": true,
+    "headingIndent": true
+  },
+  "command": {
+    "pinnedCommands": [
+      "模板: 插入模板",
+      "Git: Commit-and-sync and then close Obsidian"
+    ]
+  },
+  "other": {
+    "useTagEditorSuggest": true,
+    "devMode": false
+  }
+}
