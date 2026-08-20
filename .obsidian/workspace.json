@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6fd31471a0ceba7e",
+        "id": "3462810eb9d00cbf",
         "type": "tabs",
         "children": [
           {
-            "id": "bc00e6221ce5b795",
+            "id": "be365133b048b556",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/其他.canvas",
+                "file": "组织/python/实战.canvas",
                 "viewState": {
-                  "x": 480,
-                  "y": -282,
-                  "zoom": 0
+                  "x": 513,
+                  "y": -427,
+                  "zoom": -1.6300688862213986
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "其他"
+              "title": "实战"
             }
           }
         ]
@@ -211,19 +211,20 @@
       "templates:插入模板": false
     }
   },
-  "active": "bc00e6221ce5b795",
+  "active": "be365133b048b556",
   "lastOpenFiles": [
+    "组织/python/python roadmap.canvas",
+    "组织/python/实战.canvas",
     "组织/root.canvas",
     "组织/其他.canvas",
+    "文本笔记/旅游安排.md",
     "文本笔记/村委会发言稿.md",
     "文本笔记/temp.md",
     "组织/python/内核语法.canvas",
-    "组织/python/python roadmap.canvas",
     "文本笔记/python学习相关/Python Contributor之路.md",
     "组织/python-dotenv梳理.canvas",
     "组织/python/工程工具和思想.canvas",
     "文本笔记/python学习相关/工程思想.md",
-    "组织/python/实战.canvas",
     "文本笔记/交大新生入学.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
     "文本笔记/Wish List.md",
@@ -255,7 +256,6 @@
     "文本笔记/python学习相关/工具/Hypothesis.md",
     "文本笔记/python学习相关/工具/py-spy.md",
     "文本笔记/python学习相关/工具/coverage.py.md",
-    "文本笔记/python学习相关/工具/pytest.md",
     "组织/数学.canvas",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
