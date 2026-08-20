@@ -59,8 +59,16 @@
 		{"id":"b78690b097f4ff6d","type":"text","text":"`get_key(...)`\n\n传入`dotenv_path`，得到其中的`key_to_get`所代表的值","x":-1100,"y":-3240,"width":450,"height":159,"color":"#00ff00"},
 		{"id":"061d9c0af47ccc14","type":"text","text":"`_load_dotenv_disabled(…)`\n\n读取环境变量`PYTHON_DOTENV_DISABLED`的值判断用户是否允许load .env文件","x":-1100,"y":-3520,"width":450,"height":199,"color":"#00ff00"},
 		{"id":"ef9de975e0d77779","type":"text","text":"`with_warn_for_invalid_lines(...)`\n\n对于不合法的行打印错误信息的日志。\n\n建立的又一层生成器，将错误信息打印和处理写入数据的逻辑分离","x":-1100,"y":-3840,"width":450,"height":200,"color":"#00ff00"},
-		{"id":"4bd72eeba56373c6","type":"text","text":"`rewrite(...)`\n\n","x":-1100,"y":-2580,"width":450,"height":110,"color":"#00ff00"},
-		{"id":"39608858b4467e36","x":-500,"y":-2567,"width":250,"height":85,"type":"text","text":"找到`path`，特别是需要处理软连接的情况"}
+		{"id":"4bd72eeba56373c6","type":"text","text":"`rewrite(...)`\n\n把`path`的原始数据读取出来然后交给用户进行操作之后再写入新的文件\n","x":-1100,"y":-2580,"width":450,"height":140,"color":"#00ff00"},
+		{"id":"f37755fb8bb6c4d8","x":780,"y":-2558,"width":250,"height":102,"type":"text","text":"更改`dst`的`mode`，实现文件权限的拷贝"},
+		{"id":"39608858b4467e36","x":-455,"y":-2549,"width":250,"height":85,"type":"text","text":"找到`path`，特别是需要处理软连接的情况"},
+		{"id":"6dda52776702f54e","x":-40,"y":-2555,"width":289,"height":98,"type":"text","text":"获取`path`代表的原始数据`source`和这个原始数据的文件权限"},
+		{"id":"f068c4d6361357ba","x":420,"y":-2576,"width":250,"height":138,"type":"text","text":"用`tempfile`创建临时文件`dst`，然后把`source`和`dst`的处理权交给用户"},
+		{"id":"4b9b5c9926b8a155","x":1140,"y":-2537,"width":250,"height":60,"color":"#ff0000","type":"text","text":"原子替换文件"},
+		{"id":"d9f4ec6e747596f1","x":460,"y":-2911,"width":250,"height":60,"type":"text","text":"得到合法的值"},
+		{"id":"41ef4bdd22552bb4","x":905,"y":-2805,"width":250,"height":60,"type":"text","text":"直接得到最终的行"},
+		{"id":"1e41e57ba2131f5d","x":905,"y":-3056,"width":250,"height":109,"type":"text","text":"加上`export`并得到最终插入的行"},
+		{"id":"3abcba9cebaf9ce6","x":1360,"y":-2908,"width":250,"height":60,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"888ea5dc0403d51c","fromNode":"36d0e72c8e74134b","fromSide":"right","toNode":"85c8d2a6e7ffc7e1","toSide":"left","label":"判断"},
@@ -110,6 +118,15 @@
 		{"id":"4a42830cc280894e","fromNode":"9505254955e31e1a","fromSide":"right","toNode":"4a4aadd254434173","toSide":"left"},
 		{"id":"29af34330f2319d0","fromNode":"4a4aadd254434173","fromSide":"right","toNode":"9b039fdd922f34cb","toSide":"left","label":"需要"},
 		{"id":"1ef53c917a8fd0cc","fromNode":"4a4aadd254434173","fromSide":"right","toNode":"6a6d038ccac6d3ac","toSide":"left","label":"不需要"},
-		{"id":"063243714dcedf9c","fromNode":"4bd72eeba56373c6","fromSide":"right","toNode":"39608858b4467e36","toSide":"left"}
+		{"id":"063243714dcedf9c","fromNode":"4bd72eeba56373c6","fromSide":"right","toNode":"39608858b4467e36","toSide":"left"},
+		{"id":"bb406b3f96328c40","fromNode":"39608858b4467e36","fromSide":"right","toNode":"6dda52776702f54e","toSide":"left"},
+		{"id":"59045bfbe7bc61be","fromNode":"6dda52776702f54e","fromSide":"right","toNode":"f068c4d6361357ba","toSide":"left"},
+		{"id":"f66abe418a04fa71","fromNode":"f068c4d6361357ba","fromSide":"right","toNode":"f37755fb8bb6c4d8","toSide":"left"},
+		{"id":"52e6ebc1cfbd8d7d","fromNode":"f37755fb8bb6c4d8","fromSide":"right","toNode":"4b9b5c9926b8a155","toSide":"left"},
+		{"id":"61b2da872aad45f3","fromNode":"6a6d038ccac6d3ac","fromSide":"right","toNode":"d9f4ec6e747596f1","toSide":"left"},
+		{"id":"37d913b2aaca7430","fromNode":"9b039fdd922f34cb","fromSide":"right","toNode":"d9f4ec6e747596f1","toSide":"left"},
+		{"id":"3600328f1c6e928f","fromNode":"d9f4ec6e747596f1","fromSide":"right","toNode":"1e41e57ba2131f5d","toSide":"left","label":"export"},
+		{"id":"856a899a53f09464","fromNode":"d9f4ec6e747596f1","fromSide":"right","toNode":"41ef4bdd22552bb4","toSide":"left","label":"not export"},
+		{"id":"25038d594dc60016","fromNode":"1e41e57ba2131f5d","fromSide":"right","toNode":"3abcba9cebaf9ce6","toSide":"left"}
 	]
 }
