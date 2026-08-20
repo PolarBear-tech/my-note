@@ -4,5 +4,6 @@
   "obsidian-dictionary-plugin",
   "marimo-bridge",
   "obsidian-git",
-  "floating-toc"
+  "floating-toc",
+  "fuzzy-chinese-pinyin"
 ]
