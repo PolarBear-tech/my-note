@@ -13,34 +13,18 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/python/实战.canvas",
+                "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": 513,
-                  "y": -427,
-                  "zoom": -1.6300688862213986
+                  "x": -197.5,
+                  "y": 359,
+                  "zoom": -1.3616124176754045
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "实战"
-            }
-          },
-          {
-            "id": "d86caa2de44cd072",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/python MRO.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "python MRO"
+              "title": "其他"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,13 +211,13 @@
       "templates:插入模板": false
     }
   },
-  "active": "d86caa2de44cd072",
+  "active": "be365133b048b556",
   "lastOpenFiles": [
-    "组织/python/内核语法.canvas",
+    "组织/root.canvas",
     "Clippings/python MRO.md",
+    "组织/python/内核语法.canvas",
     "组织/python/python roadmap.canvas",
     "组织/python/实战.canvas",
-    "组织/root.canvas",
     "组织/其他.canvas",
     "文本笔记/旅游安排.md",
     "文本笔记/村委会发言稿.md",
