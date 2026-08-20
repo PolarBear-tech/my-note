@@ -3,7 +3,7 @@
 		{"id":"b035c829ed019497","type":"text","text":"- [ ] 多进程","x":130,"y":754,"width":250,"height":60},
 		{"id":"b53ae0b47c7811d4","type":"text","text":"- [x] 变量引用","x":130,"y":186,"width":250,"height":60},
 		{"id":"83b3cd11db8e05a4","type":"text","text":"- [x] 垃圾回收GC","x":130,"y":326,"width":250,"height":50},
-		{"id":"07b0c21b08a6b2fa","type":"text","text":"- [ ] GIL全局解释器锁","x":130,"y":464,"width":250,"height":60},
+		{"id":"07b0c21b08a6b2fa","type":"text","text":"- [x] GIL全局解释器锁","x":130,"y":464,"width":250,"height":60},
 		{"id":"d41b14670a753d03","type":"text","text":"- [ ] 多线程","x":130,"y":644,"width":250,"height":60},
 		{"id":"5dbcecf22c80fb0a","type":"text","text":"- [ ] IO密集和CPU密集选型","x":130,"y":984,"width":302,"height":50},
 		{"id":"1378ed675451d275","type":"text","text":"内存模型","x":-317,"y":376,"width":250,"height":60},
