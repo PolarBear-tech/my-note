@@ -1,20 +1,20 @@
 {
 	"nodes":[
-		{"id":"4d46dd966908fa73","x":1347,"y":-1285,"width":400,"height":400,"type":"file","file":"组织/python-dotenv梳理.canvas"},
 		{"id":"ca46ddbf774964f3","type":"text","text":"读","x":-245,"y":-414,"width":231,"height":60},
 		{"id":"f65435430d483d78","type":"text","text":"写","x":-245,"y":344,"width":250,"height":60},
-		{"id":"63eb0eaf1607e35d","type":"text","text":"- [ ] [theskumar/python-dotenv: Reads key-value pairs from a .env file and can set them as environment variables. It helps in developing applications following the 12-factor principles.](https://github.com/theskumar/python-dotenv)","x":226,"y":-905,"width":553,"height":140},
 		{"id":"55127e5c26d990ac","type":"text","text":"- [ ] [pallets/itsdangerous: Safely pass trusted data to untrusted environments and back.](https://github.com/pallets/itsdangerous)","x":231,"y":-663,"width":548,"height":98},
 		{"id":"2fccc81e43950403","type":"text","text":"- [ ] dotenv","x":239,"y":284,"width":250,"height":60},
 		{"id":"ceff8daccbcf5747","type":"text","text":"- [ ] [fastapi/typer: Typer, build great CLIs. Easy to code. Based on Python type hints.](https://github.com/fastapi/typer)","x":239,"y":-463,"width":540,"height":98},
 		{"id":"fb09d234a14b4b90","type":"text","text":"- [ ] [pytest-dev/pluggy: A minimalist production ready plugin system](https://github.com/pytest-dev/pluggy)","x":239,"y":-272,"width":540,"height":98},
 		{"id":"b20ba85db747d80f","type":"text","text":"- [ ] [Kludex/starlette: The little ASGI framework that shines. 🌟](https://github.com/Kludex/starlette)","x":239,"y":-74,"width":540,"height":80},
 		{"id":"20b7abdffec21ba0","type":"text","text":"- [ ] [encode/httpx: A next generation HTTP client for Python. 🦋](https://github.com/encode/httpx)","x":239,"y":86,"width":540,"height":100},
-		{"id":"587cb2da9282ed66","type":"file","file":"文本笔记/python学习相关/python开源项目.md","x":-721,"y":-905,"width":400,"height":400},
 		{"id":"514c1321a5601058","type":"text","text":"开源项目","x":-721,"y":-253,"width":250,"height":60},
 		{"id":"0e4fc51202f9a81c","type":"text","text":"- [ ] typer","x":239,"y":404,"width":250,"height":60},
 		{"id":"5a44f1efba298828","type":"text","text":"- [ ] pluggy","x":239,"y":526,"width":250,"height":60},
-		{"id":"211d94149734bf5c","type":"file","file":"文本笔记/python学习相关/实战日记/python-dotenv.md","x":779,"y":-1440,"width":400,"height":400}
+		{"id":"587cb2da9282ed66","type":"file","file":"文本笔记/python学习相关/python开源项目.md","x":-721,"y":-1440,"width":400,"height":400},
+		{"id":"4d46dd966908fa73","type":"file","file":"组织/python-dotenv梳理.canvas","x":1240,"y":-1440,"width":400,"height":400},
+		{"id":"211d94149734bf5c","type":"file","file":"文本笔记/python学习相关/实战日记/python-dotenv.md","x":239,"y":-1440,"width":400,"height":400},
+		{"id":"63eb0eaf1607e35d","type":"text","text":"- [ ] [theskumar/python-dotenv: Reads key-value pairs from a .env file and can set them as environment variables. It helps in developing applications following the 12-factor principles.](https://github.com/theskumar/python-dotenv)","x":239,"y":-920,"width":540,"height":160}
 	],
 	"edges":[
 		{"id":"a3b427b205fb1476","fromNode":"ca46ddbf774964f3","fromSide":"right","toNode":"63eb0eaf1607e35d","toSide":"left"},

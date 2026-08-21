@@ -27,7 +27,8 @@
 		{"id":"ddcbb16a9b7f75e3","type":"text","text":"- [x] [[python 模式匹配]]","x":112,"y":-260,"width":250,"height":60},
 		{"id":"f57849862f8ca285","type":"text","text":"- [x] [[python 魔术方法]]","x":112,"y":-140,"width":250,"height":60},
 		{"id":"1230ba4259c4b880","type":"text","text":"- [x] [[Python 数据结构与函数式编程工具]]","x":112,"y":0,"width":412,"height":60},
-		{"id":"06339a40b9048cd3","type":"text","text":"- [ ] mro","x":-317,"y":1320,"width":250,"height":60}
+		{"id":"06339a40b9048cd3","type":"text","text":"- [x] mro","x":-317,"y":1320,"width":250,"height":60},
+		{"id":"43446934b28452ee","x":534,"y":784,"width":400,"height":400,"type":"file","file":"Clippings/python MRO.md"}
 	],
 	"edges":[
 		{"id":"c8e8d333c649ff37","fromNode":"fdb3d4ded1f89dc8","fromSide":"right","toNode":"b035c829ed019497","toSide":"left"},

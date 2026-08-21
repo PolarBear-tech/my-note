@@ -140,11 +140,17 @@ D().method()
 
 由此，可以计算出类 B 的 MRO，其计算过程为：
 
-$\begin{aligned} L[B]   &= [B] + merge(L[A],[A]) \\ &= [B] + merge([A,object],[A])\\ &= [B,A] + merge([object])         \\ &= [B,A,object] \end{aligned}$
+$$
+\begin{aligned} L[B]   &= [B] + merge(L[A],[A]) \\ &= [B] + merge([A,object],[A])\\ &= [B,A] + merge([object])         \\ &= [B,A,object] \end{aligned}
+$$
 
-$\begin{aligned} L[C]&= [C] + merge(L[A] , [A]) \\ &=[C]+merge([A,object],[A])\\ &=[C,A]+merge([object])\\ &=[C,A,object] \end{aligned}$
+$$
+\begin{aligned} L[C]&= [C] + merge(L[A] , [A]) \\ &=[C]+merge([A,object],[A])\\ &=[C,A]+merge([object])\\ &=[C,A,object] \end{aligned}
+$$
 
-$\begin{aligned} L[D]& = [D] + merge(L[B] , L[C] , [B] , [C])\\ &=[D]+merge([B,A,object],[C,A,object],[B],[C])\\ &=[D,B]+merge([A,object],[C,A,object],[C])\\ &=[D,B,C]+merge([A,object],[A,object])\\ &=[D,B,C,A]+merge([object])\\ &=[D,B,C,A,object] \end{aligned}$
+$$
+\begin{aligned} L[D]& = [D] + merge(L[B] , L[C] , [B] , [C])\\ &=[D]+merge([B,A,object],[C,A,object],[B],[C])\\ &=[D,B]+merge([A,object],[C,A,object],[C])\\ &=[D,B,C]+merge([A,object],[A,object])\\ &=[D,B,C,A]+merge([object])\\ &=[D,B,C,A,object] \end{aligned}
+$$
 
 程序运行结果为：
 
@@ -176,6 +182,7 @@ A 的线性化计算如下：
 $\begin{aligned} L[A]  &= [A] + merge(L[X], L[Y], [X], [Y])\\ &= [A] + merge([X, object], [Y, object], [X], [Y])\\ &= [A，X] + merge([object], [Y, object], [Y])\\ &  = [A,，X，Y] + merge([object], [object])\\ & = [A，X，Y，object] \end{aligned}$
 
 注意第 3 步，merge(\[object\], \[Y, object\], \[Y\]) 中首先输出的是 Y 而不是 object。这是因为 object 虽然是第一个列表的头，但是它出现在了第二个列表的尾部。所以我们会跳过第一个列表，去检查第二个列表的头部，也就是 Y。Y 没有出现在其它列表的尾部，所以将其输出。
+
 同理，B 的线性化结果为：
 
 最后，我们看看 C 的线性化结果：
