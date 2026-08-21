@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7609905d2fd1392b",
+        "id": "e963a6e653a62b23",
         "type": "tabs",
         "children": [
           {
-            "id": "de7c8b6d2db414d4",
+            "id": "1bdebca6f161cc8f",
             "type": "leaf",
             "state": {
               "type": "canvas",
@@ -164,10 +164,17 @@
             "id": "bfbaac88c01d5417",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "canvas",
+              "state": {
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 430,
+                  "y": 60,
+                  "zoom": -2.5290370861231644
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
             }
           }
         ],
@@ -209,15 +216,15 @@
       "templates:插入模板": false
     }
   },
-  "active": "de7c8b6d2db414d4",
+  "active": "1bdebca6f161cc8f",
   "lastOpenFiles": [
+    "组织/其他.canvas",
+    "组织/root.canvas",
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
     "组织/python/工程工具和思想.canvas",
-    "组织/root.canvas",
     "组织/python/内核语法.canvas",
     "Clippings/python MRO.md",
-    "组织/其他.canvas",
     "文本笔记/旅游安排.md",
     "文本笔记/村委会发言稿.md",
     "文本笔记/temp.md",
