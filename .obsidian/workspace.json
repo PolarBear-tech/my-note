@@ -23,8 +23,41 @@
               "icon": "lucide-layout-dashboard",
               "title": "root"
             }
+          },
+          {
+            "id": "998609bd3a71d819",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "python-dotenv"
+            }
+          },
+          {
+            "id": "2cb59b1039a3a442",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "组织/python-dotenv梳理.canvas",
+                "viewState": {
+                  "x": -597.8854355898626,
+                  "y": -1418.5195611172503,
+                  "zoom": -0.7592594586772603
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "python-dotenv梳理"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,16 +168,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.66665649414062
+    "width": 247.66665649414062,
+    "collapsed": true
   },
   "right": {
     "id": "a125b68c8a957353",
     "type": "split",
     "children": [
       {
-        "id": "7c2c7f380000708e",
+        "id": "795e3fe75f4cc3d4",
         "type": "tabs",
-        "dimension": 41.27906976744186,
+        "dimension": 26.007326007326007,
         "children": [
           {
             "id": "c90c5a2a83a37647",
@@ -152,6 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "组织/python-dotenv梳理.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -161,20 +196,13 @@
             }
           },
           {
-            "id": "bfbaac88c01d5417",
+            "id": "b40e49ec3dfd3345",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 430,
-                  "y": 60,
-                  "zoom": -2.5290370861231644
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ],
@@ -183,7 +211,7 @@
       {
         "id": "e2a8ebdd080d10dc",
         "type": "tabs",
-        "dimension": 58.720930232558146,
+        "dimension": 73.992673992674,
         "children": [
           {
             "id": "01d4043ed5fab944",
@@ -199,7 +227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.66668701171875
+    "width": 262.66668701171875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,10 +245,12 @@
       "templates:插入模板": false
     }
   },
-  "active": "1bdebca6f161cc8f",
+  "active": "2cb59b1039a3a442",
   "lastOpenFiles": [
-    "组织/其他.canvas",
+    "文本笔记/python学习相关/实战日记/python-dotenv.md",
+    "组织/python-dotenv梳理.canvas",
     "组织/root.canvas",
+    "组织/其他.canvas",
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
     "组织/python/工程工具和思想.canvas",
@@ -229,7 +260,6 @@
     "文本笔记/村委会发言稿.md",
     "文本笔记/temp.md",
     "文本笔记/python学习相关/Python Contributor之路.md",
-    "组织/python-dotenv梳理.canvas",
     "文本笔记/python学习相关/工程思想.md",
     "文本笔记/交大新生入学.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
@@ -253,7 +283,6 @@
     "文本笔记/薛定谔方程里为什么有i.md",
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "文本笔记/附件/Pasted image 20260812104837.png",
-    "文本笔记/python学习相关/实战日记/python-dotenv.md",
     "文本笔记/未命名.md",
     "附件/Wish List.md",
     "附件/主页.md",
