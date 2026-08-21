@@ -47,9 +47,9 @@
               "state": {
                 "file": "组织/python-dotenv梳理.canvas",
                 "viewState": {
-                  "x": -597.8854355898626,
-                  "y": -1418.5195611172503,
-                  "zoom": -0.7592594586772603
+                  "x": 2084.8018496597697,
+                  "y": -3171.39467194065,
+                  "zoom": -1.9444443247936438
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -62,17 +62,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文本笔记/交大新生入学.md",
+                "file": "文本笔记/python学习相关/实战日记/python-dotenv.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "交大新生入学"
+              "title": "python-dotenv"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文本笔记/交大新生入学.md",
+                "file": "组织/python-dotenv梳理.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -260,11 +260,12 @@
       "templates:插入模板": false
     }
   },
-  "active": "ef92b61179d80575",
+  "active": "2cb59b1039a3a442",
   "lastOpenFiles": [
-    "组织/python-dotenv梳理.canvas",
     "文本笔记/python学习相关/实战日记/python-dotenv.md",
     "组织/root.canvas",
+    "组织/python-dotenv梳理.canvas",
+    "文本笔记/交大新生入学.md",
     "组织/其他.canvas",
     "组织/python/实战.canvas",
     "组织/python/python roadmap.canvas",
@@ -276,7 +277,6 @@
     "文本笔记/temp.md",
     "文本笔记/python学习相关/Python Contributor之路.md",
     "文本笔记/python学习相关/工程思想.md",
-    "文本笔记/交大新生入学.md",
     "Clippings/Python 数据结构与函数式编程工具.md",
     "文本笔记/Wish List.md",
     "文本笔记/读书日记.md",

@@ -47,3 +47,12 @@ def _get_stream(self) -> Iterator[IO[str]]:
 ## **2026-08-17** 14:23: 对数据的处理
 
 在大多数情况下，返回整个数据是不太稳妥的，更好的做法是返回一个 generator，这样不会把书记直接加载到内存中，防止数据太多造成程序崩溃。
+
+## **2026-08-21** 18:40: `hash` 值的计算
+
+若明确处理的对象都是一个同一个类，他的 `hash` 值可以仅由其字段产生，但是更佳的写法是：
+
+```python
+def __hash__(self) -> int:
+    return hash((self.__class__, self.fields))
+```
