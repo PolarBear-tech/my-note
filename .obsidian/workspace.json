@@ -23,41 +23,8 @@
               "icon": "lucide-layout-dashboard",
               "title": "其他"
             }
-          },
-          {
-            "id": "9d4ac5591a3c69bf",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/其他.canvas",
-                "viewState": {
-                  "x": -197.5,
-                  "y": 359,
-                  "zoom": -1.2855094385896129
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "其他"
-            }
-          },
-          {
-            "id": "8b66a2b39b17ed89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "文本笔记/交大新生入学.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "交大新生入学"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "文本笔记/交大新生入学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +211,7 @@
       "templates:插入模板": false
     }
   },
-  "active": "8b66a2b39b17ed89",
+  "active": "a5f28345280fe81a",
   "lastOpenFiles": [
     "组织/其他.canvas",
     "组织/root.canvas",
