@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/其他.canvas",
+                "file": "组织/root.canvas",
                 "viewState": {
-                  "x": -99.49374672573208,
-                  "y": 381.49986077305937,
-                  "zoom": -1.2962962165290959
+                  "x": 430,
+                  "y": 60,
+                  "zoom": -2.104431702144286
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "其他"
+              "title": "root"
             }
           }
         ]
@@ -211,7 +211,7 @@
       "templates:插入模板": false
     }
   },
-  "active": "a5f28345280fe81a",
+  "active": "20e1649149de6768",
   "lastOpenFiles": [
     "组织/其他.canvas",
     "组织/root.canvas",
