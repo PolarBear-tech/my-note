@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/其他.canvas",
+                "file": "组织/root.canvas",
                 "viewState": {
-                  "x": -197.5,
-                  "y": 359,
-                  "zoom": -1.2855094385896129
+                  "x": 430,
+                  "y": 60,
+                  "zoom": -0.8076376094379324
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "其他"
+              "title": "root"
             }
           }
         ]
