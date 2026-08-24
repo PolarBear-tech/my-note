@@ -16,27 +16,12 @@
                 "file": "组织/其他.canvas",
                 "viewState": {
                   "x": -197.5,
-                  "y": 359,
+                  "y": 358.99999999999994,
                   "zoom": -1.2855094385896129
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "其他"
-            }
-          },
-          {
-            "id": "b0476496eee249d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/关于正则表达式.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "关于正则表达式"
             }
           }
         ]
@@ -151,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.66665649414062,
-    "collapsed": true
+    "width": 247.66665649414062
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -229,10 +213,11 @@
   },
   "active": "20e1649149de6768",
   "lastOpenFiles": [
-    "组织/root.canvas",
     "Clippings/关于正则表达式.md",
-    "文本笔记/正则表达式.md",
     "组织/其他.canvas",
+    "文本笔记/备忘录.md",
+    "组织/root.canvas",
+    "文本笔记/正则表达式.md",
     "文本笔记/交大新生入学.md",
     "文本笔记/日程.md",
     "文本笔记/读书日记.md",
@@ -271,7 +256,6 @@
     "文本笔记/附件/Pasted image 20260812104837.png",
     "文本笔记/未命名.md",
     "附件/Wish List.md",
-    "附件/主页.md",
     "组织/数学.canvas",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
