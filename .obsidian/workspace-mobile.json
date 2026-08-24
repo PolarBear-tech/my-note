@@ -1,23 +1,23 @@
 {
   "main": {
-    "id": "a31a7edc569337ed",
+    "id": "7655b3d45785b7e1",
     "type": "split",
     "children": [
       {
-        "id": "79d3eef5820075c4",
+        "id": "c85531dd28ce57d8",
         "type": "tabs",
         "children": [
           {
-            "id": "034a0bcd5460ae95",
+            "id": "8c4d6424733b61aa",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": -875,
-                  "y": -282,
-                  "zoom": -0.4635360169700341
+                  "x": 166.4180801724262,
+                  "y": 966.4540847759471,
+                  "zoom": -0.9057256673244826
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -30,11 +30,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6cae5f2891543f88",
+    "id": "150a4655818c77ee",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "5888b114e0ed9833",
+        "id": "ac21481639bc0611",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -49,7 +49,7 @@
         }
       },
       {
-        "id": "24e47ca466c67e44",
+        "id": "422046f4d58c6afa",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -66,7 +66,36 @@
         }
       },
       {
-        "id": "e6e97be1b0be40f7",
+        "id": "691daab8fa3f0cc4",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-ghost",
+          "title": "tag"
+        }
+      },
+      {
+        "id": "587a1e79409500fb",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-ghost",
+          "title": "all-properties"
+        }
+      },
+      {
+        "id": "a8f8e185c82c2647",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -82,18 +111,17 @@
     "currentTab": 0
   },
   "right": {
-    "id": "7c445aa2d427e459",
+    "id": "ed51315d846cb82c",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "4941f28f6d664d44",
+        "id": "360f11b58d6e1fa3",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Clippings/Python 数据结构与函数式编程工具.md",
-            "collapseAll": true,
-            "extraContext": true,
+            "collapseAll": false,
+            "extraContext": false,
             "sortOrder": "alphabetical",
             "showSearch": false,
             "searchQuery": "",
@@ -105,7 +133,7 @@
         }
       },
       {
-        "id": "b616380c2185707a",
+        "id": "c2c89692d78cff12",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
@@ -118,12 +146,11 @@
         }
       },
       {
-        "id": "bb1673dab1583775",
+        "id": "3891ec51c62afe0b",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "组织/其他.canvas",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -133,61 +160,26 @@
         }
       }
     ],
-    "currentTab": 2
+    "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templates:插入模板": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
+      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "audio-recorder:开始/结束录音": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false,
+      "fuzzy-chinese-pinyin:FuzzySearch": false
     }
   },
-  "active": "034a0bcd5460ae95",
+  "active": "8c4d6424733b61aa",
   "lastOpenFiles": [
     "组织/root.canvas",
-    "组织/python/python roadmap.canvas",
-    "组织/其他.canvas",
-    "组织/python/实战.canvas",
-    "组织/python/工程工具和思想.canvas",
-    "Marimo/python学习相关/__marimo__/session/format.py.json",
-    "Marimo/python学习相关/__marimo__/session/闭包.py.json",
-    "Marimo/python学习相关/__marimo__/session/设计模式.py.json",
-    "Marimo/python学习相关/__marimo__/session/bytes.py.json",
-    "Marimo/python学习相关/__marimo__/session/init和new.py.json",
-    "Marimo/python学习相关/__marimo__/session/属性相关魔术方法.py.json",
-    "Marimo/python学习相关/__marimo__/session/描述器.py.json",
-    "Marimo/python学习相关/__marimo__/session/元类.py.json",
-    "Marimo/python学习相关/__marimo__/session/生成器和迭代器.py.json",
-    "Marimo/python学习相关/__marimo__/session/类构建相关魔术方法.py.json",
-    "组织/python/内核语法.canvas",
-    "文本笔记/未命名.md",
-    "文本笔记/Wish List.md",
-    "文本笔记/Plans.md",
-    "文本笔记/读书日记.md",
-    "README.md",
-    "主页 1.md",
-    "主页.md",
-    "附件/Wish List.md",
-    "附件/主页.md",
-    "组织/其他.canvas.md",
-    "文本笔记/交大新生入学.md",
-    "Clippings/Python 数据结构与函数式编程工具.md",
-    "模板/日期+时间.md",
-    "组织/python/工程工具.canvas",
-    "组织/python/roadmap.canvas",
-    "Clippings/python 模式匹配.md",
-    "Clippings/python 描述器.md",
-    "文本笔记/python学习相关/python 魔术方法.md",
-    "Clippings/python dataclass.md",
-    "文本笔记/python学习相关/The Zen of Python.md",
-    "组织/CPython Contributor RoadMap.canvas",
-    "组织/高等数学.canvas",
-    "手写笔记/高等书学-chapter-1.excalidraw.md",
-    "我的计划.md"
+    "文本笔记/test.md",
+    "Test.md"
   ]
 }
