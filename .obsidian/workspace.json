@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/root.canvas",
+                "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": 430,
-                  "y": 60,
-                  "zoom": -2.104431702144286
+                  "x": -197.5,
+                  "y": 359,
+                  "zoom": -1.2855094385896129
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "title": "其他"
             }
           },
           {
@@ -229,9 +229,9 @@
   },
   "active": "20e1649149de6768",
   "lastOpenFiles": [
+    "组织/root.canvas",
     "Clippings/关于正则表达式.md",
     "文本笔记/正则表达式.md",
-    "组织/root.canvas",
     "组织/其他.canvas",
     "文本笔记/交大新生入学.md",
     "文本笔记/日程.md",
@@ -272,7 +272,6 @@
     "文本笔记/未命名.md",
     "附件/Wish List.md",
     "附件/主页.md",
-    "主页.md",
     "组织/数学.canvas",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
