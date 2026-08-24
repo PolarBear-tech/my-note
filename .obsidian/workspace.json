@@ -13,18 +13,34 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "组织/root.canvas",
+                "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": 430,
-                  "y": 60,
-                  "zoom": -0.8076376094379324
+                  "x": 142.5,
+                  "y": 359,
+                  "zoom": -1.2855094385896129
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "root"
+              "title": "其他"
+            }
+          },
+          {
+            "id": "66376fea0b4df585",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文本笔记/日程.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "日程"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,8 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.66665649414062,
-    "collapsed": true
+    "width": 247.66665649414062
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -212,12 +227,12 @@
       "templates:插入模板": false
     }
   },
-  "active": "757d063c413678d7",
+  "active": "497eb0e50e1c55fd",
   "lastOpenFiles": [
-    "文本笔记/Plans.md",
-    "文本笔记/日程.md",
     "组织/其他.canvas",
     "组织/root.canvas",
+    "文本笔记/Plans.md",
+    "文本笔记/日程.md",
     "文本笔记/test.md",
     "Clippings/关于正则表达式.md",
     "文本笔记/备忘录.md",
