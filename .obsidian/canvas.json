@@ -4,5 +4,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "组织",
   "cardLabelVisibility": "always",
-  "defaultWheelBehavior": "pan"
+  "defaultWheelBehavior": "pan",
+  "zoomBreakpoint": 2.39
 }
