@@ -2,8 +2,15 @@
   "global": {
     "traditionalChineseSupport": false,
     "doublePinyin": "全拼",
-    "fuzzyPinyin": false,
-    "fuzzyPinyinSetting": [],
+    "fuzzyPinyin": true,
+    "fuzzyPinyinSetting": [
+      "zh",
+      "ch",
+      "sh",
+      "ang",
+      "eng",
+      "ing"
+    ],
     "palladius": false,
     "closeWithBackspace": true,
     "autoCaseSensitivity": true
@@ -12,7 +19,7 @@
     "showAttachments": false,
     "showAllFileTypes": true,
     "showUnresolvedLink": false,
-    "quicklySelectHistoryFiles": false,
+    "quicklySelectHistoryFiles": true,
     "quicklySelectHistoryFilesHint": "asdfjklgh",
     "attachmentExtensions": [
       "jpg",
@@ -37,7 +44,7 @@
       "mkv",
       "pdf"
     ],
-    "usePathToSearch": false,
+    "usePathToSearch": true,
     "useFileEditorSuggest": true,
     "showTags": false,
     "searchWithTag": true,
