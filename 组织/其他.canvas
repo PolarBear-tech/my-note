@@ -1,6 +1,5 @@
 {
 	"nodes":[
-		{"id":"e27ecaf9c31130dc","x":960,"y":-482,"width":400,"height":400,"type":"file","file":"组织/其他.canvas"},
 		{"id":"076475fdaa532b5f","type":"file","file":"文本笔记/心灵感悟.md","x":-400,"y":800,"width":400,"height":400},
 		{"id":"027bad3e4dad7d1c","type":"file","file":"文本笔记/村委会发言稿.md","x":280,"y":140,"width":400,"height":400},
 		{"id":"69cfcafcee3d4bd3","type":"file","file":"文本笔记/读书日记.md","x":-1075,"y":-482,"width":400,"height":400},
@@ -8,8 +7,7 @@
 		{"id":"0baff4cb39c85fde","type":"file","file":"文本笔记/Wish List.md","x":-400,"y":140,"width":400,"height":400,"color":"#ff0000"},
 		{"id":"52a2bff529e75452","type":"file","file":"文本笔记/交大新生入学.md","x":280,"y":-482,"width":400,"height":400},
 		{"id":"8e5e27d15e3b6aa7","type":"file","file":"文本笔记/日程.md","x":-1075,"y":800,"width":400,"height":400},
-		{"id":"0b067ba17c25cab0","type":"file","file":"文本笔记/关于外表.md","x":-400,"y":-482,"width":400,"height":400},
-		{"id":"3b9edfc82d286382","type":"file","file":"文本笔记/test.md","x":280,"y":800,"width":400,"height":400}
+		{"id":"0b067ba17c25cab0","type":"file","file":"文本笔记/关于外表.md","x":-400,"y":-482,"width":400,"height":400}
 	],
 	"edges":[]
 }

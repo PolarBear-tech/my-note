@@ -23,26 +23,8 @@
               "icon": "lucide-layout-dashboard",
               "title": "其他"
             }
-          },
-          {
-            "id": "66376fea0b4df585",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 430,
-                  "y": 60,
-                  "zoom": -0.8076376094379324
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,10 +211,10 @@
       "templates:插入模板": false
     }
   },
-  "active": "66376fea0b4df585",
+  "active": "757d063c413678d7",
   "lastOpenFiles": [
-    "组织/其他.canvas",
     "组织/root.canvas",
+    "组织/其他.canvas",
     "文本笔记/Plans.md",
     "文本笔记/日程.md",
     "文本笔记/test.md",
