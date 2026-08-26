@@ -28,15 +28,17 @@
             "id": "f54cadbb32bd37b2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "文本笔记/读书日记.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "组织/root.canvas",
+                "viewState": {
+                  "x": 430,
+                  "y": 60,
+                  "zoom": -0.8076376094379324
+                }
               },
-              "icon": "lucide-file",
-              "title": "读书日记"
+              "icon": "lucide-layout-dashboard",
+              "title": "root"
             }
           }
         ],
