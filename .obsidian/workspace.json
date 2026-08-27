@@ -15,34 +15,16 @@
               "state": {
                 "file": "组织/其他.canvas",
                 "viewState": {
-                  "x": -192.32346520752048,
-                  "y": 535.6352163426159,
+                  "x": -201.533373636379,
+                  "y": 479.3524675941786,
                   "zoom": -1.2962962165290959
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "其他"
             }
-          },
-          {
-            "id": "1fc27bc295b927c2",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "组织/root.canvas",
-                "viewState": {
-                  "x": 430,
-                  "y": 60,
-                  "zoom": -0.8076376094379324
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "root"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,12 +211,12 @@
       "templates:插入模板": false
     }
   },
-  "active": "1fc27bc295b927c2",
+  "active": "757d063c413678d7",
   "lastOpenFiles": [
+    "组织/root.canvas",
     "文本笔记/心灵感悟.md",
     "文本笔记/我的大学怎么过.md",
     "组织/其他.canvas",
-    "组织/root.canvas",
     "文本笔记/Plans.md",
     "文本笔记/日程.md",
     "文本笔记/test.md",
@@ -274,7 +256,6 @@
     "文本笔记/薛定谔方程里为什么有i.md",
     "文本笔记/python学习相关/python进阶学习知识点.md",
     "文本笔记/附件/Pasted image 20260812104837.png",
-    "文本笔记/未命名.md",
     "组织/数学.canvas",
     "组织/自我提升.canvas",
     "文本笔记/附件/Pasted image 20260812104914.png",
