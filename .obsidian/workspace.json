@@ -136,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.66665649414062,
-    "collapsed": true
+    "width": 247.66665649414062
   },
   "right": {
     "id": "a125b68c8a957353",
@@ -214,10 +213,11 @@
   },
   "active": "5c24f3d61d1f35ee",
   "lastOpenFiles": [
+    "文本笔记/temp.md",
+    "组织/root.canvas",
     "手写笔记/Drawing 2026-09-02 14.29.26.excalidraw.md",
     "文档/医用物理学笔记.pdf",
     "组织/其他.canvas",
-    "组织/root.canvas",
     "文本笔记/心灵感悟.md",
     "文本笔记/我的大学怎么过.md",
     "文本笔记/Plans.md",
@@ -256,7 +256,6 @@
     "文本笔记/python学习相关/未命名",
     "文本笔记/nvim优化.md",
     "文本笔记/薛定谔方程里为什么有i.md",
-    "文本笔记/python学习相关/python进阶学习知识点.md",
     "文本笔记/附件/Pasted image 20260812104837.png",
     "组织/数学.canvas",
     "组织/自我提升.canvas",
