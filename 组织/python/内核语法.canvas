@@ -18,7 +18,7 @@
 		{"id":"e01a1149acaf4a63","type":"text","text":"Python语言内核","x":-770,"y":205,"width":250,"height":60},
 		{"id":"fdb3d4ded1f89dc8","type":"text","text":"并发编程","x":-317,"y":814,"width":250,"height":60},
 		{"id":"1a3dda16706ecb5a","type":"file","file":"文本笔记/python学习相关/python进阶学习知识点.md","x":-1049,"y":-398,"width":400,"height":400},
-		{"id":"d7fb0ec21430ada3","type":"file","file":"手写笔记/闭包.md","x":-1006,"y":-993,"width":857,"height":268},
+		{"id":"d7fb0ec21430ada3","type":"file","file":"文本笔记/闭包.md","x":-1006,"y":-993,"width":857,"height":268},
 		{"id":"09349871369c80ac","type":"text","text":"- [x] 上下文管理器","x":112,"y":-633,"width":250,"height":60},
 		{"id":"b5d1ab7d7d75ffb7","type":"text","text":"- [x] 描述器","x":114,"y":-1034,"width":250,"height":60},
 		{"id":"2a11cbe6037c0bdc","type":"file","file":"Clippings/python 内存管理.md","x":534,"y":186,"width":400,"height":380},
